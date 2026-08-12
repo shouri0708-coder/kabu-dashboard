@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>米国マーケット なぜ動いた？</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:           #f9f9f7;
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --muted:          #898781;
+    --grid:           #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --up:             #006300;   /* delta ↑ */
+    --down:           #d03b3b;   /* delta ↓ */
+    --bar-pos:        #2a78d6;   /* diverging + pole */
+    --bar-neg:        #e34948;   /* diverging − pole */
+    --accent:         #2a78d6;
+    --chip:           #f0efec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page:           #0d0d0d;
+      --surface-1:      #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --muted:          #898781;
+      --grid:           #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --up:             #0ca30c;
+      --down:           #e66767;
+      --bar-pos:        #3987e5;
+      --bar-neg:        #e66767;
+      --accent:         #3987e5;
+      --chip:           #383835;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic UI", sans-serif;
+    background: var(--page);
+    color: var(--text-primary);
+    line-height: 1.65;
+    padding: 24px 16px 48px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header h1 { font-size: 24px; font-weight: 700; letter-spacing: .01em; }
+  header .date { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+  .headline {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 18px 0 14px;
+  }
+  .headline .kicker { font-size: 12px; color: var(--muted); letter-spacing: .08em; margin-bottom: 6px; }
+  /* live update */
+  .live-bar {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 10px; padding: 8px 14px; margin-top: 12px; font-size: 12.5px;
+  }
+  .live-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--baseline); flex: none; }
+  .live-dot.on { background: #0ca30c; box-shadow: 0 0 0 3px rgba(12,163,12,.18); }
+  .live-dot.err { background: #d03b3b; }
+  .live-dot.wait { background: #fab219; }
+  .live-bar .msg { color: var(--text-secondary); }
+  .live-bar .ts { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .key-box { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .key-box input {
+    font: inherit; font-size: 12.5px; padding: 4px 10px; border-radius: 8px;
+    border: 1px solid var(--baseline); background: var(--page); color: var(--text-primary); width: 240px;
+  }
+  .key-box button {
+    font: inherit; font-size: 12.5px; font-weight: 600; padding: 4px 14px; border-radius: 8px;
+    border: none; background: var(--accent); color: #fff; cursor: pointer;
+  }
+  .px.up-flash, .chg.up-flash { transition: background .5s; background: rgba(12,163,12,.15); border-radius: 6px; }
+  .px.down-flash, .chg.down-flash { transition: background .5s; background: rgba(208,59,59,.15); border-radius: 6px; }
+  .headline .lead { font-size: 19px; font-weight: 700; }
+  .headline .sub { font-size: 14px; color: var(--text-secondary); margin-top: 8px; }
+
+  /* KPI row */
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 14px 0 4px; }
+  .kpi {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .kpi .name { font-size: 12px; color: var(--text-secondary); }
+  .kpi .val { font-size: 21px; font-weight: 700; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .kpi .delta { font-size: 13px; font-weight: 600; margin-top: 2px; }
+  .kpi .why { font-size: 11.5px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+  .d-up { color: var(--up); }
+  .d-down { color: var(--down); }
+  .kpi-note { font-size: 11.5px; color: var(--muted); margin-bottom: 8px; }
+
+  section { margin-top: 26px; }
+  h2 { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+
+  .reason {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 10px;
+  }
+  .reason h3 { font-size: 15px; margin-bottom: 6px; }
+  .reason p { font-size: 14px; color: var(--text-secondary); }
+  .reason .tsumari {
+    margin-top: 10px; padding: 10px 12px; border-radius: 8px;
+    background: var(--chip); font-size: 13.5px;
+  }
+  .reason .tsumari b { color: var(--text-primary); }
+  .tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-size: 11.5px; padding: 2px 10px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--text-secondary);
+  }
+
+  /* watchlist */
+  .watch { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 18px; }
+  .w-row { display: grid; grid-template-columns: minmax(120px,1.3fr) 90px 92px 56px; gap: 8px; align-items: center; padding: 9px 0 2px; }
+  .w-news + .w-item { border-top: 1px solid var(--grid); }
+  .w-row .nm { font-size: 13.5px; font-weight: 600; }
+  .w-row .nm small { display: block; font-weight: 400; font-size: 10.5px; color: var(--muted); }
+  .w-row .px { font-size: 14px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+  .w-row .chg { font-size: 13px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+  .w-row .tchip { font-size: 10px; padding: 1px 6px; border-radius: 999px; background: var(--chip); color: var(--muted); text-align: center; white-space: nowrap; }
+  .w-note { font-size: 12px; color: var(--text-secondary); padding: 0 0 9px; }
+  .watch-foot { font-size: 11.5px; color: var(--muted); margin-top: 8px; }
+  .w-item { cursor: pointer; }
+  .w-item:hover .nm { color: var(--accent); }
+  .w-caret { display: inline-block; font-size: 10px; color: var(--muted); margin-right: 4px; transition: transform .15s; }
+  .w-item.open .w-caret { transform: rotate(90deg); }
+  .w-news { display: none; padding: 2px 0 12px 10px; border-left: 3px solid var(--grid); margin: 0 0 8px 4px; }
+  .w-item.open + .w-news { display: block; }
+  .w-news-item { padding: 8px 0 2px; }
+  .w-news-item a { color: var(--accent); font-weight: 600; font-size: 13px; text-decoration: none; }
+  .w-news-item a:hover { text-decoration: underline; }
+  .w-news-item .src { font-size: 11px; color: var(--muted); margin-left: 6px; }
+  .w-news-item p { font-size: 12.5px; color: var(--text-secondary); margin-top: 2px; }
+  .w-news-item .plink { display: inline-block; margin-top: 4px; font-size: 12px; padding: 2px 10px; border-radius: 999px; background: var(--chip); }
+  .w-news-item .plink.pl-up { color: var(--up); }
+  .w-news-item .plink.pl-down { color: var(--down); }
+  .w-news-item .plink.pl-mix { color: var(--text-secondary); }
+  /* KPIカードのクリック展開 */
+  .kpi[data-kpi] { cursor: pointer; }
+  .kpi[data-kpi]:hover { border-color: var(--accent); }
+  .kpi.active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .kpi .more { font-size: 10.5px; color: var(--accent); margin-top: 7px; }
+  .kpi-news { display: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 4px 18px 12px; margin: 10px 0 4px; }
+  .kpi-news.show { display: block; }
+  .kpi-news h4 { font-size: 13px; margin: 10px 0 2px; font-weight: 700; }
+  /* 目立った銘柄のクリック展開 */
+  .m-item { cursor: pointer; }
+  .m-item:hover .nm { color: var(--accent); }
+  .m-item.open .w-caret { transform: rotate(90deg); }
+  .m-news { display: none; padding: 2px 0 12px 10px; border-left: 3px solid var(--grid); margin: 0 0 8px 4px; }
+  .m-item.open + .m-news { display: block; }
+  .m-desc { font-size: 12.5px; color: var(--text-primary); padding: 8px 12px; border-radius: 8px; background: var(--chip); margin: 8px 0 2px; }
+  /* ウォッチリストへの銘柄追加 */
+  .add-box { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin: 0 0 10px; }
+  .add-box input {
+    font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 8px;
+    border: 1px solid var(--baseline); background: var(--surface-1); color: var(--text-primary); width: 210px;
+  }
+  .add-box button {
+    font: inherit; font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 8px;
+    border: none; background: var(--accent); color: #fff; cursor: pointer;
+  }
+  .add-box .add-hint { font-size: 11.5px; color: var(--muted); width: 100%; }
+  .add-msg { font-size: 12px; color: var(--down); min-height: 1em; }
+  .w-del {
+    font-size: 11px; color: var(--muted); border: 1px solid var(--border); border-radius: 999px;
+    padding: 1px 8px; margin-left: 8px; cursor: pointer; background: none; font-family: inherit;
+  }
+  .w-del:hover { color: var(--down); border-color: var(--down); }
+
+  /* movers */
+  .movers { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+  .mover { display: grid; grid-template-columns: 150px 1fr 64px; gap: 10px; align-items: center; padding: 7px 0; }
+  .m-news + .m-item { border-top: 1px solid var(--grid); }
+  .mover .nm { font-size: 13.5px; font-weight: 600; }
+  .mover .nm small { display: block; font-weight: 400; font-size: 11px; color: var(--muted); }
+  .barwrap { position: relative; height: 16px; }
+  .barwrap .axis { position: absolute; left: 50%; top: -4px; bottom: -4px; width: 1px; background: var(--baseline); }
+  .bar { position: absolute; top: 3px; height: 10px; border-radius: 0 4px 4px 0; }
+  .bar.neg { border-radius: 4px 0 0 4px; }
+  .mover .pct { font-size: 13px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+  .mover .reason-line { grid-column: 1 / -1; font-size: 12px; color: var(--text-secondary); margin: -2px 0 4px; }
+  .chart-note { font-size: 11.5px; color: var(--muted); margin-top: 10px; }
+
+  /* scenarios */
+  .scenario {
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px 18px 14px; margin-bottom: 10px;
+    border-left: 4px solid var(--baseline);
+  }
+  .scenario.bull { border-left-color: var(--up); }
+  .scenario.bear { border-left-color: var(--down); }
+  .scenario .label { font-size: 11.5px; font-weight: 700; letter-spacing: .06em; }
+  .scenario.bull .label { color: var(--up); }
+  .scenario.bear .label { color: var(--down); }
+  .scenario.flat .label { color: var(--muted); }
+  .scenario h3 { font-size: 15px; margin: 4px 0 6px; }
+  .scenario p { font-size: 13.5px; color: var(--text-secondary); }
+  .scenario .flow {
+    margin-top: 10px; padding: 10px 12px; border-radius: 8px;
+    background: var(--chip); font-size: 13px; line-height: 1.9;
+  }
+  .disclaimer {
+    border: 1px dashed var(--baseline); border-radius: 10px;
+    padding: 10px 14px; font-size: 12px; color: var(--text-secondary); margin-top: 4px;
+  }
+
+  /* news */
+  .news { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 18px; }
+  .news-item { padding: 12px 0; }
+  .news-item + .news-item { border-top: 1px solid var(--grid); }
+  .news-item a { color: var(--accent); font-weight: 600; font-size: 14px; text-decoration: none; }
+  .news-item a:hover { text-decoration: underline; }
+  .news-item .src { font-size: 11.5px; color: var(--muted); margin-left: 6px; }
+  .news-item p { font-size: 13px; color: var(--text-secondary); margin-top: 3px; }
+
+  /* events */
+  .events { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 18px; }
+  .event { display: flex; gap: 14px; padding: 12px 0; align-items: baseline; }
+  .event + .event { border-top: 1px solid var(--grid); }
+  .event .when { min-width: 130px; font-size: 12.5px; font-weight: 700; color: var(--accent); }
+  .event .what { font-size: 13.5px; }
+  .event .what small { display: block; color: var(--text-secondary); font-size: 12px; }
+
+  /* glossary */
+  details {
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 16px; margin-bottom: 8px;
+  }
+  details summary { cursor: pointer; font-size: 13.5px; font-weight: 600; }
+  details p { font-size: 13px; color: var(--text-secondary); margin-top: 8px; }
+
+  footer { margin-top: 30px; font-size: 11.5px; color: var(--muted); line-height: 1.8; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>🇺🇸 米国マーケット なぜ動いた？</h1>
+    <div class="date">ニューヨーク市場 2026年8月12日（水）取引時間中（米国東部時間 午前） ｜ 日本時間 8/12 深夜 更新</div>
+    <div class="live-bar" id="live-bar">
+      <span class="live-dot" id="live-dot"></span>
+      <span class="msg" id="live-msg">自動更新：準備中…</span>
+      <span class="key-box" id="key-box" style="display:none">
+        <input type="password" id="key-input" placeholder="Finnhub APIキーを貼り付け">
+        <button id="key-btn">接続</button>
+      </span>
+      <span class="ts" id="live-ts"></span>
+    </div>
+  </header>
+
+  <div class="headline">
+    <div class="kicker">きょうの結論</div>
+    <div class="lead">CPIが「予想どおり」の落ち着いた内容で株は反発。AI関連が主導</div>
+    <div class="sub">今週最大のイベントだった7月CPI（消費者物価指数）は前月比+0.1%・前年比+3.4%と予想に一致。「インフレ再加速」への警戒がやわらぎ、前日まで売られていたAI・半導体株に買い戻しが入っています。CoreWeaveの好決算（株価+18%）も追い風。</div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi" data-kpi="SPY">
+      <div class="name">S&P500（市場全体の平均像）</div>
+      <div class="val" id="v-SPY">約7,751</div>
+      <div class="delta d-up" id="d-SPY">▲ +0.30%（取引中）</div>
+      <div class="why">CPI無風通過で反発。前日終値 7,728.20</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
+    <div class="kpi" data-kpi="DIA">
+      <div class="name">NYダウ（大企業30社）</div>
+      <div class="val" id="v-DIA">約53,850</div>
+      <div class="delta d-up" id="d-DIA">▲ +0.11%（取引中）</div>
+      <div class="why">小幅高。前日終値 53,791.85</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
+    <div class="kpi" data-kpi="QQQ">
+      <div class="name">ナスダック（ハイテク中心）</div>
+      <div class="val" id="v-QQQ">約26,600</div>
+      <div class="delta d-up" id="d-QQQ">▲ +0.59%（取引中）</div>
+      <div class="why">AI・半導体の買い戻しで上げ幅最大。前日終値 26,445.45</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
+    <div class="kpi" data-kpi="JPY">
+      <div class="name">ドル／円</div>
+      <div class="val"><span id="v-JPY">159.08</span><span style="font-size:13px">円</span></div>
+      <div class="delta d-down">▼ −0.13%（小幅な円高）</div>
+      <div class="why">CPI通過で米金利がやや低下し、ドルが小緩み</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
+    <div class="kpi" data-kpi="WTI">
+      <div class="name">WTI原油（先物）</div>
+      <div class="val">$83.70</div>
+      <div class="delta d-up">▲ 高止まり</div>
+      <div class="why">紅海でのフーシ派攻撃報道で再び強含み。株の上値を抑える要因</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
+  </div>
+  <div class="kpi-news" id="kpi-news"></div>
+  <div class="kpi-note">※指数の水準は取引時間中の変動率からの概算値。確定値は取引終了後（日本時間あす朝）に更新されます。カードをクリックすると関連ニュースが開きます。</div>
+
+  <section>
+    <h2>なぜ動いたのか — 3つの理由</h2>
+
+    <div class="reason">
+      <h3><span style="color:var(--up)">①</span> CPIが「予想どおり」で安心感 — インフレ再加速は確認されず</h3>
+      <p>7月CPIは前月比+0.1%、前年比+3.4%。食品とエネルギーを除くコアも前月比+0.2%・前年比+2.5%と、いずれも市場予想に一致しました。前日まで警戒されていた「原油高でインフレ再加速→FRBが9月利上げ」というシナリオがいったん遠のき、買い戻しが入りました。</p>
+      <div class="tsumari"><b>つまり：</b>悪い数字が出なかったこと自体が好材料。「金利が上がるかも」という不安で売っていた投資家が、買い直した。</div>
+      <div class="tags"><span class="tag">影響：市場全体</span><span class="tag">9月利上げ観測は後退</span></div>
+    </div>
+
+    <div class="reason">
+      <h3><span style="color:var(--up)">②</span> AI関連の決算が好調 — CoreWeave +18%、Super Micro +9%</h3>
+      <p>AIクラウドのCoreWeaveが市場予想を上回る決算で+18%、AIサーバーのSuper Micro Computerも強気の見通しを示し+9%。AIインフラのNebius Groupも+16.5%。「AIへの巨額投資は空振りでは？」という前日までの不安に対し、需要の強さを示す実例が出た形で、NVIDIA（+2.9%）など半導体株全体に買いが波及しています。</p>
+      <div class="tsumari"><b>つまり：</b>AIブームが本物かどうかは決算（実際の売上）で確認するしかない。今回は「本物」側の証拠が出たので、ハイテク株が買われた。</div>
+      <div class="tags"><span class="tag">影響：ナスダック・半導体株</span><span class="tag">次の試金石はNVIDIA決算（8月下旬）</span></div>
+    </div>
+
+    <div class="reason">
+      <h3><span style="color:var(--down)">③</span> ただし原油は高止まり — 中東リスクが上値を抑える</h3>
+      <p>紅海でフーシ派の攻撃が報じられ、WTI原油は$83.70前後まで強含み。ホルムズ海峡をめぐる米国とイランの交渉も行き詰まったままです。原油高が続けば来月のCPIに跳ね返る可能性があり、株の上値を追いにくくしています。</p>
+      <div class="tsumari"><b>つまり：</b>きょうのCPIは合格だったが、原油高が続くと「来月のCPI」が悪化しかねない。だから手放しでは買えない。</div>
+      <div class="tags"><span class="tag">影響：市場全体の上値</span><span class="tag">エネルギー株には追い風</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>ウォッチリスト（大手テック＋半導体・AI）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックすると関連ニュースが開きます</span></h2>
+    <div class="add-box">
+      <input type="text" id="add-input" placeholder="ティッカーで追加（例：KO, DIS, JPM）" maxlength="8">
+      <button id="add-btn">＋ 追加</button>
+      <span class="add-msg" id="add-msg"></span>
+      <span class="add-hint">※追加した銘柄もリアルタイム更新され、クリックすると最新ニュースが日本語（自動翻訳）で見られます。追加はこの画面を開いている間有効です。ずっと表示したい銘柄はチャットでClaudeに伝えてください。</span>
+    </div>
+    <div class="watch" id="watch"></div>
+    <p class="watch-foot">※接続後のラベル：「ライブ」＝通常取引中（変動率は前日終値比）／「時間外プレ」＝プレマーケット（前日終値比）／「時間外」＝アフターマーケット（当日終値比）／「終値」＝市場クローズ中。接続前は作成時点のスナップショットを表示。出所：Finnhub・Google Finance</p>
+  </section>
+
+  <section>
+    <h2>きょう目立った銘柄（変動率）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックすると会社紹介とニュースが開きます</span></h2>
+    <div class="movers" id="movers"></div>
+    <p class="chart-note">青＝上昇 ／ 赤＝下落。バーの長さは変動率（±21%で最大表示）。米国時間8/11終値〜8/12午前時点。選定基準：市況報道で取り上げられた銘柄のうち、変動率が大きく（目安±4%以上）動いた理由が特定できるもの＋相場テーマの中心銘柄。</p>
+  </section>
+
+  <section>
+    <h2>今後どうなる？ — ニュースから読む3つのシナリオ</h2>
+
+    <div class="scenario bull">
+      <div class="label">強気シナリオ ↑</div>
+      <h3>インフレ鎮静＋AI決算好調が続く → ハイテク主導で最高値トライ</h3>
+      <p>きょうのCPIのように物価の落ち着きが続き、FRBの9月利上げ観測がさらに後退。CoreWeaveに続いてNVIDIA決算（8月下旬）もAI需要の強さを裏付ければ、出遅れていた半導体株を中心に上値を試しやすい展開です。</p>
+      <div class="flow">📈 <b>成立の条件：</b>原油が落ち着く ＋ NVIDIA決算が好調 ＋ 雇用・物価指標が穏やか<br>👀 <b>ウォッチ：</b>NVIDIA決算、次回の雇用統計・PPI、FRB高官の発言</div>
+    </div>
+
+    <div class="scenario bear">
+      <div class="label">弱気シナリオ ↓</div>
+      <h3>中東情勢の悪化で原油が90ドル超え → インフレ再燃で株安</h3>
+      <p>イランとの交渉決裂や紅海での攻撃が続き原油がさらに上がると、来月のCPIが再加速し「9月利上げ」観測が復活。金利上昇に弱いハイテク株から売られ、前日までの下げが再開するリスクがあります。ドル高・円安が進みやすいのもこのシナリオです。</p>
+      <div class="flow">📉 <b>成立の条件：</b>WTI原油が90ドルに接近 ＋ ホルムズ海峡交渉の決裂 ＋ 次回CPIの上振れ<br>👀 <b>ウォッチ：</b>WTI原油価格、イラン関連の見出し、FRBの9月会合の織り込み確率</div>
+    </div>
+
+    <div class="scenario flat">
+      <div class="label">中立シナリオ →</div>
+      <h3>材料難で高値圏もみ合い — 「次の一手」待ち</h3>
+      <p>S&P500は今年最も狭い値動きのレンジに入っています。CPIを無風で通過した後は大きな材料が出るまで方向感が出にくく、高値圏での小動きが続く可能性も十分あります。歴史的には、狭いレンジが長く続いた後は大きく動きやすい（上下どちらにも）とされます。</p>
+      <div class="flow">➡️ <b>よくある展開：</b>指数は小動き、物色は決算が良かった個別銘柄に集中<br>👀 <b>ウォッチ：</b>レンジを上下どちらに抜けるか（抜けた方向に勢いが出やすい）</div>
+    </div>
+
+    <div class="disclaimer">⚠️ このシナリオは報道・公開情報に基づく「考え方の整理」であり、将来の値動きの予想・保証や投資助言ではありません。相場はシナリオ外の出来事（地政学・要人発言など）で急変することがあります。投資判断はご自身で行ってください。</div>
+  </section>
+
+  <section>
+    <h2>関連ニュース</h2>
+    <div class="news">
+      <div class="news-item">
+        <a href="https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html" target="_blank" rel="noopener">CPI inflation report July 2026: Prices rose 0.1%, annual rate 3.4%</a><span class="src">CNBC（英語）</span>
+        <p>7月CPIの詳細。エネルギー価格の下落が物価の落ち着きに寄与。</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026" target="_blank" rel="noopener">S&P 500 climbs following key inflation report</a><span class="src">TheStreet（英語）</span>
+        <p>12日の市況。CPI通過とCoreWeave・SMCI決算でAI関連が上昇と報道。</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.cnbc.com/2026/08/11/stock-market-today-live-updates.html" target="_blank" rel="noopener">S&P 500 rises after tame inflation data; AI-related shares jump</a><span class="src">CNBC（英語）</span>
+        <p>米株市況ライブ。落ち着いたCPIを受けたAI関連株の急伸を実況中。</p>
+      </div>
+      <div class="news-item">
+        <a href="https://jp.investing.com/news/forex-news/article-1643846" target="_blank" rel="noopener">11日の米国市場ダイジェスト：米国株式市場は続落、原油高やCPIを警戒</a><span class="src">Investing.com 日本版</span>
+        <p>前日（8/11）の振り返り。原油高とCPI警戒で3指数続落の背景を解説。</p>
+      </div>
+      <div class="news-item">
+        <a href="https://seekingalpha.com/news/4630930-traders-remain-sidelined-as-the-s-and-p-500-pins-in-year-s-narrowest-band-ahead-of-cpi" target="_blank" rel="noopener">S&P 500 pins in year's narrowest band ahead of CPI</a><span class="src">Seeking Alpha（英語）</span>
+        <p>S&P500が今年最も狭いレンジで推移。「中立シナリオ」の根拠。</p>
+      </div>
+      <div class="news-item">
+        <a href="https://www.fool.com/coverage/stock-market-today/2026/08/11/stock-market-today-aug-11-markets-slip-as-oil-prices-rise-upwork-tumbles-on-mixed-earnings/" target="_blank" rel="noopener">Markets Slip as Oil Prices Rise, Upwork Tumbles on Mixed Earnings</a><span class="src">The Motley Fool（英語）</span>
+        <p>前日終値の確定値（S&P500 7,728.20 ほか）と個別材料の整理。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>この先の注目イベント</h2>
+    <div class="events">
+      <div class="event">
+        <div class="when">今夜〜あす朝</div>
+        <div class="what">8/12のNY市場の終値確定<small>CPI通過後の上昇を維持して引けられるかに注目。あす朝このページを更新します。</small></div>
+      </div>
+      <div class="event">
+        <div class="when">8月下旬</div>
+        <div class="what">NVIDIA 決算発表<small>AI相場全体の最大の試金石。強気シナリオ／弱気シナリオの分かれ目になりやすいイベント。</small></div>
+      </div>
+      <div class="event">
+        <div class="when">9月中旬 FOMC</div>
+        <div class="what">FRBの政策金利決定会合<small>きょうのCPIで利上げ観測は後退。それでも原油高が続けば見方が再び変わる可能性。</small></div>
+      </div>
+      <div class="event">
+        <div class="when">9/1</div>
+        <div class="what">Apple CEO交代（クック氏→ターナス氏）<small>15年ぶりのトップ交代。新体制の戦略発表に注目。</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>用語ミニ解説</h2>
+    <details>
+      <summary>CPI（消費者物価指数）とは？</summary>
+      <p>私たちが買うモノ・サービスの値段がどれだけ上がったかを示す「物価の体温計」。物価の上がり方が強いと、中央銀行は金利を上げて経済を冷まそうとするため、株にはマイナスに働きやすい指標です。「コアCPI」は変動の激しい食品・エネルギーを除いた数字で、物価の基調を見るのに使われます。</p>
+    </details>
+    <details>
+      <summary>FRB・FOMC・利上げって？</summary>
+      <p>FRBは米国の中央銀行、FOMCはその金利を決める会合です。金利が上がるとお金を借りるコストが増え、企業活動や株式投資にブレーキがかかるため、「利上げ観測が強まる＝株安要因」となるのが基本です。</p>
+    </details>
+    <details>
+      <summary>なぜ原油が上がると株が下がるの？</summary>
+      <p>原油は輸送・製造・電力などあらゆる産業のコストに直結します。原油高→物価高→金利が下がりにくい→株に不利、という連鎖です。ただしエネルギー関連企業にとっては収益増となり、株価の追い風になります。</p>
+    </details>
+    <details>
+      <summary>S&P500・ダウ・ナスダックの違いは？</summary>
+      <p>S&P500は米国の主要500社の平均で「市場全体」を映す指数。ダウは有名な大企業30社だけの平均。ナスダックはAppleやNVIDIAなどハイテク企業の比率が高い指数で、金利やAI関連ニュースに敏感に動きます。</p>
+    </details>
+    <details>
+      <summary>「織り込み」「様子見」ってどういう意味？</summary>
+      <p>「織り込み」は、将来の出来事（利上げなど）を予想して、株価に先に反映させておくこと。予想どおりの結果なら株価はあまり動かず、予想と違うと大きく動きます。「様子見」は重要な発表の前に売買を控えること。きょうのCPI前の相場がまさにこれでした。</p>
+    </details>
+  </section>
+
+  <footer>
+    データ時点：2026年8月12日 米国東部時間 午前（取引時間中）。個別株は Google Finance、指数・市況は CNBC・TheStreet・The Motley Fool・Investing.com 日本版・Seeking Alpha の報道に基づく。<br>
+    本ページは情報提供を目的としたもので、投資勧誘や売買推奨ではありません。数値は速報値・概算値を含み、正確性を保証するものではありません。
+  </footer>
+
+</div>
+
+<script>
+  // ウォッチリスト（大手テック7社＋半導体・AI関連）
+  // t: "live"=8/12取引中, "prev"=8/11終値（preは寄り前気配%）
+  // news: 各銘柄の株価に関係するニュース（dir: up=追い風 / down=重し / mix=両面）
+  const watch = [
+    { nm: "エヌビディア", en: "NVIDIA / NVDA", px: "$223.92", chg: 2.95, t: "live", note: "CPI通過とCoreWeave好決算でAI関連買いの中心に",
+      news: [
+        { t: "Prediction: Nvidia Stock Will Skyrocket on Aug. 26", u: "https://www.fool.com/investing/2026/08/02/prediction-nvidia-stock-will-skyrocket-on-aug-26/", s: "Motley Fool・8/2", sm: "8月26日の決算発表を前に、AIインフラ投資の勢いから好決算と株価上昇を予想する記事。", pl: "決算への期待感が先回り買いを誘う → 追い風", dir: "up" },
+        { t: "Nvidia Starts H200 AI Chip Shipments to China", u: "https://finance.yahoo.com/technology/ai/articles/nvidia-starts-h200-ai-chip-100704048.html", s: "Yahoo Finance・7/15", sm: "米政府の限定承認を受け、H200チップの中国向け出荷を開始。アナリストは目標株価を330ドルに引き上げ。", pl: "中国市場の売上回復期待 → 追い風", dir: "up" },
+        { t: "History Says This Is What Will Happen to Nvidia Stock After Aug. 26", u: "https://finance.yahoo.com/markets/stocks/articles/history-says-happen-nvidia-stock-140500023.html", s: "Yahoo Finance・8/6", sm: "過去の傾向では好決算でも直後の株価反応は鈍いことが多い、と分析。", pl: "短期は決算後に伸び悩む可能性も → 両面", dir: "mix" },
+      ] },
+    { nm: "ブロードコム", en: "Broadcom / AVGO", px: "$422.33", chg: 1.50, t: "live", note: "AI半導体売上が急拡大中。時価総額2兆ドル企業",
+      news: [
+        { t: "OpenAI and Broadcom reveal Jalapeno, first AI chip in partnership", u: "https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html", s: "CNBC・6/24", sm: "OpenAIと共同開発した初のAIチップ「Jalapeno」を発表。", pl: "大型顧客OpenAIとの提携拡大 → 追い風", dir: "up" },
+        { t: "Broadcom Pairs AI Chip Boom With A Software Security Push", u: "https://finance.yahoo.com/technology/ai/articles/broadcom-avgo-pairs-ai-chip-204234966.html", s: "Yahoo Finance・8/8", sm: "カスタムAIチップ事業が好調な一方、大口顧客がAlphabetとMetaの2社に偏る集中リスクも指摘。", pl: "成長期待は強いが顧客集中リスクが上値を抑制 → 両面", dir: "mix" },
+        { t: "Why Broadcom Stock Rallied Today", u: "https://www.fool.com/investing/2026/08/04/why-broadcom-stock-rallied-today/", s: "Motley Fool・8/4", sm: "他社のAI関連好決算が「AI需要は本物」の証拠と受け止められ、連想買いが入った。", pl: "AI需要の強さを裏付け → 追い風", dir: "up" },
+      ] },
+    { nm: "TSMC（ADR）", en: "Taiwan Semi / TSM", px: "$422.06", chg: 0.00, t: "prev", pre: 2.21, note: "7月売上高+45%と絶好調。寄り前も買い気配",
+      news: [
+        { t: "World's biggest chipmaker TSMC's sales surge 45% amid buoyant AI demand", u: "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html", s: "CNBC・8/10", sm: "7月売上高が前年比約45%増と急増。AI向け半導体需要の強さが続いていることを示した。", pl: "AI需要でファウンドリ受注が絶好調 → 追い風", dir: "up" },
+        { t: "TSMC raises capex and revenue forecast", u: "https://finance.yahoo.com/markets/article/tsmc-raises-capex-and-revenue-forecast-highlighting-growing-ai-chip-demand-113101950.html", s: "Yahoo Finance・7月", sm: "AIチップ需要の拡大を背景に、設備投資と売上高の見通しを上方修正。", pl: "会社側の強気見通し → 追い風", dir: "up" },
+        { t: "TSMC Stock Holds Flat Despite 44.7% July Sales Surge", u: "https://finance.yahoo.com/markets/stocks/articles/tsmc-stock-holds-flat-despite-155910769.html", s: "Yahoo Finance・8/10", sm: "好材料はすでに株価に織り込み済みで、発表当日の反応は横ばいにとどまった。", pl: "好材料は織り込み済みで短期は上値が重い → 両面", dir: "mix" },
+      ] },
+    { nm: "AMD", en: "Advanced Micro / AMD", px: "$474.32", chg: 1.01, t: "prev", pre: 1.49, note: "AI相場の追い風。前四半期は売上・利益とも予想超え",
+      news: [
+        { t: "AMD earnings report Q2 2026", u: "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html", s: "CNBC・8/4", sm: "4-6月期決算を発表。データセンター（AI向けGPU）事業の高成長が焦点に。", pl: "決算内容が直近の株価変動の主因", dir: "mix" },
+        { t: "AMD tops Q2 earnings estimates but leaves investors unimpressed", u: "https://finance.yahoo.com/technology/article/amd-to-report-q2-earnings-as-chip-stocks-continue-to-waver-110000620.html", s: "Yahoo Finance・8/4", sm: "予想超えの決算と強気見通しを示したが、市場の期待値が高すぎて株価の反応は冷ややかだった。", pl: "好決算でも「期待超え」ならず → 伸び悩みの一因", dir: "mix" },
+      ] },
+    { nm: "インテル", en: "Intel / INTC", px: "$97.71", chg: 0.19, t: "prev", pre: 1.52, note: "200億ドル増資へ。米政府が筆頭株主という異例の展開",
+      news: [
+        { t: "Intel upsizes stock offering to $20 billion at $95 per share", u: "https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html", s: "CNBC・8/10", sm: "AI需要の加速を背景に、1株95ドルで総額200億ドルの株式売り出しを発表。", pl: "希薄化懸念（重し）とAI成長資金の確保（追い風）が交錯", dir: "mix" },
+        { t: "Intel Now Has The U.S. Government As Its Largest Shareholder", u: "https://uk.finance.yahoo.com/news/intel-intc-now-u-government-101057433.html", s: "Yahoo Finance", sm: "米政府がインテルの筆頭株主となり、国策半導体企業としての位置づけが強まった。", pl: "政府の後ろ盾は安心材料だが政治リスクも → 両面", dir: "mix" },
+        { t: "Intel Is Raising Billions in Equity. History Says This Is What the Stock Will Do Next.", u: "https://www.fool.com/investing/2026/08/12/intel-is-raising-billions-in-equity-history-says-t/", s: "Motley Fool・8/12", sm: "巨額増資をした企業の株価が過去どう動いたかを検証する分析記事。", pl: "増資後は短期的に軟調になりやすいという経験則 → 重し", dir: "down" },
+      ] },
+    { nm: "マイクロソフト", en: "Microsoft / MSFT", px: "$503.81", chg: 0.69, t: "live", note: "売上900億ドルの好決算が下支え",
+      news: [
+        { t: "Microsoft (MSFT) Q4 earnings report 2026", u: "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html", s: "CNBC・7/29", sm: "決算は市場予想を上回り、AzureなどクラウドとAI事業が好調。", pl: "好決算とクラウド高成長の確認 → 追い風", dir: "up" },
+        { t: "Why Microsoft Stock Surged 24.6% in July While the Market Was Flat", u: "https://www.fool.com/investing/2026/08/04/msft-stock-up-july-earnings-ai-cloud/", s: "Motley Fool・8/4", sm: "市場全体が横ばいの中、好決算とAI・クラウド期待で7月に約24.6%急騰。", pl: "AI収益化への期待が上昇を後押し → 追い風", dir: "up" },
+        { t: "Analysts say Microsoft's earnings may be a turning point", u: "https://www.cnbc.com/2026/07/30/analysts-react-to-microsofts-earnings-results-.html", s: "CNBC・7/30", sm: "アナリストらは今回の決算を、伸び悩んでいた同社株の転換点になり得ると評価。", pl: "目標株価の引き上げが株価を下支え → 追い風", dir: "up" },
+      ] },
+    { nm: "アップル", en: "Apple / AAPL", px: "$302.72", chg: -0.72, t: "live", note: "9/1のCEO交代発表（クック→ターナス）を消化中",
+      news: [
+        { t: "Tim Cook Is Handing Off Apple to John Ternus as CEO on Sept. 1", u: "https://www.fool.com/investing/2026/08/12/tim-cook-handing-off-apple-to-john-ternus-as-ceo/", s: "Motley Fool・8/12", sm: "クックCEOが9月1日にターナス氏へ引き継ぎ。15年ぶりのトップ交代を前に株価の歴史を振り返る。", pl: "トップ交代は不透明要因だが承継計画は円滑 → 両面", dir: "mix" },
+        { t: "Apple (AAPL) Q3 2026 earnings report", u: "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html", s: "CNBC・7/30", sm: "iPhone販売の好調などで決算は市場予想を上回った。クック氏最後の決算発表。", pl: "予想超えの決算がCEO交代前の安心材料 → 追い風", dir: "up" },
+        { t: "Apple Q3 earnings beat estimates but services revenue misses", u: "https://finance.yahoo.com/markets/stocks/articles/apple-q3-2026-earnings-beat-211056445.html", s: "Yahoo Finance・7月末", sm: "全体は予想超えだったが、利益率の高いサービス部門の売上が市場予想に届かなかった。", pl: "サービス事業の伸び悩みが上値を抑える → 重し", dir: "down" },
+      ] },
+    { nm: "アルファベット", en: "Alphabet / GOOGL", px: "$343.24", chg: -0.16, t: "live", note: "前日−3.6%の急落から下げ止まり。AI投資負担の警戒は残る",
+      news: [
+        { t: "Alphabet Q2: revenue beats, GOOGL stock sinks on 2026 capex hike", u: "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html", s: "CNBC・7/22", sm: "決算は売上が予想超えだったが、2026年の設備投資増額計画を受けて株価は下落。", pl: "AI投資の膨張が利益を圧迫するとの懸念 → 重し", dir: "down" },
+        { t: "Google falls more than 6% on capex growth expectations", u: "https://finance.yahoo.com/technology/article/google-falls-more-than-6-on-capex-growth-expectations-despite-earnings-beat-202407124.html", s: "Yahoo Finance・7月下旬", sm: "好決算にもかかわらず、設備投資のさらなる拡大見通しを嫌気して株価は6%超下落。", pl: "「AI投資はいつ回収できるのか」という不安 → 重し", dir: "down" },
+        { t: "Google's extreme AI capex plans trigger a technical warning", u: "https://finance.yahoo.com/markets/stocks/article/googles-extreme-ai-capex-spending-plans-trigger-a-technical-warning-on-the-stock-price-120952068.html", s: "Yahoo Finance・8月上旬", sm: "巨額のAI設備投資計画を受けた売りで、チャート上の弱気シグナルが点灯したと指摘。", pl: "投資家心理の悪化が続けば下落余地も → 重し", dir: "down" },
+      ] },
+    { nm: "アマゾン", en: "Amazon / AMZN", px: "$272.27", chg: -2.09, t: "prev", note: "ベゾス氏の40億ドル超の株売却報道が重し",
+      news: [
+        { t: "Amazon時価総額3兆ドル突破 世界5社目、クラウド好調で株価急騰", u: "https://www.nikkei.com/article/DGXZQOGN03AB00T00C26A8000000/", s: "日本経済新聞・8/3頃", sm: "クラウド（AWS）の好調な決算を受けて株価が急騰し、時価総額3兆ドルを突破。", pl: "AI・クラウド需要への期待 → 追い風", dir: "up" },
+        { t: "Bezos files $4 billion sale as Amazon hits $3 trillion", u: "https://www.thestreet.com/investing/jeff-bezos-4-billion-amazon-stock-sale-3-trillion", s: "TheStreet・8/4頃", sm: "3兆ドル到達の直後、創業者ベゾス氏が約41億ドル分の株売却を届け出たと報道。", pl: "創業者の大型売却が「高値のサイン」と受け止められ → 重し", dir: "down" },
+        { t: "Amazon's $3 Trillion Record Lasts One Day as Stock Takes Big Hit", u: "https://finance.yahoo.com/markets/stocks/articles/amazon-3-trillion-record-lasts-170608381.html", s: "Yahoo Finance・8/4頃", sm: "3兆ドルの大台はわずか1日で終わり、売却報道などを背景に株価は大きく反落。", pl: "急騰後の利益確定売りと売却報道の重なり → 重し", dir: "down" },
+      ] },
+    { nm: "メタ", en: "Meta / META", px: "$594.61", chg: -0.75, t: "live", note: "前四半期のEPS未達の影響が尾を引く",
+      news: [
+        { t: "メタ営業減益、AI巨額費用が本業圧迫 投資回収見通せず", u: "https://www.nikkei.com/article/DGXZQOGN29CUC0Z20C26A7000000/", s: "日本経済新聞・7/30頃", sm: "AIへの巨額投資費用が広告事業の利益を圧迫し営業減益に。投資回収の道筋が課題。", pl: "AI投資の回収不透明感が利益見通しの重荷 → 重し", dir: "down" },
+        { t: "Meta misses EPS in Q2 2026 as stock sinks after hours", u: "https://www.investing.com/news/transcripts/earnings-call-transcript-meta-misses-eps-in-q2-2026-as-stock-sinks-after-hours-93CH-4821910", s: "Investing.com・7/29頃", sm: "決算は売上が予想超えだった一方、1株利益（EPS）は未達で時間外に株価下落。", pl: "増収でもAI費用が利益を圧迫 → 重し", dir: "down" },
+        { t: "Meta Rallies 7% as AI Hyperscalers Ride Earnings Momentum", u: "https://247wallst.com/investing/2026/08/03/amazon-tops-3t-meta-rallies-7-as-ai-hyperscalers-ride-earnings-momentum/", s: "24/7 Wall St.・8/3", sm: "AI大手の好決算を追い風に、8月初めには約7%急騰する場面も。", pl: "AI業界全体の好決算による連想買い → 追い風", dir: "up" },
+      ] },
+    { nm: "テスラ", en: "Tesla / TSLA", px: "$329.71", chg: -0.93, t: "live", note: "利益率への慎重な見方が続き、アナリスト評価は中立が多数",
+      news: [
+        { t: "Tesla (TSLA) Q2 2026 earnings report", u: "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html", s: "CNBC・7/22", sm: "4-6月期決算は売上高が予想超えの一方、利益（EPS）は予想に届かなかった。", pl: "増収でも利益率悪化 → 決算後の売り材料", dir: "down" },
+        { t: "米テスラ、四半期利益が市場予想を下回る－時間外で株価下落", u: "https://www.bloomberg.com/jp/news/articles/2026-07-22/TILEMXRKV2UT00", s: "Bloomberg日本語版・7/22", sm: "コスト増が利益を圧迫し、四半期利益は市場予想を下回った。", pl: "AI・ロボティクス投資などのコスト増による減益 → 重し", dir: "down" },
+        { t: "Tesla Price Prediction: Could the Stock Rally 30% From Here?", u: "https://247wallst.com/investing/2026/08/03/tesla-price-prediction-could-the-stock-rally-30-from-here/", s: "24/7 Wall St.・8/3", sm: "2026年は下落が続くテスラ株について、アナリストの強気・弱気の見方が大きく割れている。", pl: "EV苦戦とAI転換期待が交錯 → 両面", dir: "mix" },
+      ] },
+  ];
+  const wroot = document.getElementById("watch");
+  watch.forEach(s => {
+    const pos = s.chg >= 0;
+    const item = document.createElement("div");
+    item.className = "w-item";
+    const tk = s.en.split('/').pop().trim();
+    const row = document.createElement("div");
+    row.className = "w-row";
+    row.innerHTML =
+      '<div class="nm"><span class="w-caret">▶</span>' + s.nm + '<small style="padding-left:14px">' + s.en + '</small></div>' +
+      '<div class="px" data-px="' + tk + '">' + s.px + '</div>' +
+      '<div class="chg" data-chg="' + tk + '" style="color:' + (s.chg === 0 ? 'var(--muted)' : (pos ? 'var(--up)' : 'var(--down)')) + '">' +
+        (pos && s.chg !== 0 ? '+' : '') + s.chg.toFixed(2) + '%' +
+        (s.pre !== undefined ? '<span style="font-weight:400;font-size:10.5px;color:var(--muted)">（気配+' + s.pre.toFixed(1) + '%）</span>' : '') +
+      '</div>' +
+      '<div class="tchip" data-chip="' + tk + '">' + (s.t === 'live' ? '取引中' : '前日終値') + '</div>';
+    const note = document.createElement("div");
+    note.className = "w-note";
+    note.textContent = "→ " + s.note;
+    item.appendChild(row);
+    item.appendChild(note);
+
+    const newsBox = document.createElement("div");
+    newsBox.className = "w-news";
+    newsBox.innerHTML = (s.news || []).map(n =>
+      '<div class="w-news-item">' +
+        '<a href="' + n.u + '" target="_blank" rel="noopener">' + n.t + '</a><span class="src">' + n.s + '</span>' +
+        '<p>' + n.sm + '</p>' +
+        '<span class="plink pl-' + (n.dir === 'up' ? 'up' : (n.dir === 'down' ? 'down' : 'mix')) + '">' +
+          (n.dir === 'up' ? '📈 ' : (n.dir === 'down' ? '📉 ' : '↕️ ')) + n.pl + '</span>' +
+      '</div>'
+    ).join('');
+
+    item.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return; // リンクは通常どおり開く
+      item.classList.toggle("open");
+    });
+
+    wroot.appendChild(item);
+    wroot.appendChild(newsBox);
+  });
+
+  // ニュース1件分のHTML（ウォッチリスト・KPI・目立った銘柄で共通）
+  function newsHTML(n) {
+    return '<div class="w-news-item">' +
+      '<a href="' + n.u + '" target="_blank" rel="noopener">' + n.t + '</a><span class="src">' + n.s + '</span>' +
+      '<p>' + n.sm + '</p>' +
+      '<span class="plink pl-' + (n.dir === 'up' ? 'up' : (n.dir === 'down' ? 'down' : 'mix')) + '">' +
+        (n.dir === 'up' ? '📈 ' : (n.dir === 'down' ? '📉 ' : '↕️ ')) + n.pl + '</span>' +
+    '</div>';
+  }
+
+  // 主要指標カードの関連ニュース
+  const KPI_NEWS = {
+    SPY: { label: "S&P500 に関係するニュース", items: [
+      { t: "S&P 500 climbs following key inflation report", u: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026", s: "TheStreet・8/12", sm: "予想どおりのCPIと好決算を受けて、S&P500は+0.3%前後で推移。", pl: "インフレ再加速への警戒が緩み → 追い風", dir: "up" },
+      { t: "CPI inflation report July 2026: Prices rose 0.1%, annual rate 3.4%", u: "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html", s: "CNBC・8/12", sm: "7月CPIは前月比+0.1%・前年比+3.4%。コアも予想並みで、9月利上げ観測が後退。", pl: "「金利が上がる不安」の後退 → 市場全体の追い風", dir: "up" },
+      { t: "S&P 500 pins in year's narrowest band ahead of CPI", u: "https://seekingalpha.com/news/4630930-traders-remain-sidelined-as-the-s-and-p-500-pins-in-year-s-narrowest-band-ahead-of-cpi", s: "Seeking Alpha・8/11", sm: "S&P500は今年最も狭い値動きのレンジ内。方向感が出る前の「ため」の局面。", pl: "レンジを抜けた方向に勢いが出やすい → 両面", dir: "mix" },
+    ]},
+    DIA: { label: "NYダウ に関係するニュース", items: [
+      { t: "Markets Slip as Oil Prices Rise, Upwork Tumbles on Mixed Earnings", u: "https://www.fool.com/coverage/stock-market-today/2026/08/11/stock-market-today-aug-11-markets-slip-as-oil-prices-rise-upwork-tumbles-on-mixed-earnings/", s: "Motley Fool・8/11", sm: "前日は原油高が重しとなりダウは−184ドル（−0.34%）と続落した。", pl: "原油高＝コスト増懸念 → ダウの重し", dir: "down" },
+      { t: "11日の米国市場ダイジェスト：米国株式市場は続落、原油高やCPIを警戒", u: "https://jp.investing.com/news/forex-news/article-1643846", s: "Investing.com日本版・8/11", sm: "原油高とCPI警戒で幅広い銘柄に売り。エネルギー・金融の一角は買われた。", pl: "景気敏感株が多いダウは原油と金利に敏感 → 両面", dir: "mix" },
+    ]},
+    QQQ: { label: "ナスダック に関係するニュース", items: [
+      { t: "S&P 500 rises after tame inflation data; AI-related shares jump", u: "https://www.cnbc.com/2026/08/11/stock-market-today-live-updates.html", s: "CNBC・8/12", sm: "落ち着いたCPIを受けてAI関連株が急伸。ナスダックが3指数の上げをけん引。", pl: "金利低下観測はハイテク株に最も効く → 追い風", dir: "up" },
+      { t: "CoreWeave (CRWV) Q2 earnings report 2026", u: "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", s: "CNBC・8/11", sm: "AIクラウドのCoreWeaveが予想超えの決算。AI需要の強さを裏付けた。", pl: "AI投資への不安が和らぎハイテク全体の買い戻しに → 追い風", dir: "up" },
+    ]},
+    JPY: { label: "ドル／円 に関係するニュース", items: [
+      { t: "11日の米国市場ダイジェスト（ドル・円は159円17銭）", u: "https://jp.investing.com/news/forex-news/article-1643846", s: "Investing.com日本版・8/11", sm: "原油価格の高止まりでドル買いが優勢となり、159円台で推移。", pl: "原油高→米金利が下がりにくい→ドル高・円安の方向", dir: "up" },
+      { t: "CPI inflation report July 2026", u: "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html", s: "CNBC・8/12", sm: "CPIが落ち着いた内容だったことで米金利がやや低下し、ドルは小幅に軟化。", pl: "米金利の低下は円高方向の材料 → きょうは小幅な円高", dir: "down" },
+    ]},
+    WTI: { label: "WTI原油 に関係するニュース", items: [
+      { t: "Dow, S&P 500, Nasdaq slip amid US-Iran impasse", u: "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-11-dow-sp-500-nasdaq-102827503.html", s: "Yahoo Finance・8/11", sm: "ホルムズ海峡をめぐる米イラン交渉が行き詰まり、ブレント原油は89ドル近辺まで上昇。", pl: "供給不安 → 原油高 → 株全体の重し・エネルギー株の追い風", dir: "mix" },
+      { t: "Markets Slip as Oil Prices Rise（WTIは$83.70に上昇）", u: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026", s: "TheStreet・8/12", sm: "紅海でのフーシ派攻撃の報道を受けて、WTIは$83.70前後まで再び強含み。", pl: "中東リスクが続く限り原油は下がりにくい → 物価・株の重し", dir: "down" },
+    ]},
+  };
+  const kpiPanel = document.getElementById("kpi-news");
+  document.querySelectorAll(".kpi[data-kpi]").forEach(card => {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      const key = card.dataset.kpi;
+      const wasActive = card.classList.contains("active");
+      document.querySelectorAll(".kpi").forEach(c => c.classList.remove("active"));
+      if (wasActive) { kpiPanel.classList.remove("show"); return; }
+      card.classList.add("active");
+      const d = KPI_NEWS[key];
+      kpiPanel.innerHTML = "<h4>" + d.label + "</h4>" + d.items.map(newsHTML).join("");
+      kpiPanel.classList.add("show");
+    });
+  });
+
+  // きょう目立った銘柄（変動率・会社紹介・ニュース）
+  const movers = [
+    { nm: "コアウィーブ", en: "CoreWeave / CRWV", pct: 18.0, why: "AIクラウド決算が予想を上回り急伸。AI需要の強さを証明",
+      desc: "AI向けの高性能GPUクラウド（計算基盤）を貸し出す米国のAIインフラ企業。NVIDIAのGPUを大量に保有し、AI開発企業に「計算力」を提供する。",
+      news: [
+        { t: "CoreWeave (CRWV) Q2 earnings report 2026", u: "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html", s: "CNBC・8/11", sm: "4-6月期決算が市場予想を上回り、AI需要による売上急拡大を示した。", pl: "好決算で株価は約18%急騰 → 追い風", dir: "up" },
+        { t: "CoreWeave Trading Higher After Earnings Beat", u: "https://www.marketbeat.com/instant-alerts/coreweave-nasdaqcrwv-trading-24-higher-after-earnings-beat-2026-08-11/", s: "MarketBeat・8/11", sm: "決算が予想を上回ったことを受け、発表直後から買いが先行。", pl: "決算ビートが上昇の直接の材料 → 追い風", dir: "up" },
+      ] },
+    { nm: "ネビウス", en: "Nebius Group / NBIS", pct: 16.5, why: "AIインフラ需要の強さで買い殺到",
+      desc: "欧州発でAI用データセンターやGPUクラウドを提供するAIインフラ企業（旧ヤンデックス系）。",
+      news: [
+        { t: "Nebius Group shares jump as AI cloud growth fuels investor optimism", u: "https://finance.yahoo.com/technology/ai/articles/nebius-group-shares-jump-ai-095830477.html", s: "Yahoo Finance・8/11", sm: "AIクラウド事業の急成長への期待から投資家心理が改善し、株価が大幅上昇。", pl: "AIインフラ需要の強さが約16%高の原動力 → 追い風", dir: "up" },
+        { t: "What Is Going On With Nebius Stock On Monday?", u: "https://www.benzinga.com/markets/tech/26/08/60879696/what-is-going-on-nebius-stock-on-monday", s: "Benzinga・8/10", sm: "大型AI契約や資金調達を背景に、週明けから買われた理由を解説。", pl: "AI関連の大型案件が急伸の背景 → 追い風", dir: "up" },
+      ] },
+    { nm: "ケバ（Cava）", en: "Cava Group / CAVA", pct: 16.0, why: "好決算で急伸",
+      desc: "地中海料理のファストカジュアル店を米国で展開する外食チェーン。「地中海版チポトレ」とも呼ばれる成長株。",
+      news: [
+        { t: "CAVA Group surges on revenue beat, robust traffic growth", u: "https://ca.investing.com/news/earnings/cava-group-surges-on-revenue-beat-robust-traffic-growth-4793048", s: "Investing.com・8/11", sm: "売上高が予想を上回り、来店客数の伸びも堅調だった。", pl: "好決算で株価は約16%急騰 → 追い風", dir: "up" },
+        { t: "CAVA Group Reports Second Quarter 2026 Results", u: "https://finance.yahoo.com/markets/stocks/articles/cava-group-reports-second-quarter-201000123.html", s: "Yahoo Finance・8/11", sm: "4-6月期は増収で、既存店売上も伸びたと報告。", pl: "決算発表後の時間外取引から急伸 → 追い風", dir: "up" },
+      ] },
+    { nm: "スーパーマイクロ", en: "Super Micro / SMCI", pct: 9.0, why: "売上は未達も強気の見通しを好感",
+      desc: "AIデータセンター向けのサーバー（業務用コンピューター）を製造・販売する米国メーカー。NVIDIAチップ搭載サーバーの大手。",
+      news: [
+        { t: "Super Micro stock surges 9% as guidance shatters expectations", u: "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-stock-surges-205139077.html", s: "Yahoo Finance・8/11", sm: "来期の売上見通しが市場予想を大きく上回り、AIサーバー需要の強さを示した。", pl: "強気ガイダンスで約9%上昇 → 追い風", dir: "up" },
+        { t: "SMCI Q4 Revenue Slightly Misses, Yet Stock Jumps After Hours", u: "https://www.tradingkey.com/analysis/stocks/us-stocks/262097703-super-micro-computer-smci-q4-earnings-revenue-miss-rally-gross-margin-rebound-ai-server-tradingkey", s: "TradingKey・8/11", sm: "売上は予想にわずかに届かなかったが、利益率回復と強い見通しが好感された。", pl: "売上未達でも見通し好調 → 追い風", dir: "up" },
+      ] },
+    { nm: "エヌビディア", en: "NVIDIA / NVDA", pct: 2.95, why: "AI関連の買い戻しの中心",
+      desc: "AI半導体（GPU）で圧倒的シェアを持つ世界最大級の半導体企業。AI相場全体の「主役」で、時価総額は5兆ドル超。",
+      news: [
+        { t: "Prediction: Nvidia Stock Will Skyrocket on Aug. 26", u: "https://www.fool.com/investing/2026/08/02/prediction-nvidia-stock-will-skyrocket-on-aug-26/", s: "Motley Fool・8/2", sm: "8月26日の決算発表を前に、AIインフラ投資の勢いから好決算を予想。", pl: "決算への期待感が先回り買いを誘う → 追い風", dir: "up" },
+        { t: "Nvidia Starts H200 AI Chip Shipments to China", u: "https://finance.yahoo.com/technology/ai/articles/nvidia-starts-h200-ai-chip-100704048.html", s: "Yahoo Finance・7/15", sm: "米政府の限定承認を受け、H200チップの中国向け出荷を開始。", pl: "中国市場の売上回復期待 → 追い風", dir: "up" },
+      ] },
+    { nm: "アポロ・グローバル", en: "Apollo Global / APO", pct: 6.26, why: "オルタナ資産運用に資金流入",
+      desc: "企業買収（PE）や社債・保険資産の運用を行う米国の大手オルタナティブ資産運用会社。",
+      news: [
+        { t: "Apollo Global Management (APO) Stock Climbed, What Is Driving Attention Now?", u: "https://finance.yahoo.com/markets/stocks/articles/apollo-global-management-apo-stock-161437073.html", s: "Yahoo Finance・8月", sm: "アポロ株が上昇し、投資家の注目が集まっている要因を解説。", pl: "買い材料視され株価上昇 → 追い風", dir: "up" },
+        { t: "Apollo Stock Moved Up by 5.95% on Aug 11", u: "https://www.tradingkey.com/news/market-movers/262096528-market-movers-apo-20260811", s: "TradingKey・8/11", sm: "8月11日に約6%上昇。その背景と投資家が知るべき点を整理。", pl: "1日で約6%高 → 追い風", dir: "up" },
+      ] },
+    { nm: "アルコア", en: "Alcoa / AA", pct: 4.74, why: "アルミ価格が約4年ぶり高値",
+      desc: "アルミの原料（ボーキサイト・アルミナ）から製錬まで手がける米国の大手アルミニウム会社。",
+      news: [
+        { t: "Alcoa Stock Is Up 10% Over the Past 5 Days as Aluminum Prices Hit 4-Year High", u: "https://www.barchart.com/story/news/2284207/alcoa-stock-is-up-10-over-the-past-5-days-as-aluminum-prices-hit-4-year-high", s: "Barchart・8月", sm: "アルミ価格が約4年ぶり高値を付け、株価は直近5日間で10%上昇。", pl: "アルミ高騰が株価を押し上げ → 追い風", dir: "up" },
+        { t: "Alcoa Rides Aluminum Price Surge As Supply Shock Shifts Outlook", u: "https://finance.yahoo.com/markets/stocks/articles/alcoa-rides-aluminum-price-surge-131447235.html", s: "Yahoo Finance・8月", sm: "供給ショックによるアルミ価格急騰で業績見通しが改善しているとの分析。", pl: "資源高が追い風となり続伸 → 追い風", dir: "up" },
+      ] },
+    { nm: "ブラックストーン", en: "Blackstone / BX", pct: 3.89, why: "AIインフラ関連投資への期待で買い",
+      desc: "不動産やPEファンドなどを運用する世界最大級の資産運用会社（米国）。AIデータセンター投資でも注目。",
+      news: [
+        { t: "Blackstone gains as investors focus on AI infrastructure ties", u: "https://www.quiverquant.com/news/Blackstone+gains+as+investors+focus+on+AI+infrastructure+ties+and+recent+earnings+strength", s: "Quiver Quantitative・8月", sm: "AIインフラ関連投資への期待と好決算を背景に株価が上昇。", pl: "AIインフラ期待で買い優勢 → 追い風", dir: "up" },
+        { t: "Blackstone Stock Moved Up by 3.50% on Aug 11", u: "https://www.tradingkey.com/news/market-movers/262096525-market-movers-bx-20260811", s: "TradingKey・8/11", sm: "8月11日に約3.5%上昇した動きとその意味を分析。", pl: "1日で約4%高 → 追い風", dir: "up" },
+      ] },
+    { nm: "パフォーマンス・フード", en: "Performance Food Group / PFGC", pct: -4.5, why: "決算が予想に届かず",
+      desc: "レストランやコンビニなどに食品・食材を卸す米国大手の食品流通（フードサービス）会社。",
+      news: [
+        { t: "Performance Food Group falls on Q4 miss despite strong guidance", u: "https://www.investing.com/news/earnings/performance-food-group-falls-on-q4-miss-despite-strong-guidance-93CH-4854795", s: "Investing.com・8/12", sm: "4-6月期の利益と売上が市場予想に届かず、失望売りが出た。", pl: "予想未達で約4.5%下落 → 重し", dir: "down" },
+        { t: "Why Performance Food Group (PFGC) Stock Is Nosediving", u: "https://www.barchart.com/story/news/25696/why-performance-food-group-pfgc-stock-is-nosediving", s: "Barchart・8/12", sm: "決算未達を受けて株価が急落している理由を解説。", pl: "業績未達が売り材料 → 重し", dir: "down" },
+      ] },
+    { nm: "ニューロクライン", en: "Neurocrine / NBIX", pct: -6.5, why: "薬の安全性への懸念で売り",
+      desc: "神経系の病気（遅発性ジスキネジアなど）の治療薬を開発・販売する米国のバイオ医薬品会社。",
+      news: [
+        { t: "Neurocrine Biosciences stock falls on Vykat safety concerns", u: "https://www.investing.com/news/stock-market-news/neurocrine-biosciences-stock-falls-on-vykat-safety-concerns-93CH-4854970", s: "Investing.com・8/12", sm: "主力薬の安全性への懸念が浮上し、株が売られた。", pl: "安全性懸念で約6.5%下落 → 重し", dir: "down" },
+        { t: "Why is Neurocrine Biosciences stock down today?", u: "https://ca.investing.com/news/stock-market-news/why-is-neurocrine-biosciences-stock-down-today-93CH-4794912", s: "Investing.com・8/12", sm: "下落の背景（安全性懸念など）を解説した記事。", pl: "下落要因の解説 → 重し", dir: "down" },
+      ] },
+    { nm: "アップワーク", en: "Upwork / UPWK", pct: -15.0, why: "決算後の見通しに失望売り",
+      desc: "フリーランスと企業をネットでつなぐ、米国最大級の仕事マッチングサイト運営会社。",
+      news: [
+        { t: "Upwork Stock Crashes After Q2 Print — Here's Why", u: "https://www.benzinga.com/trading-ideas/movers/26/08/61095405/upwork-stock-crashes-after-q2-print-heres-why", s: "Benzinga・8/11", sm: "決算発表後に急落。業績見通しへの不安が売りを招いたと解説。", pl: "決算内容を嫌気して株価急落 → 重し", dir: "down" },
+        { t: "Upwork Posts Better-Than-Expected Sales In Q2 But Stock Drops", u: "https://stockstory.org/us/stocks/nasdaq/upwk/news/earnings/upwork-nasdaqupwk-posts-better-than-expected-sales-in-q2-cy2026-but-stock-drops-204percent", s: "StockStory・8/10", sm: "売上は予想を上回ったが、今後の見通しの弱さで大幅安。", pl: "売上超過でもガイダンス懸念 → 重し", dir: "down" },
+      ] },
+    { nm: "エントラビジョン", en: "Entravision / EVC", pct: -20.0, why: "決算の中身を嫌気して急落",
+      desc: "米国のヒスパニック系向けテレビ・ラジオ放送とデジタル広告を手がけるメディア会社。",
+      news: [
+        { t: "Why is Entravision Communications stock plunging today?", u: "https://www.investing.com/news/stock-market-news/why-is-entravision-communications-stock-plunging-today-93CH-4850504", s: "Investing.com・8/11", sm: "決算発表を受けて株価が急落した背景を解説。", pl: "決算失望で株価急落 → 重し", dir: "down" },
+        { t: "Entravision Q2 2026 revenue jumps 126% as stock sinks", u: "https://www.investing.com/news/transcripts/earnings-call-transcript-entravision-q2-2026-revenue-jumps-126-as-stock-sinks-93CH-4850465", s: "Investing.com・8/11", sm: "売上は126%増と急伸したが、中身への懸念から株価は下落。", pl: "増収でも内容を嫌気し売り優勢 → 重し", dir: "down" },
+      ] },
+    { nm: "オン・ホールディング", en: "On Holding / ONON", pct: -20.29, why: "売上未達と見通し引き下げで上場来最大の下げ",
+      desc: "「On（オン）」ブランドで人気の、スイス発ランニングシューズ・スポーツウェア会社。",
+      news: [
+        { t: "On Holding Stock Plunges on Worst Day Ever", u: "https://www.fool.com/coverage/stock-market-today/2026/08/11/stock-market-today-aug-11-on-holding-stock-plunges-on-worst-day-ever/", s: "Motley Fool・8/11", sm: "8月11日、上場以来最悪の下落率を記録したと報道。", pl: "上場来最大の1日下落 → 重し", dir: "down" },
+        { t: "On Holding shares plunge after Q2 sales miss, lowered growth outlook", u: "https://finance.yahoo.com/markets/stocks/articles/holding-shares-fall-sharply-q2-094135863.html", s: "Yahoo Finance・8/11", sm: "売上が予想未達で、通期の成長見通しも引き下げた。", pl: "売上未達と見通し引き下げで約2割安 → 重し", dir: "down" },
+      ] },
+  ];
+  const MAX = 21;
+  const root = document.getElementById("movers");
+  movers.sort((a,b) => b.pct - a.pct).forEach(m => {
+    const w = Math.min(Math.abs(m.pct) / MAX, 1) * 50;
+    const pos = m.pct >= 0;
+    const item = document.createElement("div");
+    item.className = "m-item";
+    const row = document.createElement("div");
+    row.className = "mover";
+    row.innerHTML =
+      '<div class="nm"><span class="w-caret">▶</span>' + m.nm + '<small style="padding-left:14px">' + m.en + '</small></div>' +
+      '<div class="barwrap"><div class="axis"></div>' +
+      '<div class="bar' + (pos ? '' : ' neg') + '" style="' +
+        (pos ? 'left:50%;' : 'right:50%;') + 'width:' + w + '%;' +
+        'background:' + (pos ? 'var(--bar-pos)' : 'var(--bar-neg)') + ';"></div></div>' +
+      '<div class="pct" style="color:' + (pos ? 'var(--up)' : 'var(--down)') + '">' +
+        (pos ? '+' : '') + m.pct.toFixed(1) + '%</div>' +
+      '<div class="reason-line">→ ' + m.why + '</div>';
+    item.appendChild(row);
+
+    const panel = document.createElement("div");
+    panel.className = "m-news";
+    panel.innerHTML =
+      '<div class="m-desc">🏢 <b>どんな会社？</b> ' + m.desc + '</div>' +
+      (m.news || []).map(newsHTML).join('');
+
+    item.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      item.classList.toggle("open");
+    });
+
+    root.appendChild(item);
+    root.appendChild(panel);
+  });
+
+  /* ================= リアルタイム自動更新エンジン (Finnhub) =================
+     - 起動時に全銘柄の現在値をRESTで取得し、以後10秒ごとに巡回更新
+     - 取引時間中はWebSocketでほぼ即時に反映（10秒より速い）
+     - 指数はETF（SPY/DIA/QQQ）の変動率から概算値を計算
+     - このパネル内で外部接続がブロックされる場合は、HTMLファイルを
+       ブラウザ（Chrome等）で直接開くと有効になります                      */
+  const FINNHUB_KEY = "d9u8ldpr01qs9cmbn5ggd9u8ldpr01qs9cmbn5h0";   // Finnhub APIキー
+
+  const IDX = {  // ETF → 指数概算（prevIdx = 8/11の指数終値）
+    SPY: { label: "S&P500", prevIdx: 7728.20 },
+    DIA: { label: "NYダウ", prevIdx: 53791.85 },
+    QQQ: { label: "ナスダック", prevIdx: 26445.45 },
+  };
+  const STOCKS = ["NVDA","AVGO","TSM","AMD","INTC","MSFT","AAPL","GOOGL","AMZN","META","TSLA"];
+  const ALL = [...Object.keys(IDX), ...STOCKS];
+  const state = {};  // sym → { pc: 前日終値, restC: REST取得の直近値(引け後=通常取引の終値), last: 直近価格 }
+  ALL.forEach(s => state[s] = { pc: null, restC: null, last: null });
+
+  /* ---- 取引セッション判定（米国東部時間）----
+     プレ 4:00-9:30 / 通常 9:30-16:00 / アフター 16:00-20:00 / それ以外クローズ */
+  function etParts() {
+    const p = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour12: false, weekday: "short", hour: "2-digit", minute: "2-digit" }).formatToParts(new Date());
+    const get = t => (p.find(x => x.type === t) || {}).value;
+    return { dow: get("weekday"), min: (parseInt(get("hour"), 10) % 24) * 60 + parseInt(get("minute"), 10) };
+  }
+  function session() {
+    const { dow, min } = etParts();
+    if (dow === "Sat" || dow === "Sun") return "closed";
+    if (min >= 240 && min < 570) return "pre";
+    if (min >= 570 && min < 960) return "regular";
+    if (min >= 960 && min < 1200) return "after";
+    return "closed";
+  }
+  const CHIP = { pre: "時間外プレ", regular: "ライブ", after: "時間外", closed: "終値" };
+  // 変動率の基準：プレ・通常＝前日終値比／アフター＝当日の通常取引終値比
+  function basis(sym) {
+    const st = state[sym];
+    return (session() === "after" && st.restC) ? st.restC : st.pc;
+  }
+
+  const $ = id => document.getElementById(id);
+  const dot = $("live-dot"), msg = $("live-msg"), ts = $("live-ts");
+
+  function setStatus(mode, text) {
+    dot.className = "live-dot" + (mode ? " " + mode : "");
+    msg.textContent = text;
+  }
+  function stamp() {
+    ts.textContent = "最終更新 " + new Date().toLocaleTimeString("ja-JP");
+  }
+  function fmt(n, digits) { return n.toLocaleString("en-US", { minimumFractionDigits: digits, maximumFractionDigits: digits }); }
+
+  function flash(el, up) {
+    const cls = up ? "up-flash" : "down-flash";
+    el.classList.add(cls);
+    setTimeout(() => el.classList.remove(cls), 600);
+  }
+
+  function updateStock(sym, price) {
+    const st = state[sym];
+    const base = basis(sym);
+    if (!base || !price) return;
+    const pct = (price / base - 1) * 100;
+    const up = pct >= 0;
+    const sess = session();
+    const pxEl = document.querySelector('[data-px="' + sym + '"]');
+    const chgEl = document.querySelector('[data-chg="' + sym + '"]');
+    const chipEl = document.querySelector('[data-chip="' + sym + '"]');
+    if (pxEl) {
+      const moved = st.last && Math.abs(price - st.last) > 0.001;
+      pxEl.textContent = "$" + fmt(price, 2);
+      if (moved) { flash(pxEl, price > st.last); }
+    }
+    if (chgEl) {
+      chgEl.textContent = (up ? "+" : "") + pct.toFixed(2) + "%";
+      chgEl.style.color = Math.abs(pct) < 0.005 ? "var(--muted)" : (up ? "var(--up)" : "var(--down)");
+    }
+    if (chipEl) chipEl.textContent = CHIP[sess];
+    st.last = price;
+    stamp();
+  }
+
+  function updateIndex(sym, price) {
+    const st = state[sym], cfg = IDX[sym];
+    const base = basis(sym);
+    if (!base || !price) return;
+    const pct = (price / base - 1) * 100;
+    const up = pct >= 0;
+    const level = cfg.prevIdx * (price / (st.pc || base));
+    const vEl = $("v-" + sym), dEl = $("d-" + sym);
+    if (vEl) vEl.textContent = "約" + fmt(level, 0);
+    if (dEl) {
+      dEl.textContent = (up ? "▲ +" : "▼ ") + pct.toFixed(2) + "%（" + CHIP[session()] + "）";
+      dEl.className = "delta " + (up ? "d-up" : "d-down");
+    }
+    state[sym].last = price;
+    stamp();
+  }
+
+  function applyPrice(sym, price) {
+    if (IDX[sym]) updateIndex(sym, price); else updateStock(sym, price);
+  }
+
+  async function fetchQuote(sym, key) {
+    const r = await fetch("https://finnhub.io/api/v1/quote?symbol=" + sym + "&token=" + encodeURIComponent(key));
+    if (r.status === 429) throw new Error("rate");
+    if (!r.ok) throw new Error("http" + r.status);
+    return r.json();
+  }
+
+  let pollTimer = null, ws = null, activeKey = null;
+
+  async function start(key) {
+    activeKey = key;
+    setStatus("wait", "接続中…");
+    // 初回：全銘柄の現在値と前日終値を取得
+    try {
+      for (let i = 0; i < ALL.length; i++) {
+        const q = await fetchQuote(ALL[i], key);   // {c:現在値, pc:前日終値}
+        if (q && q.pc) { state[ALL[i]].pc = q.pc; state[ALL[i]].restC = q.c; applyPrice(ALL[i], q.c); }
+        await new Promise(res => setTimeout(res, 120));
+      }
+    } catch (e) {
+      setStatus("err", "外部データに接続できません。このHTMLをブラウザ（Chrome等）で直接開くと自動更新が有効になります。キーの誤りの場合は入力し直してください。");
+      $("key-box").style.display = "";
+      return;
+    }
+    function statusText() {
+      const s = session();
+      if (s === "regular") return "リアルタイム更新中：通常取引（日本時間 夜22:30〜朝5:00頃）・ほぼ即時反映";
+      if (s === "pre")     return "リアルタイム更新中：時間外取引・プレマーケット（日本時間 夕方17:00〜22:30頃）";
+      if (s === "after")   return "リアルタイム更新中：時間外取引・アフターマーケット（日本時間 朝5:00〜9:00頃）※変動率は当日終値比";
+      return "市場クローズ中：直近の終値を表示（時間外プレ市場は日本時間 夕方17:00頃から）";
+    }
+    setStatus("on", statusText());
+    setInterval(() => { if (dot.classList.contains("on")) msg.textContent = statusText(); }, 60000);
+    $("key-box").style.display = "none";
+
+    // WebSocket：取引時間中はほぼ即時反映
+    try {
+      ws = new WebSocket("wss://ws.finnhub.io/?token=" + encodeURIComponent(key));
+      ws.onopen = () => ALL.forEach(s => ws.send(JSON.stringify({ type: "subscribe", symbol: s })));
+      ws.onmessage = ev => {
+        const d = JSON.parse(ev.data);
+        if (d.type === "trade" && d.data) {
+          const seen = {};
+          d.data.forEach(t => { seen[t.s] = t.p; });
+          Object.keys(seen).forEach(s => applyPrice(s, seen[s]));
+        }
+      };
+    } catch (e) { /* WebSocket不可でもRESTポーリングで継続 */ }
+
+    // RESTポーリング：1秒に1銘柄ずつ巡回（14銘柄≒15秒で一巡、レート制限内）
+    let i = 0;
+    pollTimer = setInterval(async () => {
+      const sym = ALL[i % ALL.length]; i++;
+      try {
+        const q = await fetchQuote(sym, key);
+        if (q && q.pc) {
+          state[sym].pc = q.pc;
+          state[sym].restC = q.c;
+          // 時間外はWebSocketの約定が最優先。RESTの値が古い場合は上書きしない
+          if (session() === "regular" || !state[sym].last) applyPrice(sym, q.c);
+        }
+      } catch (e) { /* 一時的な失敗はスキップ */ }
+    }, 1100);
+  }
+
+  // ドル円（無料・キー不要の参考レート。10分ごと）
+  async function fxLoop() {
+    try {
+      const r = await fetch("https://open.er-api.com/v6/latest/USD");
+      const j = await r.json();
+      if (j && j.rates && j.rates.JPY) $("v-JPY").textContent = j.rates.JPY.toFixed(2);
+    } catch (e) { /* 参考値のため失敗は無視 */ }
+    setTimeout(fxLoop, 600000);
+  }
+  fxLoop();
+
+  // 起動
+  if (FINNHUB_KEY) {
+    start(FINNHUB_KEY);
+  } else {
+    setStatus("wait", "自動更新は待機中：Finnhubの無料APIキーを入力すると株価が10秒ごとに更新されます。");
+    $("key-box").style.display = "";
+  }
+  $("key-btn").addEventListener("click", () => {
+    const k = $("key-input").value.trim();
+    if (k) start(k);
+  });
+
+  /* ---- ウォッチリストへの銘柄追加（画面上でいつでも） ---- */
+  function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+
+  /* 英語→日本語の自動翻訳（Google翻訳の無料エンドポイント。失敗時はMyMemoryに切替） */
+  async function trJa(text) {
+    if (!text) return "";
+    try {
+      const r = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ja&dt=t&q=" + encodeURIComponent(text));
+      if (!r.ok) throw new Error("http" + r.status);
+      const j = await r.json();
+      const out = (j && j[0] ? j[0] : []).map(seg => seg && seg[0] ? seg[0] : "").join("");
+      if (out) return out;
+      throw new Error("empty");
+    } catch (e) {
+      try {
+        const r = await fetch("https://api.mymemory.translated.net/get?q=" + encodeURIComponent(text.slice(0, 450)) + "&langpair=en|ja");
+        const j = await r.json();
+        if (j && j.responseData && j.responseData.translatedText) return j.responseData.translatedText;
+      } catch (e2) { /* fall through */ }
+      return null;  // 翻訳不可 → 呼び出し側で原文を表示
+    }
+  }
+
+  async function loadCompanyNews(sym, box) {
+    box.innerHTML = '<div class="w-note">ニュースを取得して日本語に翻訳中…</div>';
+    try {
+      const to = new Date(), from = new Date(Date.now() - 7 * 864e5);
+      const f = d => d.toISOString().slice(0, 10);
+      const r = await fetch("https://finnhub.io/api/v1/company-news?symbol=" + encodeURIComponent(sym) + "&from=" + f(from) + "&to=" + f(to) + "&token=" + encodeURIComponent(activeKey));
+      const arr = await r.json();
+      if (!Array.isArray(arr) || !arr.length) { box.innerHTML = '<div class="w-note">直近1週間のニュースが見つかりませんでした</div>'; return; }
+      const items = arr.slice(0, 4);
+      // 見出しと要約をまとめて翻訳（並行実行）
+      const translated = await Promise.all(items.map(async n => {
+        const [hJa, sJa] = await Promise.all([
+          trJa(n.headline || ""),
+          trJa((n.summary || "").slice(0, 300)),
+        ]);
+        return { n, hJa, sJa };
+      }));
+      const anyFail = translated.some(x => x.hJa === null);
+      box.innerHTML = translated.map(({ n, hJa, sJa }) =>
+        '<div class="w-news-item">' +
+          '<a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(hJa || n.headline) + '</a><span class="src">' + esc(n.source || "") + '</span>' +
+          (hJa ? '<p style="font-size:11px;color:var(--muted);margin-top:1px">原題: ' + esc(n.headline) + '</p>' : '') +
+          (sJa || n.summary ? '<p>' + esc((sJa || n.summary).slice(0, 200)) + '</p>' : '') +
+        '</div>'
+      ).join("") + '<div class="w-note">' +
+        (anyFail
+          ? '※翻訳サービスに接続できなかったため一部は英語のまま表示しています（リンク先は英語記事）'
+          : '※Finnhub提供の英語記事を自動翻訳しています。リンク先は英語です') + '</div>';
+    } catch (e) { box.innerHTML = '<div class="w-note">ニュースの取得に失敗しました</div>'; }
+  }
+
+  function renderCustomRow(sym, name, profile) {
+    const item = document.createElement("div");
+    item.className = "w-item";
+    const row = document.createElement("div");
+    row.className = "w-row";
+    row.innerHTML =
+      '<div class="nm"><span class="w-caret">▶</span>' + esc(name) +
+        '<button class="w-del" title="リストから外す">✕ 削除</button>' +
+        '<small style="padding-left:14px">' + esc(sym) + (profile && profile.finnhubIndustry ? "・" + esc(profile.finnhubIndustry) : "") + '</small></div>' +
+      '<div class="px" data-px="' + esc(sym) + '">—</div>' +
+      '<div class="chg" data-chg="' + esc(sym) + '">—</div>' +
+      '<div class="tchip" data-chip="' + esc(sym) + '">追加</div>';
+    item.appendChild(row);
+
+    const newsBox = document.createElement("div");
+    newsBox.className = "w-news";
+    let loaded = false;
+
+    item.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
+      if (e.target.closest(".w-del")) {
+        // 削除
+        item.remove(); newsBox.remove();
+        const idx = ALL.indexOf(sym); if (idx >= 0) ALL.splice(idx, 1);
+        delete state[sym];
+        if (ws && ws.readyState === 1) ws.send(JSON.stringify({ type: "unsubscribe", symbol: sym }));
+        return;
+      }
+      item.classList.toggle("open");
+      if (item.classList.contains("open") && !loaded) { loaded = true; loadCompanyNews(sym, newsBox); }
+    });
+
+    wroot.appendChild(item);
+    wroot.appendChild(newsBox);
+  }
+
+  async function addCustomStock() {
+    const inp = $("add-input"), msgEl = $("add-msg");
+    const sym = inp.value.trim().toUpperCase().replace(/[^A-Z0-9.\-]/g, "");
+    if (!sym) return;
+    if (!activeKey) { msgEl.textContent = "自動更新の接続後に追加できます（上の接続バーをご確認ください）"; return; }
+    if (state[sym]) { msgEl.textContent = sym + " はすでにリストにあります"; return; }
+    msgEl.textContent = sym + " を検索中…";
+    try {
+      const [q, p] = await Promise.all([
+        fetchQuote(sym, activeKey),
+        fetch("https://finnhub.io/api/v1/stock/profile2?symbol=" + encodeURIComponent(sym) + "&token=" + encodeURIComponent(activeKey)).then(r => r.json()).catch(() => null),
+      ]);
+      if (!q || !q.pc) { msgEl.textContent = "「" + sym + "」が見つかりません。米国上場のティッカーで入力してください（例：KO、DIS、JPM）"; return; }
+      state[sym] = { pc: q.pc, restC: q.c, last: null };
+      ALL.push(sym);
+      renderCustomRow(sym, (p && p.name) ? p.name : sym, p);
+      applyPrice(sym, q.c);
+      if (ws && ws.readyState === 1) ws.send(JSON.stringify({ type: "subscribe", symbol: sym }));
+      msgEl.textContent = "";
+      inp.value = "";
+    } catch (e) { msgEl.textContent = "取得に失敗しました。少し待ってからもう一度お試しください"; }
+  }
+  $("add-btn").addEventListener("click", addCustomStock);
+  $("add-input").addEventListener("keydown", e => { if (e.key === "Enter") addCustomStock(); });
+</script>
+</body>
+</html>
