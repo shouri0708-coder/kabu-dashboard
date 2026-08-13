@@ -417,7 +417,7 @@
   <section>
     <h2>ウォッチリスト（大手テック＋半導体・AI）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックするとチャートと関連ニュースが開きます</span></h2>
     <div class="add-box">
-      <input type="text" id="add-input" placeholder="ティッカーで追加（例：KO, DIS, JPM）" maxlength="8">
+      <input type="text" id="add-input" placeholder="会社名かティッカーで追加（例：コカコーラ、DIS）" maxlength="30">
       <button id="add-btn">＋ 追加</button>
       <span class="add-msg" id="add-msg"></span>
       <span class="add-hint">※追加した銘柄もリアルタイム更新され、クリックすると最新ニュースが日本語（自動翻訳）で見られます。追加はこの画面を開いている間有効です。ずっと表示したい銘柄はチャットでClaudeに伝えてください。</span>
@@ -1046,6 +1046,85 @@
     load() { try { const v = JSON.parse(localStorage.getItem(WKEY) || "[]"); return Array.isArray(v) ? v : []; } catch (e) { return null; } },
     save(list) { try { localStorage.setItem(WKEY, JSON.stringify(list)); return true; } catch (e) { return false; } },
   };
+  /* 主要米国株の日本語名辞書（日本語表示と日本語検索の両方に使用） */
+  const JP_STOCKS = [
+    { tk: "AAPL", ja: "アップル", al: "apple,あっぷる" },
+    { tk: "MSFT", ja: "マイクロソフト", al: "microsoft" },
+    { tk: "NVDA", ja: "エヌビディア", al: "nvidia,ヌビディア" },
+    { tk: "GOOGL", ja: "アルファベット", al: "google,グーグル" },
+    { tk: "AMZN", ja: "アマゾン", al: "amazon" },
+    { tk: "META", ja: "メタ", al: "meta,フェイスブック,facebook,インスタ" },
+    { tk: "TSLA", ja: "テスラ", al: "tesla" },
+    { tk: "AVGO", ja: "ブロードコム", al: "broadcom" },
+    { tk: "TSM", ja: "TSMC", al: "台湾セミコンダクター,タイワンセミ,tsmc" },
+    { tk: "AMD", ja: "AMD", al: "エーエムディー,アドバンストマイクロ" },
+    { tk: "INTC", ja: "インテル", al: "intel" },
+    { tk: "KO", ja: "コカ・コーラ", al: "コカコーラ,コーラ,cocacola,cola" },
+    { tk: "PEP", ja: "ペプシコ", al: "ペプシ,pepsi" },
+    { tk: "MCD", ja: "マクドナルド", al: "マック,mcdonald" },
+    { tk: "SBUX", ja: "スターバックス", al: "スタバ,starbucks" },
+    { tk: "NKE", ja: "ナイキ", al: "nike" },
+    { tk: "DIS", ja: "ウォルト・ディズニー", al: "ディズニー,disney" },
+    { tk: "NFLX", ja: "ネットフリックス", al: "ネトフリ,netflix" },
+    { tk: "V", ja: "ビザ", al: "visa" },
+    { tk: "MA", ja: "マスターカード", al: "mastercard" },
+    { tk: "JPM", ja: "JPモルガン・チェース", al: "jpモルガン,モルガンチェース,jpmorgan" },
+    { tk: "BAC", ja: "バンク・オブ・アメリカ", al: "バンカメ,bankofamerica" },
+    { tk: "GS", ja: "ゴールドマン・サックス", al: "ゴールドマン,goldman" },
+    { tk: "MS", ja: "モルガン・スタンレー", al: "morganstanley" },
+    { tk: "BRK.B", ja: "バークシャー・ハサウェイ", al: "バークシャー,バフェット,berkshire" },
+    { tk: "JNJ", ja: "ジョンソン・エンド・ジョンソン", al: "ジョンソン,j&j,johnson" },
+    { tk: "PFE", ja: "ファイザー", al: "pfizer" },
+    { tk: "MRK", ja: "メルク", al: "merck" },
+    { tk: "LLY", ja: "イーライリリー", al: "リリー,elililly,lilly" },
+    { tk: "UNH", ja: "ユナイテッドヘルス", al: "unitedhealth" },
+    { tk: "PG", ja: "プロクター・アンド・ギャンブル", al: "p&g,ピーアンドジー" },
+    { tk: "WMT", ja: "ウォルマート", al: "walmart" },
+    { tk: "COST", ja: "コストコ", al: "costco" },
+    { tk: "HD", ja: "ホーム・デポ", al: "ホームデポ,homedepot" },
+    { tk: "XOM", ja: "エクソンモービル", al: "エクソン,exxon" },
+    { tk: "CVX", ja: "シェブロン", al: "chevron" },
+    { tk: "BA", ja: "ボーイング", al: "boeing" },
+    { tk: "CAT", ja: "キャタピラー", al: "caterpillar" },
+    { tk: "GE", ja: "GEエアロスペース", al: "ゼネラルエレクトリック,ge" },
+    { tk: "F", ja: "フォード", al: "ford" },
+    { tk: "GM", ja: "ゼネラルモーターズ", al: "gm" },
+    { tk: "T", ja: "AT&T", al: "エーティーアンドティー" },
+    { tk: "VZ", ja: "ベライゾン", al: "verizon" },
+    { tk: "ORCL", ja: "オラクル", al: "oracle" },
+    { tk: "CRM", ja: "セールスフォース", al: "salesforce" },
+    { tk: "ADBE", ja: "アドビ", al: "adobe" },
+    { tk: "CSCO", ja: "シスコシステムズ", al: "シスコ,cisco" },
+    { tk: "IBM", ja: "IBM", al: "アイビーエム" },
+    { tk: "QCOM", ja: "クアルコム", al: "qualcomm" },
+    { tk: "MU", ja: "マイクロン・テクノロジー", al: "マイクロン,micron" },
+    { tk: "PLTR", ja: "パランティア", al: "palantir" },
+    { tk: "COIN", ja: "コインベース", al: "coinbase" },
+    { tk: "UBER", ja: "ウーバー", al: "uber" },
+    { tk: "ABNB", ja: "エアビーアンドビー", al: "エアビー,airbnb" },
+    { tk: "PYPL", ja: "ペイパル", al: "paypal" },
+    { tk: "SHOP", ja: "ショッピファイ", al: "shopify" },
+    { tk: "ARM", ja: "アーム", al: "arm" },
+    { tk: "MRNA", ja: "モデルナ", al: "moderna" },
+    { tk: "SMCI", ja: "スーパー・マイクロ・コンピューター", al: "スーパーマイクロ,supermicro" },
+    { tk: "CRWV", ja: "コアウィーブ", al: "coreweave" },
+    { tk: "LMT", ja: "ロッキード・マーチン", al: "ロッキード,lockheed" },
+    { tk: "RTX", ja: "RTX（旧レイセオン）", al: "レイセオン,raytheon" },
+    { tk: "DAL", ja: "デルタ航空", al: "デルタ,delta" },
+    { tk: "BABA", ja: "アリババ", al: "alibaba" },
+    { tk: "ONON", ja: "オン・ホールディング", al: "オン,on" },
+  ];
+  const norm = s => String(s).normalize("NFKC").toLowerCase().replace(/[・\s　\-–—''&]/g, "");
+  function jpByTicker(tk) { const hit = JP_STOCKS.find(x => x.tk === tk); return hit ? hit.ja : null; }
+  function jpSearch(q) {
+    const n = norm(q);
+    if (n.length < 2 && !/[ぁ-んァ-ヶ一-龠]/.test(q)) return null;
+    return JP_STOCKS.find(x =>
+      norm(x.ja) === n || norm(x.ja).includes(n) || n.includes(norm(x.ja)) ||
+      x.al.split(",").some(a => { const na = norm(a); return na === n || na.includes(n) || (n.length >= 3 && n.includes(na)); })
+    ) || null;
+  }
+
   let customSyms = [];
   function persistCustom() {
     const ok = store.save(customSyms);
@@ -1073,6 +1152,30 @@
       } catch (e2) { /* fall through */ }
       return null;  // 翻訳不可 → 呼び出し側で原文を表示
     }
+  }
+
+  /* 日本語→英語(検索用) */
+  async function trEn(text) {
+    try {
+      const r = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=ja&tl=en&dt=t&q=" + encodeURIComponent(text));
+      if (!r.ok) throw new Error("http" + r.status);
+      const j = await r.json();
+      const out = (j && j[0] ? j[0] : []).map(seg => seg && seg[0] ? seg[0] : "").join("");
+      return out || null;
+    } catch (e) { return null; }
+  }
+
+  /* 会社名の日本語表示名を決める：辞書 → 自動翻訳 → 英語のまま */
+  function cleanCompanyName(nm) {
+    return String(nm || "").replace(/,?\s*(Inc\.?|Corp\.?|Corporation|Company|Co\.?|Ltd\.?|PLC|plc|Holdings?|Group|SE|SA|AG|NV|LP)\s*$/i, "").trim();
+  }
+  async function jaCompanyName(tk, enName) {
+    const dict = jpByTicker(tk);
+    if (dict) return dict;
+    const cleaned = cleanCompanyName(enName);
+    if (!cleaned) return enName || tk;
+    const ja = await trJa(cleaned);
+    return ja || cleaned;
   }
 
   async function loadCompanyNews(sym, box) {
@@ -1106,6 +1209,8 @@
     } catch (e) { box.innerHTML = '<div class="w-note">ニュースの取得に失敗しました</div>'; }
   }
 
+  const INDUSTRY_JA = { "Technology": "テクノロジー", "Semiconductors": "半導体", "Retail": "小売", "Banking": "銀行", "Pharmaceuticals": "医薬品", "Automobiles": "自動車", "Beverages": "飲料", "Media": "メディア", "Financial Services": "金融サービス", "Health Care": "ヘルスケア", "Insurance": "保険", "Energy": "エネルギー", "Airlines": "航空", "Hotels, Restaurants & Leisure": "外食・レジャー", "Food Products": "食品", "Aerospace & Defense": "航空宇宙・防衛", "Telecommunication": "通信", "Consumer products": "消費財", "Textiles, Apparel & Luxury Goods": "アパレル・高級品", "Machinery": "機械", "Internet": "インターネット", "Software": "ソフトウェア", "Biotechnology": "バイオ医薬", "Real Estate": "不動産", "Utilities": "公益事業", "Chemicals": "化学", "Metals & Mining": "金属・鉱業", "Logistics & Transportation": "物流・運輸", "Commercial Services & Supplies": "商業サービス", "Road & Rail": "陸運" };
+
   function renderCustomRow(sym, name, profile) {
     const item = document.createElement("div");
     item.className = "w-item";
@@ -1114,7 +1219,7 @@
     row.innerHTML =
       '<div class="nm"><span class="w-caret">▶</span>' + esc(name) +
         '<button class="w-del" title="リストから外す">✕ 削除</button>' +
-        '<small style="padding-left:14px">' + esc(sym) + (profile && profile.finnhubIndustry ? "・" + esc(profile.finnhubIndustry) : "") + '</small></div>' +
+        '<small style="padding-left:14px">' + esc(sym) + (profile && profile.finnhubIndustry ? "・" + esc(INDUSTRY_JA[profile.finnhubIndustry] || profile.finnhubIndustry) : "") + '</small></div>' +
       '<div class="px" data-px="' + esc(sym) + '">—</div>' +
       '<div class="chg" data-chg="' + esc(sym) + '">—</div>' +
       '<div class="tchip" data-chip="' + esc(sym) + '">追加</div>';
@@ -1160,23 +1265,65 @@
     if (!q || !q.pc) return false;
     state[sym] = { pc: q.pc, restC: q.c, last: null };
     ALL.push(sym);
-    renderCustomRow(sym, (p && p.name) ? p.name : sym, p);
+    const jaName = await jaCompanyName(sym, p && p.name ? p.name : sym);
+    renderCustomRow(sym, jaName, p);
     applyPrice(sym, q.c);
     if (ws && ws.readyState === 1) ws.send(JSON.stringify({ type: "subscribe", symbol: sym }));
     if (saveToList && !customSyms.includes(sym)) { customSyms.push(sym); persistCustom(); }
     return true;
   }
 
+  /* 入力(ティッカー or 日本語/英語の会社名)からティッカーを解決する */
+  async function resolveTicker(raw) {
+    // ① ティッカーそのもの (例: KO, BRK.B)
+    if (/^[A-Za-z]{1,5}([.\-][A-Za-z]{1,3})?$/.test(raw) && !/[ぁ-んァ-ヶ一-龠]/.test(raw)) {
+      const dictHit = jpSearch(raw);           // "apple"のような英語名にも一応対応
+      if (dictHit && raw.length > 5) return dictHit.tk;
+      return raw.toUpperCase();
+    }
+    // ② 日本語名辞書 (例: コカコーラ, ディズニー)
+    const hit = jpSearch(raw);
+    if (hit) return hit.tk;
+    // ③ 日本語→英語に翻訳してFinnhubの銘柄検索にかける
+    const en = /[ぁ-んァ-ヶ一-龠]/.test(raw) ? (await trEn(raw)) : raw;
+    if (!en) return null;
+    try {
+      const r = await fetch("https://finnhub.io/api/v1/search?q=" + encodeURIComponent(en) + "&token=" + encodeURIComponent(activeKey));
+      const j = await r.json();
+      const cands = (j && j.result ? j.result : []).filter(x =>
+        x.symbol && /^[A-Z]{1,5}([.\-][A-Z]{1,3})?$/.test(x.symbol) && !x.symbol.includes(":") &&
+        (x.type === "Common Stock" || x.type === "ADR" || x.type === "")
+      );
+      return cands.length ? cands[0].symbol : null;
+    } catch (e) { return null; }
+  }
+
   async function addCustomStock() {
     const inp = $("add-input"), msgEl = $("add-msg");
-    const sym = inp.value.trim().toUpperCase().replace(/[^A-Z0-9.\-]/g, "");
-    if (!sym) return;
+    const raw = inp.value.trim();
+    if (!raw) return;
     if (!activeKey) { msgEl.textContent = "自動更新の接続後に追加できます（上の接続バーをご確認ください）"; return; }
-    if (state[sym]) { msgEl.textContent = sym + " はすでにリストにあります"; return; }
-    msgEl.textContent = sym + " を検索中…";
+    msgEl.textContent = "「" + raw + "」を検索中…";
     try {
-      const ok = await addSymbol(sym, true);
-      msgEl.textContent = ok ? "" : "「" + sym + "」が見つかりません。米国上場のティッカーで入力してください（例：KO、DIS、JPM）";
+      const sym = await resolveTicker(raw);
+      if (!sym) { msgEl.textContent = "「" + raw + "」が見つかりません。会社名（例：コカコーラ）またはティッカー（例：KO）でお試しください"; return; }
+      if (state[sym]) { msgEl.textContent = (jpByTicker(sym) || sym) + "（" + sym + "）はすでにリストにあります"; return; }
+      let ok = await addSymbol(sym, true);
+      if (!ok) {
+        // ティッカーとして解釈して失敗した場合（例:「apple」）→ 会社名として再検索
+        const hit = jpSearch(raw);
+        let sym2 = hit ? hit.tk : null;
+        if (!sym2) {
+          try {
+            const r = await fetch("https://finnhub.io/api/v1/search?q=" + encodeURIComponent(raw) + "&token=" + encodeURIComponent(activeKey));
+            const j = await r.json();
+            const cands = (j && j.result ? j.result : []).filter(x => x.symbol && /^[A-Z]{1,5}([.\-][A-Z]{1,3})?$/.test(x.symbol) && !x.symbol.includes(":"));
+            sym2 = cands.length ? cands[0].symbol : null;
+          } catch (e) { /* skip */ }
+        }
+        if (sym2 && !state[sym2]) ok = await addSymbol(sym2, true);
+      }
+      msgEl.textContent = ok ? "" : "「" + raw + "」が見つかりませんでした。会社名（例：コカコーラ）またはティッカー（例：KO）でお試しください";
       if (ok) inp.value = "";
     } catch (e) { msgEl.textContent = "取得に失敗しました。少し待ってからもう一度お試しください"; }
   }
