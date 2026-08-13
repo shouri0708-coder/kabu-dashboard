@@ -189,6 +189,15 @@
   .m-news { display: none; padding: 2px 0 12px 10px; border-left: 3px solid var(--grid); margin: 0 0 8px 4px; }
   .m-item.open + .m-news { display: block; }
   .m-desc { font-size: 12.5px; color: var(--text-primary); padding: 8px 12px; border-radius: 8px; background: var(--chip); margin: 8px 0 2px; }
+  /* 株価チャート(TradingView埋め込み) */
+  .tv-wrap {
+    height: 380px; margin: 8px 0 2px; border: 1px solid var(--border);
+    border-radius: 10px; overflow: hidden; background: var(--surface-1);
+  }
+  .tv-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .tv-link { font-size: 11px; color: var(--muted); margin: 4px 0 8px; }
+  .tv-link a { color: var(--accent); }
+  @media (max-width: 600px) { .tv-wrap { height: 300px; } }
   /* ウォッチリストへの銘柄追加 */
   .add-box { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin: 0 0 10px; }
   .add-box input {
@@ -378,7 +387,7 @@
     </div>
   </div>
   <div class="kpi-news" id="kpi-news"></div>
-  <div class="kpi-note">※指数の水準は取引時間中の変動率からの概算値。確定値は取引終了後（日本時間あす朝）に更新されます。カードをクリックすると関連ニュースが開きます。</div>
+  <div class="kpi-note">※指数の水準は取引時間中の変動率からの概算値。確定値は取引終了後（日本時間あす朝）に更新されます。カードをクリックするとチャートと関連ニュースが開きます。</div>
 
   <section>
     <h2>なぜ動いたのか — 3つの理由</h2>
@@ -406,7 +415,7 @@
   </section>
 
   <section>
-    <h2>ウォッチリスト（大手テック＋半導体・AI）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックすると関連ニュースが開きます</span></h2>
+    <h2>ウォッチリスト（大手テック＋半導体・AI）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックするとチャートと関連ニュースが開きます</span></h2>
     <div class="add-box">
       <input type="text" id="add-input" placeholder="ティッカーで追加（例：KO, DIS, JPM）" maxlength="8">
       <button id="add-btn">＋ 追加</button>
@@ -418,7 +427,7 @@
   </section>
 
   <section>
-    <h2>きょう目立った銘柄（変動率）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックすると会社紹介とニュースが開きます</span></h2>
+    <h2>きょう目立った銘柄（変動率）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックすると会社紹介・チャート・ニュースが開きます</span></h2>
     <div class="movers" id="movers"></div>
     <p class="chart-note">青＝上昇 ／ 赤＝下落。バーの長さは変動率（±21%で最大表示）。米国時間8/11終値〜8/12午前時点。選定基準：市況報道で取り上げられた銘柄のうち、変動率が大きく（目安±4%以上）動いた理由が特定できるもの＋相場テーマの中心銘柄。</p>
   </section>
@@ -637,14 +646,32 @@
       '</div>'
     ).join('');
 
+    let chartDone = false;
     item.addEventListener("click", (e) => {
       if (e.target.closest("a")) return; // リンクは通常どおり開く
       item.classList.toggle("open");
+      if (item.classList.contains("open") && !chartDone) {
+        chartDone = true;
+        newsBox.insertAdjacentHTML("afterbegin", chartHTML(WATCH_TV[tk] || tk));
+      }
     });
 
     wroot.appendChild(item);
     wroot.appendChild(newsBox);
   });
+
+  /* 株価チャート(TradingViewの無料埋め込みウィジェット。日本時間・日本語表示) */
+  const WATCH_TV = { NVDA: "NASDAQ:NVDA", AVGO: "NASDAQ:AVGO", TSM: "NYSE:TSM", AMD: "NASDAQ:AMD", INTC: "NASDAQ:INTC", MSFT: "NASDAQ:MSFT", AAPL: "NASDAQ:AAPL", GOOGL: "NASDAQ:GOOGL", AMZN: "NASDAQ:AMZN", META: "NASDAQ:META", TSLA: "NASDAQ:TSLA" };
+  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", JPY: "FX:USDJPY", WTI: "TVC:USOIL" };
+  const MOVER_TV = { CRWV: "NASDAQ:CRWV", NBIS: "NASDAQ:NBIS", CAVA: "NYSE:CAVA", SMCI: "NASDAQ:SMCI", NVDA: "NASDAQ:NVDA", APO: "NYSE:APO", AA: "NYSE:AA", BX: "NYSE:BX", PFGC: "NYSE:PFGC", NBIX: "NASDAQ:NBIX", UPWK: "NASDAQ:UPWK", EVC: "NYSE:EVC", ONON: "NYSE:ONON" };
+  function chartHTML(tvsym) {
+    const dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const src = "https://s.tradingview.com/widgetembed/?symbol=" + encodeURIComponent(tvsym) +
+      "&interval=D&hidesidetoolbar=1&hide_side_toolbar=1&symboledit=0&saveimage=0&allow_symbol_change=0" +
+      "&theme=" + (dark ? "dark" : "light") + "&style=1&timezone=Asia%2FTokyo&locale=ja&withdateranges=1";
+    return '<div class="tv-wrap"><iframe src="' + src + '" loading="lazy" allowfullscreen></iframe></div>' +
+      '<div class="tv-link">ローソク足チャート（日足・日本時間）。表示されない場合は <a href="https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(tvsym) + '" target="_blank" rel="noopener">TradingViewで開く</a></div>';
+  }
 
   // ニュース1件分のHTML（ウォッチリスト・KPI・目立った銘柄で共通）
   function newsHTML(n) {
@@ -690,7 +717,7 @@
       if (wasActive) { kpiPanel.classList.remove("show"); return; }
       card.classList.add("active");
       const d = KPI_NEWS[key];
-      kpiPanel.innerHTML = "<h4>" + d.label + "</h4>" + d.items.map(newsHTML).join("");
+      kpiPanel.innerHTML = "<h4>" + d.label + "</h4>" + chartHTML(KPI_TV[key]) + d.items.map(newsHTML).join("");
       kpiPanel.classList.add("show");
     });
   });
@@ -802,9 +829,16 @@
       '<div class="m-desc">🏢 <b>どんな会社？</b> ' + m.desc + '</div>' +
       (m.news || []).map(newsHTML).join('');
 
+    const mTk = m.en.split('/').pop().trim();
+    let mChartDone = false;
     item.addEventListener("click", (e) => {
       if (e.target.closest("a")) return;
       item.classList.toggle("open");
+      if (item.classList.contains("open") && !mChartDone) {
+        mChartDone = true;
+        const descEl = panel.querySelector(".m-desc");
+        descEl.insertAdjacentHTML("afterend", chartHTML(MOVER_TV[mTk] || mTk));
+      }
     });
 
     root.appendChild(item);
@@ -1088,6 +1122,10 @@
 
     const newsBox = document.createElement("div");
     newsBox.className = "w-news";
+    const chartDiv = document.createElement("div");
+    const newsDiv = document.createElement("div");
+    newsBox.appendChild(chartDiv);
+    newsBox.appendChild(newsDiv);
     let loaded = false;
 
     item.addEventListener("click", (e) => {
@@ -1103,7 +1141,11 @@
         return;
       }
       item.classList.toggle("open");
-      if (item.classList.contains("open") && !loaded) { loaded = true; loadCompanyNews(sym, newsBox); }
+      if (item.classList.contains("open") && !loaded) {
+        loaded = true;
+        chartDiv.innerHTML = chartHTML(sym);   // 追加銘柄はティッカーで自動判別
+        loadCompanyNews(sym, newsDiv);
+      }
     });
 
     wroot.appendChild(item);
