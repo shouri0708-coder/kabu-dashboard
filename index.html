@@ -254,7 +254,13 @@
   }
 
   /* news */
-  .news { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 18px; }
+  .news { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 18px 14px; }
+  .news-cat {
+    font-size: 13.5px; font-weight: 700; margin: 14px 0 2px;
+    padding: 6px 12px; border-radius: 8px; background: var(--chip);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .news-cat small { font-weight: 400; font-size: 11px; color: var(--muted); margin-left: auto; }
   .news-item { padding: 12px 0; }
   .news-item + .news-item { border-top: 1px solid var(--grid); }
   .news-item a { color: var(--accent); font-weight: 600; font-size: 14px; text-decoration: none; }
@@ -462,30 +468,39 @@
   <section>
     <h2>関連ニュース</h2>
     <div class="news">
+
+      <div class="news-cat">🌍 世界の大きな動き<small>相場全体を左右するニュース・毎朝更新</small></div>
       <div class="news-item">
-        <a href="https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html" target="_blank" rel="noopener">CPI inflation report July 2026: Prices rose 0.1%, annual rate 3.4%</a><span class="src">CNBC（英語）</span>
-        <p>7月CPIの詳細。エネルギー価格の下落が物価の落ち着きに寄与。</p>
+        <a href="https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html" target="_blank" rel="noopener">Strait of Hormuz shipping slows as U.S.-Iran ceasefire nears end</a><span class="src">CNBC（英語）・8/17</span>
+        <p>米国とイランの停戦期限が迫り、原油輸送の大動脈ホルムズ海峡の船舶通航が減速。📉 停戦が切れれば原油急騰→株全体の重しになる、今週最大のリスク要因。</p>
       </div>
       <div class="news-item">
-        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026" target="_blank" rel="noopener">S&P 500 climbs following key inflation report</a><span class="src">TheStreet（英語）</span>
-        <p>12日の市況。CPI通過とCoreWeave・SMCI決算でAI関連が上昇と報道。</p>
+        <a href="https://abcnews.com/International/live-updates/iran-live-updates-negotiations-us-messages-exchanged-tehran/?id=135508900" target="_blank" rel="noopener">US, Iran passing messages through intermediaries</a><span class="src">ABC News（英語）・8/17</span>
+        <p>米イランは仲介者経由で交渉メッセージを交換中。クシュナー氏がエジプト・イスラエルを歴訪。📈 交渉進展の報道が出れば原油安→株の追い風に転じる可能性。</p>
+      </div>
+
+      <div class="news-cat">📈 米国市場のいま</div>
+      <div class="news-item">
+        <a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-17-2026" target="_blank" rel="noopener">S&P 500 futures edge higher ahead of retail earnings reports</a><span class="src">TheStreet（英語）・8/17</span>
+        <p>週明けは小動きで開始。9月利上げの織り込みは約33%まで低下し、「業績の強さが相場を支える」との声。ただし地政学リスクが最大の懸念と指摘。</p>
       </div>
       <div class="news-item">
-        <a href="https://www.cnbc.com/2026/08/11/stock-market-today-live-updates.html" target="_blank" rel="noopener">S&P 500 rises after tame inflation data; AI-related shares jump</a><span class="src">CNBC（英語）</span>
-        <p>米株市況ライブ。落ち着いたCPIを受けたAI関連株の急伸を実況中。</p>
+        <a href="https://www.cnbc.com/2026/08/16/stock-market-today-live-updates-.html" target="_blank" rel="noopener">S&P 500 opens little changed as traders weigh AI optimism vs. Iran tensions</a><span class="src">CNBC（英語）・8/17</span>
+        <p>「AIへの強気」と「イラン情勢の緊張」の綱引きで、指数は最高値圏でもみ合い。</p>
       </div>
+
+      <div class="news-cat">🏢 企業・決算</div>
       <div class="news-item">
-        <a href="https://jp.investing.com/news/forex-news/article-1643846" target="_blank" rel="noopener">11日の米国市場ダイジェスト：米国株式市場は続落、原油高やCPIを警戒</a><span class="src">Investing.com 日本版</span>
-        <p>前日（8/11）の振り返り。原油高とCPI警戒で3指数続落の背景を解説。</p>
+        <a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html" target="_blank" rel="noopener">Dow, S&P 500, Nasdaq waver ahead of retail earnings</a><span class="src">Yahoo Finance（英語）・8/17</span>
+        <p>今週はウォルマート・ホームデポ・ターゲット・ロウズなど小売大手の決算が集中。「米国の消費が強いか」を確かめる1週間。📈 好決算なら景気安心感につながる。</p>
       </div>
+
+      <div class="news-cat">🏛 金融政策・経済指標</div>
       <div class="news-item">
-        <a href="https://seekingalpha.com/news/4630930-traders-remain-sidelined-as-the-s-and-p-500-pins-in-year-s-narrowest-band-ahead-of-cpi" target="_blank" rel="noopener">S&P 500 pins in year's narrowest band ahead of CPI</a><span class="src">Seeking Alpha（英語）</span>
-        <p>S&P500が今年最も狭いレンジで推移。「中立シナリオ」の根拠。</p>
+        <a href="https://www.bloomberg.com/news/articles/2026-08-16/stock-market-today-dow-s-p-live-updates" target="_blank" rel="noopener">Stock Market Today: Dow, S&P Live Updates</a><span class="src">Bloomberg（英語）・8/17</span>
+        <p>水曜（日本時間木曜未明）に7月FOMC議事要旨が公表予定。9月に利上げしない場合の条件を探るヒントに。先週のCPI・PPI鎮静を受けた各委員の意見に注目。</p>
       </div>
-      <div class="news-item">
-        <a href="https://www.fool.com/coverage/stock-market-today/2026/08/11/stock-market-today-aug-11-markets-slip-as-oil-prices-rise-upwork-tumbles-on-mixed-earnings/" target="_blank" rel="noopener">Markets Slip as Oil Prices Rise, Upwork Tumbles on Mixed Earnings</a><span class="src">The Motley Fool（英語）</span>
-        <p>前日終値の確定値（S&P500 7,728.20 ほか）と個別材料の整理。</p>
-      </div>
+
     </div>
   </section>
 
@@ -493,16 +508,20 @@
     <h2>この先の注目イベント</h2>
     <div class="events">
       <div class="event">
-        <div class="when">今夜〜あす朝</div>
-        <div class="what">8/12のNY市場の終値確定<small>CPI通過後の上昇を維持して引けられるかに注目。あす朝このページを更新します。</small></div>
+        <div class="when">今週前半</div>
+        <div class="what">米イラン停戦の期限<small>今週最大のリスクイベント。決裂なら原油高→株安、延長・合意なら株の追い風。ホルムズ海峡関連の見出しに注意。</small></div>
       </div>
       <div class="event">
-        <div class="when">8月下旬</div>
-        <div class="what">NVIDIA 決算発表<small>AI相場全体の最大の試金石。強気シナリオ／弱気シナリオの分かれ目になりやすいイベント。</small></div>
+        <div class="when">今週（火〜木）</div>
+        <div class="what">米小売大手の決算ラッシュ<small>ウォルマート、ホームデポ、ターゲット、ロウズなど。米国の消費の強さを確かめる材料。</small></div>
       </div>
       <div class="event">
-        <div class="when">9月中旬 FOMC</div>
-        <div class="what">FRBの政策金利決定会合<small>きょうのCPIで利上げ観測は後退。それでも原油高が続けば見方が再び変わる可能性。</small></div>
+        <div class="when">木曜 未明（日本時間）</div>
+        <div class="what">7月FOMC議事要旨の公表<small>9月利上げ観測は約33%まで後退中。FRB内部の意見の分かれ方が見えるとさらに動く可能性。</small></div>
+      </div>
+      <div class="event">
+        <div class="when">8/26（水）</div>
+        <div class="what">NVIDIA 決算発表<small>AI相場全体の最大の試金石。強気／弱気シナリオの分かれ目になりやすいイベント。</small></div>
       </div>
       <div class="event">
         <div class="when">9/1</div>
@@ -531,7 +550,47 @@
     </details>
     <details>
       <summary>「織り込み」「様子見」ってどういう意味？</summary>
-      <p>「織り込み」は、将来の出来事（利上げなど）を予想して、株価に先に反映させておくこと。予想どおりの結果なら株価はあまり動かず、予想と違うと大きく動きます。「様子見」は重要な発表の前に売買を控えること。きょうのCPI前の相場がまさにこれでした。</p>
+      <p>「織り込み」は、将来の出来事（利上げなど）を予想して、株価に先に反映させておくこと。予想どおりの結果なら株価はあまり動かず、予想と違うと大きく動きます。「様子見」は重要な発表の前に売買を控えること。</p>
+    </details>
+    <details>
+      <summary>PPI（卸売物価指数）とCPIの違いは？</summary>
+      <p>CPIが「消費者が買う値段」なら、PPIは「企業同士が取引する値段（卸値）」の物価指数です。卸値は数カ月遅れて消費者の値段に反映されることが多いため、PPIは「未来のCPIの先行ヒント」として注目されます。両方落ち着いていれば、インフレ鎮静の説得力が増します。</p>
+    </details>
+    <details>
+      <summary>決算・EPS・ガイダンスって？</summary>
+      <p>決算は企業の「成績発表」（3カ月ごと）。EPSは1株あたりの利益で、成績の代表的な数字です。ガイダンスは会社自身による「来期の見通し」。株価は過去の成績より未来を見るので、決算の数字が良くてもガイダンスが弱いと売られ、逆に数字が悪くてもガイダンスが強ければ買われることがよくあります（今週のSuper Microがまさにこの例）。</p>
+    </details>
+    <details>
+      <summary>PER（株価収益率）って何？</summary>
+      <p>「株価が1株利益の何倍まで買われているか」を示す割高・割安の目安です。例えばPER 30倍なら「30年分の利益に相当する値段」。成長期待が高い企業ほどPERは高くなります（NVIDIAは30倍台、成熟企業は15倍前後が目安）。高PER株は期待で買われている分、期待が崩れたときの下げも大きくなりがちです。</p>
+    </details>
+    <details>
+      <summary>時価総額って何？</summary>
+      <p>「株価 × 発行株式数」＝会社全体の値段です。米国の巨大テックは数兆ドル規模（NVIDIAは約5兆ドル＝日本の国家予算の数倍）。時価総額が大きい企業ほど指数（S&P500など）への影響も大きいため、大型株の急落は市場全体を揺らします。</p>
+    </details>
+    <details>
+      <summary>ETF（上場投資信託）って何？</summary>
+      <p>たくさんの株を詰め合わせて1つの商品にした「株の福袋」です。例えばSPYはS&P500全体、QQQはナスダック100に連動します。1本買うだけで数百社に分散投資できるため、初心者の定番。このダッシュボードの指数概算もETFの値動きから計算しています。</p>
+    </details>
+    <details>
+      <summary>長期金利（10年債利回り）と株の関係は？</summary>
+      <p>米国債の利回り（金利）が上がると、「リスクのある株より安全な債券でいいや」という資金移動が起こり、株には逆風になります。特に将来の利益に期待して買われているハイテク株は金利上昇に弱め。逆に金利低下はハイテク株の追い風です。</p>
+    </details>
+    <details>
+      <summary>円高・円安は米国株投資にどう影響する？</summary>
+      <p>日本から米国株を買う場合、株価とは別に為替の損益が乗ります。円安（1ドル150円→160円）になると持っている米国株の円建て価値は増え、円高になると減ります。「株は上がったのに円高で利益が消えた」も起こり得るので、ドル円の動き（このページ上部に表示）もセットで見るのがおすすめです。</p>
+    </details>
+    <details>
+      <summary>時間外取引（プレ・アフター）って何？</summary>
+      <p>通常取引（日本時間 夜22:30〜朝5:00頃）の前後にも取引できる時間帯があります。前が「プレマーケット」（夕方17:00頃〜）、後が「アフターマーケット」（朝5:00〜9:00頃）。決算発表は引け後に出ることが多いため、アフターの急騰急落は翌日の相場の予告編になります。参加者が少なく値が飛びやすい点には注意。</p>
+    </details>
+    <details>
+      <summary>「利益確定売り」「押し目買い」って？</summary>
+      <p>利益確定売りは、値上がりした株を売って利益を現金にすること。最高値更新の後に小さく下げるのは大抵これで、悪材料とは限りません。押し目買いは、上昇トレンド中の一時的な下げ（押し目）を狙って買うこと。「上がったら売る人、下がったら買う人」が交錯して相場は動きます。</p>
+    </details>
+    <details>
+      <summary>ローソク足チャートの見方（超入門）</summary>
+      <p>チャートの1本1本が「1日の値動き」を表します。四角い部分（実体）は始値と終値の間で、上に伸びるヒゲはその日の高値、下のヒゲは安値。実体が長い陽線（上昇）は買いの勢いが強かった日、長い上ヒゲは「高値で売りに押された」サインです。まずは「実体が長いか短いか」だけ見るのでも十分役立ちます。</p>
     </details>
   </section>
 
