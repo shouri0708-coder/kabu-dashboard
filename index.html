@@ -417,6 +417,13 @@
       <div class="why">物価鎮静で米金利が低下気味。接続すると自動更新</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
+    <div class="kpi" data-kpi="US10Y">
+      <div class="name">米国10年金利（長期金利）</div>
+      <div class="val">4.71<span style="font-size:13px">%</span></div>
+      <div class="delta d-up">▲ +0.01%（8/17）</div>
+      <div class="why">19カ月ぶり高水準の4.75%に接近中。金利上昇は株（特にハイテク）の逆風</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
     <div class="kpi" data-kpi="WTI">
       <div class="name">WTI原油（先物）</div>
       <div class="val">$81.74</div>
@@ -754,7 +761,7 @@
 
   /* 株価チャート(TradingViewの無料埋め込みウィジェット。日本時間・日本語表示) */
   const WATCH_TV = { NVDA: "NASDAQ:NVDA", AVGO: "NASDAQ:AVGO", TSM: "NYSE:TSM", AMD: "NASDAQ:AMD", INTC: "NASDAQ:INTC", MSFT: "NASDAQ:MSFT", AAPL: "NASDAQ:AAPL", GOOGL: "NASDAQ:GOOGL", AMZN: "NASDAQ:AMZN", META: "NASDAQ:META", TSLA: "NASDAQ:TSLA" };
-  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", JPY: "FX:USDJPY", WTI: "TVC:USOIL" };
+  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", JPY: "FX:USDJPY", WTI: "TVC:USOIL", US10Y: "TVC:US10Y" };
   const MOVER_TV = { CRWV: "NASDAQ:CRWV", NBIS: "NASDAQ:NBIS", CAVA: "NYSE:CAVA", SMCI: "NASDAQ:SMCI", NVDA: "NASDAQ:NVDA", APO: "NYSE:APO", AA: "NYSE:AA", BX: "NYSE:BX", PFGC: "NYSE:PFGC", NBIX: "NASDAQ:NBIX", UPWK: "NASDAQ:UPWK", EVC: "NYSE:EVC", ONON: "NYSE:ONON" };
   function isDarkTheme() {
     const t = document.documentElement.dataset.theme;
@@ -799,6 +806,11 @@
     JPY: { label: "ドル／円 に関係するニュース", items: [
       { t: "11日の米国市場ダイジェスト（ドル・円は159円17銭）", u: "https://jp.investing.com/news/forex-news/article-1643846", s: "Investing.com日本版・8/11", sm: "原油価格の高止まりでドル買いが優勢となり、159円台で推移。", pl: "原油高→米金利が下がりにくい→ドル高・円安の方向", dir: "up" },
       { t: "CPI inflation report July 2026", u: "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html", s: "CNBC・8/12", sm: "CPIが落ち着いた内容だったことで米金利がやや低下し、ドルは小幅に軟化。", pl: "米金利の低下は円高方向の材料 → きょうは小幅な円高", dir: "down" },
+    ]},
+    US10Y: { label: "米国10年金利 に関係するニュース", items: [
+      { t: "US 10 Year Treasury Note Yield（4.7%超え・19カ月ぶり高水準圏）", u: "https://tradingeconomics.com/united-states/government-bond-yield", s: "Trading Economics・8/17", sm: "10年金利は4.71%まで上昇し、先週付けた19カ月ぶり高水準4.75%に接近。インフレ懸念、中東情勢によるエネルギー価格、AI企業の大量の社債発行が背景。", pl: "金利上昇はハイテク株の重し → 重し", dir: "down" },
+      { t: "S&P 500 futures edge higher ahead of retail earnings reports", u: "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-17-2026", s: "TheStreet・8/17", sm: "先週金曜は金利上昇が株の反落要因のひとつに。一方で9月利上げの織り込みは約33%まで低下。", pl: "金利と利上げ観測の綱引きが続く → 両面", dir: "mix" },
+      { t: "Stock Market Today: Dow, S&P Live Updates", u: "https://www.bloomberg.com/news/articles/2026-08-16/stock-market-today-dow-s-p-live-updates", s: "Bloomberg・8/17", sm: "水曜のFOMC議事要旨が金利観の次の材料。委員の意見の分かれ方に注目。", pl: "議事要旨の内容次第で金利が上下 → 両面", dir: "mix" },
     ]},
     WTI: { label: "WTI原油 に関係するニュース", items: [
       { t: "Dow, S&P 500, Nasdaq slip amid US-Iran impasse", u: "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-11-dow-sp-500-nasdaq-102827503.html", s: "Yahoo Finance・8/11", sm: "ホルムズ海峡をめぐる米イラン交渉が行き詰まり、ブレント原油は89ドル近辺まで上昇。", pl: "供給不安 → 原油高 → 株全体の重し・エネルギー株の追い風", dir: "mix" },
