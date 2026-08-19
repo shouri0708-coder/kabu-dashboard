@@ -223,6 +223,26 @@
   .tv-link { font-size: 11px; color: var(--muted); margin: 4px 0 8px; }
   .tv-link a { color: var(--accent); }
   @media (max-width: 600px) { .tv-wrap { height: 300px; } }
+  /* スマホ表示の調整（行のはみ出し防止） */
+  @media (max-width: 600px) {
+    body { padding: 16px 10px 40px; }
+    .w-row { grid-template-columns: minmax(0, 1fr) auto auto auto; gap: 6px; }
+    .w-row .nm { font-size: 12.5px; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+    .w-row .nm small { font-size: 9.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .w-row .px { font-size: 12px; }
+    .w-row .chg { font-size: 11.5px; }
+    .w-row .tchip { font-size: 9px; padding: 1px 6px; }
+    .x-sub { font-size: 9px; white-space: normal; max-width: 110px; margin-left: auto; }
+    .w-del { font-size: 10px; padding: 0 6px; }
+    .mover { grid-template-columns: minmax(0, 104px) 1fr 48px; gap: 6px; }
+    .mover .nm { font-size: 12px; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+    .mover .nm small { font-size: 9.5px; }
+    .mover .pct { font-size: 11.5px; }
+    .live-bar { font-size: 11px; padding: 7px 10px; gap: 7px; }
+    .live-bar .ts { width: 100%; margin-left: 0; }
+    .kpi .val { font-size: 19px; }
+    .event .when { min-width: 96px; font-size: 11.5px; }
+  }
   /* ウォッチリストへの銘柄追加 */
   .add-box { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin: 0 0 10px; }
   .add-box input {
