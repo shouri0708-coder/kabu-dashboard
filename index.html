@@ -180,6 +180,7 @@
   .w-row .nm small { display: block; font-weight: 400; font-size: 10.5px; color: var(--muted); }
   .w-row .px { font-size: 14px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
   .w-row .chg { font-size: 13px; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+  .x-sub { display: block; font-size: 10px; color: var(--muted); font-weight: 400; line-height: 1.4; white-space: nowrap; }
   .w-row .tchip { font-size: 10px; padding: 1px 6px; border-radius: 999px; background: var(--chip); color: var(--muted); text-align: center; white-space: nowrap; }
   .w-note { font-size: 12px; color: var(--text-secondary); padding: 0 0 9px; }
   .watch-foot { font-size: 11.5px; color: var(--muted); margin-top: 8px; }
@@ -726,7 +727,7 @@
       '<div class="chg" data-chg="' + tk + '" style="color:' + (s.chg === 0 ? 'var(--muted)' : (pos ? 'var(--up)' : 'var(--down)')) + '">' +
         (pos && s.chg !== 0 ? '+' : '') + s.chg.toFixed(2) + '%' +
         (s.pre !== undefined ? '<span style="font-weight:400;font-size:10.5px;color:var(--muted)">（気配+' + s.pre.toFixed(1) + '%）</span>' : '') +
-      '</div>' +
+      '<span class="x-sub" data-sub="' + tk + '"></span></div>' +
       '<div class="tchip" data-chip="' + tk + '">' + (s.t === 'live' ? '取引中' : '前日終値') + '</div>';
     const note = document.createElement("div");
     note.className = "w-note";
@@ -978,8 +979,21 @@
       if (moved) { flash(pxEl, price > st.last); }
     }
     if (chgEl) {
+      // 変動率本体を更新（サブ行は残す）
+      let subEl = chgEl.querySelector('[data-sub]');
       chgEl.textContent = (up ? "+" : "") + pct.toFixed(2) + "%";
+      if (subEl) chgEl.appendChild(subEl);
+      else { subEl = document.createElement("span"); subEl.className = "x-sub"; subEl.setAttribute("data-sub", sym); chgEl.appendChild(subEl); }
       chgEl.style.color = Math.abs(pct) < 0.005 ? "var(--muted)" : (up ? "var(--up)" : "var(--down)");
+      // 時間外は「終値との両建て表示」：プレ=前日終値を、アフター=当日終値と通常取引の変動率を併記
+      if (sess === "after" && st.restC && st.pc) {
+        const regPct = (st.restC / st.pc - 1) * 100;
+        subEl.textContent = "終値 $" + fmt(st.restC, 2) + "（通常 " + (regPct >= 0 ? "+" : "") + regPct.toFixed(2) + "%）";
+      } else if (sess === "pre" && st.pc) {
+        subEl.textContent = "前日終値 $" + fmt(st.pc, 2);
+      } else {
+        subEl.textContent = "";
+      }
     }
     if (chipEl) chipEl.textContent = CHIP[sess];
     st.last = price;
@@ -1307,7 +1321,7 @@
         '<button class="w-del" title="リストから外す">✕ 削除</button>' +
         '<small style="padding-left:14px">' + esc(sym) + (profile && profile.finnhubIndustry ? "・" + esc(INDUSTRY_JA[profile.finnhubIndustry] || profile.finnhubIndustry) : "") + '</small></div>' +
       '<div class="px" data-px="' + esc(sym) + '">—</div>' +
-      '<div class="chg" data-chg="' + esc(sym) + '">—</div>' +
+      '<div class="chg" data-chg="' + esc(sym) + '">—<span class="x-sub" data-sub="' + esc(sym) + '"></span></div>' +
       '<div class="tchip" data-chip="' + esc(sym) + '">追加</div>';
     item.appendChild(row);
 
