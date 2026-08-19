@@ -761,7 +761,8 @@
 
   /* 株価チャート(TradingViewの無料埋め込みウィジェット。日本時間・日本語表示) */
   const WATCH_TV = { NVDA: "NASDAQ:NVDA", AVGO: "NASDAQ:AVGO", TSM: "NYSE:TSM", AMD: "NASDAQ:AMD", INTC: "NASDAQ:INTC", MSFT: "NASDAQ:MSFT", AAPL: "NASDAQ:AAPL", GOOGL: "NASDAQ:GOOGL", AMZN: "NASDAQ:AMZN", META: "NASDAQ:META", TSLA: "NASDAQ:TSLA" };
-  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", JPY: "FX:USDJPY", WTI: "TVC:USOIL", US10Y: "TVC:US10Y" };
+  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", JPY: "FX:USDJPY", WTI: "TVC:USOIL", US10Y: "FRED:DGS10" };
+  // ※US10Yは TVC:US10Y が埋め込み非対応のため、FRED（米セントルイス連銀）の日次データを使用
   const MOVER_TV = { CRWV: "NASDAQ:CRWV", NBIS: "NASDAQ:NBIS", CAVA: "NYSE:CAVA", SMCI: "NASDAQ:SMCI", NVDA: "NASDAQ:NVDA", APO: "NYSE:APO", AA: "NYSE:AA", BX: "NYSE:BX", PFGC: "NYSE:PFGC", NBIX: "NASDAQ:NBIX", UPWK: "NASDAQ:UPWK", EVC: "NYSE:EVC", ONON: "NYSE:ONON" };
   function isDarkTheme() {
     const t = document.documentElement.dataset.theme;
@@ -771,11 +772,12 @@
   }
   function chartHTML(tvsym) {
     const dark = isDarkTheme();
+    const isFred = tvsym.indexOf("FRED:") === 0;   // FRED系（金利など）はローソク足ではなく折れ線で表示
     const src = "https://s.tradingview.com/widgetembed/?symbol=" + encodeURIComponent(tvsym) +
       "&interval=D&hidesidetoolbar=1&hide_side_toolbar=1&symboledit=0&saveimage=0&allow_symbol_change=0" +
-      "&theme=" + (dark ? "dark" : "light") + "&style=1&timezone=Asia%2FTokyo&locale=ja&withdateranges=1";
+      "&theme=" + (dark ? "dark" : "light") + "&style=" + (isFred ? "2" : "1") + "&timezone=Asia%2FTokyo&locale=ja&withdateranges=1";
     return '<div class="tv-wrap"><iframe src="' + src + '" loading="lazy" allowfullscreen></iframe></div>' +
-      '<div class="tv-link">ローソク足チャート（日足・日本時間）。表示されない場合は <a href="https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(tvsym) + '" target="_blank" rel="noopener">TradingViewで開く</a></div>';
+      '<div class="tv-link">' + (isFred ? "折れ線チャート（日次・公的データのため約1営業日遅れ）" : "ローソク足チャート（日足・日本時間）") + '。表示されない場合は <a href="https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(tvsym) + '" target="_blank" rel="noopener">TradingViewで開く</a></div>';
   }
 
   // ニュース1件分のHTML（ウォッチリスト・KPI・目立った銘柄で共通）
