@@ -114,7 +114,8 @@
     border-radius: 10px; padding: 8px 14px; margin-top: 12px; font-size: 12.5px;
   }
   .live-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--baseline); flex: none; }
-  .live-dot.on { background: #0ca30c; box-shadow: 0 0 0 3px rgba(12,163,12,.18); }
+  .live-dot.on { background: #0ca30c; box-shadow: 0 0 0 3px rgba(12,163,12,.18); animation: livePulse 1.6s ease-in-out infinite; }
+  .live-dot.on + .msg { color: #0ca30c; font-weight: 600; }
   .live-dot.err { background: #d03b3b; }
   .live-dot.wait { background: #fab219; }
   .live-bar .msg { color: var(--text-secondary); }
@@ -363,7 +364,7 @@
 
   <header>
     <h1>🇺🇸 米国マーケット なぜ動いた？</h1>
-    <div class="date">ニューヨーク市場 2026年8月19日（水）終値 ｜ ※解説とニュースは毎日22時頃に自動で全面更新されます</div>
+    <div class="date">ニューヨーク市場 2026年8月20日（木）終値 ｜ ※解説とニュースは毎日22時頃に自動で全面更新されます</div>
     <div class="live-bar" id="live-bar">
       <span class="live-dot" id="live-dot"></span>
       <span class="msg" id="live-msg">自動更新：準備中…</span>
@@ -377,75 +378,75 @@
   </header>
 
   <div class="headline">
-    <div class="kicker">きょうの結論（8/19 水曜終値時点）</div>
-    <div class="lead">財務省の「国債買い戻し拡大」で金利が低下、5日ぶりに反発。今夜は対イラン制裁に警戒</div>
-    <div class="sub">相場の重しだった長期金利に「援軍」。財務省が10〜30年債の買い戻し規模を少なくとも2倍にすると発表し、10年金利は20カ月ぶり高値4.75%から4.64%へ低下。株は4日続落を止めて3指数そろって+0.2%の反発となりました（週間ではS&P500 −1%）。ただし今夜は、トランプ政権が対イランの包括的な経済制裁を発表し原油が86ドル台へ再上昇しており、警戒が必要です。</div>
+    <div class="kicker">きょうの結論（8/20 木曜終値時点）</div>
+    <div class="lead">金利の安心感は1日で消滅。ウォルマート−9%も重なりダウは−700ドルの大幅安</div>
+    <div class="sub">前日の反発を支えた財務省の買い戻し効果は「機械的な戻りに過ぎない」と見なされ、10年金利は4.70%へ逆戻り。対イランの強硬姿勢で原油も86ドル台へ続伸し、「金利高＋原油高」の逆風が復活しました。さらに消費の大トリ・ウォルマートが6年超ぶりの既存店売上減速で−9.3%。ダウは−703ドル（−1.3%）と水曜の上げを帳消しにしました。ただし恐怖指数VIXは16前後と、パニックではなく秩序的な調整です。</div>
     <div class="ev-hint"><span class="w-caret">▶</span> この結論の根拠を見る</div>
     <div class="ev-panel">
       <div class="ev-item">
         <div class="ev-no">1</div>
         <div>
-          <div class="ev-tag">金利の援軍</div>
-          <h5>財務省が長期国債の「買い戻し」を少なくとも2倍に拡大へ</h5>
-          <p>ベッセント財務長官のもと、財務省は10〜30年債を対象とする流動性支援の買い戻し（バイバック）を大幅拡大すると発表。国が長期国債の買い手に回ることで需給が改善し、10年金利は週前半の20カ月ぶり高値4.75%から4.64%へ低下しました。</p>
-          <div class="ev-so">→ <b>だから：</b>今週の下げの主犯だった「金利上昇」がいったん止まり、株が反発するきっかけになった。</div>
-          <a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank" rel="noopener">出典：Trading Economics（買い戻し拡大と金利低下）</a>　<a href="https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-8192026-135786651" target="_blank" rel="noopener">ABC News（AP・終値）</a>
+          <div class="ev-tag">金利</div>
+          <h5>財務省効果は1日で剥落 — 10年金利が4.70%へ逆戻り</h5>
+          <p>前日の金利低下（買い戻し拡大の発表）は「実需の買いではなく機械的な反発」とアナリストに見なされ、10年金利は+5bpの4.70%へ上昇。30年金利も約20年ぶり高水準圏に戻りました。</p>
+          <div class="ev-so">→ <b>だから：</b>水曜の反発の土台だった「金利の安心感」が消え、株全体が売り直された。</div>
+          <a href="https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/" target="_blank" rel="noopener">出典：Market Close 8/20（金利の逆戻り）</a>
         </div>
       </div>
       <div class="ev-item">
         <div class="ev-no">2</div>
         <div>
-          <div class="ev-tag">反発の確認</div>
-          <h5>3指数そろって+0.2% — 4日続落にストップ</h5>
-          <p>S&P500は7,707.98（+0.2%）、ダウ53,463.05（+0.2%）、ナスダック26,331.09（+0.2%）。ターゲットやエスティローダーなど小売の決算がおおむね良好だったことも下支えしました。TJX（TJマックス）は+4%超。</p>
-          <div class="ev-so">→ <b>だから：</b>「5日ぶりに反発」という結論の根拠。ただし上げ幅は小さく、週間ではS&P500 −1%と流れを取り戻すには至っていない。</div>
-          <a href="https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-8192026-135786651" target="_blank" rel="noopener">出典：ABC News（AP・8/19終値）</a>
+          <div class="ev-tag">消費の失望</div>
+          <h5>ウォルマートが−9.3% — 既存店売上が6年超ぶりの低成長</h5>
+          <p>1株利益は予想を上回ったものの、米国の既存店売上の伸びが6年超ぶりの低さとなり、5年以上ぶりにこの指標で予想未達。小売決算ウィークの大トリが「消費の減速」を示唆した形で、ダウの−703ドルの最大の押し下げ要因になりました。</p>
+          <div class="ev-so">→ <b>だから：</b>「米国の消費は堅い」という前提に初めてヒビが入り、景気敏感株の広い売りにつながった。</div>
+          <a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-202223785.html" target="_blank" rel="noopener">出典：Yahoo Finance / AP（8/20終値）</a>　<a href="https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/" target="_blank" rel="noopener">Market Close（WMT −9.3%）</a>
         </div>
       </div>
       <div class="ev-item">
         <div class="ev-no">3</div>
         <div>
-          <div class="ev-tag">個別の主役</div>
-          <h5>Modernaが+97%の歴史的急騰 — がんワクチン試験に光</h5>
-          <p>メルクと共同開発中のがんワクチンが、皮膚がん（メラノーマ）の臨床試験で有望な結果を示し、株価はほぼ2倍に。バイオ・製薬セクター全体に買いが波及しました。</p>
-          <div class="ev-so">→ <b>だから：</b>金利や地政学のニュースだけでなく「個別の夢のある材料」にも資金が動いた1日。相場の物色意欲は健在。</div>
-          <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener">出典：Charles Schwab（Moderna +97%）</a>
+          <div class="ev-tag">原油</div>
+          <h5>対イラン強硬発言でWTIが86.78ドルへ続伸（+2.8%）</h5>
+          <p>トランプ大統領がイランへの経済的措置を改めて警告し、原油は続伸。ブレントも+2.4%。原油高は「インフレ再燃→金利が下がらない」の連想で①の金利上昇を後押しする悪循環になっています。</p>
+          <div class="ev-so">→ <b>だから：</b>「金利高＋原油高」という今週前半の逆風セットが完全復活した。</div>
+          <a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-202223785.html" target="_blank" rel="noopener">出典：Yahoo Finance / AP（原油と金利）</a>
         </div>
       </div>
       <div class="ev-item">
         <div class="ev-no">4</div>
         <div>
-          <div class="ev-tag">今夜への警戒</div>
-          <h5>トランプ政権が対イランの包括経済制裁 — 原油が再び86ドル台へ</h5>
-          <p>イランの国際金融・商取引へのアクセスを制限する制裁パッケージが発表され、UAEもイランとの経済関係を停止。WTI原油は+2.8%の86.74ドル、ブレントは93ドル台へ再上昇し、10年金利も4.71%へ戻しています。</p>
-          <div class="ev-so">→ <b>だから：</b>水曜の反発材料（金利低下・原油落ち着き）が今夜は逆回転しかねない。見出しに「今夜は警戒」を付けた理由。</div>
-          <a href="https://tradingeconomics.com/commodity/crude-oil" target="_blank" rel="noopener">出典：Trading Economics（対イラン制裁と原油86ドル台）</a>
+          <div class="ev-tag">パニックではない</div>
+          <h5>VIXは16前後 — 逃避ではなく「物色しながらの調整」</h5>
+          <p>恐怖指数VIXは15.98と落ち着いた水準。一方でビットコインはホワイトハウスの暗号資産サミットを材料に+6%の7.2万ドル超え、コインベースは+6.1%と、上がるものは上がっています。</p>
+          <div class="ev-so">→ <b>だから：</b>相場全体の総崩れではなく「金利・消費・原油をにらんだ大きめの調整」という位置づけ。だが下げ幅は大きく、見出しは「大幅安」を明記した。</div>
+          <a href="https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/" target="_blank" rel="noopener">出典：Market Close（VIX・ビットコイン）</a>
         </div>
       </div>
-      <div class="ev-sum">📝 <b>まとめ：</b>①財務省の買い戻し拡大で金利低下 ＋ ②小売決算の下支えで「5日ぶり反発」。③Moderna +97%など物色も活発。ただし④今夜は対イラン制裁で原油・金利が再上昇しており、反発が続くかは今晩22:30からの取引次第。</div>
+      <div class="ev-sum">📝 <b>まとめ：</b>①金利の安心感消滅 ＋ ②ウォルマートの消費減速シグナル ＋ ③原油続伸のトリプルパンチでダウ−703ドル。ただし④VIXは平静で秩序的な調整。今夜（金曜）の取引はすでに始まっており、週間成績の確定と週末の中東情勢に注目。</div>
     </div>
   </div>
 
   <div class="kpis">
     <div class="kpi" data-kpi="SPY">
       <div class="name">S&P500（市場全体の平均像）</div>
-      <div class="val" id="v-SPY">7,707.98</div>
-      <div class="delta d-up" id="d-SPY">▲ +0.21%（8/19終値）</div>
-      <div class="why">財務省の買い戻し拡大による金利低下で5日ぶり反発</div>
+      <div class="val" id="v-SPY">7,641.16</div>
+      <div class="delta d-down" id="d-SPY">▼ −0.87%（8/20終値）</div>
+      <div class="why">金利逆戻りとウォルマート急落で反落</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
     <div class="kpi" data-kpi="DIA">
       <div class="name">NYダウ（大企業30社）</div>
-      <div class="val" id="v-DIA">53,463.05</div>
-      <div class="delta d-up" id="d-DIA">▲ +0.22%（8/19終値）</div>
-      <div class="why">小売決算（ターゲット等）がおおむね良好で下支え</div>
+      <div class="val" id="v-DIA">52,759.21</div>
+      <div class="delta d-down" id="d-DIA">▼ −1.32%（−703ドル・8/20終値）</div>
+      <div class="why">構成銘柄ウォルマート−9.3%が最大の押し下げ要因</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
     <div class="kpi" data-kpi="QQQ">
       <div class="name">ナスダック（ハイテク中心）</div>
-      <div class="val" id="v-QQQ">26,331.09</div>
-      <div class="delta d-up" id="d-QQQ">▲ +0.16%（8/19終値）</div>
-      <div class="why">反発は小幅。週間では−1.5%と出遅れ気味</div>
+      <div class="val" id="v-QQQ">26,067.17</div>
+      <div class="delta d-down" id="d-QQQ">▼ −1.00%（8/20終値）</div>
+      <div class="why">金利再上昇でハイテクも売り直し</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
     <div class="kpi" data-kpi="JPY">
@@ -457,16 +458,16 @@
     </div>
     <div class="kpi" data-kpi="US10Y">
       <div class="name">米国10年金利（長期金利）</div>
-      <div class="val">4.64<span style="font-size:13px">%</span></div>
-      <div class="delta d-down">▼ 低下（8/19）→今朝4.71%へ反発</div>
-      <div class="why">財務省の長期債買い戻し拡大で4.75%→4.64%へ低下。今朝は制裁報道で戻す</div>
+      <div class="val">4.70<span style="font-size:13px">%</span></div>
+      <div class="delta d-up">▲ +0.05%（8/20）</div>
+      <div class="why">買い戻し効果は「機械的」と剥落し逆戻り。30年は約20年ぶり高水準圏</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
     <div class="kpi" data-kpi="WTI">
       <div class="name">WTI原油（先物）</div>
-      <div class="val">$86.74</div>
-      <div class="delta d-up">▲ +2.8%（8/20朝・ブレント93ドル台）</div>
-      <div class="why">対イラン包括経済制裁の発表とUAEの関係停止で再上昇</div>
+      <div class="val">$86.78</div>
+      <div class="delta d-up">▲ +2.8%（8/20終値）</div>
+      <div class="why">対イラン強硬発言で続伸。インフレ再燃の懸念要因に</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
   </div>
@@ -477,24 +478,24 @@
     <h2>なぜ動いたのか — 3つの理由</h2>
 
     <div class="reason">
-      <h3><span style="color:var(--up)">①</span> 財務省の「国債買い戻し拡大」— 金利上昇に援軍が入った</h3>
-      <p>財務省が10〜30年の長期国債を対象に、買い戻し（バイバック）の規模を少なくとも2倍へ拡大すると発表。売られすぎていた長期債に大きな買い手が現れる形となり、10年金利は20カ月ぶり高値の4.75%から4.64%へ低下しました。</p>
-      <div class="tsumari"><b>つまり：</b>今週の株安の主犯は「金利上昇」だった。国が国債を買い支えれば金利は下がる → 株の重しが軽くなる、という直球の好材料。</div>
-      <div class="tags"><span class="tag">影響：市場全体・特にハイテク</span><span class="tag">金利カードで推移を確認</span></div>
+      <h3><span style="color:var(--down)">①</span> 金利の安心感が1日で消えた — 「機械的な反発」との評価</h3>
+      <p>水曜の金利低下は財務省の買い戻し拡大が理由でしたが、市場では「実需の買いが戻ったわけではない」との見方が広がり、10年金利は4.70%へ逆戻り。30年金利も約20年ぶりの高水準圏に戻りました。</p>
+      <div class="tsumari"><b>つまり：</b>薬は効いたように見えたが1日で切れた。金利問題の根っこ（インフレ・財政赤字・AI企業の大量起債）は解決していない、と市場が判断した。</div>
+      <div class="tags"><span class="tag">影響：市場全体</span><span class="tag">金利カードで推移を確認</span></div>
     </div>
 
     <div class="reason">
-      <h3><span style="color:var(--up)">②</span> 小売決算がおおむね良好 — 「米国の消費」は崩れていない</h3>
-      <p>ターゲットは予想超えの決算（株価は出尽くしで小幅安）、エスティローダーも良好、TJX（TJマックス）は+4%超と好反応。一方でロウズは住宅リフォーム需要の「圧力」に言及して−3%。強弱はあるものの、消費全体が崩れている姿ではありませんでした。</p>
-      <div class="tsumari"><b>つまり：</b>今週のテーマだった「消費の答え合わせ」は及第点。景気不安で売る理由にはならなかった。</div>
-      <div class="tags"><span class="tag">影響：小売株・景気心理</span><span class="tag">今夜はウォルマート決算</span></div>
+      <h3><span style="color:var(--down)">②</span> ウォルマート・ショック — 「消費は堅い」の前提にヒビ</h3>
+      <p>利益は予想超えだったものの、米国の既存店売上の伸びが6年超ぶりの低さに減速。米国経済の約7割を占める消費の最重要指標だけに、失望売りは−9.3%に達し、ダウを1銘柄で大きく押し下げました。</p>
+      <div class="tsumari"><b>つまり：</b>今週の小売決算は「ターゲット◯、ホームデポ△、ウォルマート×」。全体としては「消費は堅いが減速の入り口かも」という嫌な余韻が残った。</div>
+      <div class="tags"><span class="tag">影響：小売株・景気心理</span><span class="tag">ダウ−703ドルの主因</span></div>
     </div>
 
     <div class="reason">
-      <h3><span style="color:var(--down)">③</span> ただし今夜は対イラン経済制裁 — 原油再上昇に警戒</h3>
-      <p>トランプ政権がイランの国際金融アクセスを断つ包括制裁を発表し、UAEもイランとの経済関係を停止。WTI原油は86ドル台、ブレントは93ドル台へ再上昇し、低下したはずの10年金利も4.71%へ戻しています。水曜の反発材料が今夜は逆回転しかねない状況です。</p>
-      <div class="tsumari"><b>つまり：</b>「金利低下＋原油落ち着き」で反発した翌日に、その両方が逆方向へ。今夜22:30からの取引は荒れる可能性を頭に入れておく。</div>
-      <div class="tags"><span class="tag">影響：今夜の方向性</span><span class="tag">中東見出しと原油価格に注意</span></div>
+      <h3><span style="color:var(--down)">③</span> 原油86ドル台へ続伸 — 対イラン強硬姿勢が止まらない</h3>
+      <p>トランプ大統領の対イラン経済措置の警告を受けてWTIは+2.8%の86.78ドル。原油高→インフレ再燃→金利高、の悪循環が①を増幅しています。一方でVIXは16前後と冷静で、ビットコイン+6%など資金の逃げ場探しも見られました。</p>
+      <div class="tsumari"><b>つまり：</b>下げはきついが「パニック売り」ではない。中東と金利の見出し次第で、どちらにも大きく動ける状態。</div>
+      <div class="tags"><span class="tag">影響：今夜〜週明けの方向性</span><span class="tag">週末の中東ニュースに注意</span></div>
     </div>
   </section>
 
@@ -513,7 +514,7 @@
   <section>
     <h2>きょう目立った銘柄（変動率）<span style="font-size:12px;font-weight:400;color:var(--muted);margin-left:8px">▶ 銘柄をクリックすると会社紹介・チャート・ニュースが開きます</span></h2>
     <div class="movers" id="movers"></div>
-    <p class="chart-note">青＝上昇 ／ 赤＝下落。バーの長さは変動率（±100%で最大表示）。銘柄と理由は毎朝の自動更新で入れ替わります。選定基準：市況報道で取り上げられた銘柄のうち、変動率が大きく（目安±4%以上）動いた理由が特定できるもの＋相場テーマの中心銘柄。</p>
+    <p class="chart-note">青＝上昇 ／ 赤＝下落。バーの長さは変動率（±26%で最大表示）。銘柄と理由は毎朝の自動更新で入れ替わります。選定基準：市況報道で取り上げられた銘柄のうち、変動率が大きく（目安±4%以上）動いた理由が特定できるもの＋相場テーマの中心銘柄。</p>
   </section>
 
   <section>
@@ -549,38 +550,34 @@
 
       <div class="news-cat">🌍 世界の大きな動き<small>相場全体を左右するニュース・毎晩更新</small></div>
       <div class="news-item">
-        <a href="https://tradingeconomics.com/commodity/crude-oil" target="_blank" rel="noopener">トランプ政権、対イランの包括経済制裁パッケージを発表</a><span class="src">Trading Economics（英語）・8/20</span>
-        <p>イランの国際金融システムや商取引へのアクセスを制限する広範な制裁を発表。📉 WTI原油は+2.8%の86.74ドル、ブレントは93ドル台へ再上昇し、今夜の株の逆風に。</p>
+        <a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-202223785.html" target="_blank" rel="noopener">対イラン強硬発言が続き、原油と金利が同時上昇</a><span class="src">Yahoo Finance / AP（英語）・8/20</span>
+        <p>トランプ大統領のイランへの経済的措置の警告でブレント原油+2.4%・WTI+2.8%。📉 原油高がインフレ懸念を通じて金利を押し上げ、株の二重の逆風に。</p>
       </div>
       <div class="news-item">
-        <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener">UAE、イランとの経済関係を停止 — 弾道ミサイル発射を非難</a><span class="src">Charles Schwab（英語）・8/19</span>
-        <p>湾岸の主要国UAEがイランとの経済関係を断絶。中東の孤立化が進む。↕️ 湾岸産油国の原油輸送は代替ルートとホルムズ海峡経由で継続中とされ、パニックには至らず。</p>
+        <a href="https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/" target="_blank" rel="noopener">ホワイトハウスで暗号資産サミット — ビットコイン7.2万ドル超え</a><span class="src">Market Close（英語）・8/20</span>
+        <p>米政権の暗号資産推進の動きとショートスクイーズでビットコインが+6%。📈 コインベースなど関連株の追い風に。株式からの資金の逃げ場としても機能。</p>
       </div>
 
       <div class="news-cat">📈 米国市場のいま</div>
       <div class="news-item">
-        <a href="https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-wednesday-8192026-135786651" target="_blank" rel="noopener">How major US stock indexes fared Wednesday 8/19/2026</a><span class="src">ABC News / AP（英語）・8/19</span>
-        <p>財務省の発表が債券市場の圧力を和らげ、3指数そろって+0.2%と4日続落から反発。週間ではS&P500 −1%。</p>
+        <a href="https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html" target="_blank" rel="noopener">Dow tumbles 700 points as Treasury plan to subdue yields fails</a><span class="src">CNBC（英語）・8/20</span>
+        <p>財務省の金利抑制策への期待が1日で剥落し、ダウは−703ドル。「機械的な反発だった」との評価。</p>
       </div>
       <div class="news-item">
-        <a href="https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html" target="_blank" rel="noopener">S&P 500 futures little changed after index snaps three-day slide</a><span class="src">CNBC（英語）・8/20</span>
-        <p>反発の翌日、市場は対イラン制裁の影響とウォルマート決算を見極める構え。</p>
+        <a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-20-dow-sp-500-nasdaq-081139322.html" target="_blank" rel="noopener">Dow, S&P 500, Nasdaq slide as bond relief evaporates</a><span class="src">Yahoo Finance（英語）・8/20</span>
+        <p>金利の安心感消滅とウォルマート急落のダブルパンチで3指数とも反落。VIXは16前後と秩序的。</p>
       </div>
 
       <div class="news-cat">🏢 企業・決算</div>
       <div class="news-item">
-        <a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener">Moderna、がんワクチン試験の有望結果で株価+97%</a><span class="src">Charles Schwab（英語）・8/19</span>
-        <p>メルクと共同開発のがんワクチンがメラノーマ試験で有望な結果。📈 バイオセクター全体に買いが波及した歴史的急騰。</p>
-      </div>
-      <div class="news-item">
-        <a href="https://www.cnbc.com/2026/08/19/target-tgt-q2-2026-earnings.html" target="_blank" rel="noopener">Target (TGT) Q2 2026 earnings</a><span class="src">CNBC（英語）・8/19</span>
-        <p>ターゲットの決算は予想超え。ただし株価は年初来+50%で「出尽くし」の小幅安。↕️ 今夜はウォルマート決算で消費の答え合わせが完結。</p>
+        <a href="https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/" target="_blank" rel="noopener">ウォルマート−9.3% — 既存店売上の伸びが6年超ぶりの低さ</a><span class="src">Market Close（英語）・8/20</span>
+        <p>利益は予想超えも、消費の最重要指標が減速。📉 「米国の消費は堅い」という相場の前提を揺らした今週最大の決算サプライズ。</p>
       </div>
 
       <div class="news-cat">🏛 金融政策・経済指標</div>
       <div class="news-item">
-        <a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank" rel="noopener">財務省、10〜30年債の買い戻し規模を「少なくとも2倍」に拡大へ</a><span class="src">Trading Economics（英語）・8/19</span>
-        <p>ベッセント財務長官は買い戻しを「市場の混乱に対処する重要な道具」と説明。📈 10年金利は4.75%→4.64%へ低下し株の反発を主導（今朝は4.71%へ戻す動き）。</p>
+        <a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank" rel="noopener">10年金利4.70%へ逆戻り — 買い戻し効果は続かず</a><span class="src">Trading Economics（英語）・8/20</span>
+        <p>金利上昇の根っこ（インフレ・財政赤字・AI企業の大量起債）は未解決のまま。↕️ 金利の落ち着きどころが見えるまで、ハイテク株は上値の重い展開が続きやすい。</p>
       </div>
 
     </div>
@@ -590,20 +587,16 @@
     <h2>この先の注目イベント</h2>
     <div class="events">
       <div class="event">
-        <div class="when">今夜22:30〜</div>
-        <div class="what">対イラン制裁後、最初のNY取引<small>原油86ドル台・金利4.71%へ戻す中でのスタート。水曜の反発が続くかの試金石。</small></div>
-      </div>
-      <div class="event">
         <div class="when">今夜〜あす朝</div>
-        <div class="what">ウォルマート 決算発表<small>小売決算ウィークの大トリ。米国の消費の強さを測る最重要データ。</small></div>
+        <div class="what">金曜のNY取引（進行中）と週間成績の確定<small>ダウ−700ドルの翌日に買い戻しが入るか。週末持ち越しを嫌う売りが出やすい点にも注意。</small></div>
       </div>
       <div class="event">
-        <div class="when">連日</div>
-        <div class="what">米イラン情勢・原油価格<small>制裁への イランの反応とホルムズ海峡の動向次第で相場が振れやすい。</small></div>
+        <div class="when">週末</div>
+        <div class="what">米イラン情勢・原油価格<small>制裁強化へのイランの反応次第で、週明けの窓開けリスク。ホルムズ海峡関連の見出しに注意。</small></div>
       </div>
       <div class="event">
         <div class="when">8/26（水）</div>
-        <div class="what">NVIDIA 決算発表<small>AI相場全体の最大の試金石。金利で売られたAI関連が反転できるかの分かれ目。</small></div>
+        <div class="what">NVIDIA 決算発表<small>AI相場全体の最大の試金石。金利で売られたハイテクが反転できるかの分かれ目。</small></div>
       </div>
       <div class="event">
         <div class="when">9/1</div>
@@ -878,33 +871,24 @@
 
   // きょう目立った銘柄（変動率・会社紹介・ニュース）
   const movers = [
-    { nm: "モデルナ", en: "Moderna / MRNA", pct: 97.0, why: "がんワクチン試験の有望結果でほぼ2倍に",
-      desc: "新型コロナワクチンで知られるmRNA医薬のバイオ企業。メルクと共同でがんワクチンを開発中。",
+    { nm: "コインベース", en: "Coinbase / COIN", pct: 6.1, why: "ビットコイン7.2万ドル超えの追い風",
+      desc: "米国最大の暗号資産（仮想通貨）取引所。ビットコイン価格と株価が連動しやすい。",
       news: [
-        { t: "Stocks Waver Before Fed Minutes as Yields Retreat（Moderna surged 97%）", u: "https://www.schwab.com/learn/story/stock-market-update-open", s: "Charles Schwab・8/19", sm: "メルクと共同開発するがんワクチンが皮膚がん（メラノーマ）試験で有望な結果を示し、株価はほぼ2倍に急騰。", pl: "パイプラインの価値が一変する材料 → 追い風", dir: "up" },
+        { t: "Market Close Aug 20: Bitcoin surged past $72,000", u: "https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/", s: "Market Close・8/20", sm: "ホワイトハウスの暗号資産サミットとショートスクイーズでビットコインが+6%の7.2万ドル超え。取引所のコインベースも+6.1%。", pl: "暗号資産の追い風が直撃 → 追い風", dir: "up" },
       ] },
-    { nm: "TJX（TJマックス）", en: "TJX Companies / TJX", pct: 4.3, why: "決算好調。節約志向の追い風",
-      desc: "ブランド品を割安販売するオフプライス小売の最大手。TJマックスやマーシャルズを運営。",
+    { nm: "ウォルマート", en: "Walmart / WMT", pct: -9.3, why: "既存店売上が6年超ぶりの低成長",
+      desc: "世界最大の小売チェーン。米国の消費の「体温計」とされ、決算は市場全体に影響する。",
       news: [
-        { t: "Earnings Movers | TJX Jumps over 4%", u: "https://www.itiger.com/news/1186640758", s: "Tiger News・8/19", sm: "決算が好感され4%超の上昇。物価高で「賢く買う」消費者の流れが追い風に。", pl: "節約志向の受け皿として好調 → 追い風", dir: "up" },
+        { t: "Walmart sinks 9% on slowest U.S. comparable-sales growth in 6+ years", u: "https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/", s: "Market Close・8/20", sm: "利益は予想超えも、米既存店売上の伸びが6年超ぶりの低さで5年以上ぶりの予想未達。", pl: "「消費減速の入り口」への警戒 → 重し", dir: "down" },
+        { t: "Dow, S&P 500, Nasdaq slide as bond relief evaporates, Walmart stock takes a hit", u: "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-20-dow-sp-500-nasdaq-081139322.html", s: "Yahoo Finance・8/20", sm: "ウォルマートの下げと金利の逆戻りが相場全体を押し下げたと報道。", pl: "ダウ−703ドルの最大の押し下げ役 → 重し", dir: "down" },
       ] },
-    { nm: "アナログ・デバイセズ", en: "Analog Devices / ADI", pct: 2.0, why: "決算を好感して上昇",
-      desc: "産業機器や車載向けのアナログ半導体大手。景気の体温計とも呼ばれるセクター。",
+    { nm: "アドバンス・オート・パーツ", en: "Advance Auto Parts / AAP", pct: -25.0, why: "弱い業績見通しで急落",
+      desc: "自動車の補修部品を販売する米国の小売チェーン。業績立て直しの途上にある。",
       news: [
-        { t: "Earnings Movers | Analog Devices Gains Nearly 2%", u: "https://www.itiger.com/news/1186640758", s: "Tiger News・8/19", sm: "決算内容が好感され約2%上昇した。", pl: "産業向け半導体の底堅さを確認 → 追い風", dir: "up" },
-      ] },
-    { nm: "ターゲット", en: "Target / TGT", pct: -1.0, why: "予想超え決算も「出尽くし」で小幅安",
-      desc: "全米大手のディスカウント小売チェーン。今年株価が5割上昇していたため期待値が高かった。",
-      news: [
-        { t: "Target (TGT) Q2 2026 earnings", u: "https://www.cnbc.com/2026/08/19/target-tgt-q2-2026-earnings.html", s: "CNBC・8/19", sm: "決算は市場予想を上回ったが、株価は年初来+50%と好材料を織り込み済みで小幅安。", pl: "好決算でも「出尽くし」の売り → 両面", dir: "mix" },
-      ] },
-    { nm: "ロウズ", en: "Lowe's / LOW", pct: -3.0, why: "住宅リフォーム需要の「圧力」に言及",
-      desc: "ホームデポに次ぐ米住宅リフォーム用品小売の2番手。金利高の影響を受けやすい業態。",
-      news: [
-        { t: "Stocks Waver Before Fed Minutes（Lowe's declined 3%）", u: "https://www.schwab.com/learn/story/stock-market-update-open", s: "Charles Schwab・8/19", sm: "決算で住宅リフォーム支出への「圧力」に言及し、約3%下落。高金利が住宅関連の重しに。", pl: "金利高が住宅関連の需要を圧迫 → 重し", dir: "down" },
+        { t: "Market Close Aug 20: Advance Auto Parts collapsed 25%", u: "https://www.metatradingclub.com/market-close-august-20-2026-sp-500-falls-walmart-sinks/", s: "Market Close・8/20", sm: "弱いガイダンス（業績見通し）を受けて25%の急落となった。", pl: "見通し悪化で売り殺到 → 重し", dir: "down" },
       ] },
   ];
-  const MAX = 100;
+  const MAX = 26;
   const root = document.getElementById("movers");
   movers.sort((a,b) => b.pct - a.pct).forEach(m => {
     const w = Math.min(Math.abs(m.pct) / MAX, 1) * 50;
@@ -955,9 +939,9 @@
   const FINNHUB_KEY = "d9u8ldpr01qs9cmbn5ggd9u8ldpr01qs9cmbn5h0";   // Finnhub APIキー
 
   const IDX = {  // ETF → 指数概算（prevIdx = 直近の「前日」指数終値。毎朝の自動更新で書き換え）
-    SPY: { label: "S&P500", prevIdx: 7707.98 },
-    DIA: { label: "NYダウ", prevIdx: 53463.05 },
-    QQQ: { label: "ナスダック", prevIdx: 26331.09 },
+    SPY: { label: "S&P500", prevIdx: 7641.16 },
+    DIA: { label: "NYダウ", prevIdx: 52759.21 },
+    QQQ: { label: "ナスダック", prevIdx: 26067.17 },
   };
   const STOCKS = ["NVDA","AVGO","TSM","AMD","INTC","MSFT","AAPL","GOOGL","AMZN","META","TSLA"];
   const ALL = [...Object.keys(IDX), ...STOCKS];
