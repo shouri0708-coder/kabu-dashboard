@@ -1,0 +1,11 @@
+{
+  "name": "kabu-dashboard",
+  "private": true,
+  "type": "module",
+  "description": "米国マーケット なぜ動いた？ — 毎日更新の市況ダッシュボード",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs",
+    "daily": "node scripts/check.mjs && node scripts/build.mjs"
+  }
+}
