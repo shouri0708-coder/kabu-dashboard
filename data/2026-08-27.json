@@ -3,21 +3,21 @@
   "headerNote": "※解説とニュースは毎日22時頃に自動で全面更新されます",
   "headline": {
     "kicker": "きょうの結論（8/27 木曜終値時点）",
-    "lead": "NVIDIA +9.3%でAI相場が全面復活。ソフトウェア株も爆騰 — 今夜はウォーシュ議長講演",
-    "sub": "NVIDIA決算の「合格」が通常取引でも確認され、株価は+9.3%と急騰。「AI投資サイクルは健在」との見方が広がり、ナスダックは+1.51%と大幅高になりました。さらにSalesforceが+20.1%（決算超過とAnthropicとのAI提携拡大）、Oktaが+23.3%、CrowdStrikeが+9%とAIソフトウェア株が軒並み爆騰。AI相場の主役が半導体からソフトへ広がった1日です。ただし上昇セクターは実質テックのみで裾野は狭く、今夜（日本時間23時頃）のウォーシュFRB議長のジャクソンホール講演が今週最後の関門になります。",
+    "lead": "NVIDIA +8.7%でAI相場が全面復活。ソフトウェア株も爆騰 — 今夜はウォーシュ議長講演",
+    "sub": "NVIDIA決算の「合格」が通常取引でも確認され、株価は+8.7%と急騰。「AI投資サイクルは健在」との見方が広がり、ナスダックは+1.57%と大幅高になりました。さらにSalesforceが+22.6%（決算超過とAnthropicとのAI提携拡大）、Oktaが+28.6%、CrowdStrikeが+20.5%とAIソフトウェア株が軒並み爆騰。AI相場の主役が半導体からソフトへ広がった1日です。ただし上昇セクターは実質テックのみで裾野は狭く、今夜（日本時間23時頃）のウォーシュFRB議長のジャクソンホール講演が今週最後の関門になります。",
     "evidence": [
       {
         "tag": "NVIDIA定着",
-        "title": "通常取引でNVIDIA +9.3% — 「AI投資サイクルは健在」",
-        "body": "前夜の決算（売上962億ドル・ガイダンス1,080億ドル）を受け、通常取引でも買いが殺到し+9.3%の急騰。アナリストは「AI投資サイクルが無傷であることを再確認させた」と評価しました。8月の7日続落分をほぼ取り戻す勢いです。",
-        "so": "時間外の+5%が「本物」だったことが確認され、ナスダック+1.51%の原動力に。「AI相場が全面復活」の第一の根拠。",
+        "title": "通常取引でNVIDIA +8.7% — 「AI投資サイクルは健在」",
+        "body": "前夜の決算（売上962億ドル・ガイダンス1,080億ドル）を受け、通常取引でも買いが殺到し+8.7%の急騰。アナリストは「AI投資サイクルが無傷であることを再確認させた」と評価しました。8月の7日続落分をほぼ取り戻す勢いです。",
+        "so": "時間外の+5%が「本物」だったことが確認され、ナスダック+1.57%の原動力に。「AI相場が全面復活」の第一の根拠。",
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
-        "src": "出典：TheStreet（8/27・NVDA +9.3%）"
+        "src": "出典：TheStreet（8/27・NVDA +8.7%）"
       },
       {
         "tag": "ソフトへ拡大",
-        "title": "Salesforce +20.1%・Okta +23.3% — AIソフトウェアの爆騰",
-        "body": "Salesforceは予想超え決算に加えAnthropicとのAI提携拡大を発表して+20.1%。Oktaは+23.3%、CrowdStrike +9%、Veeva +19%と、AIの「使う側」であるソフトウェア企業の決算が軒並み好調でした。",
+        "title": "Salesforce +22.6%・Okta +28.6% — AIソフトウェアの爆騰",
+        "body": "Salesforceは予想超え決算に加えAnthropicとのAI提携拡大を発表して+22.6%。Oktaは+28.6%、CrowdStrike +20.5%、Veeva +15.2%と、AIの「使う側」であるソフトウェア企業の決算が軒並み好調でした。",
         "so": "AI相場の主役が「半導体（作る側）」から「ソフトウェア（使う側）」へ広がった。ブームの第2幕を示唆する重要な変化。",
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
         "src": "出典：TheStreet（ソフトウェア決算）"
@@ -25,7 +25,7 @@
       {
         "tag": "裾野は狭い",
         "title": "上昇はテックのみ — S&P500の上昇セクターは実質1つ",
-        "body": "S&P500は+0.68%と上昇したものの、セクター別で上昇したのはテクノロジーがほぼ唯一。ウェンディーズ−12.4%、ホーメル−9.1%、HP −7.1%など、テック以外では下落銘柄が目立ちました。",
+        "body": "S&P500は+0.72%と上昇したものの、セクター別で上昇したのはテクノロジーがほぼ唯一。ウェンディーズ−13.5%、ホーメル−10.2%、HP −2.9%など、テック以外では下落銘柄が目立ちました。",
         "so": "「AI祭り」の一方で相場全体の体温はまだ低め。全面強気ではなく「AI相場の復活」に限定した表現にした理由。",
         "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
         "src": "出典：TheStreet「Tech stands alone as sole sector to advance」"
@@ -33,13 +33,13 @@
       {
         "tag": "今夜の関門",
         "title": "ウォーシュ議長のジャクソンホール講演 — コアPCE3.3%停滞の中で",
-        "body": "インフレの鈍化は「反転はしていないが停滞」（コアPCE 3.3%）という微妙な状況で、議長が「軟化する成長と粘着する物価」の舵取りをどう語るかが焦点。10年金利は4.6%台で講演待ち、原油は82.15ドルと落ち着いています。",
+        "body": "インフレの鈍化は「反転はしていないが停滞」（コアPCE 3.3%）という微妙な状況で、議長が「軟化する成長と粘着する物価」の舵取りをどう語るかが焦点。10年金利は4.67%で講演待ち、原油は83.53ドルと反発しています。",
         "so": "講演がタカ派（引き締め寄り）なら金利上昇でAI祭りに水を差し、ハト派なら追い風が完成する。今夜が今週の総決算。",
         "url": "https://www.cnbc.com/2026/08/27/stock-market-today-live-updates.html",
         "src": "出典：CNBC（Warsh講演カウントダウン）"
       }
     ],
-    "summary": "①NVIDIA +9.3%で決算合格が定着 ＋ ②ソフトウェア爆騰でAI相場は第2幕へ。ただし③上昇の裾野はテックに偏っており、④今夜のウォーシュ議長講演の内容次第で週明けの方向が決まる。講演の結果はあす22時の更新（金曜終値版）で詳報。"
+    "summary": "①NVIDIA +8.7%で決算合格が定着 ＋ ②ソフトウェア爆騰でAI相場は第2幕へ。ただし③上昇の裾野はテックに偏っており、④今夜のウォーシュ議長講演の内容次第で週明けの方向が決まる。講演の結果はあす22時の更新（金曜終値版）で詳報。"
   },
   "kpis": [
     {
@@ -107,8 +107,8 @@
     {
       "dir": "up",
       "mark": "①",
-      "title": " NVIDIA +9.3% — 決算「合格」が通常取引で本物と確認された",
-      "body": "時間外の+5%にとどまらず、通常取引で+9.3%の急騰。「AI投資サイクルは健在」という決算のメッセージを市場全体が受け入れ、8月の7日続落分をほぼ取り戻しました。半導体各社にも買いが波及しています。",
+      "title": " NVIDIA +8.7% — 決算「合格」が通常取引で本物と確認された",
+      "body": "時間外の+5%にとどまらず、通常取引で+8.7%の急騰。「AI投資サイクルは健在」という決算のメッセージを市場全体が受け入れ、8月の7日続落分をほぼ取り戻しました。半導体各社にも買いが波及しています。",
       "tsumari": "8月相場の最大の不安だった「AIブームの失速」説がいったん否定された。売られすぎた分の巻き戻しはまだ続く余地がある。",
       "tags": [
         "影響：ナスダック・半導体",
@@ -119,7 +119,7 @@
       "dir": "up",
       "mark": "②",
       "title": " AIソフトの決算ラッシュが好調 — 主役が「使う側」へ拡大",
-      "body": "Salesforceは決算超過に加えAnthropicとのAI提携拡大を発表して+20.1%。Okta +23.3%、CrowdStrike +9%、Veeva +19%と、AIを製品に組み込む「使う側」の企業が軒並み好決算で急騰しました。",
+      "body": "Salesforceは決算超過に加えAnthropicとのAI提携拡大を発表して+22.6%。Okta +28.6%、CrowdStrike +20.5%、Veeva +15.2%と、AIを製品に組み込む「使う側」の企業が軒並み好決算で急騰しました。",
       "tsumari": "これまでは「AIチップを作る会社」だけが儲かる相場だったが、「AIを使って稼ぐ会社」にも利益が出始めた。ブームの持続力を裏付ける変化。",
       "tags": [
         "影響：ソフトウェア株",
@@ -130,7 +130,7 @@
       "dir": "down",
       "mark": "③",
       "title": " ただし上昇はテックだけ — 今夜のウォーシュ講演が総決算",
-      "body": "S&P500の上昇セクターは実質テクノロジーのみで、ウェンディーズ−12.4%、HP −7.1%などテック以外は軟調。コアPCEが3.3%で停滞するなか、今夜（日本時間23時頃）のウォーシュFRB議長のジャクソンホール講演がタカ派なら金利上昇でお祭りに水を差すリスクがあります。",
+      "body": "S&P500の上昇セクターは実質テクノロジーのみで、ウェンディーズ−13.5%、HP −2.9%などテック以外は軟調。コアPCEが3.3%で停滞するなか、今夜（日本時間23時頃）のウォーシュFRB議長のジャクソンホール講演がタカ派なら金利上昇でお祭りに水を差すリスクがあります。",
       "tsumari": "「AIは買い、それ以外は様子見」という偏った相場。講演次第で週明けの地合いが決まるので、深追いは禁物の金曜夜。",
       "tags": [
         "影響：週明けの方向性",
@@ -186,7 +186,7 @@
       "items": [
         {
           "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html",
-          "title": "Nasdaq +1.51% — Nvidia earnings revive AI optimism, software stocks roar back",
+          "title": "Nasdaq +1.57% — Nvidia earnings revive AI optimism, software stocks roar back",
           "src": "Yahoo Finance（英語）・8/27",
           "body": "NVIDIA決算がAI楽観論を復活させ、ソフトウェア株が咆哮。ナスダック主導の1日。"
         },
@@ -204,9 +204,9 @@
       "items": [
         {
           "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
-          "title": "Salesforce +20.1% — 決算超過とAnthropicとのAI提携拡大",
+          "title": "Salesforce +22.6% — 決算超過とAnthropicとのAI提携拡大",
           "src": "TheStreet（英語）・8/27",
-          "body": "📈 AIソフトの収益化を象徴する急騰。Okta +23.3%、CrowdStrike +9%、Veeva +19%と決算組が軒並み高。"
+          "body": "📈 AIソフトの収益化を象徴する急騰。Okta +28.6%、CrowdStrike +20.5%、Veeva +15.2%と決算組が軒並み高。"
         }
       ]
     },
@@ -618,12 +618,12 @@
     {
       "nm": "オクタ",
       "en": "Okta / OKTA",
-      "pct": 23.3,
+      "pct": 28.6,
       "why": "好決算と通期見通し引き上げで急騰",
       "desc": "企業向けのID認証（ログイン管理）サービス大手。セキュリティ×AIの文脈で注目。",
       "news": [
         {
-          "t": "Okta +23.3% on strong Q2 results and raised guidance",
+          "t": "Okta +28.6% on strong Q2 results and raised guidance",
           "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
           "s": "TheStreet・8/27",
           "sm": "予想超えの決算と通期ガイダンス引き上げで2割超の急騰。",
@@ -635,12 +635,12 @@
     {
       "nm": "セールスフォース",
       "en": "Salesforce / CRM",
-      "pct": 20.1,
+      "pct": 22.6,
       "why": "決算超過＋AnthropicとのAI提携拡大",
       "desc": "顧客管理（CRM）ソフト最大手。AI「Agentforce」の収益化が評価され始めた。",
       "news": [
         {
-          "t": "Salesforce +20.1% after beating earnings and expanding AI partnership with Anthropic",
+          "t": "Salesforce +22.6% after beating earnings and expanding AI partnership with Anthropic",
           "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
           "s": "TheStreet・8/27",
           "sm": "決算超過に加え、AI企業Anthropicとの提携拡大を発表して急騰。",
@@ -652,15 +652,15 @@
     {
       "nm": "ヴィーバ・システムズ",
       "en": "Veeva Systems / VEEV",
-      "pct": 19,
+      "pct": 15.2,
       "why": "製薬向けクラウドの決算超過",
       "desc": "製薬・ライフサイエンス業界専門のクラウドソフト企業。",
       "news": [
         {
-          "t": "Veeva Systems +19% on fiscal Q2 beat",
+          "t": "Veeva Systems +15.2% on fiscal Q2 beat",
           "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
           "s": "TheStreet・8/27",
-          "sm": "四半期決算が予想を上回り約19%の急騰。",
+          "sm": "四半期決算が予想を上回り15%超の急騰。",
           "pl": "業種特化クラウドの強さを確認 → 追い風",
           "dir": "up"
         }
@@ -669,15 +669,15 @@
     {
       "nm": "エヌビディア",
       "en": "NVIDIA / NVDA",
-      "pct": 9.3,
+      "pct": 8.7,
       "why": "決算合格が通常取引で定着",
       "desc": "AI半導体（GPU）の絶対王者。前夜の決算で「AI投資サイクル健在」を証明した。",
       "news": [
         {
-          "t": "Nvidia surged +9.3% after stronger-than-expected results",
+          "t": "Nvidia surges after stronger-than-expected results",
           "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
           "s": "TheStreet・8/27",
-          "sm": "決算とガイダンスが投資家を安心させ、通常取引で+9.3%の急騰。",
+          "sm": "決算とガイダンスが投資家を安心させ、通常取引で+8.7%の急騰。",
           "pl": "AI相場全面復活の号砲 → 追い風",
           "dir": "up"
         }
@@ -686,12 +686,12 @@
     {
       "nm": "ウェンディーズ",
       "en": "Wendy's / WEN",
-      "pct": -12.4,
+      "pct": -13.5,
       "why": "買収観測の後退で急落",
       "desc": "米国のハンバーガーチェーン大手。",
       "news": [
         {
-          "t": "Wendy's −12.4% after Trian Fund stepped back from buyout",
+          "t": "Wendy's −13.5% after Trian Fund stepped back from buyout",
           "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
           "s": "TheStreet・8/27",
           "sm": "投資ファンドが買収検討から後退し、期待剥落で急落。",
@@ -703,12 +703,12 @@
     {
       "nm": "HP",
       "en": "HP Inc. / HPQ",
-      "pct": -7.1,
+      "pct": -2.9,
       "why": "PC出荷への懸念で下落",
       "desc": "パソコン・プリンター大手。AI祭りの外側で景気減速の影響を受けやすい。",
       "news": [
         {
-          "t": "HP −7.1% amid PC shipment concerns",
+          "t": "HP −2.9% amid PC shipment concerns",
           "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
           "s": "TheStreet・8/27",
           "sm": "PC出荷の先行き懸念で下落。テック内でも明暗が分かれた。",
