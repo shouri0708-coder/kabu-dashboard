@@ -17,12 +17,16 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 
 ## 毎日の更新手順
 
-1. 最新の市況を調べ、前日の `data/*.json` を複製して新しい日付で作成
-2. 全セクションを更新する（`headline` / `kpis` / `reasons` / `scenarios` /
+1. `node scripts/fetch-quotes.mjs <日付>` — Yahoo Finance から全銘柄・指数・
+   ドル円・10年金利・WTI の終値と騰落率を取得（`data-quotes/<日付>.json` に保存）。
+   騰落率や指数水準は必ずこの実データを使う（報道の数字は intraday のことがある）
+2. 最新の市況ニュースを調べ、前日の `data/*.json` を複製して新しい日付で作成
+3. 全セクションを更新する（`headline` / `kpis` / `reasons` / `scenarios` /
    `news` / `events` / `watch` / `movers` / `kpiNews` / `prevIdx` /
-   `dateLabel` / `footerAsOf` / `date`）
-3. `npm run daily` — チェックが通ればそのままビルドされる
-4. `git add -A && git commit`
+   `dateLabel` / `footerAsOf` / `date`）。`prevIdx` は「直近取引日」の指数終値
+   （ライブ更新の換算基準になる）
+4. `npm run daily` — チェックが通ればそのままビルドされる
+5. `git add -A && git commit`
 
 ### check.mjs の見方
 - **ERROR**（ビルド中断）: ヘッダー・結論・フッター等の日付が対象日と食い違う
