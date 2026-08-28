@@ -21,6 +21,10 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 
 ## 毎日の更新手順
 
+> この手順はスケジュールタスク `daily-kabu-dashboard-update`（火〜土 22:00 JST）で
+> 自動実行される。手動で走らせるときも同じ手順。米国休場日など新しい終値が無い日は
+> 手順1の時点で分かるので何もせず終了する。
+
 1. `node scripts/fetch-quotes.mjs <日付>` — Yahoo Finance から全銘柄・指数・
    ドル円・10年金利・WTI の終値と騰落率を取得（`data-quotes/<日付>.json` に保存）。
    騰落率や指数水準は必ずこの実データを使う（報道の数字は intraday のことがある）
