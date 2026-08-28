@@ -46,61 +46,61 @@
       "key": "SPY",
       "name": "S&P500（市場全体の平均像）",
       "valAttr": " id=\"v-SPY\"",
-      "valueHtml": "約7,722",
+      "valueHtml": "7,731",
       "deltaClass": "d-up",
       "deltaAttr": " id=\"d-SPY\"",
-      "delta": "▲ +0.68%（8/27終値）",
+      "delta": "▲ +0.72%（8/27終値）",
       "why": "NVIDIA効果で反発。ただし上昇はテック偏重"
     },
     {
       "key": "DIA",
       "name": "NYダウ（大企業30社）",
       "valAttr": " id=\"v-DIA\"",
-      "valueHtml": "約53,500",
+      "valueHtml": "53,569",
       "deltaClass": "d-up",
       "deltaAttr": " id=\"d-DIA\"",
-      "delta": "▲ 小幅高（8/27終値）",
-      "why": "テック以外は軟調でほぼ横ばい"
+      "delta": "▲ +0.20%（8/27終値）",
+      "why": "テック以外は軟調で小幅高どまり"
     },
     {
       "key": "QQQ",
       "name": "ナスダック（ハイテク中心）",
       "valAttr": " id=\"v-QQQ\"",
-      "valueHtml": "約26,443",
+      "valueHtml": "26,541",
       "deltaClass": "d-up",
       "deltaAttr": " id=\"d-QQQ\"",
-      "delta": "▲ +1.51%（8/27終値）",
-      "why": "NVIDIA +9.3%とAIソフト爆騰で大幅高"
+      "delta": "▲ +1.57%（8/27終値）",
+      "why": "NVIDIA +8.7%とAIソフト爆騰で大幅高"
     },
     {
       "key": "JPY",
       "name": "ドル／円",
       "valAttr": "",
-      "valueHtml": "<span id=\"v-JPY\">159.08</span><span style=\"font-size:13px\">円</span>",
+      "valueHtml": "<span id=\"v-JPY\">159.26</span><span style=\"font-size:13px\">円</span>",
       "deltaClass": "d-down",
       "deltaAttr": "",
-      "delta": "▼ 159円前後（参考）",
-      "why": "物価鎮静で米金利が低下気味。接続すると自動更新"
+      "delta": "→ 159円台前半（8/27）",
+      "why": "日銀の9月利上げ観測（織り込み87%）が円を下支え。接続すると自動更新"
     },
     {
       "key": "US10Y",
       "name": "米国10年金利（長期金利）",
       "valAttr": "",
-      "valueHtml": "4.6<span style=\"font-size:13px\">%台</span>",
+      "valueHtml": "4.67<span style=\"font-size:13px\">%</span>",
       "deltaClass": "d-down",
       "deltaAttr": "",
-      "delta": "→ 講演待ちの小動き（8/27）",
+      "delta": "→ 講演待ちの小動き（8/27終値）",
       "why": "今夜のウォーシュ議長講演（ジャクソンホール）が金利の分岐点"
     },
     {
       "key": "WTI",
       "name": "WTI原油（先物）",
       "valAttr": "",
-      "valueHtml": "$82.15",
-      "deltaClass": "d-down",
+      "valueHtml": "$83.53",
+      "deltaClass": "d-up",
       "deltaAttr": "",
-      "delta": "▼ −0.1%（8/27終値）",
-      "why": "停戦交渉期待で落ち着き。インフレ圧力の後退要因"
+      "delta": "▲ +1.58%（8/27終値）",
+      "why": "停戦協議の不透明感で反発。インフレ圧力に再び注意"
     }
   ],
   "reasons": [
@@ -142,23 +142,23 @@
     {
       "type": "bull",
       "label": "強気シナリオ ↑",
-      "title": "インフレ鎮静＋AI決算好調が続く → ハイテク主導で最高値トライ",
-      "body": "きょうのCPIのように物価の落ち着きが続き、FRBの9月利上げ観測がさらに後退。CoreWeaveに続いてNVIDIA決算（8月下旬）もAI需要の強さを裏付ければ、出遅れていた半導体株を中心に上値を試しやすい展開です。",
-      "flow": "📈 <b>成立の条件：</b>原油が落ち着く ＋ NVIDIA決算が好調 ＋ 雇用・物価指標が穏やか<br>👀 <b>ウォッチ：</b>NVIDIA決算、次回の雇用統計・PPI、FRB高官の発言"
+      "title": "ウォーシュ講演がハト派寄り → AI相場の第2幕が本格化",
+      "body": "今夜の講演が「利上げを急がない」姿勢なら、金利低下とNVIDIA効果が重なってハイテク主導の上値追いが続きやすい展開です。決算はNVIDIAに続きSalesforce・CrowdStrike・OktaとAIソフトも好調で、「作る側」から「使う側」への広がりが上昇の持続力を裏付けます。",
+      "flow": "📈 <b>成立の条件：</b>講演がハト派 ＋ 9月利上げ観測（約1/3）の後退 ＋ AIソフト決算の好調継続<br>👀 <b>ウォッチ：</b>講演への初期反応（今夜〜週明け）、9/16 FOMCの織り込み、来週の経済指標"
     },
     {
       "type": "bear",
       "label": "弱気シナリオ ↓",
-      "title": "中東情勢の悪化で原油が90ドル超え → インフレ再燃で株安",
-      "body": "イランとの交渉決裂や紅海での攻撃が続き原油がさらに上がると、来月のCPIが再加速し「9月利上げ」観測が復活。金利上昇に弱いハイテク株から売られ、前日までの下げが再開するリスクがあります。ドル高・円安が進みやすいのもこのシナリオです。",
-      "flow": "📉 <b>成立の条件：</b>WTI原油が90ドルに接近 ＋ ホルムズ海峡交渉の決裂 ＋ 次回CPIの上振れ<br>👀 <b>ウォッチ：</b>WTI原油価格、イラン関連の見出し、FRBの9月会合の織り込み確率"
+      "title": "講演がタカ派 → 金利上昇でAI祭りに水",
+      "body": "コアPCEが3.3%で停滞するなか、議長が引き締め寄りの姿勢を示せば9月利上げ観測が復活し、10年金利が4.7%を超えてハイテク株の重しになります。日銀の9月利上げ（織り込み87%）で円キャリー取引の巻き戻しが重なると、下げが増幅されるリスクも。",
+      "flow": "📉 <b>成立の条件：</b>講演がタカ派 ＋ 10年金利4.7%超え ＋ 円高進行<br>👀 <b>ウォッチ：</b>10年金利、ドル円、9月FOMCの利上げ織り込み確率"
     },
     {
       "type": "flat",
       "label": "中立シナリオ →",
-      "title": "材料難で高値圏もみ合い — 「次の一手」待ち",
-      "body": "S&P500は今年最も狭い値動きのレンジに入っています。CPIを無風で通過した後は大きな材料が出るまで方向感が出にくく、高値圏での小動きが続く可能性も十分あります。歴史的には、狭いレンジが長く続いた後は大きく動きやすい（上下どちらにも）とされます。",
-      "flow": "➡️ <b>よくある展開：</b>指数は小動き、物色は決算が良かった個別銘柄に集中<br>👀 <b>ウォッチ：</b>レンジを上下どちらに抜けるか（抜けた方向に勢いが出やすい）"
+      "title": "講演は無風通過 — 指数もみ合い・物色はAI関連に集中",
+      "body": "きょうの上昇セクターは実質テックのみで、相場全体の体温はまだ低め。講演が想定内なら、指数は高値圏でのもみ合いを続けながら、決算が良かったAI関連の個別銘柄に物色が集中する展開が続きそうです。",
+      "flow": "➡️ <b>よくある展開：</b>指数は小動き、AIソフト・半導体の決算組に資金集中<br>👀 <b>ウォッチ：</b>上昇の裾野（テック以外に広がるか）、来週の決算スケジュール"
     }
   ],
   "news": [
@@ -174,9 +174,9 @@
         },
         {
           "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
-          "title": "原油は82ドル台で落ち着き — 米イラン停戦交渉の期待続く",
+          "title": "原油は83.5ドルに反発 — 停戦協議の不透明感を意識",
           "src": "TheStreet（英語）・8/27",
-          "body": "WTIは82.15ドルと今週は軟化基調。📈 インフレ圧力の後退要因として株を静かに支えている。"
+          "body": "朝方は82ドル台と軟化基調だったが、終値は83.53ドル（+1.58%）と反発。↕️ 停戦協議の行方次第で上下どちらにも振れやすい。"
         }
       ]
     },
@@ -245,38 +245,30 @@
       "note": "9月のFRB会合に向けた材料が続く。"
     }
   ],
-  "footerAsOf": "2026年8月12日 米国東部時間 午前（取引時間中）。個別株は Google Finance、指数・市況は CNBC・TheStreet・The Motley Fool・Investing.com 日本版・Seeking Alpha の報道に基づく。",
+  "footerAsOf": "2026年8月27日（木）米国市場終値。株価・指数は Yahoo Finance の終値データ、解説・ニュースは CNBC・TheStreet・The Motley Fool・Bloomberg・Yahoo Finance などの報道に基づく",
   "watch": [
     {
       "nm": "エヌビディア",
       "en": "NVIDIA / NVDA",
-      "px": "$223.92",
-      "chg": 2.95,
-      "t": "live",
-      "note": "CPI通過とCoreWeave好決算でAI関連買いの中心に",
+      "px": "$227.98",
+      "chg": 8.74,
+      "t": "prev",
+      "note": "決算「合格」で+8.7%の急騰。AI投資サイクル健在を証明",
       "news": [
         {
-          "t": "Prediction: Nvidia Stock Will Skyrocket on Aug. 26",
-          "u": "https://www.fool.com/investing/2026/08/02/prediction-nvidia-stock-will-skyrocket-on-aug-26/",
-          "s": "Motley Fool・8/2",
-          "sm": "8月26日の決算発表を前に、AIインフラ投資の勢いから好決算と株価上昇を予想する記事。",
-          "pl": "決算への期待感が先回り買いを誘う → 追い風",
+          "t": "Nvidia Delivers and the Nasdaq Jumps",
+          "u": "https://www.fool.com/investing/2026/08/27/nvidia-delivers-and-the-nasdaq-jumps-13/",
+          "s": "Motley Fool・8/27",
+          "sm": "売上962億ドル（前年比+106%）、来年度は約70%成長の見通し。市場予想のほぼ2倍のガイダンスで、時価総額は5.5兆ドルに。",
+          "pl": "AI失速説をいったん否定 → 追い風",
           "dir": "up"
         },
         {
-          "t": "Nvidia Starts H200 AI Chip Shipments to China",
-          "u": "https://finance.yahoo.com/technology/ai/articles/nvidia-starts-h200-ai-chip-100704048.html",
-          "s": "Yahoo Finance・7/15",
-          "sm": "米政府の限定承認を受け、H200チップの中国向け出荷を開始。アナリストは目標株価を330ドルに引き上げ。",
-          "pl": "中国市場の売上回復期待 → 追い風",
-          "dir": "up"
-        },
-        {
-          "t": "History Says This Is What Will Happen to Nvidia Stock After Aug. 26",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/history-says-happen-nvidia-stock-140500023.html",
-          "s": "Yahoo Finance・8/6",
-          "sm": "過去の傾向では好決算でも直後の株価反応は鈍いことが多い、と分析。",
-          "pl": "短期は決算後に伸び悩む可能性も → 両面",
+          "t": "Nvidia Surges on Blowout Results and Surprising Guidance",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-nvidia-surges-on-blowout-results-and-surprising-guidance/",
+          "s": "Motley Fool・8/27",
+          "sm": "出来高は3カ月平均の2倍超。粗利率75%を維持したが、次四半期はメモリコスト上昇で一時低下する見通しも示した。",
+          "pl": "急騰の持続力はコスト動向次第 → 両面",
           "dir": "mix"
         }
       ]
@@ -284,33 +276,17 @@
     {
       "nm": "ブロードコム",
       "en": "Broadcom / AVGO",
-      "px": "$422.33",
-      "chg": 1.5,
-      "t": "live",
-      "note": "AI半導体売上が急拡大中。時価総額2兆ドル企業",
+      "px": "$371.54",
+      "chg": 4.49,
+      "t": "prev",
+      "note": "NVIDIA決算を受けAI半導体に買い波及。+4.5%",
       "news": [
         {
-          "t": "OpenAI and Broadcom reveal Jalapeno, first AI chip in partnership",
-          "u": "https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html",
-          "s": "CNBC・6/24",
-          "sm": "OpenAIと共同開発した初のAIチップ「Jalapeno」を発表。",
-          "pl": "大型顧客OpenAIとの提携拡大 → 追い風",
-          "dir": "up"
-        },
-        {
-          "t": "Broadcom Pairs AI Chip Boom With A Software Security Push",
-          "u": "https://finance.yahoo.com/technology/ai/articles/broadcom-avgo-pairs-ai-chip-204234966.html",
-          "s": "Yahoo Finance・8/8",
-          "sm": "カスタムAIチップ事業が好調な一方、大口顧客がAlphabetとMetaの2社に偏る集中リスクも指摘。",
-          "pl": "成長期待は強いが顧客集中リスクが上値を抑制 → 両面",
-          "dir": "mix"
-        },
-        {
-          "t": "Why Broadcom Stock Rallied Today",
-          "u": "https://www.fool.com/investing/2026/08/04/why-broadcom-stock-rallied-today/",
-          "s": "Motley Fool・8/4",
-          "sm": "他社のAI関連好決算が「AI需要は本物」の証拠と受け止められ、連想買いが入った。",
-          "pl": "AI需要の強さを裏付け → 追い風",
+          "t": "Broadcom +4.5% as Nvidia's results keep AI-chip investors focused on data center demand",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-nvidia-surges-on-blowout-results-and-surprising-guidance/",
+          "s": "Motley Fool・8/27",
+          "sm": "NVIDIAの強気ガイダンスがデータセンター投資の継続を裏付け、カスタムAIチップ勢にも買いが広がった。",
+          "pl": "AIインフラ投資の恩恵 → 追い風",
           "dir": "up"
         }
       ]
@@ -318,61 +294,43 @@
     {
       "nm": "TSMC（ADR）",
       "en": "Taiwan Semi / TSM",
-      "px": "$422.06",
-      "chg": 0,
+      "px": "$427.30",
+      "chg": 2.3,
       "t": "prev",
-      "pre": 2.21,
-      "note": "7月売上高+45%と絶好調。寄り前も買い気配",
+      "note": "AIチップ生産の中核として決算効果の追い風。+2.3%",
       "news": [
         {
-          "t": "World's biggest chipmaker TSMC's sales surge 45% amid buoyant AI demand",
-          "u": "https://www.cnbc.com/2026/08/10/tsmc-revenue-surge-ai-chip-big-tech.html",
-          "s": "CNBC・8/10",
-          "sm": "7月売上高が前年比約45%増と急増。AI向け半導体需要の強さが続いていることを示した。",
-          "pl": "AI需要でファウンドリ受注が絶好調 → 追い風",
+          "t": "Dow, S&P 500, Nasdaq rally as Nvidia earnings revive AI optimism",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html",
+          "s": "Yahoo Finance・8/27",
+          "sm": "NVIDIA決算を受けて半導体セクターが全面高。半導体ETFのSMHは3%上昇し、受託生産のTSMCにも買いが及んだ。",
+          "pl": "AIチップ増産の恩恵が続く → 追い風",
           "dir": "up"
-        },
-        {
-          "t": "TSMC raises capex and revenue forecast",
-          "u": "https://finance.yahoo.com/markets/article/tsmc-raises-capex-and-revenue-forecast-highlighting-growing-ai-chip-demand-113101950.html",
-          "s": "Yahoo Finance・7月",
-          "sm": "AIチップ需要の拡大を背景に、設備投資と売上高の見通しを上方修正。",
-          "pl": "会社側の強気見通し → 追い風",
-          "dir": "up"
-        },
-        {
-          "t": "TSMC Stock Holds Flat Despite 44.7% July Sales Surge",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stock-holds-flat-despite-155910769.html",
-          "s": "Yahoo Finance・8/10",
-          "sm": "好材料はすでに株価に織り込み済みで、発表当日の反応は横ばいにとどまった。",
-          "pl": "好材料は織り込み済みで短期は上値が重い → 両面",
-          "dir": "mix"
         }
       ]
     },
     {
       "nm": "AMD",
       "en": "Advanced Micro / AMD",
-      "px": "$474.32",
-      "chg": 1.01,
+      "px": "$476.67",
+      "chg": -0.89,
       "t": "prev",
-      "pre": 1.49,
-      "note": "AI相場の追い風。前四半期は売上・利益とも予想超え",
+      "note": "半導体全面高の中で逆行安。NVIDIA一強を意識",
       "news": [
         {
-          "t": "AMD earnings report Q2 2026",
-          "u": "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html",
-          "s": "CNBC・8/4",
-          "sm": "4-6月期決算を発表。データセンター（AI向けGPU）事業の高成長が焦点に。",
-          "pl": "決算内容が直近の株価変動の主因",
-          "dir": "mix"
+          "t": "AMD slips even as chip stocks rally on Nvidia's results",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-nvidia-surges-on-blowout-results-and-surprising-guidance/",
+          "s": "Motley Fool・8/27",
+          "sm": "半導体高の中でAMDはASML・アプライドマテリアルズとともに小幅安。NVIDIAへの資金集中が意識された。",
+          "pl": "AI相場でも勝ち組と負け組が分かれ始めた → 重し",
+          "dir": "down"
         },
         {
-          "t": "AMD tops Q2 earnings estimates but leaves investors unimpressed",
-          "u": "https://finance.yahoo.com/technology/article/amd-to-report-q2-earnings-as-chip-stocks-continue-to-waver-110000620.html",
-          "s": "Yahoo Finance・8/4",
-          "sm": "予想超えの決算と強気見通しを示したが、市場の期待値が高すぎて株価の反応は冷ややかだった。",
-          "pl": "好決算でも「期待超え」ならず → 伸び悩みの一因",
+          "t": "AMD and Intel Rise 3% on a Strong Buy Upgrade and a Pelosi Disclosure",
+          "u": "https://247wallst.com/investing/2026/08/25/amd-and-intel-rise-3-on-a-strong-buy-upgrade-and-a-pelosi-disclosure-nvidia-and-broadcom-tick-up/",
+          "s": "24/7 Wall St.・8/25",
+          "sm": "週初にはアナリストの強気格上げとペロシ議員の保有開示で買われる場面もあった。",
+          "pl": "材料次第で戻りも速い → 両面",
           "dir": "mix"
         }
       ]
@@ -380,68 +338,35 @@
     {
       "nm": "インテル",
       "en": "Intel / INTC",
-      "px": "$97.71",
-      "chg": 0.19,
+      "px": "$92.09",
+      "chg": 4.36,
       "t": "prev",
-      "pre": 1.52,
-      "note": "200億ドル増資へ。米政府が筆頭株主という異例の展開",
+      "note": "半導体全面高に乗って+4.4%。政府出資の国策銘柄",
       "news": [
         {
-          "t": "Intel upsizes stock offering to $20 billion at $95 per share",
-          "u": "https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html",
-          "s": "CNBC・8/10",
-          "sm": "AI需要の加速を背景に、1株95ドルで総額200億ドルの株式売り出しを発表。",
-          "pl": "希薄化懸念（重し）とAI成長資金の確保（追い風）が交錯",
-          "dir": "mix"
-        },
-        {
-          "t": "Intel Now Has The U.S. Government As Its Largest Shareholder",
-          "u": "https://uk.finance.yahoo.com/news/intel-intc-now-u-government-101057433.html",
-          "s": "Yahoo Finance",
-          "sm": "米政府がインテルの筆頭株主となり、国策半導体企業としての位置づけが強まった。",
-          "pl": "政府の後ろ盾は安心材料だが政治リスクも → 両面",
-          "dir": "mix"
-        },
-        {
-          "t": "Intel Is Raising Billions in Equity. History Says This Is What the Stock Will Do Next.",
-          "u": "https://www.fool.com/investing/2026/08/12/intel-is-raising-billions-in-equity-history-says-t/",
-          "s": "Motley Fool・8/12",
-          "sm": "巨額増資をした企業の株価が過去どう動いたかを検証する分析記事。",
-          "pl": "増資後は短期的に軟調になりやすいという経験則 → 重し",
-          "dir": "down"
+          "t": "AMD and Intel Rise on a Strong Buy Upgrade and a Pelosi Disclosure",
+          "u": "https://247wallst.com/investing/2026/08/25/amd-and-intel-rise-3-on-a-strong-buy-upgrade-and-a-pelosi-disclosure-nvidia-and-broadcom-tick-up/",
+          "s": "24/7 Wall St.・8/25",
+          "sm": "強気格上げを受けて週初から堅調。NVIDIA決算後の半導体全面高では上昇率上位に入った。",
+          "pl": "AI相場の裾野拡大の受け皿 → 追い風",
+          "dir": "up"
         }
       ]
     },
     {
       "nm": "マイクロソフト",
       "en": "Microsoft / MSFT",
-      "px": "$503.81",
-      "chg": 0.69,
-      "t": "live",
-      "note": "売上900億ドルの好決算が下支え",
+      "px": "$505.06",
+      "chg": 1.75,
+      "t": "prev",
+      "note": "Azure+43%が支え。AIソフト決算祭りの追い風で+1.8%",
       "news": [
         {
-          "t": "Microsoft (MSFT) Q4 earnings report 2026",
-          "u": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html",
-          "s": "CNBC・7/29",
-          "sm": "決算は市場予想を上回り、AzureなどクラウドとAI事業が好調。",
-          "pl": "好決算とクラウド高成長の確認 → 追い風",
-          "dir": "up"
-        },
-        {
-          "t": "Why Microsoft Stock Surged 24.6% in July While the Market Was Flat",
-          "u": "https://www.fool.com/investing/2026/08/04/msft-stock-up-july-earnings-ai-cloud/",
-          "s": "Motley Fool・8/4",
-          "sm": "市場全体が横ばいの中、好決算とAI・クラウド期待で7月に約24.6%急騰。",
-          "pl": "AI収益化への期待が上昇を後押し → 追い風",
-          "dir": "up"
-        },
-        {
-          "t": "Analysts say Microsoft's earnings may be a turning point",
-          "u": "https://www.cnbc.com/2026/07/30/analysts-react-to-microsofts-earnings-results-.html",
-          "s": "CNBC・7/30",
-          "sm": "アナリストらは今回の決算を、伸び悩んでいた同社株の転換点になり得ると評価。",
-          "pl": "目標株価の引き上げが株価を下支え → 追い風",
+          "t": "MSFT Stock Surges on Azure Growth and Sustainable CapEx Outlook",
+          "u": "https://www.marketbeat.com/articles/microsoft-just-flipped-the-ai-spending-narrative-overnight/",
+          "s": "MarketBeat・8月下旬",
+          "sm": "Azureは年商1,000億ドルを突破し+43%成長。Copilotの有料席数は3,000万を超え、「需要が供給を上回る」状態が続く。",
+          "pl": "AI投資が収益に直結する代表例 → 追い風",
           "dir": "up"
         }
       ]
@@ -449,67 +374,43 @@
     {
       "nm": "アップル",
       "en": "Apple / AAPL",
-      "px": "$302.72",
-      "chg": -0.72,
-      "t": "live",
-      "note": "9/1のCEO交代発表（クック→ターナス）を消化中",
+      "px": "$314.58",
+      "chg": 0.36,
+      "t": "prev",
+      "note": "9/1のCEO交代と9/9の新製品イベントを控えて堅調",
       "news": [
         {
-          "t": "Tim Cook Is Handing Off Apple to John Ternus as CEO on Sept. 1",
-          "u": "https://www.fool.com/investing/2026/08/12/tim-cook-handing-off-apple-to-john-ternus-as-ceo/",
-          "s": "Motley Fool・8/12",
-          "sm": "クックCEOが9月1日にターナス氏へ引き継ぎ。15年ぶりのトップ交代を前に株価の歴史を振り返る。",
-          "pl": "トップ交代は不透明要因だが承継計画は円滑 → 両面",
-          "dir": "mix"
-        },
-        {
-          "t": "Apple (AAPL) Q3 2026 earnings report",
-          "u": "https://www.cnbc.com/2026/07/30/apple-earnings-live-updates.html",
-          "s": "CNBC・7/30",
-          "sm": "iPhone販売の好調などで決算は市場予想を上回った。クック氏最後の決算発表。",
-          "pl": "予想超えの決算がCEO交代前の安心材料 → 追い風",
+          "t": "Apple to launch $2,000-plus foldable 'iPhone Ultra' in early September",
+          "u": "https://fortune.com/2026/08/24/apple-launch-2000-foldable-iphone-ultra-september/",
+          "s": "Fortune・8/24",
+          "sm": "9/9のイベントで初の折りたたみ「iPhone Ultra」（2,000ドル超）を発表すると報道。新製品サイクルへの期待が高まる。",
+          "pl": "新カテゴリー投入への期待 → 追い風",
           "dir": "up"
         },
         {
-          "t": "Apple Q3 earnings beat estimates but services revenue misses",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/apple-q3-2026-earnings-beat-211056445.html",
-          "s": "Yahoo Finance・7月末",
-          "sm": "全体は予想超えだったが、利益率の高いサービス部門の売上が市場予想に届かなかった。",
-          "pl": "サービス事業の伸び悩みが上値を抑える → 重し",
-          "dir": "down"
+          "t": "Apple's CEO transition begins: farewell for Tim Cook ahead of Ternus takeover",
+          "u": "https://www.businesstoday.in/technology/news/story/apples-ceo-transition-begins-iphone-maker-holds-farewell-for-tim-cook-ahead-of-john-ternus-takeover-551110-2026-08-25",
+          "s": "Business Today・8/25",
+          "sm": "8/23にクックCEOの送別イベントを開催。9/1にターナス新体制へ移行し、9/9のイベントが新CEOの初舞台になる。",
+          "pl": "15年ぶりのトップ交代は不透明要因だが承継は円滑 → 両面",
+          "dir": "mix"
         }
       ]
     },
     {
       "nm": "アルファベット",
       "en": "Alphabet / GOOGL",
-      "px": "$343.24",
-      "chg": -0.16,
-      "t": "live",
-      "note": "前日−3.6%の急落から下げ止まり。AI投資負担の警戒は残る",
+      "px": "$340.65",
+      "chg": -0.39,
+      "t": "prev",
+      "note": "AI開発の遅れと人材流出への懸念が重し",
       "news": [
         {
-          "t": "Alphabet Q2: revenue beats, GOOGL stock sinks on 2026 capex hike",
-          "u": "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html",
-          "s": "CNBC・7/22",
-          "sm": "決算は売上が予想超えだったが、2026年の設備投資増額計画を受けて株価は下落。",
-          "pl": "AI投資の膨張が利益を圧迫するとの懸念 → 重し",
-          "dir": "down"
-        },
-        {
-          "t": "Google falls more than 6% on capex growth expectations",
-          "u": "https://finance.yahoo.com/technology/article/google-falls-more-than-6-on-capex-growth-expectations-despite-earnings-beat-202407124.html",
-          "s": "Yahoo Finance・7月下旬",
-          "sm": "好決算にもかかわらず、設備投資のさらなる拡大見通しを嫌気して株価は6%超下落。",
-          "pl": "「AI投資はいつ回収できるのか」という不安 → 重し",
-          "dir": "down"
-        },
-        {
-          "t": "Google's extreme AI capex plans trigger a technical warning",
-          "u": "https://finance.yahoo.com/markets/stocks/article/googles-extreme-ai-capex-spending-plans-trigger-a-technical-warning-on-the-stock-price-120952068.html",
-          "s": "Yahoo Finance・8月上旬",
-          "sm": "巨額のAI設備投資計画を受けた売りで、チャート上の弱気シグナルが点灯したと指摘。",
-          "pl": "投資家心理の悪化が続けば下落余地も → 重し",
+          "t": "Alphabet Stock Sheds $692 Billion as AI Delays and Talent Loss Hit Shares",
+          "u": "https://www.bloomberg.com/news/articles/2026-08-27/alphabet-loses-692-billion-in-market-value-as-ai-questions-rise",
+          "s": "Bloomberg・8/27",
+          "sm": "AI開発の遅れと人材流出（ブレインドレイン）への懸念で、時価総額は高値から6,920億ドル減少。年初の勢いが反転している。",
+          "pl": "「AIで勝てるのか」という疑念 → 重し",
           "dir": "down"
         }
       ]
@@ -517,102 +418,70 @@
     {
       "nm": "アマゾン",
       "en": "Amazon / AMZN",
-      "px": "$272.27",
-      "chg": -2.09,
+      "px": "$256.26",
+      "chg": -1.54,
       "t": "prev",
-      "note": "ベゾス氏の40億ドル超の株売却報道が重し",
+      "note": "ベゾス氏の大量売却の消化が続き軟調。−1.5%",
       "news": [
         {
-          "t": "Amazon時価総額3兆ドル突破 世界5社目、クラウド好調で株価急騰",
-          "u": "https://www.nikkei.com/article/DGXZQOGN03AB00T00C26A8000000/",
-          "s": "日本経済新聞・8/3頃",
-          "sm": "クラウド（AWS）の好調な決算を受けて株価が急騰し、時価総額3兆ドルを突破。",
-          "pl": "AI・クラウド需要への期待 → 追い風",
-          "dir": "up"
-        },
-        {
-          "t": "Bezos files $4 billion sale as Amazon hits $3 trillion",
-          "u": "https://www.thestreet.com/investing/jeff-bezos-4-billion-amazon-stock-sale-3-trillion",
-          "s": "TheStreet・8/4頃",
-          "sm": "3兆ドル到達の直後、創業者ベゾス氏が約41億ドル分の株売却を届け出たと報道。",
-          "pl": "創業者の大型売却が「高値のサイン」と受け止められ → 重し",
+          "t": "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling",
+          "u": "https://www.cnbc.com/2026/08/04/jeff-bezos-just-filed-to-sell-4-billion-in-amazon-the-shares-are-falling.html",
+          "s": "CNBC・8/4",
+          "sm": "ベゾス氏は6月末以降の売却分と合わせ約97億ドル相当を売却。需給面の重しとして意識され続けている。",
+          "pl": "創業者売りの需給圧力 → 重し",
           "dir": "down"
         },
         {
-          "t": "Amazon's $3 Trillion Record Lasts One Day as Stock Takes Big Hit",
-          "u": "https://finance.yahoo.com/markets/stocks/articles/amazon-3-trillion-record-lasts-170608381.html",
-          "s": "Yahoo Finance・8/4頃",
-          "sm": "3兆ドルの大台はわずか1日で終わり、売却報道などを背景に株価は大きく反落。",
-          "pl": "急騰後の利益確定売りと売却報道の重なり → 重し",
-          "dir": "down"
+          "t": "Bezos Plans to Sell $4B Amazon Stock: Why Investors Should Sit Tight",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/bezos-plans-sell-4b-amazon-153700719.html",
+          "s": "Yahoo Finance・8月",
+          "sm": "一方でAWSは受注残4,960億ドル・売上+37%（18四半期ぶりの高成長）と絶好調。売却は既定の計画に基づくとの指摘も。",
+          "pl": "事業は好調で売りは需給要因 → 両面",
+          "dir": "mix"
         }
       ]
     },
     {
       "nm": "メタ",
       "en": "Meta / META",
-      "px": "$594.61",
-      "chg": -0.75,
-      "t": "live",
-      "note": "前四半期のEPS未達の影響が尾を引く",
+      "px": "$571.10",
+      "chg": -0.87,
+      "t": "prev",
+      "note": "170億ドルの和解で不透明要因は減少も、AI出遅れ懸念が続く",
       "news": [
         {
-          "t": "メタ営業減益、AI巨額費用が本業圧迫 投資回収見通せず",
-          "u": "https://www.nikkei.com/article/DGXZQOGN29CUC0Z20C26A7000000/",
-          "s": "日本経済新聞・7/30頃",
-          "sm": "AIへの巨額投資費用が広告事業の利益を圧迫し営業減益に。投資回収の道筋が課題。",
-          "pl": "AI投資の回収不透明感が利益見通しの重荷 → 重し",
-          "dir": "down"
+          "t": "Stocks Edge Lower As Market Digests Meta Ruling",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/26/stock-market-today-aug-26-stocks-edge-lower-as-market-digests-meta-ruling-and-awaits-nvidia-s-earnings/",
+          "s": "Motley Fool・8/26",
+          "sm": "170億ドルという巨額の和解に合意。金額よりも法的な不確実性が消えたことを評価する見方が優勢だった。",
+          "pl": "悪材料の出尽くしと見る向きも → 両面",
+          "dir": "mix"
         },
         {
-          "t": "Meta misses EPS in Q2 2026 as stock sinks after hours",
-          "u": "https://www.investing.com/news/transcripts/earnings-call-transcript-meta-misses-eps-in-q2-2026-as-stock-sinks-after-hours-93CH-4821910",
-          "s": "Investing.com・7/29頃",
-          "sm": "決算は売上が予想超えだった一方、1株利益（EPS）は未達で時間外に株価下落。",
-          "pl": "増収でもAI費用が利益を圧迫 → 重し",
+          "t": "Meta Falls Far Behind Amazon, Alphabet, and Microsoft In AI",
+          "u": "https://247wallst.com/investing/2026/08/20/meta-falls-far-behind-amazon-alphabet-and-microsoft-in-ai/",
+          "s": "24/7 Wall St.・8/20",
+          "sm": "AI競争で他のハイパースケーラーに出遅れているとの分析。7月末の決算後から続く懸念が株価の重しになっている。",
+          "pl": "AI戦略への疑念が続く → 重し",
           "dir": "down"
-        },
-        {
-          "t": "Meta Rallies 7% as AI Hyperscalers Ride Earnings Momentum",
-          "u": "https://247wallst.com/investing/2026/08/03/amazon-tops-3t-meta-rallies-7-as-ai-hyperscalers-ride-earnings-momentum/",
-          "s": "24/7 Wall St.・8/3",
-          "sm": "AI大手の好決算を追い風に、8月初めには約7%急騰する場面も。",
-          "pl": "AI業界全体の好決算による連想買い → 追い風",
-          "dir": "up"
         }
       ]
     },
     {
       "nm": "テスラ",
       "en": "Tesla / TSLA",
-      "px": "$329.71",
-      "chg": -0.93,
-      "t": "live",
-      "note": "利益率への慎重な見方が続き、アナリスト評価は中立が多数",
+      "px": "$354.81",
+      "chg": 2.6,
+      "t": "prev",
+      "note": "ロボタクシーの運行拡大発表で+2.6%と反発",
       "news": [
         {
-          "t": "Tesla (TSLA) Q2 2026 earnings report",
-          "u": "https://www.cnbc.com/2026/07/22/tesla-tsla-q2-2026-earnings-report.html",
-          "s": "CNBC・7/22",
-          "sm": "4-6月期決算は売上高が予想超えの一方、利益（EPS）は予想に届かなかった。",
-          "pl": "増収でも利益率悪化 → 決算後の売り材料",
-          "dir": "down"
-        },
-        {
-          "t": "米テスラ、四半期利益が市場予想を下回る－時間外で株価下落",
-          "u": "https://www.bloomberg.com/jp/news/articles/2026-07-22/TILEMXRKV2UT00",
-          "s": "Bloomberg日本語版・7/22",
-          "sm": "コスト増が利益を圧迫し、四半期利益は市場予想を下回った。",
-          "pl": "AI・ロボティクス投資などのコスト増による減益 → 重し",
-          "dir": "down"
-        },
-        {
-          "t": "Tesla Price Prediction: Could the Stock Rally 30% From Here?",
-          "u": "https://247wallst.com/investing/2026/08/03/tesla-price-prediction-could-the-stock-rally-30-from-here/",
-          "s": "24/7 Wall St.・8/3",
-          "sm": "2026年は下落が続くテスラ株について、アナリストの強気・弱気の見方が大きく割れている。",
-          "pl": "EV苦戦とAI転換期待が交錯 → 両面",
-          "dir": "mix"
+          "t": "Tesla Stock Rebounds Above $355 as Robotaxi Expansion and Semi Plans Boost TSLA",
+          "u": "https://www.fxleaders.com/news/2026/08/27/tesla-stock-rebounds-above-355-as-robotaxi-expansion-and-semi-plans-boost-tsla/",
+          "s": "FX Leaders・8/27",
+          "sm": "ロボタクシーの運行時間を全都市で朝6時〜夜10時に拡大し、無人運行の車両も増加。配車の最適化で待ち時間も短縮した。",
+          "pl": "ロボタクシー事業の進捗が見えてきた → 追い風",
+          "dir": "up"
         }
       ]
     }
@@ -622,27 +491,19 @@
       "label": "S&P500 に関係するニュース",
       "items": [
         {
-          "t": "S&P 500 climbs following key inflation report",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026",
-          "s": "TheStreet・8/12",
-          "sm": "予想どおりのCPIと好決算を受けて、S&P500は+0.3%前後で推移。",
-          "pl": "インフレ再加速への警戒が緩み → 追い風",
+          "t": "Dow, S&P 500, Nasdaq rally as Nvidia earnings revive AI optimism, software stocks roar back",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html",
+          "s": "Yahoo Finance・8/27",
+          "sm": "NVIDIA決算がAI楽観論を復活させ、S&P500は+0.72%の7,731で終了。ソフトウェア株も軒並み急騰した。",
+          "pl": "AI相場の全面復活 → 追い風",
           "dir": "up"
         },
         {
-          "t": "CPI inflation report July 2026: Prices rose 0.1%, annual rate 3.4%",
-          "u": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
-          "s": "CNBC・8/12",
-          "sm": "7月CPIは前月比+0.1%・前年比+3.4%。コアも予想並みで、9月利上げ観測が後退。",
-          "pl": "「金利が上がる不安」の後退 → 市場全体の追い風",
-          "dir": "up"
-        },
-        {
-          "t": "S&P 500 pins in year's narrowest band ahead of CPI",
-          "u": "https://seekingalpha.com/news/4630930-traders-remain-sidelined-as-the-s-and-p-500-pins-in-year-s-narrowest-band-ahead-of-cpi",
-          "s": "Seeking Alpha・8/11",
-          "sm": "S&P500は今年最も狭い値動きのレンジ内。方向感が出る前の「ため」の局面。",
-          "pl": "レンジを抜けた方向に勢いが出やすい → 両面",
+          "t": "Tech stands alone as sole S&P 500 sector to advance after Nvidia earnings",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-27-2026",
+          "s": "TheStreet・8/27",
+          "sm": "上昇セクターは実質テクノロジーのみ。指数は上がったが、相場全体の裾野はまだ狭い。",
+          "pl": "偏った上昇には注意 → 両面",
           "dir": "mix"
         }
       ]
@@ -651,20 +512,20 @@
       "label": "NYダウ に関係するニュース",
       "items": [
         {
-          "t": "Markets Slip as Oil Prices Rise, Upwork Tumbles on Mixed Earnings",
-          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/11/stock-market-today-aug-11-markets-slip-as-oil-prices-rise-upwork-tumbles-on-mixed-earnings/",
-          "s": "Motley Fool・8/11",
-          "sm": "前日は原油高が重しとなりダウは−184ドル（−0.34%）と続落した。",
-          "pl": "原油高＝コスト増懸念 → ダウの重し",
-          "dir": "down"
+          "t": "Stock Market Today, Aug. 27: Tech Strength Powers Nasdaq Higher",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-tech-strength-powers-nasdaq-higher-as-nvidia-leads-rally/",
+          "s": "Motley Fool・8/27",
+          "sm": "AI祭りの主役はナスダックで、景気敏感株が多いダウは+0.20%の小幅高にとどまった。",
+          "pl": "テック偏重の上昇でダウは出遅れ → 両面",
+          "dir": "mix"
         },
         {
-          "t": "11日の米国市場ダイジェスト：米国株式市場は続落、原油高やCPIを警戒",
-          "u": "https://jp.investing.com/news/forex-news/article-1643846",
-          "s": "Investing.com日本版・8/11",
-          "sm": "原油高とCPI警戒で幅広い銘柄に売り。エネルギー・金融の一角は買われた。",
-          "pl": "景気敏感株が多いダウは原油と金利に敏感 → 両面",
-          "dir": "mix"
+          "t": "Wendy's −14% after Trian reportedly backs away from takeover bid",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html",
+          "s": "Yahoo Finance・8/27",
+          "sm": "テック以外ではウェンディーズ−14%など下落銘柄が目立ち、消費関連の弱さがダウの重しになった。",
+          "pl": "テックの外側は軟調 → 重し",
+          "dir": "down"
         }
       ]
     },
@@ -672,19 +533,19 @@
       "label": "ナスダック に関係するニュース",
       "items": [
         {
-          "t": "S&P 500 rises after tame inflation data; AI-related shares jump",
-          "u": "https://www.cnbc.com/2026/08/11/stock-market-today-live-updates.html",
-          "s": "CNBC・8/12",
-          "sm": "落ち着いたCPIを受けてAI関連株が急伸。ナスダックが3指数の上げをけん引。",
-          "pl": "金利低下観測はハイテク株に最も効く → 追い風",
+          "t": "Nvidia Delivers and the Nasdaq Jumps",
+          "u": "https://www.fool.com/investing/2026/08/27/nvidia-delivers-and-the-nasdaq-jumps-13/",
+          "s": "Motley Fool・8/27",
+          "sm": "NVIDIA+8.7%を筆頭に半導体・AIソフトが急騰し、ナスダックは+1.57%の26,541で終了。3指数の上げをけん引した。",
+          "pl": "AI関連の買い戻しが直撃 → 追い風",
           "dir": "up"
         },
         {
-          "t": "CoreWeave (CRWV) Q2 earnings report 2026",
-          "u": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
-          "s": "CNBC・8/11",
-          "sm": "AIクラウドのCoreWeaveが予想超えの決算。AI需要の強さを裏付けた。",
-          "pl": "AI投資への不安が和らぎハイテク全体の買い戻しに → 追い風",
+          "t": "Salesforce +22%, Okta +28%, CrowdStrike +18% — software earnings roar back",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html",
+          "s": "Yahoo Finance・8/27",
+          "sm": "「SaaS終焉論」への不安を吹き飛ばす決算ラッシュ。AIソフトの好決算がハイテク全体の追い風になった。",
+          "pl": "AI相場が半導体からソフトへ拡大 → 追い風",
           "dir": "up"
         }
       ]
@@ -693,20 +554,20 @@
       "label": "ドル／円 に関係するニュース",
       "items": [
         {
-          "t": "11日の米国市場ダイジェスト（ドル・円は159円17銭）",
-          "u": "https://jp.investing.com/news/forex-news/article-1643846",
-          "s": "Investing.com日本版・8/11",
-          "sm": "原油価格の高止まりでドル買いが優勢となり、159円台で推移。",
-          "pl": "原油高→米金利が下がりにくい→ドル高・円安の方向",
-          "dir": "up"
+          "t": "The Japanese Yen gets its hike whatever Tokyo CPI prints",
+          "u": "https://www.fxstreet.com/news/the-japanese-yen-gets-its-hike-whatever-tokyo-cpi-prints-202608272154",
+          "s": "FXStreet・8/27",
+          "sm": "日銀の9月利上げ（1.25%へ）の織り込みは約87%まで上昇。7月会合前の23%から急速に高まった。",
+          "pl": "日米金利差の縮小観測 → 円高方向の材料",
+          "dir": "down"
         },
         {
-          "t": "CPI inflation report July 2026",
-          "u": "https://www.cnbc.com/2026/08/12/cpi-inflation-report-july-2026.html",
-          "s": "CNBC・8/12",
-          "sm": "CPIが落ち着いた内容だったことで米金利がやや低下し、ドルは小幅に軟化。",
-          "pl": "米金利の低下は円高方向の材料 → きょうは小幅な円高",
-          "dir": "down"
+          "t": "Fed Chair Warsh speaks at Jackson Hole — dollar's next move hinges on tone",
+          "u": "https://www.bloomberg.com/news/live-blog/2026-08-28/fed-meeting-at-jackson-hole-and-warsh-speech-live-updates",
+          "s": "Bloomberg・8/28",
+          "sm": "今夜のウォーシュ議長講演がタカ派ならドル高・円安、ハト派ならドル安・円高。日銀の利上げ観測との綱引きに。",
+          "pl": "講演次第でどちらにも振れる → 両面",
+          "dir": "mix"
         }
       ]
     },
@@ -714,27 +575,19 @@
       "label": "米国10年金利 に関係するニュース",
       "items": [
         {
-          "t": "US 10 Year Treasury Note Yield（4.7%超え・19カ月ぶり高水準圏）",
+          "t": "US 10 Year Treasury Note Yield（4.67%で講演待ち）",
           "u": "https://tradingeconomics.com/united-states/government-bond-yield",
-          "s": "Trading Economics・8/17",
-          "sm": "10年金利は4.71%まで上昇し、先週付けた19カ月ぶり高水準4.75%に接近。インフレ懸念、中東情勢によるエネルギー価格、AI企業の大量の社債発行が背景。",
-          "pl": "金利上昇はハイテク株の重し → 重し",
-          "dir": "down"
-        },
-        {
-          "t": "S&P 500 futures edge higher ahead of retail earnings reports",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-17-2026",
-          "s": "TheStreet・8/17",
-          "sm": "先週金曜は金利上昇が株の反落要因のひとつに。一方で9月利上げの織り込みは約33%まで低下。",
-          "pl": "金利と利上げ観測の綱引きが続く → 両面",
+          "s": "Trading Economics・8/27",
+          "sm": "10年金利は4.67%と小動き。市場は9月利上げの確率を約3分の1と織り込み、ウォーシュ議長の講演を待っている。",
+          "pl": "講演がタカ派なら金利上昇の余地 → 両面",
           "dir": "mix"
         },
         {
-          "t": "Stock Market Today: Dow, S&P Live Updates",
-          "u": "https://www.bloomberg.com/news/articles/2026-08-16/stock-market-today-dow-s-p-live-updates",
-          "s": "Bloomberg・8/17",
-          "sm": "水曜のFOMC議事要旨が金利観の次の材料。委員の意見の分かれ方に注目。",
-          "pl": "議事要旨の内容次第で金利が上下 → 両面",
+          "t": "Jackson Hole 2026: Warsh's First Fed Speech & Market Impact Guide",
+          "u": "https://www.xtb.com/en/education/jackson-hole-2026-warsh-fed-speech",
+          "s": "XTB・8月下旬",
+          "sm": "インフレは2%目標を上回ったまま停滞。新議長の初講演が9/16のFOMCに向けた金利観の分岐点になる。",
+          "pl": "タカ派なら金利上昇＝ハイテクの重し → 両面",
           "dir": "mix"
         }
       ]
@@ -743,20 +596,20 @@
       "label": "WTI原油 に関係するニュース",
       "items": [
         {
-          "t": "Dow, S&P 500, Nasdaq slip amid US-Iran impasse",
-          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-11-dow-sp-500-nasdaq-102827503.html",
-          "s": "Yahoo Finance・8/11",
-          "sm": "ホルムズ海峡をめぐる米イラン交渉が行き詰まり、ブレント原油は89ドル近辺まで上昇。",
-          "pl": "供給不安 → 原油高 → 株全体の重し・エネルギー株の追い風",
-          "dir": "mix"
+          "t": "Oil Climbs on Ceasefire Uncertainty",
+          "u": "https://tradingeconomics.com/commodity/crude-oil/news/540343",
+          "s": "Trading Economics・8月下旬",
+          "sm": "停戦協議の不透明感からWTIは+1.58%の83.53ドルに反発。今週の軟化基調から一転した。",
+          "pl": "中東リスクが残る限り下がりにくい → 物価の重し",
+          "dir": "down"
         },
         {
-          "t": "Markets Slip as Oil Prices Rise（WTIは$83.70に上昇）",
-          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-12-2026",
-          "s": "TheStreet・8/12",
-          "sm": "紅海でのフーシ派攻撃の報道を受けて、WTIは$83.70前後まで再び強含み。",
-          "pl": "中東リスクが続く限り原油は下がりにくい → 物価・株の重し",
-          "dir": "down"
+          "t": "IEA Oil Market Report - August 2026",
+          "u": "https://www.iea.org/reports/oil-market-report-august-2026",
+          "s": "IEA・8月",
+          "sm": "7月は停戦の破綻と再交渉で約40ドル幅の乱高下。供給の回復は中東情勢次第という不安定な状態が続く。",
+          "pl": "地政学リスクが価格の主導権を握る → 両面",
+          "dir": "mix"
         }
       ]
     }
@@ -868,15 +721,15 @@
   "prevIdx": {
     "SPY": {
       "label": "S&P500",
-      "prevIdx": 7722
+      "prevIdx": 7746
     },
     "DIA": {
       "label": "NYダウ",
-      "prevIdx": 53500
+      "prevIdx": 53667
     },
     "QQQ": {
       "label": "ナスダック",
-      "prevIdx": 26443
+      "prevIdx": 26582
     }
   },
   "date": "2026-08-27"
