@@ -3,6 +3,10 @@
 毎日更新する米国市況ダッシュボード。単一の `index.html` を配布物とし、
 **中身（解説・ニュース）はデータ、ガワ（HTML/CSS/JS）はテンプレート**に分離している。
 
+- 公開ページ: https://shouri0708-coder.github.io/kabu-dashboard/
+- リポジトリ: https://github.com/shouri0708-coder/kabu-dashboard （origin/main）
+- `git push` すると GitHub Pages が自動で再公開する（反映まで1〜2分）
+
 ## 構成
 
 ```
@@ -26,7 +30,7 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
    `dateLabel` / `footerAsOf` / `date`）。`prevIdx` は「直近取引日」の指数終値
    （ライブ更新の換算基準になる）
 4. `npm run daily` — チェックが通ればそのままビルドされる
-5. `git add -A && git commit`
+5. `git add -A && git commit && git push` — push で公開ページに反映される
 
 ### check.mjs の見方
 - **ERROR**（ビルド中断）: ヘッダー・結論・フッター等の日付が対象日と食い違う
@@ -39,8 +43,19 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 - ニュース 1 件: `{ t: 見出し, u: URL, s: "出典・8/27", sm: 要約, pl: "→ 追い風", dir: "up|down|mix" }`
   `s` の日付は check.mjs が鮮度判定に使うので必ず入れる
 - `kpis[].valAttr / deltaAttr`: `id="v-SPY"` などライブ株価更新用の属性。消すと自動更新が壊れる
-- `prevIdx`: ETF→指数換算の前日終値。毎日更新が必要
+- `prevIdx`: ETF→指数換算の基準（直近取引日の指数終値）。毎日更新が必要
 - HTML 断片を含むフィールドがある（`valueHtml` など）。値はエスケープせずそのまま埋め込まれる
+- 騰落率・終値は報道の数字より fetch-quotes の実測を優先する（報道は intraday のことがある。
+  8/27版では CRWD「+9%」実際+20.5%、HP「−7.1%」実際−2.9% という食い違いが実在した）
+
+## テンプレート側の注意（Cowork からの引き継ぎ）
+
+- 10年金利チャートは TradingView 埋め込みで `FRED:DGS10` を使用。
+  `TVC:US10Y` は埋め込み非対応なので戻さないこと
+- リアルタイム株価は Finnhub（WebSocket＋RESTポーリング、時間外セッション判定付き）。
+  キーは公開ページの HTML にも埋め込まれている（無料枠・本人の意図した公開）
+- ウォッチリストの追加銘柄は localStorage キー `kabu-dashboard-watchlist` に保存。
+  日本語銘柄名の辞書はテンプレート内の `JP_STOCKS`
 
 ## してはいけないこと
 
