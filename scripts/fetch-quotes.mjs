@@ -3,11 +3,30 @@
 // 使い方:  node scripts/fetch-quotes.mjs [YYYY-MM-DD]   （省略時は直近の取引日）
 //
 // 出力: data-quotes/<日付>.json と、画面に貼りやすい一覧表
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readdirSync, readFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+
+// 過去に取得済みのスナップショット（Yahoo側でバーが消えた日の保険。2026-08-28 で実際に発生）
+const archives = {};
+if (existsSync(join(ROOT, "data-quotes"))) {
+  for (const f of readdirSync(join(ROOT, "data-quotes")).filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))) {
+    const j = JSON.parse(readFileSync(join(ROOT, "data-quotes", f), "utf8"));
+    archives[j.date] = j;
+  }
+}
+// Yahoo の前日バーとターゲットの間に、保存済みスナップショットの取引日が挟まっていれば
+// そちらの終値を「前日終値」として使う（バー欠落時に騰落率が2日分になるのを防ぐ）
+function resolvePrev(sym, targetDate, yahooPrevDate, yahooPrevClose) {
+  const between = Object.keys(archives).filter(d => d > yahooPrevDate && d < targetDate).sort().at(-1);
+  if (!between) return { close: yahooPrevClose, note: null };
+  const a = archives[between];
+  const v = a.quotes?.[sym]?.close ?? a.extra?.[sym]?.close;
+  if (v == null) return { close: yahooPrevClose, note: null };
+  return { close: v, note: `前日=${between}（保存分。Yahoo側は${yahooPrevDate}までしか無い）` };
+}
 
 // ウォッチリスト銘柄
 const STOCKS = ["NVDA", "AVGO", "TSM", "AMD", "INTC", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "TSLA"];
@@ -38,30 +57,51 @@ for (const sym of [...STOCKS, ...Object.keys(EXTRA)]) {
   await new Promise(r => setTimeout(r, 250));   // 行儀よく間隔を空ける
 }
 
-// 対象日（指定なしなら株式データに共通して存在する直近の取引日）
+// NY市場が「きょう」としてまだ取引中の日付（引け前）は終値が無いので除外する
+function nyNow() {
+  const p = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", hour12: false,
+    year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).formatToParts(new Date());
+  const g = (t) => p.find(x => x.type === t).value;
+  return { date: `${g("year")}-${g("month")}-${g("day")}`, min: +g("hour") * 60 + +g("minute") };
+}
+const ny = nyNow();
+const inProgress = (date) => date === ny.date && ny.min < 16 * 60;   // 16:00 ET の引け前
+
+// 対象日（指定なしなら株式データに共通して存在する「引け済みの」直近取引日）
 const target = process.argv[2] ||
-  all["NVDA"].map(d => d.date).filter(d => all["^GSPC"].some(x => x.date === d)).at(-1);
+  all["NVDA"].map(d => d.date)
+    .filter(d => all["^GSPC"].some(x => x.date === d) && !inProgress(d)).at(-1);
+if (inProgress(target)) {
+  console.error(`エラー: ${target} はNY市場が取引中（引け前）で終値が確定していません。引け（日本時間 朝5〜6時）以降に実行してください。`);
+  process.exit(1);
+}
 
 const out = { date: target, quotes: {}, extra: {} };
 const rows = [];
+const notes = new Set();
 for (const sym of STOCKS) {
   const days = all[sym];
   const i = days.findIndex(d => d.date === target);
   if (i < 1) { rows.push(`${sym.padEnd(6)} ${target} のデータなし`); continue; }
-  const close = days[i].close, prev = days[i - 1].close;
-  const chg = (close / prev - 1) * 100;
-  out.quotes[sym] = { close: +close.toFixed(2), prevClose: +prev.toFixed(2), chg: +chg.toFixed(2) };
+  const close = days[i].close;
+  const prev = resolvePrev(sym, target, days[i - 1].date, days[i - 1].close);
+  if (prev.note) notes.add(prev.note);
+  const chg = (close / prev.close - 1) * 100;
+  out.quotes[sym] = { close: +close.toFixed(2), prevClose: +prev.close.toFixed(2), chg: +chg.toFixed(2) };
   rows.push(`${sym.padEnd(6)} $${close.toFixed(2).padStart(8)}  ${(chg >= 0 ? "+" : "") + chg.toFixed(2)}%`);
 }
 for (const [sym, label] of Object.entries(EXTRA)) {
   const days = all[sym];
   const i = days.findIndex(d => d.date === target);
   if (i < 1) { rows.push(`${label} ${target} のデータなし`); continue; }
-  const close = days[i].close, prev = days[i - 1].close;
-  const chg = (close / prev - 1) * 100;
-  out.extra[sym] = { label, close: +close.toFixed(2), prevClose: +prev.toFixed(2), chg: +chg.toFixed(2) };
-  rows.push(`${label.padEnd(12)} ${close.toFixed(2).padStart(10)}  ${(chg >= 0 ? "+" : "") + chg.toFixed(2)}%  (前日 ${prev.toFixed(2)})`);
+  const close = days[i].close;
+  const prev = resolvePrev(sym, target, days[i - 1].date, days[i - 1].close);
+  if (prev.note) notes.add(prev.note);
+  const chg = (close / prev.close - 1) * 100;
+  out.extra[sym] = { label, close: +close.toFixed(2), prevClose: +prev.close.toFixed(2), chg: +chg.toFixed(2) };
+  rows.push(`${label.padEnd(12)} ${close.toFixed(2).padStart(10)}  ${(chg >= 0 ? "+" : "") + chg.toFixed(2)}%  (前日 ${prev.close.toFixed(2)})`);
 }
+notes.forEach(n => rows.push(`※ ${n}`));
 
 mkdirSync(join(ROOT, "data-quotes"), { recursive: true });
 writeFileSync(join(ROOT, "data-quotes", `${target}.json`), JSON.stringify(out, null, 2) + "\n", "utf8");
