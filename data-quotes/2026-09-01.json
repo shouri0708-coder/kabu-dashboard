@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-01",
+  "quotes": {
+    "NVDA": {
+      "close": 217.44,
+      "prevClose": 220.78,
+      "chg": -1.51
+    },
+    "AVGO": {
+      "close": 369.68,
+      "prevClose": 370.34,
+      "chg": -0.18
+    },
+    "TSM": {
+      "close": 414,
+      "prevClose": 415.32,
+      "chg": -0.32
+    },
+    "AMD": {
+      "close": 459.61,
+      "prevClose": 470.72,
+      "chg": -2.36
+    },
+    "INTC": {
+      "close": 88.97,
+      "prevClose": 89.51,
+      "chg": -0.6
+    },
+    "MSFT": {
+      "close": 501.02,
+      "prevClose": 507.29,
+      "chg": -1.24
+    },
+    "AAPL": {
+      "close": 325.13,
+      "prevClose": 316.85,
+      "chg": 2.61
+    },
+    "GOOGL": {
+      "close": 335.02,
+      "prevClose": 339.35,
+      "chg": -1.28
+    },
+    "AMZN": {
+      "close": 254.92,
+      "prevClose": 259.77,
+      "chg": -1.87
+    },
+    "META": {
+      "close": 578.54,
+      "prevClose": 572.34,
+      "chg": 1.08
+    },
+    "TSLA": {
+      "close": 356.09,
+      "prevClose": 367.95,
+      "chg": -3.22
+    }
+  },
+  "extra": {
+    "^GSPC": {
+      "label": "S&P500",
+      "close": 7631.47,
+      "prevClose": 7686.14,
+      "chg": -0.71
+    },
+    "^DJI": {
+      "label": "NYダウ",
+      "close": 52766.88,
+      "prevClose": 53185.9,
+      "chg": -0.79
+    },
+    "^IXIC": {
+      "label": "ナスダック",
+      "close": 26099.77,
+      "prevClose": 26370.89,
+      "chg": -1.03
+    },
+    "JPY=X": {
+      "label": "ドル円",
+      "close": 159.75,
+      "prevClose": 160.12,
+      "chg": -0.23
+    },
+    "^TNX": {
+      "label": "米10年金利",
+      "close": 4.8,
+      "prevClose": 4.76,
+      "chg": 0.8
+    },
+    "CL=F": {
+      "label": "WTI原油",
+      "close": 90.22,
+      "prevClose": 85.76,
+      "chg": 5.2
+    }
+  }
+}
