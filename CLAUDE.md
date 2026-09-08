@@ -21,7 +21,8 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 
 ## 毎日の更新手順
 
-> この手順はスケジュールタスク `daily-kabu-dashboard-update`（火〜土 22:00 JST）で
+> この手順はスケジュールタスク `daily-kabu-dashboard-update`（火〜土 朝7:00 JST。
+> NY市場の終値確定＝日本時間朝5〜6時の直後に走る）で
 > 自動実行される。手動で走らせるときも同じ手順。米国休場日など新しい終値が無い日は
 > 手順1の時点で分かるので何もせず終了する。
 
