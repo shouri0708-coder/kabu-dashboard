@@ -1,0 +1,822 @@
+{
+  "dateLabel": "2026年9月10日（木）終値",
+  "headerNote": "※解説とニュースは毎朝7時頃（火〜土）に自動で全面更新されます",
+  "headline": {
+    "kicker": "きょうの結論（9/10 木曜終値時点）",
+    "lead": "原油が100ドル突破・金利4.94% — 株は4日続落。今夜21:30のCPIが「9月利上げ確定」の審判に",
+    "sub": "WTI原油は+6.7%の102.48ドルと5月以来の100ドル台に乗せました。トランプ大統領が「イランとのディールは求めていない」と発言し、革命防衛隊がホルムズ海峡で米艦船2隻・タンカー8隻などを攻撃、海峡の通航はほぼ止まっています。ディーゼルは史上2度目の200ドル超え。物価の先行指標PPIも前年比5.4%と高く、9/16の利上げ織り込みは73%へ。10年金利は4.94%と52週高値を更新し、3指数は4日続落となりました。一方で個別は明暗が鮮明です。Appleは初の折りたたみ「iPhone Duo」（1,999ドル）が好評で+3.6%の逆行高、Metaは水曜にAIエージェント「Muse」で+6.6%と高値更新。今夜21:30の8月CPIが、来週のFOMCの結論をほぼ決めます。",
+    "evidence": [
+      {
+        "tag": "原油100ドル",
+        "title": "WTI 102ドル・ブレント107ドル — ホルムズ海峡の通航がほぼ停止",
+        "body": "トランプ大統領が水曜夜に「イランとのディールは求めていない」「原油は中間選挙の直後まで下がらないだろう」と発言。木曜にはイラン革命防衛隊が米艦船2隻とタンカー8隻を含む船舶を攻撃したと報じられ、海峡のタンカー通航は再びほぼ停止しました。米戦略備蓄は44年ぶりの低水準、ディーゼルは2022年以来2度目の200ドル超えです。",
+        "so": "世界の原油の約2割が通る海峡が止まれば、物価も金利も株も全部が原油に振り回される。「原油が下がらない前提」で来週の中央銀行が動く。",
+        "url": "https://fortune.com/2026/09/10/we-worry-now-oil-tops-100-diesel-record-highs-iran-escalation/",
+        "src": "出典：Fortune（9/10・原油100ドル突破）"
+      },
+      {
+        "tag": "利上げ73%",
+        "title": "PPI前年比5.4%で利上げ織り込み73% — 10年金利4.94%",
+        "body": "8月のPPI（卸売物価）は前月比+0.4%と予想どおりでしたが、前年比は5.4%と予想を0.1pt上回りました。原油高と合わせて9/16の利上げ確率は73%、10月までなら80%超に上昇。10年金利は4.94%と52週高値を更新し、2日前の4.81%から一気に上がりました。",
+        "so": "利上げそのものより「10月も、12月も」という連続利上げの織り込みが始まったのが重い。今夜のCPIが上振れれば5%台の金利が視野に。",
+        "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+        "src": "出典：CNBC（9/10・利上げ確率上昇）"
+      },
+      {
+        "tag": "Apple逆行高",
+        "title": "初の折りたたみ「iPhone Duo」1,999ドル — 翌日+3.6%と好評",
+        "body": "ターナスCEO初のイベントで、7.6インチ内画面・史上最薄の折りたたみ「iPhone Duo」を発表。256GBが1,999ドル、10/23発売。iPhone 18 Pro/Pro Maxは各100ドル値上げの1,199/1,299ドル。イベント中に下げていた株価は発表後に切り返し、木曜は市場全体が売られる中で+3.6%と逆行高でした。",
+        "so": "「売り材料出尽くし」が定番のAppleイベントで買われたのは異例。値上げと新カテゴリーで成長シナリオが描けたと市場が判断した。",
+        "url": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+        "src": "出典：Fortune（9/9・iPhone Duo発表）"
+      },
+      {
+        "tag": "AIは収益化へ",
+        "title": "MetaのAIエージェント「Muse」で+6.6% — 「AI投資の回収」が買われる",
+        "body": "水曜、Metaは買い物・航空券予約・予定管理をこなす個人向けAIエージェント「Muse」を発表（無料／月20ドル／月100ドル）。巨額AI投資の収益化への一歩とみずほ証券などが評価し、株価は+6.6%の653ドルと高値更新。木曜は−1.4%と一服しましたが週間では大幅高です。",
+        "so": "半導体（Intel−5.6%・AMD−3.4%）が売られ、AIの「使う側・稼ぐ側」が買われた。AI相場の主役が半導体からソフト・サービスへ移る兆し。",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+        "src": "出典：Motley Fool（9/9・Meta急騰）"
+      }
+    ],
+    "summary": "①原油100ドル突破（ホルムズ通航停止）＋ ②PPI高止まりで利上げ織り込み73%・金利4.94%と、株は4日続落。③Apple（iPhone Duo）と④Meta（Muse）は個別材料で逆行高し、「AI収益化」と「新製品サイクル」が選ばれた。今夜21:30のCPIで来週のFOMCがほぼ決まる。"
+  },
+  "kpis": [
+    {
+      "key": "SPY",
+      "name": "S&P500（市場全体の平均像）",
+      "valAttr": " id=\"v-SPY\"",
+      "valueHtml": "7,592",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-SPY\"",
+      "delta": "▼ −0.58%・4日続落（9/10終値）",
+      "why": "原油100ドルと金利急伸で全面安。今夜のCPI待ち"
+    },
+    {
+      "key": "DIA",
+      "name": "NYダウ（大企業30社）",
+      "valAttr": " id=\"v-DIA\"",
+      "valueHtml": "52,064",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-DIA\"",
+      "delta": "▼ −317ドル・−0.60%（9/10終値）",
+      "why": "4日で1,350ドル安。エネルギーコストと利上げ懸念の二重苦"
+    },
+    {
+      "key": "QQQ",
+      "name": "ナスダック（ハイテク中心）",
+      "valAttr": " id=\"v-QQQ\"",
+      "valueHtml": "26,082",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-QQQ\"",
+      "delta": "▼ −0.65%（9/10終値）",
+      "why": "半導体・AIインフラに利益確定。Appleの逆行高が下支え"
+    },
+    {
+      "key": "JPY",
+      "name": "ドル／円",
+      "valAttr": "",
+      "valueHtml": "<span id=\"v-JPY\">153.57</span><span style=\"font-size:13px\">円</span>",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "→ 153円台で小動き（9/10）",
+      "why": "米金利上昇のドル買いと日銀利上げ観測の円買いが拮抗。9/18会合待ち"
+    },
+    {
+      "key": "US10Y",
+      "name": "米国10年金利（長期金利）",
+      "valAttr": "",
+      "valueHtml": "4.94<span style=\"font-size:13px\">%</span>",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▲ 52週高値を更新（9/10終値）",
+      "why": "PPI 5.4%と原油高で連続利上げを織り込み。CPI次第で5%台も"
+    },
+    {
+      "key": "WTI",
+      "name": "WTI原油（先物）",
+      "valAttr": "",
+      "valueHtml": "$102.48",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▲ +6.7%・5月以来の100ドル台（9/10終値）",
+      "why": "ホルムズ通航ほぼ停止。ブレントは107ドル、ディーゼルは200ドル超"
+    }
+  ],
+  "reasons": [
+    {
+      "dir": "down",
+      "mark": "①",
+      "title": " 原油が100ドルを突破 — 「ディールは求めない」発言とホルムズ通航停止",
+      "body": "トランプ大統領の「イランとのディールは求めていない」発言に、革命防衛隊による米艦船・タンカーへの攻撃が重なり、ホルムズ海峡の通航は再びほぼ停止。WTIは+6.7%の102.48ドル、ブレントは107.63ドルと5月以来の高値です。米戦略備蓄が44年ぶりの低水準にあることも供給不安を増幅しています。",
+      "tsumari": "8月末の「原油90ドル超え」シナリオを通り越して100ドル台へ。エネルギー株以外のほぼ全業種にコスト増要因で、株全体の重し。",
+      "tags": [
+        "影響：市場全体・物価",
+        "ホルムズ海峡に注目"
+      ]
+    },
+    {
+      "dir": "down",
+      "mark": "②",
+      "title": " 利上げは既定路線に — PPI 5.4%、織り込み73%、金利4.94%",
+      "body": "PPIは前月比では想定内でしたが前年比5.4%と高止まり。原油高と合わせて来週の利上げ織り込みは73%、10月までなら80%超に上昇し、10年金利は4.94%と52週高値を更新。金利に弱い半導体・AIインフラ株（Intel−5.6%・AMD−3.4%・Dell−5.4%・Oracle−5.4%）に利益確定売りが集中しました。",
+      "tsumari": "週初に爆騰した半導体が真っ先に売られたのは、相場が「利上げ1回」ではなく「連続利上げ」を織り込み始めた証拠。今夜のCPIがその確認になる。",
+      "tags": [
+        "影響：半導体・AIインフラ",
+        "今夜21:30 CPI"
+      ]
+    },
+    {
+      "dir": "up",
+      "mark": "③",
+      "title": " 個別は明暗 — Apple「iPhone Duo」とMeta「Muse」は逆行高",
+      "body": "Appleは初の折りたたみiPhone Duo（1,999ドル）とPro各機種の100ドル値上げが好感され、木曜に+3.6%の逆行高。Metaは水曜のAIエージェント「Muse」発表で+6.6%と高値を更新しました。市場全体が売られる中でも「AIを収益に変える企業」と「新製品サイクル入りの企業」には資金が向かっています。",
+      "tsumari": "AI相場の主役が「チップを作る側」から「AIで稼ぐ側」へ移る動きが再び。ただし週初の半導体祭りの反動でもあり、物色の回転は速い。",
+      "tags": [
+        "影響：Apple・Meta",
+        "AI収益化テーマ"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "type": "bull",
+      "label": "強気シナリオ ↑",
+      "title": "CPIが想定内 → 「利上げ1回で打ち止め」観測で4日続落から反発",
+      "body": "今夜のCPIが予想どおりなら、金利4.94%は行き過ぎと見た買い戻しが入りやすい局面です。9/16の利上げが「これで最後」というトーンになり、原油が停戦交渉の再開で反落すれば、Apple・Metaが示した「AI収益化・新製品」テーマに沿って指数全体の反発が期待できます。",
+      "flow": "📈 <b>成立の条件：</b>CPIコアが前月比+0.2%以下 ＋ 原油の反落 ＋ FOMCが「打ち止め」示唆<br>👀 <b>ウォッチ：</b>今夜21:30 CPI、WTIが100ドルを割るか、9/16 FOMC声明のトーン"
+    },
+    {
+      "type": "bear",
+      "label": "弱気シナリオ ↓",
+      "title": "CPI上振れ → 連続利上げ確定 → 金利5%・原油110ドルの本格調整",
+      "body": "CPIが上振れれば9/16と10月の連続利上げが確定的になり、10年金利は5%台へ。ホルムズ封鎖が長引いて原油110ドルに達すれば、8月の上昇分を全て吐き出す本格調整に発展します。9/18の日銀利上げで円高が重なれば、円建ての損失はさらに拡大します。",
+      "flow": "📉 <b>成立の条件：</b>CPIコア上振れ ＋ 10年金利5%超え ＋ 原油110ドル<br>👀 <b>ウォッチ：</b>CPI、10年金利5%の節目、ホルムズ関連の見出し、ドル円150円"
+    },
+    {
+      "type": "flat",
+      "label": "中立シナリオ →",
+      "title": "CPI待ちからFOMC・日銀待ちへ — 原油にらみの神経質なもみ合い",
+      "body": "CPIが決定打にならなければ、来週の中央銀行ウィークまで指数は方向感なく上下し、物色は「AI収益化」（Meta・Apple）と「エネルギー」に偏った二極相場が続く公算。半導体は週初の急騰・木曜の急落と振れ幅が大きく、追いかけにくい状況です。",
+      "flow": "➡️ <b>よくある展開：</b>指数は上下に振れつつ方向感なし、個別材料株だけが動く<br>👀 <b>ウォッチ：</b>9/16 FOMC、9/18 日銀、原油と10年金利"
+    }
+  ],
+  "news": [
+    {
+      "cat": "🌍 世界の大きな動き",
+      "catNote": "相場全体を左右するニュース・毎晩更新",
+      "items": [
+        {
+          "url": "https://fortune.com/2026/09/10/we-worry-now-oil-tops-100-diesel-record-highs-iran-escalation/",
+          "title": "原油100ドル突破、ディーゼルは史上2度目の200ドル超 — イラン情勢が悪化",
+          "src": "Fortune（英語）・9/10",
+          "body": "革命防衛隊が米艦船2隻・タンカー8隻を攻撃と報道、ホルムズ通航はほぼ停止。📉 米戦略備蓄は44年ぶり低水準で供給不安に拍車。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+          "title": "来週の利上げ確率が73%に急上昇 — PPI高止まりと原油高で",
+          "src": "CNBC（英語）・9/10",
+          "body": "10月までの利上げ確率は80%超。📉 「1回」ではなく連続利上げの織り込みが始まり、10年金利は4.94%へ。"
+        }
+      ]
+    },
+    {
+      "cat": "📈 米国市場のいま",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "title": "3指数が4日続落 — 金利急伸と原油100ドル超が重し",
+          "src": "Yahoo Finance（英語）・9/10",
+          "body": "ダウは4日で約1,350ドル安。📉 週初に急騰した半導体（Intel−5.6%・AMD−3.4%）とAIインフラ（Dell・Oracle各−5.4%）に利益確定が集中。"
+        },
+        {
+          "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026",
+          "title": "水曜：ブレント101ドル突破、金利は52週高値 — 米加貿易摩擦も重し",
+          "src": "TheStreet（英語）・9/9",
+          "body": "原油・金利・イラン・カナダとの関税摩擦の4点セットでリスク回避。↕️ 唯一MetaがAIエージェント発表で+6.6%と気を吐いた。"
+        }
+      ]
+    },
+    {
+      "cat": "🏢 企業・決算",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+          "title": "Apple、初の折りたたみ「iPhone Duo」を1,999ドルで発表 — 翌日+3.6%",
+          "src": "Fortune（英語）・9/9",
+          "body": "7.6インチ内画面・史上最薄、10/23発売。iPhone 18 Pro/Pro Maxは各100ドル値上げ。📈 「売り材料出尽くし」の定番を覆し、翌日は市場全体の下げに逆行して上昇。"
+        },
+        {
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+          "title": "Meta、AIエージェント「Muse」発表で+6.6% — 買い物・予約・予定管理を代行",
+          "src": "Motley Fool（英語）・9/9",
+          "body": "無料／月20ドル／月100ドルの3段階。📈 巨額AI投資の収益化への一歩と評価され653ドルの高値。木曜は−1.4%と一服。"
+        }
+      ]
+    },
+    {
+      "cat": "🏛 金融政策・経済指標",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html",
+          "title": "今夜21:30のCPIは「いつも以上に重要」— 利上げの最終判断材料",
+          "src": "CNBC（英語）・9/10",
+          "body": "PPIは前年比5.4%と高く、原油高の転嫁も懸念。↕️ 想定内なら買い戻し、上振れなら連続利上げ確定で金利5%が視野に。"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "when": "今夜21:30（日本時間）",
+      "what": "8月CPI（消費者物価指数）",
+      "note": "9/16 FOMCの最終判断材料。コアの前月比が焦点で、上振れなら連続利上げがほぼ確定。"
+    },
+    {
+      "when": "9/16（水）",
+      "what": "FOMC — 利上げ織り込み73%で突入",
+      "note": "利上げの有無より「10月・12月も続くか」のトーンが焦点。ドットチャートにも注目。"
+    },
+    {
+      "when": "9/18（金）",
+      "what": "日銀金融政策決定会合",
+      "note": "利上げ観測が高く円は153円台。FOMCとの「同時引き締め」なら円高加速のリスク。"
+    },
+    {
+      "when": "継続監視",
+      "what": "ホルムズ海峡情勢と原油100ドル台",
+      "note": "通航再開の兆しがあれば大きな反落余地。逆に110ドルへ向かえば物価・金利経由で相場全体の重し。"
+    }
+  ],
+  "footerAsOf": "2026年9月10日（木）米国市場終値。株価・指数は Yahoo Finance の終値データ、解説・ニュースは Fortune・CNBC・Yahoo Finance・TheStreet・Motley Fool などの報道に基づく",
+  "watch": [
+    {
+      "nm": "エヌビディア",
+      "en": "NVIDIA / NVDA",
+      "px": "$218.36",
+      "chg": -2.37,
+      "t": "prev",
+      "note": "金利急伸でAI半導体に利益確定売り。決算後の安値圏へ",
+      "news": [
+        {
+          "t": "AI infrastructure names sold as rate-hike odds climb",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "利上げ織り込み73%への上昇で−2.4%。Dell・Oracleなど AIインフラ関連と一緒に利益確定の対象に。",
+          "pl": "金利上昇局面ではAI半導体も無風では済まない → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Chip rally leaves Nvidia behind — profit-taking continues",
+          "u": "https://ca.finance.yahoo.com/news/intel-leads-chip-stocks-rally-204945385.html",
+          "s": "Yahoo Finance・9/8",
+          "sm": "SOX+2%の全面高の中で−2.0%。決算後の高値圏から、出遅れ半導体への資金の持ち替えが続いている。",
+          "pl": "セクター内ローテーションの売り側に → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Why AI Chip Stocks Nvidia, AMD, Intel Are Rising Today",
+          "u": "https://www.tipranks.com/news/why-ai-chip-stocks-nvidia-amd-intel-are-rising-today-september-4",
+          "s": "TipRanks・9/4",
+          "sm": "AI開発者プラットフォームのHugging Faceを約130億ドルで買収することで合意と報道。AIディール・ラッシュの中心に。",
+          "pl": "ハードからソフト・開発者基盤への布陣拡大 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "ブロードコム",
+      "en": "Broadcom / AVGO",
+      "px": "$360.83",
+      "chg": -0.97,
+      "t": "prev",
+      "note": "半導体安に連れて小幅安。決算の好内容は評価継続",
+      "news": [
+        {
+          "t": "Broadcom (AVGO) Q3 earnings report 2026",
+          "u": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
+          "s": "CNBC・9/2",
+          "sm": "半導体売上が3倍の167億ドル、純利益131億ドル。来期の強気見通しも示したが、株価は既に織り込み済みで反応は限定的。",
+          "pl": "業績は絶好調、株価は期待の高さとの戦い → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Broadcom +4.5% as Nvidia's results keep AI-chip investors focused on data center demand",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-nvidia-surges-on-blowout-results-and-surprising-guidance/",
+          "s": "Motley Fool・8/27",
+          "sm": "NVIDIAの強気ガイダンスがデータセンター投資の継続を裏付け、カスタムAIチップ勢にも買いが広がった。",
+          "pl": "AIインフラ投資の恩恵 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "TSMC（ADR）",
+      "en": "Taiwan Semi / TSM",
+      "px": "$428.03",
+      "chg": -1.68,
+      "t": "prev",
+      "note": "半導体売りに連れ安。AI需要期待は不変",
+      "news": [
+        {
+          "t": "Dow, S&P 500, Nasdaq rally as Nvidia earnings revive AI optimism",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html",
+          "s": "Yahoo Finance・8/27",
+          "sm": "NVIDIA決算を受けて半導体セクターが全面高。半導体ETFのSMHは3%上昇し、受託生産のTSMCにも買いが及んだ。",
+          "pl": "AIチップ増産の恩恵が続く → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "AMD",
+      "en": "Advanced Micro / AMD",
+      "px": "$503.60",
+      "chg": -3.36,
+      "t": "prev",
+      "note": "週初の急騰から−3.4%と反落。振れ幅の大きい展開",
+      "news": [
+        {
+          "t": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Jump",
+          "u": "https://ca.finance.yahoo.com/news/intel-leads-chip-stocks-rally-204945385.html",
+          "s": "Yahoo Finance・9/8",
+          "sm": "半導体指数SOXが+2%となる全面高の中で+5.9%と上昇率上位。Meta 6GW案件など大型契約の進捗期待も継続。",
+          "pl": "AI一極物色の中心 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "AMD slips even as chip stocks rally on Nvidia's results",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/27/stock-market-today-aug-27-nvidia-surges-on-blowout-results-and-surprising-guidance/",
+          "s": "Motley Fool・8/27",
+          "sm": "半導体高の中でAMDはASML・アプライドマテリアルズとともに小幅安。NVIDIAへの資金集中が意識された。",
+          "pl": "AI相場でも勝ち組と負け組が分かれ始めた → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "AMD and Intel Rise 3% on a Strong Buy Upgrade and a Pelosi Disclosure",
+          "u": "https://247wallst.com/investing/2026/08/25/amd-and-intel-rise-3-on-a-strong-buy-upgrade-and-a-pelosi-disclosure-nvidia-and-broadcom-tick-up/",
+          "s": "24/7 Wall St.・8/25",
+          "sm": "週初にはアナリストの強気格上げとペロシ議員の保有開示で買われる場面もあった。",
+          "pl": "材料次第で戻りも速い → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "インテル",
+      "en": "Intel / INTC",
+      "px": "$100.32",
+      "chg": -5.57,
+      "t": "prev",
+      "note": "+9%の急騰から2日で−5.6%。値上げ報道の勢いが一服",
+      "news": [
+        {
+          "t": "Chip stocks lead decline as yields hit 52-week highs",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "火曜の+9%急騰から一転、金利急伸で−5.6%。連続利上げの織り込みが高PER半導体の重しに。",
+          "pl": "金利に振らされる相場が続く → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Intel Stock Jumps 9% on Chip Price Hike Report",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-jumps-9-chip-163052538.html",
+          "s": "Yahoo Finance・9/8",
+          "sm": "Northland証券が「Outperform」へ格上げ（目標120ドル）。サーバーCPU不足、10月からの約10%値上げ報道、テスラとのTerafab案件が評価材料。",
+          "pl": "値上げできる=需要の強さの証明 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "AMD and Intel Rise on a Strong Buy Upgrade and a Pelosi Disclosure",
+          "u": "https://247wallst.com/investing/2026/08/25/amd-and-intel-rise-3-on-a-strong-buy-upgrade-and-a-pelosi-disclosure-nvidia-and-broadcom-tick-up/",
+          "s": "24/7 Wall St.・8/25",
+          "sm": "強気格上げを受けて週初から堅調。NVIDIA決算後の半導体全面高では上昇率上位に入った。",
+          "pl": "AI相場の裾野拡大の受け皿 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "マイクロソフト",
+      "en": "Microsoft / MSFT",
+      "px": "$492.44",
+      "chg": 0.16,
+      "t": "prev",
+      "note": "ほぼ横ばい。大型グロースの中では底堅い",
+      "news": [
+        {
+          "t": "MSFT Stock Surges on Azure Growth and Sustainable CapEx Outlook",
+          "u": "https://www.marketbeat.com/articles/microsoft-just-flipped-the-ai-spending-narrative-overnight/",
+          "s": "MarketBeat・8月下旬",
+          "sm": "Azureは年商1,000億ドルを突破し+43%成長。Copilotの有料席数は3,000万を超え、「需要が供給を上回る」状態が続く。",
+          "pl": "AI投資が収益に直結する代表例 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アップル",
+      "en": "Apple / AAPL",
+      "px": "$326.57",
+      "chg": 3.56,
+      "t": "prev",
+      "note": "iPhone Duo好評で+3.6%の逆行高。値上げと新カテゴリーを評価",
+      "news": [
+        {
+          "t": "Apple unveils $2,000 iPhone Duo, its first foldable smartphone",
+          "u": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+          "s": "Fortune・9/9",
+          "sm": "ターナスCEO初のイベントで折りたたみ「iPhone Duo」（1,999ドル、10/23発売）を発表。Pro各機種は100ドル値上げ。翌日は市場安の中で+3.6%。",
+          "pl": "新カテゴリー＋値上げで成長シナリオ再構築 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Apple event tonight: foldable iPhone Ultra expected",
+          "u": "https://www.cnbc.com/2026/09/08/stock-market-today-live-updates.html",
+          "s": "CNBC・9/8",
+          "sm": "日本時間あす未明2時からの新製品イベントを前に−1.2%の様子見。折りたたみ「iPhone Ultra」の発表が焦点。",
+          "pl": "イベントの中身次第で仕切り直し → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Apple Rises on John Ternus's First Day as CEO Even While the NASDAQ Skids",
+          "u": "https://247wallst.com/investing/2026/09/01/apple-rises-3-on-john-ternuss-first-day-as-ceo-even-while-nasdaq-skids/",
+          "s": "24/7 Wall St.・9/1",
+          "sm": "CEO交代初日に指数安の中で+2.6%の逆行高。ハードウェア畑25年のターナス氏と9/9イベントへの期待が支え。",
+          "pl": "新体制への期待が売り地合いに勝った → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アルファベット",
+      "en": "Alphabet / GOOGL",
+      "px": "$332.60",
+      "chg": 0.59,
+      "t": "prev",
+      "note": "小幅反発。AI懸念に金利高が重なり出遅れ続く",
+      "news": [
+        {
+          "t": "Alphabet Stock Sheds $692 Billion as AI Delays and Talent Loss Hit Shares",
+          "u": "https://www.bloomberg.com/news/articles/2026-08-27/alphabet-loses-692-billion-in-market-value-as-ai-questions-rise",
+          "s": "Bloomberg・8/27",
+          "sm": "AI開発の遅れと人材流出（ブレインドレイン）への懸念で、時価総額は高値から6,920億ドル減少。年初の勢いが反転している。",
+          "pl": "「AIで勝てるのか」という疑念 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "アマゾン",
+      "en": "Amazon / AMZN",
+      "px": "$251.89",
+      "chg": -0.2,
+      "t": "prev",
+      "note": "小動き。物流コスト増（ディーゼル200ドル超）の連想も",
+      "news": [
+        {
+          "t": "Amazon Stock Moved Up on Aug 28: A Full Analysis",
+          "u": "https://www.tradingkey.com/news/market-movers/262138960-market-movers-amzn-20260828",
+          "s": "TradingKey・8/28",
+          "sm": "AWSの基盤拡大とAI投資を評価し、アナリストが買い推奨の維持と目標株価引き上げを相次いで発表。+4.0%と急伸した。",
+          "pl": "出遅れ大型株買いの筆頭に → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling",
+          "u": "https://www.cnbc.com/2026/08/04/jeff-bezos-just-filed-to-sell-4-billion-in-amazon-the-shares-are-falling.html",
+          "s": "CNBC・8/4",
+          "sm": "ベゾス氏は6月末以降の売却分と合わせ約97億ドル相当を売却。需給面の重しとして意識され続けている。",
+          "pl": "創業者売りの需給圧力 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Bezos Plans to Sell $4B Amazon Stock: Why Investors Should Sit Tight",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/bezos-plans-sell-4b-amazon-153700719.html",
+          "s": "Yahoo Finance・8月",
+          "sm": "一方でAWSは受注残4,960億ドル・売上+37%（18四半期ぶりの高成長）と絶好調。売却は既定の計画に基づくとの指摘も。",
+          "pl": "事業は好調で売りは需給要因 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "メタ",
+      "en": "Meta / META",
+      "px": "$644.38",
+      "chg": -1.42,
+      "t": "prev",
+      "note": "前日+6.6%（Muse）の反動で−1.4%。644ドルと高値圏を維持",
+      "news": [
+        {
+          "t": "Meta Surges Over 6.5% on Muse AI Agent Launch",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+          "s": "Motley Fool・9/9",
+          "sm": "買い物・航空券予約・予定管理を代行する個人向けAIエージェント「Muse」を発表。AI投資の収益化への一歩と評価され高値更新。",
+          "pl": "AI投資の回収が見え始めた → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Why Is Meta Stock Up Today? — Muse Spark 1.3 paid access opens",
+          "u": "https://www.fool.com/investing/2026/09/03/why-is-meta-stock-up-today/",
+          "s": "Motley Fool・9/3",
+          "sm": "新AIモデルの有料開発者アクセスを開放。ベンチマークでOpenAI・Anthropicの最上位モデルに並ぶ評価で、巨額AI投資への疑念が後退。",
+          "pl": "「AI出遅れ」の評価が変わり始めた → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Stocks Edge Lower As Market Digests Meta Ruling",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/26/stock-market-today-aug-26-stocks-edge-lower-as-market-digests-meta-ruling-and-awaits-nvidia-s-earnings/",
+          "s": "Motley Fool・8/26",
+          "sm": "170億ドルという巨額の和解に合意。金額よりも法的な不確実性が消えたことを評価する見方が優勢だった。",
+          "pl": "悪材料の出尽くしと見る向きも → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "テスラ",
+      "en": "Tesla / TSLA",
+      "px": "$363.56",
+      "chg": -1.16,
+      "t": "prev",
+      "note": "小幅安。Cybercab失望からの戻りは限定的",
+      "news": [
+        {
+          "t": "Tesla's stock drops as Cybercab update 'underwhelms,' NHTSA probe",
+          "u": "https://www.cnbc.com/2026/09/04/teslas-stock-drops-as-cybercab-update-underwhelms-nhtsa-probe.html",
+          "s": "CNBC・9/4",
+          "sm": "招待制・中継なしのイベントは中身に乏しく、NHTSAの調査開始も重なって−5.9%。アナリストの失望コメントが相次いだ。",
+          "pl": "ロボタクシー期待の修正が続くリスク → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Tesla Surges on Cybercab Event Anticipation and Autonomy Focus",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/08/31/stock-market-today-aug-31-tesla-surges-on-cybercab-event-anticipation-and-autonomy-focus/",
+          "s": "Motley Fool・8/31",
+          "sm": "9/3のCybercab発表イベントへの期待で月曜に+5.5%と急騰（出来高は3カ月平均の1.5倍）。火曜は反動で−3.2%。",
+          "pl": "イベントの中身次第で上下どちらにも → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Tesla Stock Rebounds Above $355 as Robotaxi Expansion and Semi Plans Boost TSLA",
+          "u": "https://www.fxleaders.com/news/2026/08/27/tesla-stock-rebounds-above-355-as-robotaxi-expansion-and-semi-plans-boost-tsla/",
+          "s": "FX Leaders・8/27",
+          "sm": "ロボタクシーの運行時間を全都市で朝6時〜夜10時に拡大し、無人運行の車両も増加。配車の最適化で待ち時間も短縮した。",
+          "pl": "ロボタクシー事業の進捗が見えてきた → 追い風",
+          "dir": "up"
+        }
+      ]
+    }
+  ],
+  "kpiNews": {
+    "SPY": {
+      "label": "S&P500 に関係するニュース",
+      "items": [
+        {
+          "t": "Dow, S&P 500, Nasdaq fall for fourth straight day as bond yields jump, oil stays above $100",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "4日続落でS&P500は7,592。原油100ドルと金利4.94%の二重苦で、買われたのはAppleなど個別材料株だけ。",
+          "pl": "原油と金利の天井が見えるまで重い → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Friday's CPI inflation report is even more important than usual",
+          "u": "https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html",
+          "s": "CNBC・9/10",
+          "sm": "今夜のCPIが想定内なら4日続落の反発材料に、上振れなら連続利上げ確定で下げが加速。",
+          "pl": "CPI次第で上下どちらにも → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "DIA": {
+      "label": "NYダウ に関係するニュース",
+      "items": [
+        {
+          "t": "Dow falls 316 points; down four sessions in a row",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "4日で約1,350ドル安。燃料コスト増と利上げ懸念が景気敏感株に直撃した。",
+          "pl": "原油高は景気敏感株に最も効く → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Dow, Russell 2000 fall as Brent passes $101/bbl（水曜）",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-09-2026",
+          "s": "TheStreet・9/9",
+          "sm": "水曜は−405ドル。カナダとの関税摩擦の激化も、輸出企業の多いダウの重しになった。",
+          "pl": "貿易摩擦も新たな重し → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "QQQ": {
+      "label": "ナスダック に関係するニュース",
+      "items": [
+        {
+          "t": "Meta Surges Over 6.5% on Muse AI Agent Launch（水曜）",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+          "s": "Motley Fool・9/9",
+          "sm": "MetaのAIエージェントとAppleのiPhone Duoが逆行高。「AIで稼ぐ側」への物色がナスダックの下値を支えた。",
+          "pl": "AI収益化テーマは健在 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Chip stocks reverse as rate-hike odds top 70%",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "週初に急騰した半導体が金利急伸で反落。Intel−5.6%・AMD−3.4%・NVIDIA−2.4%。",
+          "pl": "金利がハイテクの天井を決める → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "JPY": {
+      "label": "ドル／円 に関係するニュース",
+      "items": [
+        {
+          "t": "Yen makes dash across ¥153, raising possibility that trend has turned",
+          "u": "https://www.japantimes.co.jp/business/2026/09/08/markets/yen-153/",
+          "s": "Japan Times・9/8",
+          "sm": "153円台で足踏み。米金利上昇のドル買いと日銀利上げ観測の円買いが拮抗している。",
+          "pl": "9/18会合で均衡が崩れる可能性 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "The likelihood of a Fed rate hike next week just got higher",
+          "u": "https://www.cnbc.com/2026/09/10/the-likelihood-of-a-fed-interest-rate-hike-next-week-just-got-a-lot-higher.html",
+          "s": "CNBC・9/10",
+          "sm": "米利上げ観測の高まりはドル買い材料。日米同時利上げなら金利差は変わらず、原油高の交易条件悪化で円安圧力も。",
+          "pl": "米金利上昇は円安方向 → ドル高材料",
+          "dir": "up"
+        }
+      ]
+    },
+    "US10Y": {
+      "label": "米国10年金利 に関係するニュース",
+      "items": [
+        {
+          "t": "PPI inflation report August 2026",
+          "u": "https://www.cnbc.com/2026/09/10/ppi-inflation-report-august-2026.html",
+          "s": "CNBC・9/10",
+          "sm": "PPIは前年比5.4%と予想を0.1pt上回り、10年金利は4.94%と52週高値を更新。2日で13bp上昇した。",
+          "pl": "連続利上げの織り込みで上昇 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Tomorrow's CPI Report Could Send Rate-Hike Odds Even Higher",
+          "u": "https://247wallst.com/investing/2026/09/10/tomorrows-cpi-report-could-send-rate-hike-odds-even-higher/",
+          "s": "24/7 Wall St.・9/10",
+          "sm": "CPI上振れなら5%台が視野に。想定内なら4.94%は行き過ぎとして低下余地も。",
+          "pl": "CPIで方向が決まる → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "WTI": {
+      "label": "WTI原油 に関係するニュース",
+      "items": [
+        {
+          "t": "Oil tops $100, diesel hits record highs amid Iran war escalation",
+          "u": "https://fortune.com/2026/09/10/we-worry-now-oil-tops-100-diesel-record-highs-iran-escalation/",
+          "s": "Fortune・9/10",
+          "sm": "トランプ大統領「ディールは求めない」「原油は中間選挙直後まで下がらない」発言と革命防衛隊の船舶攻撃で+6.7%の102.48ドル。",
+          "pl": "供給途絶リスクが現実に → 物価の重し",
+          "dir": "down"
+        },
+        {
+          "t": "Oil stays above $100 a barrel amid Iran's stranglehold on Strait of Hormuz",
+          "u": "https://finance.yahoo.com/news/oil-stays-above-100-barrel-035819939.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "ホルムズのタンカー通航は再びほぼ停止。通航再開の報道が出れば反落余地は大きいが、当面は高止まりの公算。",
+          "pl": "地政学次第で急変 → 両面",
+          "dir": "mix"
+        }
+      ]
+    }
+  },
+  "movers": [
+    {
+      "nm": "アップル",
+      "en": "Apple / AAPL",
+      "pct": 3.6,
+      "why": "iPhone Duo好評で市場安に逆行高",
+      "desc": "初の折りたたみ「iPhone Duo」（1,999ドル・10/23発売）を発表。ターナス新CEOの初イベント。",
+      "news": [
+        {
+          "t": "Apple unveils $2,000 iPhone Duo, its first foldable smartphone",
+          "u": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+          "s": "Fortune・9/9",
+          "sm": "史上最薄の折りたたみとPro各機種の値上げで、単価上昇の成長シナリオを市場が評価した。",
+          "pl": "新製品サイクル入り → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "エヌビディア",
+      "en": "NVIDIA / NVDA",
+      "pct": -2.4,
+      "why": "金利急伸でAI半導体に利益確定",
+      "desc": "AI半導体の絶対王者。決算後の高値から調整が続き、218ドルと約2週間ぶりの安値圏。",
+      "news": [
+        {
+          "t": "Stocks fall for fourth straight day as bond yields jump",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "10年金利4.94%への急伸で、金利に弱いAI関連が軒並み売られた。",
+          "pl": "金利の天井が見えるまで上値は重い → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "AMD",
+      "en": "Advanced Micro / AMD",
+      "pct": -3.4,
+      "why": "週初の急騰から反落",
+      "desc": "月・火で2桁%上昇していた分の利益確定。AI半導体の振れ幅の大きさを象徴。",
+      "news": [
+        {
+          "t": "Chip stocks reverse as rate-hike odds top 70%",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "半導体指数は週初の急騰分を吐き出す動き。連続利上げの織り込みが高PER株の重しに。",
+          "pl": "急騰後の反動で値幅が大きい → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "デル・テクノロジーズ",
+      "en": "Dell Tech / DELL",
+      "pct": -5.4,
+      "why": "AIインフラ関連に利益確定売り",
+      "desc": "AIサーバー大手。9/1の決算爆発で急騰した分の反動が金利急伸で出た。",
+      "news": [
+        {
+          "t": "AI hardware names slide as yields hit 52-week highs",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-10-2026",
+          "s": "TheStreet・9/10",
+          "sm": "金利急伸で高バリュエーションのAIインフラ株から資金が流出。決算後の上昇分を一部返した。",
+          "pl": "業績は好調、株価は金利次第 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "オラクル",
+      "en": "Oracle / ORCL",
+      "pct": -5.4,
+      "why": "AIクラウド関連の高PER株として売られる",
+      "desc": "AIデータセンター向けクラウドで急成長。金利上昇局面で真っ先に売られる高PER銘柄の代表。",
+      "news": [
+        {
+          "t": "S&P 500, Nasdaq decline as Brent oil hits highest since July",
+          "u": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-10-2026",
+          "s": "TheStreet・9/10",
+          "sm": "原油高・金利高のリスクオフで、AIクラウド・インフラ関連に幅広く利益確定売り。",
+          "pl": "金利上昇は高PER株に最も効く → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "インテル",
+      "en": "Intel / INTC",
+      "pct": -5.6,
+      "why": "火曜+9%の反動。値上げ報道の勢い一服",
+      "desc": "格上げとCPU値上げ報道で火曜に急騰したが、金利急伸で2日で反落。",
+      "news": [
+        {
+          "t": "Chip stocks lead decline as yields jump",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html",
+          "s": "Yahoo Finance・9/10",
+          "sm": "急騰の翌々日に−5.6%。材料は生きているが、金利急伸の局面で高値掴みの投げが出た。",
+          "pl": "急騰後の調整、材料自体は不変 → 両面",
+          "dir": "mix"
+        }
+      ]
+    }
+  ],
+  "prevIdx": {
+    "SPY": {
+      "label": "S&P500",
+      "prevIdx": 7592
+    },
+    "DIA": {
+      "label": "NYダウ",
+      "prevIdx": 52064
+    },
+    "QQQ": {
+      "label": "ナスダック",
+      "prevIdx": 26082
+    }
+  },
+  "date": "2026-09-10"
+}
