@@ -1,8 +1,13 @@
 // データの整合性チェック。ビルド前に走らせて「更新漏れ」を検出する。
-// 使い方:  node scripts/check.mjs [日付]
+// 使い方:  node scripts/check.mjs [キー]   キー = 2026-09-11 / 2026-09-11_20260914-1000
+//
+// ファイル名の2種類:
+//   data/<終値日>.json                      取引日の終値版
+//   data/<終値日>_<JST日付>-<HHmm>.json     休場日などのニュース更新版（株価は終値日のまま）
 //
 // 検出するもの:
 //   [ERROR] 本文の日付が対象日と食い違っている（ヘッダー・結論・KPI・フッター）
+//   [ERROR] ニュース更新版なのに、更新日の表記や終値日より新しい出典が無い
 //   [WARN ] セクションの出典が古いまま残っている（前回更新分の残存）
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -10,15 +15,20 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const STALE_DAYS = 4;   // セクションの最新の出典がこれ以上古いと警告
+const KEY_RE = /^(\d{4}-\d{2}-\d{2})(?:_(\d{4})(\d{2})(\d{2})-(\d{2})(\d{2}))?$/;
 
-const dates = readdirSync(join(ROOT, "data"))
-  .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).map(f => f.replace(".json", "")).sort();
-const date = process.argv[2] || dates[dates.length - 1];
-const path = join(ROOT, "data", `${date}.json`);
-if (!existsSync(path)) { console.error(`データがありません: data/${date}.json`); process.exit(1); }
+const keys = readdirSync(join(ROOT, "data"))
+  .map(f => f.replace(/\.json$/, "")).filter(k => KEY_RE.test(k)).sort();
+const key = process.argv[2] || keys[keys.length - 1];
+const path = join(ROOT, "data", `${key}.json`);
+if (!KEY_RE.test(key) || !existsSync(path)) { console.error(`データがありません: data/${key}.json`); process.exit(1); }
 const d = JSON.parse(readFileSync(path, "utf8"));
 
-const target = new Date(date + "T00:00:00Z");
+const [, date, uy, um, ud, uh, umin] = key.match(KEY_RE);   // date = 株価の終値日
+const updateDate = uy ? `${uy}-${um}-${ud}` : null;          // ニュース更新版なら JST の更新日
+const newsDate = updateDate || date;
+
+const target = new Date(newsDate + "T00:00:00Z");            // 鮮度判定の基準はニュースの日付
 const errors = [], warns = [];
 const fmt = (dt) => dt.toISOString().slice(0, 10);
 const daysOld = (dt) => Math.round((target - dt) / 864e5);
@@ -44,18 +54,31 @@ function datesIn(text) {
 }
 
 /* --- 1. 本文の日付が対象日と一致しているか（必須） --- */
+// ヘッダー等は「終値日」「ニュース更新日」のどちらかであればよい。KPIの変動率は終値日のみ
+const both = [date, updateDate].filter(Boolean);
 const mustMatch = [
-  ["ヘッダーの日付",        d.dateLabel],
-  ["きょうの結論の kicker",  d.headline.kicker],
-  ["フッターのデータ時点",   d.footerAsOf],
-  ...(d.kpis || []).map(k => [`KPI「${k.key}」の変動率表記`, k.delta]),
+  ["ヘッダーの日付",        d.dateLabel,         both],
+  ["きょうの結論の kicker",  d.headline.kicker,   both],
+  ["フッターのデータ時点",   d.footerAsOf,        both],
+  ...(d.kpis || []).map(k => [`KPI「${k.key}」の変動率表記`, k.delta, [date]]),
 ];
-for (const [label, text] of mustMatch) {
+for (const [label, text, allowed] of mustMatch) {
   const found = datesIn(String(text));
   if (!found.length) continue;                       // 日付を書いていない項目は対象外
-  const wrong = found.filter(dt => fmt(dt) !== date);
+  const wrong = found.filter(dt => !allowed.includes(fmt(dt)));
   if (wrong.length)
-    errors.push(`${label}が ${date} と食い違う → ${[...new Set(wrong.map(fmt))].join(", ")}  「${text}」`);
+    errors.push(`${label}が ${allowed.join(" / ")} と食い違う → ${[...new Set(wrong.map(fmt))].join(", ")}  「${text}」`);
+}
+if (d.date !== date) errors.push(`date フィールド「${d.date}」が終値日 ${date} と食い違う`);
+
+/* --- 1b. ニュース更新版の追加チェック --- */
+if (updateDate) {
+  const expectAsOf = `${updateDate} ${uh}:${umin}`;
+  if (d.newsAsOf !== expectAsOf)
+    errors.push(`newsAsOf「${d.newsAsOf}」がファイル名の更新時刻 ${expectAsOf} と食い違う`);
+  for (const [label, text] of [["ヘッダーの日付", d.dateLabel], ["きょうの結論の kicker", d.headline.kicker]])
+    if (!datesIn(String(text)).some(dt => fmt(dt) === updateDate))
+      errors.push(`ニュース更新版なのに${label}に更新日 ${updateDate} の表記が無い  「${text}」`);
 }
 
 /* --- 2. セクションの鮮度：出典の日付フィールドだけを見る --- */
@@ -77,6 +100,13 @@ for (const [name, all] of Object.entries(sections)) {
     warns.push(`「${name}」の最新の出典が ${fmt(newest)}（${old}日前）— 更新漏れの可能性`);
 }
 
+// ニュース更新版は「終値日より新しい出典」が結論の根拠に無ければ更新する意味が無い
+if (updateDate) {
+  const closeDt = new Date(date + "T00:00:00Z");
+  if (!sections["きょうの結論の根拠"].some(dt => dt > closeDt && dt <= target))
+    errors.push(`ニュース更新版なのに「きょうの結論の根拠」に ${date} より新しい出典が無い`);
+}
+
 /* --- 3. データが揃っているか --- */
 if (!d.watch?.length)  errors.push("ウォッチリストが空");
 if (!d.movers?.length) errors.push("きょう目立った銘柄が空");
@@ -86,7 +116,8 @@ for (const s of ["SPY", "DIA", "QQQ"])
   if (!(s in (d.prevIdx || {}))) errors.push(`prevIdx に ${s} が無い`);
 
 /* --- 出力 --- */
-console.log(`チェック対象: data/${date}.json\n`);
+console.log(`チェック対象: data/${key}.json` +
+  (updateDate ? `（ニュース更新版: 株価 ${date} 終値 / ニュース ${d.newsAsOf} JST）` : "") + "\n");
 errors.forEach(m => console.log("  [ERROR] " + m));
 warns.forEach(m  => console.log("  [WARN ] " + m));
 if (!errors.length && !warns.length) console.log("  問題なし");

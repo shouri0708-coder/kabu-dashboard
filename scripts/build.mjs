@@ -1,6 +1,8 @@
 // src/template.html + data/<日付>.json → index.html（単一ファイル）を生成する。
-// 使い方:  node scripts/build.mjs            最新の日付のデータでビルド
-//          node scripts/build.mjs 2026-08-27 日付を指定してビルド
+// 使い方:  node scripts/build.mjs            最新のデータでビルド
+//          node scripts/build.mjs 2026-08-27 キーを指定してビルド
+// キーは <終値日> または <終値日>_<JST日付>-<HHmm>（ニュース更新版）。
+// 文字列ソートで「終値版 < その上に積んだニュース更新版 < 次の終値版」の順になる
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -9,7 +11,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 /* ---------- 入力 ---------- */
 const dates = readdirSync(join(ROOT, "data"))
-  .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+  .filter(f => /^\d{4}-\d{2}-\d{2}(_\d{8}-\d{4})?\.json$/.test(f))
   .map(f => f.replace(".json", ""))
   .sort();
 if (!dates.length) { console.error("data/ に <日付>.json がありません"); process.exit(1); }

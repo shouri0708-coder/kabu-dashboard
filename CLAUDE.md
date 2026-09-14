@@ -12,7 +12,11 @@
 ```
 index.html            ビルド成果物（直接編集しない！）
 src/template.html     ガワ。CSS・株価ライブ更新ロジック・{{PLACEHOLDER}} 入り
-data/<日付>.json      その日の中身。毎日の更新で作るのはこれだけ
+data/<終値日>.json    取引日の中身（終値版）。毎日の更新で作るのは基本これだけ
+data/<終値日>_<JST日付>-<HHmm>.json
+                      休場日・週末のニュース更新版（株価は終値日のまま、解説とニュースだけ新しい）
+                      例: 2026-09-11_20260914-1000.json = 9/11終値 ＋ 9/14 10時JSTまでのニュース
+                      文字列ソートで「終値版 < ニュース更新版 < 次の終値版」になり、build は常に最新を使う
 scripts/check.mjs     整合性チェック（日付の食い違い・古いニュースの残存を検出）
 scripts/build.mjs     template + json → index.html
 scripts/extract.mjs   旧・単一HTML からの移行用（もう使わない）
@@ -21,10 +25,22 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 
 ## 毎日の更新手順
 
-> この手順はスケジュールタスク `daily-kabu-dashboard-update`（火〜土 朝7:00 JST。
-> NY市場の終値確定＝日本時間朝5〜6時の直後に走る）で
-> 自動実行される。手動で走らせるときも同じ手順。米国休場日など新しい終値が無い日は
-> 手順1の時点で分かるので何もせず終了する。
+> この手順はスケジュールタスク `kabu-dashboard-daily`（毎日 7・12・18・22時 JST）で
+> 自動実行される。手動で走らせるときも同じ手順。新しい終値が無い（週末・休場日・既に作成済み）
+> 場合は、終値日以降に重要なニュースがあるときだけ下の「ニュース更新版」を作る。
+
+### ニュース更新版（新しい終値が無いとき）
+- 最新の data ファイル（ニュース更新版を含む）の出典より**新しい、重要な**ニュースがあるときだけ作る。
+  重要 = FRB・政策当局の決定/要人発言、主要経済指標、地政学の大きな進展、原油・為替の急変、
+  ウォッチリスト銘柄や大型株の決算・提携・規制・経営・大型案件など。焼き直しや小ネタだけなら作らない
+- 最新の data ファイルを複製し `data/<終値日>_<JST日付>-<HHmm>.json` で保存。`date` は終値日のまま、
+  `newsAsOf: "YYYY-MM-DD HH:mm"`（JST・ファイル名と一致）を追加
+- 株価系（kpis の valueHtml/delta、watch の px/chg、movers の pct、prevIdx）は終値日の実測値のまま。
+  KPI の delta に書く日付は終値日のみ。先物・ドル円などの途中経過は Yahoo チャートAPIの実測を
+  why・本文に「日本時間◯時時点」と明記して書く
+- dateLabel と headline.kicker には終値日と**更新日の両方**を書く（check.mjs が検査）
+- headline / reasons / scenarios / news / events / kpiNews と、関係するウォッチ銘柄の note・news を更新
+- check.mjs は「結論の根拠に終値日より新しい出典が無い」とエラーにする
 
 1. `node scripts/fetch-quotes.mjs <日付>` — Yahoo Finance から全銘柄・指数・
    ドル円・10年金利・WTI の終値と騰落率を取得（`data-quotes/<日付>.json` に保存）。
@@ -66,4 +82,4 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 
 - `index.html` を直接編集（次のビルドで消える）
 - `secrets.json` や API キーをコミット
-- `data/` の過去日付ファイルの書き換え（履歴として残す）
+- `data/` の過去日付ファイルの書き換え（履歴として残す。ニュース更新も既存ファイルを直さず新ファイルで積む）
