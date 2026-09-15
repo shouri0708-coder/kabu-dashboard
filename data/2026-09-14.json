@@ -1,0 +1,834 @@
+{
+  "dateLabel": "2026年9月14日（月）終値",
+  "headerNote": "※株価は取引日の翌朝に終値で更新。週末・休場日も重要ニュースがあれば解説を随時更新します（7・12・18・22時に確認）",
+  "headline": {
+    "kicker": "きょうの結論（9/14 月曜の米国市場）",
+    "lead": "「AI減速」ショックで半導体指数は−5.9%、それでもS&P500は−0.5%で踏みとどまる — 売られたのは「AIに設備を売る側」、買われたのは「AIを使う側・守る側」",
+    "sub": "週末のAI業界トップの「減速」発言を受けて、月曜の米国市場では半導体株が急落し、フィラデルフィア半導体指数（SOX）は−5.9%と7月初め以来の大きな下げになりました。一方で、マイクロソフト（+2.0%）・アルファベット（+3.2%）・メタ（+2.7%）といった「AIにお金を払う側」の大手テックは上昇し、サイバーセキュリティ株は10%超の急騰。この「中身の入れ替え」のおかげで、ナスダックは−0.56%、S&P500は−0.48%、ダウは−0.29%で終わりました。10年金利は一時5%を突破（2023年以来）しましたが4.96%で引け、原油は一時5%近く上げた後、トランプ大統領の「イランは合意を望んでいる」発言で上げ幅を縮めてWTI 101.39ドル（+1.3%）でした。",
+    "evidence": [
+      {
+        "tag": "半導体急落",
+        "title": "半導体指数SOXは−5.9% — ブロードコム−4.8%、インテル−5.6%、AMD−4.4%、NVIDIA−3.4%",
+        "body": "AnthropicのアモデイCEOが「AIの能力向上のペースを落とすべき」と論考で呼びかけ、OpenAIのアルトマンCEOらが同調したことで、AIのデータセンター投資で稼ぐ半導体株に売りが集中しました。ブルームバーグによると半導体指数の下げは7月初め以来の大きさです。光ファイバーのコーニング（−13.7%）やコヒレント（−12.7%）など、データセンター向け部品株にも売りが広がりました。",
+        "so": "市場は「AI開発が減速すれば、チップや部品の注文が減るかもしれない」と先回りして値下がりを織り込んだ。ただし、実際に投資を減らすと発表した企業はまだ無い。",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-13/us-stock-futures-fall-on-ai-warning-oil-gains-markets-wrap",
+        "src": "出典：Bloomberg（9/14・米国市場まとめ）"
+      },
+      {
+        "tag": "大手テック高",
+        "title": "マイクロソフト・アルファベット・メタは上昇 — 「投資を減らせばお金が残る側」と評価",
+        "body": "フォーチュン誌によると、AI開発が減速した場合、グーグルやマイクロソフトのような大手は「データセンターの増設を止め、すでに作った設備で稼ぐ」ことができ、設備投資が減る分だけ手元のお金が増える、という見方が広がりました。D.A.デビッドソンのアナリストは「減速は顧客の投資に頼る半導体会社には打撃だが、大手クラウドは収穫期に入れる」と指摘しています。",
+        "so": "同じ「AI関連」でも、設備を売る側（半導体）と、設備を買う側（大手テック）で明暗がくっきり分かれた。これがナスダックの下げを−0.56%にとどめた。",
+        "url": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+        "src": "出典：Fortune（9/14・チップ安と大手テック高）"
+      },
+      {
+        "tag": "金利5%",
+        "title": "米10年金利が一時5%を突破 — 2023年以来。終値は4.96%",
+        "body": "物価高への警戒と、政府・企業の借り入れ増加への懸念から、10年金利は一時5%を超えました（2023年以来）。ブレント原油が一時109ドルを超えたことも物価懸念を強めました。ゴールドマン・サックスは今週のFOMCの予想を「据え置き」から「利上げ」に変更し、市場の利上げ確率は9割前後です。その後は買いが入り、金利は4.96%で終わりました。",
+        "so": "5%は住宅ローンや企業の借り入れコストに直結する「節目」。FOMCで連続利上げが示唆されれば、再び5%を試す可能性がある。",
+        "url": "https://finance.yahoo.com/markets/article/10-year-treasury-yield-briefly-tops-5-for-the-first-time-since-2023-123457398.html",
+        "src": "出典：Yahoo Finance（9/14・10年金利5%突破）"
+      },
+      {
+        "tag": "原油",
+        "title": "原油は一時5%近く急騰も、トランプ氏の「イランは合意を望む」発言で失速 — WTIは101.39ドル（+1.3%）",
+        "body": "サウジの東西パイプライン停止（世界供給の約4%に相当）とホルムズ協議の延期で、WTI・ブレントとも一時5%近く上昇しました。しかしトランプ大統領が「イランは米国と合意したがっている」と述べると上げ幅の大半を失い、WTIは101.39ドル、ブレントは105.68ドルで引けました。ディーゼル燃料は全米平均で1ガロン6.23ドルと過去最高です。",
+        "so": "原油は「中東の悪い知らせ」と「合意への期待」で1日の中でも大きく振れる状態。物価とFRBの判断を左右するので、株式市場にとっても最大級の変動要因。",
+        "url": "https://www.nationthailand.com/news/world/40071035",
+        "src": "出典：Nation Thailand（ロイター配信・9/14・原油終値）"
+      }
+    ],
+    "summary": "①「AI減速」発言で半導体指数は−5.9%、光通信部品株も10%超の急落。②一方でマイクロソフト・アルファベット・メタとサイバーセキュリティ株が上昇し、S&P500は−0.48%、ナスダックは−0.56%にとどまる。③10年金利は一時5%突破（2023年以来）も4.96%で引け。④原油は一時5%近く上昇後、トランプ氏のイラン発言で失速しWTI 101.39ドル。⑤あす9/16はFOMC結果発表 — 利上げ確率は9割前後。"
+  },
+  "kpis": [
+    {
+      "key": "SPY",
+      "name": "S&P500（市場全体の平均像）",
+      "valAttr": " id=\"v-SPY\"",
+      "valueHtml": "7,620",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-SPY\"",
+      "delta": "▼ −0.48%（9/14終値）",
+      "why": "半導体安を大手テック・セキュリティ株の上昇が相殺"
+    },
+    {
+      "key": "DIA",
+      "name": "NYダウ（大企業30社）",
+      "valAttr": " id=\"v-DIA\"",
+      "valueHtml": "52,421",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-DIA\"",
+      "delta": "▼ −0.29%（9/14終値）",
+      "why": "マイクロソフト高が支え。3指数で下げは最小"
+    },
+    {
+      "key": "QQQ",
+      "name": "ナスダック（ハイテク中心）",
+      "valAttr": " id=\"v-QQQ\"",
+      "valueHtml": "26,186",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-QQQ\"",
+      "delta": "▼ −0.56%（9/14終値）",
+      "why": "半導体指数−5.9%も、アルファベット・メタ高で小幅安に"
+    },
+    {
+      "key": "JPY",
+      "name": "ドル／円",
+      "valAttr": "",
+      "valueHtml": "<span id=\"v-JPY\">154.30</span><span style=\"font-size:13px\">円</span>",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▼ −0.1% ほぼ横ばい（9/14）",
+      "why": "日中は154円90銭台までドル高、NY引けにかけて戻す。FOMC・日銀待ち"
+    },
+    {
+      "key": "US10Y",
+      "name": "米国10年金利（長期金利）",
+      "valAttr": "",
+      "valueHtml": "4.96<span style=\"font-size:13px\">%</span>",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▼ 一時5%突破も4.96%で引け（9/14終値）",
+      "why": "2023年以来の5%超え。物価高と借り入れ増加への警戒"
+    },
+    {
+      "key": "WTI",
+      "name": "WTI原油（先物）",
+      "valAttr": "",
+      "valueHtml": "$101.39",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ +1.3%（9/14終値）",
+      "why": "一時5%近く上昇も、トランプ氏のイラン発言で上げ幅を縮小"
+    }
+  ],
+  "reasons": [
+    {
+      "dir": "down",
+      "mark": "①",
+      "title": " 「AI減速」発言で、AIに設備を売る側（半導体・光通信）が急落",
+      "body": "AnthropicのアモデイCEOの「AIの進歩のペースを落とすべき」という論考に、OpenAIのアルトマンCEO、イーロン・マスク氏が同調。月曜の米国市場では半導体指数SOXが−5.9%と7月初め以来の大幅安で、ブロードコム−4.8%、インテル−5.6%、AMD−4.4%、NVIDIA−3.4%。光ファイバーのコーニングは20億ドルの株式売り出し計画も重なって−13.7%、コヒレント−12.7%と、データセンター向け部品株まで売りが広がりました。一方、トランプ大統領は「AIとデータセンターに対する悪質な陰謀がある。喜ぶのは中国だけだ」と投稿し、減速論に強く反発しています。",
+      "tsumari": "ここ数年の株高は「AI投資はどこまでも膨らむ」という前提に支えられてきた。その前提に疑問符がつき、投資で直接稼ぐ会社から売られた。ただ、政権は減速に反対で、実際に投資を減らした企業もまだ無い。「発言」と「実際の注文」の差がこれからの焦点。",
+      "tags": [
+        "影響：半導体・部品",
+        "AI安全性"
+      ]
+    },
+    {
+      "dir": "up",
+      "mark": "②",
+      "title": " 大手テックとサイバーセキュリティは上昇 — 市場の「中身の入れ替え」",
+      "body": "マイクロソフト+2.0%、アルファベット+3.2%、メタ+2.7%。AI開発が減速すれば、データセンターの増設を止めて手元にお金が残る、という見方で買われました。さらに「AIが危険になるほど守りの投資が増える」との連想で、ゼットスケーラー+16.5%、クラウドストライク+13.9%、パロアルトネットワークス+13.1%、オクタ+12.0%とセキュリティ株が急騰しました。",
+      "tsumari": "同じニュースでも、損をする会社と得をする会社がある。お金が市場から逃げたのではなく、市場の中で移動したので、S&P500は−0.48%の小幅安で済んだ。",
+      "tags": [
+        "影響：大手テック・ソフトウェア",
+        "資金の移動"
+      ]
+    },
+    {
+      "dir": "down",
+      "mark": "③",
+      "title": " 10年金利が一時5%、原油は乱高下 — あすFOMC",
+      "body": "10年金利は一時5%を超え2023年以来の水準に（終値4.96%）。30年金利も5.37%超と2007年以来の高さです。原油はサウジのパイプライン停止で一時5%近く上げた後、トランプ氏の「イランは合意を望んでいる」発言で失速しました。9/16のFOMCでは0.25%利上げの確率が9割前後で、ゴールドマン・サックスも利上げ予想に変更しています。",
+      "tsumari": "利上げそのものは織り込み済み。焦点は「この先も上げるのか」。原油が再び上がれば物価と金利の心配が強まり、ハイテク株には重しになる。",
+      "tags": [
+        "影響：金利・原油・市場全体",
+        "9/16 FOMC"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "type": "bull",
+      "label": "強気シナリオ ↑",
+      "title": "FOMCが「利上げは1回で様子見」を示唆し、半導体に押し目買い",
+      "body": "FOMCの声明やドットチャートが「今回の利上げで様子を見る」というトーンなら、5%近辺の金利が天井と受け止められ、ハイテク株に買いが戻る展開です。さらに大手テックがAI投資計画の維持を改めて示せば、月曜に急落した半導体株の「売られすぎ」の修正が起こる可能性があります。",
+      "flow": "📈 <b>成立の条件：</b>FOMCのハト派的な利上げ ＋ 大手テックのAI投資維持の表明 ＋ 原油の落ち着き<br>👀 <b>ウォッチ：</b>9/16のドットチャート、半導体指数SOXの戻り"
+    },
+    {
+      "type": "bear",
+      "label": "弱気シナリオ ↓",
+      "title": "連続利上げの示唆と原油再上昇で、金利5%定着 → ハイテク全体の調整",
+      "body": "FOMCが「10月以降も利上げの可能性」を示し、サウジのパイプライン停止が長引いて原油が105ドルを超えれば、10年金利が5%に定着するおそれがあります。そこにAI投資を実際に絞る企業が出てくれば、月曜は買われた大手テックも含めて、ハイテク全体が売られる展開です。",
+      "flow": "📉 <b>成立の条件：</b>FOMCのタカ派シグナル ＋ 原油の105ドル超え ＋ AI投資削減の発表<br>👀 <b>ウォッチ：</b>10年金利5%、ホルムズ協議の新日程、大手テックの投資計画"
+    },
+    {
+      "type": "flat",
+      "label": "中立シナリオ →",
+      "title": "FOMC待ちのもみ合い — 半導体安・ソフト高の入れ替えが続く",
+      "body": "FOMCの結果が出るまでは指数は方向を決めにくく、月曜のように「AI設備を売る側」から「AIを使う側・守る側」へ資金が移る動きが続く可能性があります。AI減速論が一時的な話題で終わるのか、実際の投資計画に影響するのかは、数週間単位で見極めることになりそうです。",
+      "flow": "➡️ <b>よくある展開：</b>指数は小動き、業種ごとの明暗は大きい<br>👀 <b>ウォッチ：</b>9/16 FOMC・小売売上高、9/18 日銀"
+    }
+  ],
+  "news": [
+    {
+      "cat": "🌍 世界の大きな動き",
+      "catNote": "相場全体を左右するニュース",
+      "items": [
+        {
+          "url": "https://www.axios.com/2026/09/14/trump-ai-safety-anthropic-dario-amodei",
+          "title": "トランプ大統領「AIに必要な歯止めは強く賢い大統領だけ」— アモデイ氏の減速論に反発",
+          "src": "Axios（英語）・9/14",
+          "body": "「AIとデータセンターに対する悪質な陰謀、喜ぶのは中国だけ」とも投稿。↕️ 政権は減速に反対で、規制強化の可能性は低いとの見方にも。"
+        },
+        {
+          "url": "https://www.nationthailand.com/news/world/40071035",
+          "title": "原油は1%高で引け — 一時5%近く上昇も、トランプ氏のイラン発言で失速",
+          "src": "Nation Thailand（ロイター配信・英語）・9/14",
+          "body": "WTI 101.39ドル、ブレント105.68ドル。サウジ東西パイプラインの停止で世界供給の約4%に影響。↕️ 悪材料と合意期待の綱引き。"
+        },
+        {
+          "url": "https://www.nbcnews.com/business/business-news/diesel-oil-prices-jump-saudi-pipeline-shut-hormuz-talks-postponed-iran-rcna597579",
+          "title": "10年金利が5%超え、ディーゼルは過去最高の1ガロン6.23ドル",
+          "src": "NBC News（英語）・9/14",
+          "body": "サウジのパイプラインは修理で「数週間」止まる可能性。ホルムズの通航は1日14隻と低水準。📉 物価高の圧力が続く。"
+        },
+        {
+          "url": "https://edition.cnn.com/2026/09/14/business/ai-stocks-slide-slowdown-development-amodei-altman-intl",
+          "title": "AI関連株が世界で下落 — AI業界トップが開発の減速を呼びかけ",
+          "src": "CNN Business（英語）・9/14",
+          "body": "アジア・欧州に続き米国でも半導体株が売られた。📉 AI投資の成長ストーリーに不確実性。"
+        }
+      ]
+    },
+    {
+      "cat": "📈 米国市場のいま",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-09-13/us-stock-futures-fall-on-ai-warning-oil-gains-markets-wrap",
+          "title": "AI警告で半導体株が急落、指数も下落 — 半導体指数は−5.9%",
+          "src": "Bloomberg（英語）・9/14",
+          "body": "NVIDIA・ブロードコムなど主力半導体が大幅安。原油高と金利上昇も重し。📉 ただし指数の下げは0.5%前後にとどまった。"
+        },
+        {
+          "url": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "title": "ウォール街の「AI減速トレード」— チップが沈み、大手クラウドが上がる",
+          "src": "Fortune（英語）・9/14",
+          "body": "減速なら大手クラウドは「増設を止めて収穫」できるとの見方。↕️ 「訓練の一時停止が発表されない限り、本当の減速ではない」との懐疑論も。"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/09/14/cybersecurity-stocks-surge-as-ai-safety-warnings-spark-security-bid-crowdstrike-and-zscaler-jump-12-palo-alto-rallies-11/",
+          "title": "AI安全性の警告でサイバーセキュリティ株が急騰",
+          "src": "24/7 Wall St.（英語）・9/14",
+          "body": "「脅威が増すほど守りの支出が増える」との連想買い。📈 ただしセキュリティETF（CIBR）は+4%で、個別の人気銘柄に集中。"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-14-dow-sp-500-nasdaq-080559558.html",
+          "title": "ダウ・S&P500・ナスダックが下落 — AI警告で半導体安",
+          "src": "Yahoo Finance（英語）・9/14",
+          "body": "マイクロン・SKハイニックス・マーベル・スーパーマイクロが大幅安、マイクロソフト・アルファベット・メタは上昇。↕️ 指数は寄り付き直後より下げ幅を縮めた。"
+        }
+      ]
+    },
+    {
+      "cat": "🏢 企業・決算",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://247wallst.com/investing/2026/09/14/corning-tumbles-12-on-2b-at-the-market-equity-offering-coherent-sinks-11-lumentum-drops-9-fabrinet-slides-6/",
+          "title": "コーニングが20億ドルの株式売り出し計画 — 光通信部品株が軒並み急落",
+          "src": "24/7 Wall St.（英語）・9/14",
+          "body": "株数が増える「希薄化」の懸念にAI減速論が重なり、コヒレント・ルメンタムも大幅安。📉 データセンター向け部品に逆風。"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing",
+          "title": "Anthropic、上場先にナスダックを選定と報道",
+          "src": "Bloomberg（英語）・9/13",
+          "body": "10月の上場を目指すと報じられている。OpenAIが年内上場を見送る中での動き。↕️ 出資するアマゾン・アルファベットにも関係。"
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/13/larry-ellison-cancels-7-5-billion-sale-of-oracle-stock/",
+          "title": "オラクルのエリソン会長、75億ドルの自社株売却計画を取り消し",
+          "src": "TechCrunch（英語）・9/13",
+          "body": "撤回後も月曜のオラクル株は−3.7%。📉 AIクラウド銘柄への不安が残った。"
+        }
+      ]
+    },
+    {
+      "cat": "🏛 金融政策・経済指標",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://finance.yahoo.com/markets/article/10-year-treasury-yield-briefly-tops-5-for-the-first-time-since-2023-123457398.html",
+          "title": "米10年金利が一時5%を突破、2023年以来",
+          "src": "Yahoo Finance（英語）・9/14",
+          "body": "物価高と借り入れ増加への懸念。ゴールドマンはFOMC予想を利上げに変更。📉 住宅ローン金利などにも波及。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/11/stock-market-next-week-outlook-for-sept-14-18-2026.html",
+          "title": "今週の米国市場の見通し（9/14〜18）",
+          "src": "CNBC（英語）・9/11",
+          "body": "9/16にFOMC結果と8月小売売上高、9/17に住宅着工。↕️ 利上げ後の道筋を占う材料が続く。"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "when": "9/15（火）",
+      "what": "FOMC（2日間）初日",
+      "note": "結果は9/16。前日に10年金利が一時5%を超えており、債券市場の動きに注目。"
+    },
+    {
+      "when": "9/16（水）",
+      "what": "FOMC結果発表・8月小売売上高",
+      "note": "0.25%利上げの確率は9割前後。利上げ自体より声明・ドットチャートの「この先」が焦点。"
+    },
+    {
+      "when": "9/18（金）",
+      "what": "日銀金融政策決定会合",
+      "note": "0.25%利上げ（1.25%へ）がほぼ織り込み済み。今後の利上げペースの示し方が円相場を左右。"
+    },
+    {
+      "when": "日程未定",
+      "what": "ホルムズ海峡をめぐるイラン・湾岸諸国の協議",
+      "note": "延期のまま。トランプ氏は「イランは合意を望んでいる」と発言。進展すれば原油の下げ材料。"
+    }
+  ],
+  "footerAsOf": "株価・指数・金利・原油は2026年9月14日（月）米国市場終値（Yahoo Finance）。ドル円は同日のニューヨーク引け近辺の値。解説・ニュースは Bloomberg・Fortune・Yahoo Finance・CNN・NBC News・Axios・24/7 Wall St.・ロイター などの報道に基づく",
+  "watch": [
+    {
+      "nm": "エヌビディア",
+      "en": "NVIDIA / NVDA",
+      "px": "$210.96",
+      "chg": -3.36,
+      "t": "prev",
+      "note": "AI減速発言で−3.4%。半導体指数（−5.9%）よりは下げが小さい",
+      "news": [
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "AI開発が減速すれば大手クラウドはデータセンター増設を止められる、との見方でチップ株が売られた。NVIDIAは約−3%。",
+          "pl": "GPUの注文が将来減るのではとの警戒 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Trump says a strong, smart president is the only \"guardrail\" AI needs",
+          "u": "https://www.axios.com/2026/09/14/trump-ai-safety-anthropic-dario-amodei",
+          "s": "Axios・9/14",
+          "sm": "トランプ大統領が減速論を「陰謀」と批判。政権はAIとデータセンターの拡大を後押しする姿勢を崩していない。",
+          "pl": "規制で投資が止まるリスクは小さいとの見方も → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Anthropic's Amodei calls for AI oversight, joined by Altman and Musk",
+          "u": "https://www.washingtonpost.com/technology/2026/09/12/anthropic-ceo-dario-amodei-calls-ai-industry-slow-down/",
+          "s": "Washington Post・9/12",
+          "sm": "AnthropicのアモデイCEOがAIの能力向上のペースを落とすよう提唱し、アルトマン氏・マスク氏も同調。",
+          "pl": "AI投資の成長ストーリーに不確実性 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "ブロードコム",
+      "en": "Broadcom / AVGO",
+      "px": "$344.72",
+      "chg": -4.77,
+      "t": "prev",
+      "note": "−4.8%。大手クラウド向け特注AIチップが主力のため、投資減速論の直撃を受けた",
+      "news": [
+        {
+          "t": "US Stocks Fall as AI Warning Sparks Chip Rout; Oil Gains",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/us-stock-futures-fall-on-ai-warning-oil-gains-markets-wrap",
+          "s": "Bloomberg・9/14",
+          "sm": "AI大手のトップが開発の減速を提案したことで半導体指数が5.9%下落。NVIDIAやブロードコムの下げが特に大きかった。",
+          "pl": "AI設備投資の恩恵が大きい分、売りも大きい → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Broadcom (AVGO) Q3 earnings report 2026",
+          "u": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
+          "s": "CNBC・9/2",
+          "sm": "半導体売上が3倍の167億ドル、純利益131億ドル。来期の強気見通しも示した。",
+          "pl": "足元の業績は絶好調 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "TSMC（ADR）",
+      "en": "Taiwan Semi / TSM",
+      "px": "$418.01",
+      "chg": -3.52,
+      "t": "prev",
+      "note": "−3.5%。アジアに続き米国でも半導体の製造側に売り",
+      "news": [
+        {
+          "t": "AI stocks slide after top industry CEOs call for slowdown of technology's development",
+          "u": "https://edition.cnn.com/2026/09/14/business/ai-stocks-slide-slowdown-development-amodei-altman-intl",
+          "s": "CNN Business・9/14",
+          "sm": "SKハイニックス・ASMLなど世界のAIチップ関連株が下落。製造・装置の会社にも売りが広がった。",
+          "pl": "最先端チップの需要見通しに不透明感 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Kospi plunges 3.26% as AI slowdown concerns and Hormuz tensions rattle markets",
+          "u": "https://www.koreajoongangdaily.com/business/kospi-closes-down-326-on-talks-of-ai-development-slowdown-hormuz-tension/12874916",
+          "s": "Korea JoongAng Daily・9/14",
+          "sm": "SKハイニックス−6.35%、サムスン電子−4.05%。「下げの主因はAI開発ペースをめぐる論争」との声。",
+          "pl": "アジアの半導体株安が先行 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "AMD",
+      "en": "Advanced Micro / AMD",
+      "px": "$493.41",
+      "chg": -4.4,
+      "t": "prev",
+      "note": "−4.4%。金曜の上昇分を大きく上回る下げ",
+      "news": [
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq slip as chip stocks fall on AI warning",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-14-dow-sp-500-nasdaq-080559558.html",
+          "s": "Yahoo Finance・9/14",
+          "sm": "AI安全性の警告を受けてAMD・インテルが4%超下落。マイクロン・マーベル・スーパーマイクロは6%前後の下げ。",
+          "pl": "AI成長への期待が大きかった分、売りも大きい → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Jump",
+          "u": "https://ca.finance.yahoo.com/news/intel-leads-chip-stocks-rally-204945385.html",
+          "s": "Yahoo Finance・9/8",
+          "sm": "半導体指数SOXが+2%となる全面高の中で+5.9%。Meta 6GW案件など大型契約の進捗期待も継続。",
+          "pl": "大型契約は残っている → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "インテル",
+      "en": "Intel / INTC",
+      "px": "$97.19",
+      "chg": -5.59,
+      "t": "prev",
+      "note": "−5.6%で100ドルを割り込む。ウォッチ銘柄で最大の下げ",
+      "news": [
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "インテル・AMD・マーベルが5〜6%安。顧客の設備投資に頼る半導体会社ほど減速論の打撃が大きいとの分析。",
+          "pl": "AI需要頼みの上昇分が剥がれやすい → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Intel Stock Jumps 9% on Chip Price Hike Report",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/intel-stock-jumps-9-chip-163052538.html",
+          "s": "Yahoo Finance・9/8",
+          "sm": "Northland証券が格上げ（目標120ドル）。サーバーCPU不足と10月からの約10%値上げ報道が評価材料。",
+          "pl": "値上げできる=需要の強さの証明 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "マイクロソフト",
+      "en": "Microsoft / MSFT",
+      "px": "$505.41",
+      "chg": 1.97,
+      "t": "prev",
+      "note": "+2.0%で500ドル台回復。「AI投資を減らせる側」として買われた",
+      "news": [
+        {
+          "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
+          "u": "https://247wallst.com/investing/2026/09/14/meta-alphabet-and-microsoft-rise-while-nvidia-falls-after-three-ai-chiefs-call-for-slowing-down-frontier-models/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "売りはデータセンター・チップなど「設備投資で稼ぐ側」に集中し、買いは投資継続への依存が小さいマイクロソフトなどに向かった。",
+          "pl": "設備投資が減れば手元資金が増える → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Sam Altman confirms OpenAI won't go public this year",
+          "u": "https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/",
+          "s": "Fortune・9/12",
+          "sm": "大株主として出資するOpenAIが、安全性への懸念を理由に2026年の上場を見送り。",
+          "pl": "出資価値の確定が先送りに → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "アップル",
+      "en": "Apple / AAPL",
+      "px": "$333.08",
+      "chg": 0.24,
+      "t": "prev",
+      "note": "+0.2%と小幅高。AI設備投資との関わりが小さく、減速論の影響は限定的",
+      "news": [
+        {
+          "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
+          "u": "https://247wallst.com/investing/2026/09/14/meta-alphabet-and-microsoft-rise-while-nvidia-falls-after-three-ai-chiefs-call-for-slowing-down-frontier-models/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "売りはAIの設備投資で稼ぐ会社に集中。巨額のAIデータセンター投資をしていない大手はその影響を受けにくかった。",
+          "pl": "AI減速論の直接の打撃は小さい → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Apple unveils $2,000 iPhone Duo, its first foldable smartphone",
+          "u": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+          "s": "Fortune・9/9",
+          "sm": "折りたたみ「iPhone Duo」（1,999ドル、10/23発売）を発表。Pro各機種は100ドル値上げ。",
+          "pl": "新カテゴリー＋値上げで成長シナリオ再構築 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アルファベット",
+      "en": "Alphabet / GOOGL",
+      "px": "$349.39",
+      "chg": 3.22,
+      "t": "prev",
+      "note": "+3.2%とウォッチ銘柄で最大の上昇。「減速なら追いつける」との見方も",
+      "news": [
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "減速すればグーグルなどは増設を止め、すでに作った設備で稼げるとの分析。アルファベットは約+2%（報道時点）。",
+          "pl": "設備投資の負担が軽くなる可能性 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing",
+          "s": "Bloomberg・9/13",
+          "sm": "出資先のAnthropicが上場先にナスダックを選び、10月の上場を目指すと報じられた。",
+          "pl": "出資先の上場で価値が見えやすくなる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アマゾン",
+      "en": "Amazon / AMZN",
+      "px": "$253.54",
+      "chg": -1.26,
+      "t": "prev",
+      "note": "−1.3%。大手テックで唯一の下落。AWSのデータセンター投資が大きいことが意識された",
+      "news": [
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "大手テックが上昇する中、アマゾンは約1.6%安（報道時点）。コロナ後に倉庫を作りすぎた経験も引き合いに出された。",
+          "pl": "投資の回収時期に不透明感 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing",
+          "s": "Bloomberg・9/13",
+          "sm": "大口出資先のAnthropicが上場先にナスダックを選定と報道。10月の上場が目標。",
+          "pl": "出資価値が表に出るきっかけ → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "メタ",
+      "en": "Meta / META",
+      "px": "$665.60",
+      "chg": 2.71,
+      "t": "prev",
+      "note": "+2.7%で高値更新。Museの評価に「投資を絞れる側」の買いが加わる",
+      "news": [
+        {
+          "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
+          "u": "https://247wallst.com/investing/2026/09/14/meta-alphabet-and-microsoft-rise-while-nvidia-falls-after-three-ai-chiefs-call-for-slowing-down-frontier-models/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "チップ株が売られる中、メタは上昇。AI投資で稼ぐ側ではなく、投資を使って稼ぐ側として評価された。",
+          "pl": "設備投資の負担が減る可能性 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Meta Surges Over 6.5% on Muse AI Agent Launch",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+          "s": "Motley Fool・9/9",
+          "sm": "個人向けAIエージェント「Muse」を発表。AI投資の収益化への一歩と評価され高値更新。",
+          "pl": "AI投資の回収が見え始めた → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "テスラ",
+      "en": "Tesla / TSLA",
+      "px": "$358.97",
+      "chg": -1.77,
+      "t": "prev",
+      "note": "−1.8%。マスク氏が減速論に同調し、自動運転・AI期待にやや逆風",
+      "news": [
+        {
+          "t": "Anthropic's Amodei calls for AI oversight, joined by Altman and Musk",
+          "u": "https://www.washingtonpost.com/technology/2026/09/12/anthropic-ceo-dario-amodei-calls-ai-industry-slow-down/",
+          "s": "Washington Post・9/12",
+          "sm": "マスクCEOもAIの能力向上ペースを落とすべきとの主張に同調。AIを成長の柱に据えるテスラの経営者の発言として注目された。",
+          "pl": "AI・自動運転の成長期待に不透明感 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Tesla's stock drops as Cybercab update 'underwhelms,' NHTSA probe",
+          "u": "https://www.cnbc.com/2026/09/04/teslas-stock-drops-as-cybercab-update-underwhelms-nhtsa-probe.html",
+          "s": "CNBC・9/4",
+          "sm": "Cybercabイベントは中身に乏しく、NHTSAの調査開始も重なって−5.9%。",
+          "pl": "ロボタクシー期待の修正が続くリスク → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "kpiNews": {
+    "SPY": {
+      "label": "S&P500 に関係するニュース",
+      "items": [
+        {
+          "t": "US Stocks Fall as AI Warning Sparks Chip Rout; Oil Gains",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/us-stock-futures-fall-on-ai-warning-oil-gains-markets-wrap",
+          "s": "Bloomberg・9/14",
+          "sm": "半導体指数は−5.9%と急落したが、S&P500は−0.48%。原油高と金利上昇も重しだった。",
+          "pl": "半導体の比重が大きい分、指数にも重し → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Cybersecurity Stocks Surge as AI Safety Warnings Spark Security Bid",
+          "u": "https://247wallst.com/investing/2026/09/14/cybersecurity-stocks-surge-as-ai-safety-warnings-spark-security-bid-crowdstrike-and-zscaler-jump-12-palo-alto-rallies-11/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "クラウドストライク・パロアルトなどセキュリティ株が急騰。指数の中で業種ごとの明暗が大きく分かれた。",
+          "pl": "業種によって追い風・逆風が分かれる → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "DIA": {
+      "label": "NYダウ に関係するニュース",
+      "items": [
+        {
+          "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
+          "u": "https://247wallst.com/investing/2026/09/14/meta-alphabet-and-microsoft-rise-while-nvidia-falls-after-three-ai-chiefs-call-for-slowing-down-frontier-models/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "ダウ採用のマイクロソフトが上昇し、NVIDIA・アマゾンの下げを一部相殺。ダウは−0.29%と3指数で最も小さい下げ。",
+          "pl": "構成銘柄の明暗が相殺 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Oil gains about 1% on September 14 after Saudi strikes fuel supply fears",
+          "u": "https://www.nationthailand.com/news/world/40071035",
+          "s": "Nation Thailand（ロイター配信）・9/14",
+          "sm": "原油は一時5%近く上昇後、上げ幅を縮小。景気敏感株が多いダウにとっては最悪の事態は避けられた。",
+          "pl": "原油の急騰が一服 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "QQQ": {
+      "label": "ナスダック に関係するニュース",
+      "items": [
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "チップ株が沈む一方、大手クラウドとソフトウェアが上昇し、ナスダックは−0.56%にとどまった。",
+          "pl": "ハイテクの中で資金が移動 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Corning Tumbles 12% on $2B At-the-Market Equity Offering; Coherent Sinks 11%, Lumentum Drops 9%",
+          "u": "https://247wallst.com/investing/2026/09/14/corning-tumbles-12-on-2b-at-the-market-equity-offering-coherent-sinks-11-lumentum-drops-9-fabrinet-slides-6/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "データセンター向け光通信部品株が軒並み急落。AI投資の連鎖の末端まで売りが広がった。",
+          "pl": "AIインフラ関連に逆風 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "JPY": {
+      "label": "ドル／円 に関係するニュース",
+      "items": [
+        {
+          "t": "Japanese Yen weakens at the start of a central bank-heavy week",
+          "u": "https://www.fxstreet.com/news/japanese-yen-weakens-against-us-dollar-at-the-start-of-a-central-bank-heavy-week-202609141607",
+          "s": "FXStreet・9/14",
+          "sm": "FOMC・日銀が続く週の初めに円は弱含み。ドル円は日中に154円90銭台まで上昇したが、NY引けにかけて154円30銭近辺に戻した（Yahoo Finance実測）。",
+          "pl": "日米の利上げ観測が綱引き → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Japanese Yen gains as BoJ hike bets rise",
+          "u": "https://www.fxstreet.com/news/japanese-yen-gains-against-us-dollar-as-markets-brace-for-a-more-aggressive-boj-202609091139",
+          "s": "FXStreet・9/9",
+          "sm": "9/18の日銀会合では1.25%への利上げが織り込まれている。焦点は次の利上げ時期の示し方。",
+          "pl": "日銀のタカ派姿勢は円高要因 → 円高材料",
+          "dir": "down"
+        }
+      ]
+    },
+    "US10Y": {
+      "label": "米国10年金利 に関係するニュース",
+      "items": [
+        {
+          "t": "10-year Treasury yield briefly tops 5% for the first time since 2023",
+          "u": "https://finance.yahoo.com/markets/article/10-year-treasury-yield-briefly-tops-5-for-the-first-time-since-2023-123457398.html",
+          "s": "Yahoo Finance・9/14",
+          "sm": "物価高への警戒と政府・企業の借り入れ増加で一時5%超え。ゴールドマンはFOMC予想を利上げに変更。",
+          "pl": "5%の節目はハイテクの重し → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "10-year Treasury yield tops 5% as oil surges and diesel hits all-time high",
+          "u": "https://www.nbcnews.com/business/business-news/diesel-oil-prices-jump-saudi-pipeline-shut-hormuz-talks-postponed-iran-rcna597579",
+          "s": "NBC News・9/14",
+          "sm": "30年金利も5.37%超と2007年以来の高さ。利上げ確率は9割超との報道。",
+          "pl": "長期の借り入れコストが上昇 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "WTI": {
+      "label": "WTI原油 に関係するニュース",
+      "items": [
+        {
+          "t": "Oil gains about 1% on September 14 after Saudi strikes fuel supply fears",
+          "u": "https://www.nationthailand.com/news/world/40071035",
+          "s": "Nation Thailand（ロイター配信）・9/14",
+          "sm": "サウジ東西パイプライン停止で一時5%近く上昇。トランプ氏の「イランは合意を望んでいる」発言で上げ幅を縮め、WTIは101.39ドルで引け。",
+          "pl": "供給不安と合意期待の綱引き → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "10-year Treasury yield tops 5% as oil surges and diesel hits all-time high",
+          "u": "https://www.nbcnews.com/business/business-news/diesel-oil-prices-jump-saudi-pipeline-shut-hormuz-talks-postponed-iran-rcna597579",
+          "s": "NBC News・9/14",
+          "sm": "パイプラインは修理で数週間止まる可能性。ディーゼルは全米平均6.23ドルと過去最高。",
+          "pl": "供給不安が長引く恐れ → 原油高材料",
+          "dir": "up"
+        }
+      ]
+    }
+  },
+  "movers": [
+    {
+      "nm": "ゼットスケーラー",
+      "en": "Zscaler / ZS",
+      "pct": 16.5,
+      "why": "AI安全性の警告で「守りの投資」が増えるとの連想買い",
+      "desc": "クラウド型のセキュリティ大手。社員が社外からアプリにつなぐときの安全を守るサービスが主力。年初来では出遅れていた。",
+      "news": [
+        {
+          "t": "Cybersecurity Stocks Surge as AI Safety Warnings Spark Security Bid: CrowdStrike and Zscaler Jump 12%, Palo Alto Rallies 11%",
+          "u": "https://247wallst.com/investing/2026/09/14/cybersecurity-stocks-surge-as-ai-safety-warnings-spark-security-bid-crowdstrike-and-zscaler-jump-12-palo-alto-rallies-11/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "AI業界トップの警告を「脅威の多い環境になる証拠」と受け止めた買いが集中。年初来で下げていた分、戻りも大きかった。",
+          "pl": "AI時代のセキュリティ需要 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "クラウドストライク",
+      "en": "CrowdStrike / CRWD",
+      "pct": 13.9,
+      "why": "AIのリスクが高まるほどセキュリティが必要との見方",
+      "desc": "パソコンやサーバーをサイバー攻撃から守るセキュリティ大手。CEOは「最先端AIの開発は止まらないので防御が不可欠」と主張。",
+      "news": [
+        {
+          "t": "Crowdstrike Skyrockets 14% As AI Fears Send Cybersecurity Stocks Surging",
+          "u": "https://www.forbes.com/sites/antoniopequenoiv/2026/09/14/crowdstrike-skyrockets-14-as-ai-fears-send-cybersecurity-stocks-surging/",
+          "s": "Forbes・9/14",
+          "sm": "AIへの不安がセキュリティ株への買いにつながり、クラウドストライクは約14%急騰。",
+          "pl": "AIリスクへの備えの需要 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "パロアルトネットワークス",
+      "en": "Palo Alto / PANW",
+      "pct": 13.1,
+      "why": "セキュリティ株の一斉高、アナリストの格上げも支え",
+      "desc": "ネットワーク・クラウドのセキュリティ最大手の一角。年初来ではほぼ2倍に上昇している人気銘柄。",
+      "news": [
+        {
+          "t": "CrowdStrike and Palo Alto Rallied While AI Stocks Sank. Wall Street Is Pricing a Different AI Trade",
+          "u": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-palo-alto-rallied-while-211451001.html",
+          "s": "Yahoo Finance・9/14",
+          "sm": "市場は「より賢いAIを作るコスト」と「今あるシステムを守るコスト」を分けて考え始めている、との分析。",
+          "pl": "AI関連でも「守る側」は別の追い風 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "オクタ",
+      "en": "Okta / OKTA",
+      "pct": 12,
+      "why": "AIエージェントの「本人確認」需要への期待",
+      "desc": "ログインや本人確認（ID管理）のクラウドサービス大手。AIエージェントの身元管理を新しい成長分野と位置づけている。",
+      "news": [
+        {
+          "t": "Cybersecurity Stocks Rally as AI Safety Debate Heats Up",
+          "u": "https://www.benzinga.com/trading-ideas/movers/26/09/61763825/cybersecurity-stocks-rally-as-ai-safety-debate-heats-up",
+          "s": "Benzinga・9/14",
+          "sm": "AI安全性をめぐる議論の過熱で、パロアルト・クラウドストライク・オクタなどセキュリティ株が買われた。",
+          "pl": "AIの安全対策の受け皿 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "コーニング",
+      "en": "Corning / GLW",
+      "pct": -13.7,
+      "why": "20億ドルの株式売り出し計画＋AI減速論",
+      "desc": "ガラス・光ファイバーの大手。データセンター向け光ファイバーで成長してきたが、株数が増える「希薄化」の懸念とAI投資減速の不安が重なった。S&P500で下落率トップ。",
+      "news": [
+        {
+          "t": "Corning Tumbles 12% on $2B At-the-Market Equity Offering",
+          "u": "https://247wallst.com/investing/2026/09/14/corning-tumbles-12-on-2b-at-the-market-equity-offering-coherent-sinks-11-lumentum-drops-9-fabrinet-slides-6/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "ゴールドマン・サックスを代理人に、市場で随時株を売る20億ドルの計画を開示。いつ売りが出るか分からない不透明感も重しに。",
+          "pl": "1株あたりの価値が薄まる懸念 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "コヒレント",
+      "en": "Coherent / COHR",
+      "pct": -12.7,
+      "why": "データセンター向け光部品にAI減速論が直撃",
+      "desc": "データセンター内の高速通信に使う光トランシーバーなどのメーカー。AI投資の拡大で急成長してきた分、減速論に敏感。",
+      "news": [
+        {
+          "t": "Corning Tumbles 12% on $2B At-the-Market Equity Offering; Coherent Sinks 11%, Lumentum Drops 9%",
+          "u": "https://247wallst.com/investing/2026/09/14/corning-tumbles-12-on-2b-at-the-market-equity-offering-coherent-sinks-11-lumentum-drops-9-fabrinet-slides-6/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "AI研究所トップらの減速論が光通信の需要に直結するとして、コヒレント・ルメンタム・ファブリネットが連れ安。",
+          "pl": "AIインフラ需要の見通しに不安 → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "prevIdx": {
+    "SPY": {
+      "label": "S&P500",
+      "prevIdx": 7620
+    },
+    "DIA": {
+      "label": "NYダウ",
+      "prevIdx": 52421
+    },
+    "QQQ": {
+      "label": "ナスダック",
+      "prevIdx": 26186
+    }
+  },
+  "date": "2026-09-14"
+}
