@@ -1,0 +1,853 @@
+{
+  "dateLabel": "2026年9月15日（火）終値",
+  "headerNote": "※株価は取引日の翌朝に終値で更新。週末・休場日も重要ニュースがあれば解説を随時更新します（7・12・18・22時に確認）",
+  "headline": {
+    "kicker": "きょうの結論（9/15 火曜の米国市場）",
+    "lead": "10年金利は2007年以来の5%台、原油は+4.4% — FOMC前日の米国株は2日続落。前日急落の半導体は小反発、前日買われた大手テックは反落",
+    "sub": "火曜の米国市場は、S&P500が−0.45%、ダウが−0.63%、ナスダックが−0.78%と2日続けて下げました。主な理由は「金利」と「原油」です。10年金利は一時5.04%と2007年以来の高さまで上がり、5.00%で引けました。サウジアラビアの主要パイプライン停止を受けて欧州向けの原油の出荷が取り消されたと伝わり、WTI原油は105.83ドル（+4.4%）に上昇。あす9/16のFOMCでの利上げ確率は9割を超えています。一方、前日に「AI減速」発言で急落した半導体株には買い戻しが入り、半導体指数SOXは+0.4%、AMDは+2.2%。スマホ向け半導体のスカイワークスは+13.6%と急騰しました。逆に前日に買われたマイクロソフト（−1.6%）・アマゾン（−2.0%）・アルファベット（−1.3%）は売られ、指数を押し下げました。",
+    "evidence": [
+      {
+        "tag": "金利5%",
+        "title": "米10年金利が一時5.04%、2007年以来の高さ — 5.00%で引け",
+        "body": "ブルームバーグによると、10年金利は火曜に一時5.04%まで上がり、2007年以来の水準になりました。中東の戦闘が広がって原油の供給がさらに細るとの心配が強まり、物価高への警戒から債券が売られました。2年金利も4.68%前後と2024年半ば以来の高さで、市場はあす9/16のFOMCで0.25%の利上げが決まる確率を9割超とみています。",
+        "so": "10年金利は住宅ローンや企業の借り入れの「基準」。5%に乗ると、将来の利益で評価されるハイテク株の割高感が意識されやすくなる。",
+        "url": "https://www.bloomberg.com/news/articles/2026-09-15/us-10-year-treasury-yields-rise-to-highest-level-since-2007",
+        "src": "出典：Bloomberg（9/15・10年金利2007年以来）"
+      },
+      {
+        "tag": "原油",
+        "title": "サウジが欧州向け原油の出荷を取り消し — WTIは105.83ドル（+4.4%）",
+        "body": "ロイターによると、ドローン攻撃で東西パイプラインが止まったサウジアラビアは、紅海側のヤンブー港からの積み出しを止め、9月積みの一部の原油の出荷を取り消しました。サウジ産に約4割を頼るポーランドの石油会社オーレンは、北海産など代わりの原油の確保を急いでいます。欧州の現物原油（デーテッド・ブレント）は1バレル120ドル前後まで上がっています。",
+        "so": "月曜は「イランとの合意期待」で上げ幅を縮めた原油が、火曜は「実際に原油が届かない」という話で再び上昇。物価と金利の心配に直結する。",
+        "url": "https://www.al-monitor.com/originals/2026/09/saudi-cancels-some-oil-cargoes-after-pipeline-hit-top-buyer-chasing-alternatives",
+        "src": "出典：Al-Monitor（ロイター配信・9/15・サウジ出荷取り消し）"
+      },
+      {
+        "tag": "半導体戻す",
+        "title": "前日急落の半導体に買い戻し — AMD+2.2%、クアルコム+4.3%、スカイワークス+13.6%",
+        "body": "前日に−5.9%と急落した半導体指数SOXは+0.4%と小反発しました。ヤフー・ファイナンスによると、AI関連株の上昇が指数の下げを和らげ、AMDやクアルコムが上昇。スマホ向け通信チップのスカイワークス（+13.6%）とコルボ（+9.3%）は、両社の合併が最終段階に入ったとの発言もあって急騰しました。バンク・オブ・アメリカは2030年の半導体市場の予想を3.2兆ドルに引き上げています。",
+        "so": "「AI減速」の発言だけで売られすぎた、と考える買いが入った。ただしSOXの戻りは前日の下げのごく一部で、まだ様子見の段階。",
+        "url": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+        "src": "出典：24/7 Wall St.（9/15・スマホ半導体高、大型テック安）"
+      },
+      {
+        "tag": "大手テック反落",
+        "title": "前日に買われたマイクロソフト・アマゾン・アルファベットは反落",
+        "body": "月曜は「AI投資を減らせる側」として買われた大手テックが、火曜はそろって下げました。マイクロソフト−1.6%、アマゾン−2.0%、アルファベット−1.3%、オラクル−3.1%。時価総額の大きい銘柄の下げが、ナスダック（−0.78%）とダウ（−0.63%）の重しになりました。",
+        "so": "前日の「半導体売り・大手テック買い」の入れ替えが一部巻き戻された。金利5%の中では、大型ハイテク株全体に売りが出やすい。",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+        "src": "出典：Yahoo Finance（9/15・米国市場ライブ）"
+      }
+    ],
+    "summary": "①10年金利は一時5.04%と2007年以来の高さ、5.00%で引け。②サウジの原油出荷取り消しでWTIは105.83ドル（+4.4%）。③S&P500−0.45%、ダウ−0.63%、ナスダック−0.78%と2日続落。④前日急落の半導体は小反発（SOX+0.4%、AMD+2.2%）、スカイワークスは+13.6%。⑤前日買われた大手テックは反落。⑥あす9/16はFOMC結果発表 — 利上げ確率は9割超。"
+  },
+  "kpis": [
+    {
+      "key": "SPY",
+      "name": "S&P500（市場全体の平均像）",
+      "valAttr": " id=\"v-SPY\"",
+      "valueHtml": "7,586",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-SPY\"",
+      "delta": "▼ −0.45%（9/15終値）",
+      "why": "金利5%・原油高で2日続落。半導体の戻りが下げを和らげる"
+    },
+    {
+      "key": "DIA",
+      "name": "NYダウ（大企業30社）",
+      "valAttr": " id=\"v-DIA\"",
+      "valueHtml": "52,093",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-DIA\"",
+      "delta": "▼ −0.63%（9/15終値）",
+      "why": "マイクロソフト・アマゾンの反落が重し"
+    },
+    {
+      "key": "QQQ",
+      "name": "ナスダック（ハイテク中心）",
+      "valAttr": " id=\"v-QQQ\"",
+      "valueHtml": "25,982",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-QQQ\"",
+      "delta": "▼ −0.78%（9/15終値）",
+      "why": "大手テック安が半導体の小反発を上回り、3指数で最大の下げ"
+    },
+    {
+      "key": "JPY",
+      "name": "ドル／円",
+      "valAttr": "",
+      "valueHtml": "<span id=\"v-JPY\">154.38</span><span style=\"font-size:13px\">円</span>",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ 154円台でドル高・円安気味（9/15）",
+      "why": "米金利5%でドルが買われやすい。9/16 FOMC・9/18 日銀待ち"
+    },
+    {
+      "key": "US10Y",
+      "name": "米国10年金利（長期金利）",
+      "valAttr": "",
+      "valueHtml": "5.00<span style=\"font-size:13px\">%</span>",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ 5.00%で引け、一時5.04%（9/15終値）",
+      "why": "2007年以来の高さ。原油高による物価警戒と利上げ観測"
+    },
+    {
+      "key": "WTI",
+      "name": "WTI原油（先物）",
+      "valAttr": "",
+      "valueHtml": "$105.83",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ +4.4%（9/15終値）",
+      "why": "サウジのパイプライン停止で欧州向け出荷の一部を取り消し"
+    }
+  ],
+  "reasons": [
+    {
+      "dir": "down",
+      "mark": "①",
+      "title": " 10年金利が2007年以来の5%台 — FOMCの利上げはほぼ確実視",
+      "body": "10年金利は一時5.04%まで上がり、2007年以来の高さで5.00%で引けました。30年金利も5.38%前後、2年金利は4.68%前後と上昇。原油高で物価が再び上がるとの警戒に加え、各国政府の借金の増加やAIのデータセンター投資の資金需要も、金利を押し上げる理由に挙げられています。あす9/16のFOMCでは0.25%利上げ（3.75〜4.00%へ）の確率が9割を超えています。ニューヨーク連銀の9月の製造業景況指数は7.6と8月の20.6から大きく下がった一方で、仕入れ価格の指数は63.1と高いままでした。",
+      "tsumari": "景気の勢いは落ち着き始めているのに、物価の圧力は強いまま。FRBにとっては難しい組み合わせで、「利上げを続けるのか」の判断が株式市場の最大の関心事になっている。",
+      "tags": [
+        "影響：金利・ハイテク株・住宅",
+        "9/16 FOMC"
+      ]
+    },
+    {
+      "dir": "down",
+      "mark": "②",
+      "title": " 原油が再び急伸 — サウジが欧州向けの出荷を取り消し",
+      "body": "ドローン攻撃で止まったサウジアラビアの東西パイプライン（1日700万バレルを運べる）は再開のめどが立たず、サウジは紅海側の港からの積み出しを止め、欧州向けなど一部の出荷を取り消しました。WTIは105.83ドル（+4.4%）、ブレントは108.75ドル（+2.9%）。月曜にトランプ大統領の「イランは合意を望んでいる」発言で縮んだ上げ幅を、火曜は取り戻しました。",
+      "tsumari": "原油は「話し合いへの期待」より「実際に原油が届かない」事実のほうが強い材料になった。原油高 → 物価高 → 利上げ → 株安、という連鎖が意識されている。",
+      "tags": [
+        "影響：原油・物価・市場全体",
+        "中東"
+      ]
+    },
+    {
+      "dir": "mix",
+      "mark": "③",
+      "title": " 月曜の「中身の入れ替え」が一部巻き戻し — 半導体は小反発、大手テックは反落",
+      "body": "前日に急落した半導体には買い戻しが入り、SOXは+0.4%、AMD+2.2%、NVIDIA+0.6%、クアルコム+4.3%。スマホ向け通信チップのスカイワークスは、コルボとの合併が最終段階に入ったとの発言もあり+13.6%と急騰しました。NVIDIAのフアンCEOは、トランプ大統領との公開の電話で「AIの減速は起こさせない」と述べています。一方、前日に買われたマイクロソフト−1.6%、アマゾン−2.0%、アルファベット−1.3%は反落し、前日急騰したサイバーセキュリティ株も上げ幅は小さくなりました。",
+      "tsumari": "「AI減速」の話は1日で終わったわけではないが、売られすぎた部分の修正が始まった。業種ごとの明暗は前日ほど極端ではなくなり、市場の関心は金利とFOMCに戻りつつある。",
+      "tags": [
+        "影響：半導体・大手テック",
+        "AI減速論"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "type": "bull",
+      "label": "強気シナリオ ↑",
+      "title": "FOMCが「今回の利上げで様子見」を示し、金利5%が天井に",
+      "body": "9/16のFOMCで利上げが決まっても、声明やドットチャート、ウォーシュ議長の会見が「この先は様子を見る」というトーンなら、10年金利が5%近辺で頭打ちになる可能性があります。そうなれば、金利上昇で売られてきたハイテク株や、前日に戻りを試した半導体株に買いが入りやすくなります。",
+      "flow": "📈 <b>成立の条件：</b>FOMCのハト派的な利上げ ＋ 原油の上げ一服 ＋ 小売売上高の落ち着いた数字<br>👀 <b>ウォッチ：</b>ドットチャートの年内・来年の利上げ回数、10年金利5%を上回るか"
+    },
+    {
+      "type": "bear",
+      "label": "弱気シナリオ ↓",
+      "title": "連続利上げの示唆と原油110ドル台 → 金利がさらに上へ",
+      "body": "FOMCが「10月以降も利上げの可能性」をはっきり示し、サウジのパイプライン停止が長引いてWTIが110ドルに近づけば、10年金利が5%を大きく超えていくおそれがあります。そうなると、株式の割高感が強まり、ハイテク株を中心に指数全体が下げる展開です。",
+      "flow": "📉 <b>成立の条件：</b>FOMCのタカ派シグナル ＋ パイプライン停止の長期化 ＋ 強い小売売上高<br>👀 <b>ウォッチ：</b>9/16の会見、サウジ東西パイプラインの再開時期、ブレント110ドル"
+    },
+    {
+      "type": "flat",
+      "label": "中立シナリオ →",
+      "title": "利上げは想定どおり — 指数はもみ合い、日銀の9/18を待つ",
+      "body": "利上げは9割超織り込まれているため、「予想どおり」なら大きな驚きは無く、指数は方向感の乏しい動きになる可能性があります。その場合は、原油のニュースやAI減速論の続報で、業種ごとに上げ下げが分かれる展開が続きそうです。ドル円は9/18の日銀の利上げとその後の方針の示し方で動きやすくなります。",
+      "flow": "➡️ <b>よくある展開：</b>FOMC直後は上下に振れた後、落ち着く<br>👀 <b>ウォッチ：</b>9/17 住宅着工、9/18 日銀、ホルムズ協議の新日程"
+    }
+  ],
+  "news": [
+    {
+      "cat": "🌍 世界の大きな動き",
+      "catNote": "相場全体を左右するニュース",
+      "items": [
+        {
+          "url": "https://www.al-monitor.com/originals/2026/09/saudi-cancels-some-oil-cargoes-after-pipeline-hit-top-buyer-chasing-alternatives",
+          "title": "サウジ、パイプライン被害で原油の出荷を一部取り消し — 大口の買い手は代わりを探す",
+          "src": "Al-Monitor（ロイター配信・英語）・9/15",
+          "body": "紅海側ヤンブー港の積み出しを停止。ポーランドのオーレンは北海産などを急いで調達。欧州の現物原油は120ドル前後。📉 供給不安が現実のものに。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+          "title": "米国原油が105ドル超え — サウジの出荷取り消し報道で",
+          "src": "CNBC（英語）・9/15",
+          "body": "WTIは105.83ドル（+4.4%）、ブレントは108.75ドル（+2.9%）で終了（Yahoo Finance実測）。📉 物価と金利の上昇圧力。"
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+          "title": "NVIDIAのフアンCEO、トランプ氏に「AIの減速は起こさせない」",
+          "src": "TechCrunch（英語）・9/14",
+          "body": "イベント中にトランプ大統領が電話で登場し、減速論を「でっち上げ」と批判。フアン氏は同意した。↕️ 業界トップの間で意見が割れている。"
+        },
+        {
+          "url": "https://finance.yahoo.com/economy/policy/article/bessent-says-treasury-is-seeking-ways-to-deliver-trumps-5000-dividend-without-adding-to-deficit-180851219.html",
+          "title": "ベッセント財務長官、国民1人5,000ドルの「配当」を赤字を増やさず実現する方法を検討と証言",
+          "src": "Yahoo Finance（英語）・9/15",
+          "body": "具体的な財源は示さず。全成人に配れば約1.2兆ドルかかるとの試算も。↕️ 財政赤字への懸念は金利上昇の一因。"
+        }
+      ]
+    },
+    {
+      "cat": "📈 米国市場のいま",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+          "title": "ダウ・S&P500・ナスダックが下落 — 10年金利が2007年以来の水準、FOMC前日",
+          "src": "Yahoo Finance（英語）・9/15",
+          "body": "AI関連株の戻りが下げを和らげた。バンク・オブ・アメリカは8月のカード支出が前年比+4.5%と報告。📉 金利と原油が重し。"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "title": "スマホ向け半導体株が上昇、大型テックは下落 — スカイワークス・コルボ・クアルコム高",
+          "src": "24/7 Wall St.（英語）・9/15",
+          "body": "終値はスカイワークス+13.6%、コルボ+9.3%、クアルコム+4.3%（Yahoo Finance実測）。↕️ 同じテックでも明暗。"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/bofa-raises-us-semiconductor-industry-outlook-to-18-annual-growth-93CH-4901067",
+          "title": "バンク・オブ・アメリカ、半導体市場の成長予想を年18%に引き上げ",
+          "src": "Investing.com（英語）・9/15",
+          "body": "2030年の市場規模予想を2.7兆ドルから3.2兆ドルへ。メモリーとデータセンターが中心。📈 AI減速論への反論材料に。"
+        }
+      ]
+    },
+    {
+      "cat": "🏢 企業・決算",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://seekingalpha.com/news/4643087-skyworks-solutions-and-qorvo-surge-as-merger-enters-final-stages",
+          "title": "スカイワークスとコルボが急騰 — 合併が最終段階に",
+          "src": "Seeking Alpha（英語）・9/15",
+          "body": "スカイワークスのCEOが、残る承認は2つの国・地域のみと説明。📈 年内の完了が見えてきた。"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/enova-stock-falls-after-dropping-grasshopper-acquisition-bid-93CH-4900413",
+          "title": "オンライン融資のエノバ、銀行買収を断念して株価急落",
+          "src": "Investing.com（英語）・9/15",
+          "body": "グラスホッパー・バンコープ買収の規制当局への申請を取り下げ。2026年の業績予想は維持。📉 銀行になる計画が白紙に。"
+        },
+        {
+          "url": "https://ca.finance.yahoo.com/news/axon-stock-falls-10-1-154341979.html",
+          "title": "アクソン、10億ドルの転換社債発行で株価10%安",
+          "src": "Yahoo Finance（英語）・9/15",
+          "body": "将来株に換わる社債のため、1株あたりの価値が薄まる懸念。📉 資金は成長投資や買収に充てる方針。"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/09/15/dave-busters-retreats-4-on-sales-miss-six-flags-slips-2-lucky-strike-entertainment-falls-1/",
+          "title": "デイブ＆バスターズ、売上が予想に届かず株価下落",
+          "src": "24/7 Wall St.（英語）・9/15",
+          "body": "ゲームなど娯楽部門の売上が約9%減。📉 物価高の中で消費者の「遊び」の支出に慎重さ。"
+        }
+      ]
+    },
+    {
+      "cat": "🏛 金融政策・経済指標",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-09-15/us-10-year-treasury-yields-rise-to-highest-level-since-2007",
+          "title": "米10年金利、2007年以来の高水準に上昇",
+          "src": "Bloomberg（英語）・9/15",
+          "body": "一時5.04%、5.00%で引け。世界的な債券売りの流れ。📉 住宅ローンや企業の借り入れコストに波及。"
+        },
+        {
+          "url": "https://www.investing.com/news/economy-news/us-10yr-treasury-yields-rise-further-above-5-hit-highest-level-since-2007-4900796",
+          "title": "10年金利が5%超え、FOMCの利上げ観測で — 2年金利も2024年半ば以来の高さ",
+          "src": "Investing.com（英語）・9/15",
+          "body": "9/16の0.25%利上げ確率は92%。10年金利は年初から0.86%上昇。📉 株の割高感が意識されやすい。"
+        },
+        {
+          "url": "https://www.stateeconomicwatch.com/2026/09/empire-growth-moderates-in-september.html",
+          "title": "ニューヨーク州の製造業景況指数、9月は7.6に低下",
+          "src": "State Economic Watch（英語）・9/15",
+          "body": "8月の20.6から大きく低下し、予想（14.75）を下回った。一方で仕入れ価格の指数は63.1と高水準。↕️ 景気は減速、物価圧力は継続。"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "when": "9/16（水）",
+      "what": "8月小売売上高（日本時間21:30）",
+      "note": "個人消費の強さを確認。強すぎる数字は利上げ継続の材料と受け止められやすい。"
+    },
+    {
+      "when": "9/16（水）",
+      "what": "FOMC結果発表（日本時間9/17 3:00）・ウォーシュ議長会見（同3:30）",
+      "note": "0.25%利上げの確率は9割超。利上げ自体より、ドットチャートと会見での「この先」の示し方が焦点。"
+    },
+    {
+      "when": "9/17（木）",
+      "what": "8月住宅着工件数",
+      "note": "10年金利5%・住宅ローン金利の上昇が住宅市場にどこまで響いているかを確認。"
+    },
+    {
+      "when": "9/18（金）",
+      "what": "日銀金融政策決定会合",
+      "note": "1.25%への利上げがほぼ織り込み済み。今後の利上げペースの示し方が円相場を左右。"
+    },
+    {
+      "when": "日程未定",
+      "what": "サウジ東西パイプラインの再開／ホルムズ海峡をめぐる協議",
+      "note": "再開が遅れれば原油の上昇要因。協議が進展すれば下げ材料。"
+    }
+  ],
+  "footerAsOf": "株価・指数・金利・原油は2026年9月15日（火）米国市場終値（Yahoo Finance）。ドル円は同日のニューヨーク引け近辺の値。解説・ニュースは Bloomberg・Yahoo Finance・CNBC・ロイター・Investing.com・24/7 Wall St.・Seeking Alpha・TechCrunch などの報道に基づく",
+  "watch": [
+    {
+      "nm": "エヌビディア",
+      "en": "NVIDIA / NVDA",
+      "px": "$212.17",
+      "chg": 0.57,
+      "t": "prev",
+      "note": "+0.6%と小反発。フアンCEOは「AIの減速は起こさせない」と発言",
+      "news": [
+        {
+          "t": "Nvidia CEO Jensen Huang tells Trump 'we're not going to let [an AI slowdown] happen'",
+          "u": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
+          "s": "TechCrunch・9/14",
+          "sm": "イベント中に電話をかけてきたトランプ大統領に、フアンCEOが「減速は起こさせない」と応じた。一方、第三者による安全性の検証には賛成の立場。",
+          "pl": "AI投資の継続を政権と業界トップが後押し → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "BofA raises US semiconductor industry outlook to 18% annual growth",
+          "u": "https://www.investing.com/news/stock-market-news/bofa-raises-us-semiconductor-industry-outlook-to-18-annual-growth-93CH-4901067",
+          "s": "Investing.com・9/15",
+          "sm": "バンク・オブ・アメリカが2030年の半導体市場予想を3.2兆ドルに引き上げ。データセンター向けが成長の中心。",
+          "pl": "AI半導体の需要見通しは強いまま → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "AI開発が減速すれば大手クラウドはデータセンター増設を止められる、との見方で月曜はチップ株が売られた。",
+          "pl": "GPUの注文が将来減るのではとの警戒 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "ブロードコム",
+      "en": "Broadcom / AVGO",
+      "px": "$339.27",
+      "chg": -1.58,
+      "t": "prev",
+      "note": "−1.6%と2日続落。半導体全体が戻す中でも買い戻しは入らず",
+      "news": [
+        {
+          "t": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips",
+          "u": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "火曜の半導体の戻りはスマホ向けの中小型株に集中し、時価総額の大きいテック株は下げた。",
+          "pl": "大型のAI半導体株には買いが戻りきらず → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "US Stocks Fall as AI Warning Sparks Chip Rout; Oil Gains",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/us-stock-futures-fall-on-ai-warning-oil-gains-markets-wrap",
+          "s": "Bloomberg・9/14",
+          "sm": "AI大手のトップが開発の減速を提案したことで半導体指数が5.9%下落。NVIDIAやブロードコムの下げが特に大きかった。",
+          "pl": "AI設備投資の恩恵が大きい分、売りも大きい → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Broadcom (AVGO) Q3 earnings report 2026",
+          "u": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
+          "s": "CNBC・9/2",
+          "sm": "半導体売上が3倍の167億ドル、純利益131億ドル。来期の強気見通しも示した。",
+          "pl": "足元の業績は絶好調 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "TSMC（ADR）",
+      "en": "Taiwan Semi / TSM",
+      "px": "$413.75",
+      "chg": -1.02,
+      "t": "prev",
+      "note": "−1.0%と2日続落。製造装置のASML（+1.0%）は小反発",
+      "news": [
+        {
+          "t": "BofA raises US semiconductor industry outlook to 18% annual growth",
+          "u": "https://www.investing.com/news/stock-market-news/bofa-raises-us-semiconductor-industry-outlook-to-18-annual-growth-93CH-4901067",
+          "s": "Investing.com・9/15",
+          "sm": "半導体製造装置の2026年予想も1,560億ドル（前年比+33%）に引き上げ。最先端の製造能力への投資が続くとの見方。",
+          "pl": "製造の需要見通しは強い → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "AI stocks slide after top industry CEOs call for slowdown of technology's development",
+          "u": "https://edition.cnn.com/2026/09/14/business/ai-stocks-slide-slowdown-development-amodei-altman-intl",
+          "s": "CNN Business・9/14",
+          "sm": "SKハイニックス・ASMLなど世界のAIチップ関連株が下落。製造・装置の会社にも売りが広がった。",
+          "pl": "最先端チップの需要見通しに不透明感 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "AMD",
+      "en": "Advanced Micro / AMD",
+      "px": "$504.20",
+      "chg": 2.19,
+      "t": "prev",
+      "note": "+2.2%で500ドル台を回復。前日の下げ（−4.4%）の半分ほどを取り戻す",
+      "news": [
+        {
+          "t": "What Is Going on With AMD Stock on Tuesday?",
+          "u": "https://www.benzinga.com/markets/tech/26/09/61794801/what-is-going-on-with-amd-stock-on-tuesday-3",
+          "s": "Benzinga・9/15",
+          "sm": "AI安全性への注目がデータセンター投資を鈍らせるとの心配を、投資家が見直す動き。市場全体が弱い中で上昇した。",
+          "pl": "売られすぎの修正 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq fall as 10-year Treasury yield touches 2007 high",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+          "s": "Yahoo Finance・9/15",
+          "sm": "前日売られたAI関連株の上昇が指数の下げを和らげ、AMDやクアルコム、コヒレントが上昇した。",
+          "pl": "AI関連に買い戻し → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "インテル",
+      "en": "Intel / INTC",
+      "px": "$97.14",
+      "chg": -0.05,
+      "t": "prev",
+      "note": "ほぼ横ばい。前日−5.6%の後、100ドル割れのまま戻せず",
+      "news": [
+        {
+          "t": "BofA raises US semiconductor industry outlook to 18% annual growth",
+          "u": "https://www.investing.com/news/stock-market-news/bofa-raises-us-semiconductor-industry-outlook-to-18-annual-growth-93CH-4901067",
+          "s": "Investing.com・9/15",
+          "sm": "サーバー向け部品やメモリーの需要を理由に、米国の半導体市場の成長予想を年14%から18%に引き上げ。",
+          "pl": "サーバーCPUの需要にも追い風 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Wall Street's AI doomsday trade is here: chipmakers sink while hyperscalers gain",
+          "u": "https://fortune.com/2026/09/14/ai-slowdown-stocks-nvidia-meta/",
+          "s": "Fortune・9/14",
+          "sm": "インテル・AMD・マーベルが5〜6%安。顧客の設備投資に頼る半導体会社ほど減速論の打撃が大きいとの分析。",
+          "pl": "AI需要頼みの上昇分が剥がれやすい → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "マイクロソフト",
+      "en": "Microsoft / MSFT",
+      "px": "$497.12",
+      "chg": -1.64,
+      "t": "prev",
+      "note": "−1.6%で再び500ドル割れ。前日の上昇（+2.0%）を大きく打ち消す",
+      "news": [
+        {
+          "t": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips",
+          "u": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "火曜は中小型の半導体株が買われる一方、時価総額の大きいテック株は下落。ナスダック100連動のETFは−0.5%（報道時点）。",
+          "pl": "前日の「大手テック買い」が一部巻き戻し → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "U.S. 10-year yield surges past 5% to highest since 2007 on Fed rate hike bets",
+          "u": "https://www.investing.com/news/economy-news/us-10yr-treasury-yields-rise-further-above-5-hit-highest-level-since-2007-4900796",
+          "s": "Investing.com・9/15",
+          "sm": "10年金利の5%超えは、将来の利益を今の価値に直すときの割引率を上げ、株の評価を押し下げるとの指摘。",
+          "pl": "金利高は大型成長株の重し → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "アップル",
+      "en": "Apple / AAPL",
+      "px": "$331.34",
+      "chg": -0.52,
+      "t": "prev",
+      "note": "−0.5%。部品メーカーのスカイワークスは急騰も、本体は市場全体の慎重ムードに沿って小幅安",
+      "news": [
+        {
+          "t": "What's Going On With Apple Stock Tuesday?",
+          "u": "https://www.benzinga.com/markets/tech/26/09/61792123/whats-going-on-with-apple-stock-tuesday-2",
+          "s": "Benzinga・9/15",
+          "sm": "市場全体の慎重なムードの中で小幅安。9/9に発表した折りたたみ「iPhone Duo」は10月に発売予定。",
+          "pl": "新製品の発売を控えて様子見 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Apple unveils $2,000 iPhone Duo, its first foldable smartphone",
+          "u": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+          "s": "Fortune・9/9",
+          "sm": "折りたたみ「iPhone Duo」（1,999ドル、10/23発売）を発表。Pro各機種は100ドル値上げ。",
+          "pl": "新カテゴリー＋値上げで成長シナリオ再構築 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アルファベット",
+      "en": "Alphabet / GOOGL",
+      "px": "$344.98",
+      "chg": -1.26,
+      "t": "prev",
+      "note": "−1.3%と反落。前日+3.2%の後の利益確定売り",
+      "news": [
+        {
+          "t": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips",
+          "u": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "半導体の一部に資金が戻る一方、大型テックは下落。月曜の「チップ売り・大手クラウド買い」とは逆の動き。",
+          "pl": "前日の上昇分の反動 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing",
+          "s": "Bloomberg・9/13",
+          "sm": "出資先のAnthropicが上場先にナスダックを選び、10月の上場を目指すと報じられた。",
+          "pl": "出資先の上場で価値が見えやすくなる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アマゾン",
+      "en": "Amazon / AMZN",
+      "px": "$248.42",
+      "chg": -2.02,
+      "t": "prev",
+      "note": "−2.0%と2日続落し、大手テックで最大の下げ",
+      "news": [
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq fall as 10-year Treasury yield touches 2007 high",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+          "s": "Yahoo Finance・9/15",
+          "sm": "金利が2007年以来の水準に上がり、FOMCを前に市場全体が下落。大型株に売りが出た。",
+          "pl": "金利高・FOMC前の様子見 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Qualcomm issues warrants to Amazon to acquire $4 billion worth of chipmaker's stock as part of AI infrastructure deal",
+          "u": "https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html",
+          "s": "CNBC・9/8",
+          "sm": "AWS向けにクアルコムが複数世代の特注AIチップを供給。アマゾンは最大2,500万株分のクアルコム株を取得できる権利を得た。",
+          "pl": "自社向けAIチップの調達先を広げる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "メタ",
+      "en": "Meta / META",
+      "px": "$670.24",
+      "chg": 0.7,
+      "t": "prev",
+      "note": "+0.7%。大手テックが軒並み下げる中で上昇し、高値を更新",
+      "news": [
+        {
+          "t": "Meta, Alphabet and Microsoft Rise While Nvidia Falls After Three AI Chiefs Call For Slowing Down Frontier Models",
+          "u": "https://247wallst.com/investing/2026/09/14/meta-alphabet-and-microsoft-rise-while-nvidia-falls-after-three-ai-chiefs-call-for-slowing-down-frontier-models/",
+          "s": "24/7 Wall St.・9/14",
+          "sm": "チップ株が売られる中、メタは上昇。AI投資で稼ぐ側ではなく、投資を使って稼ぐ側として評価された。",
+          "pl": "設備投資の負担が減る可能性 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Meta Surges Over 6.5% on Muse AI Agent Launch",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+          "s": "Motley Fool・9/9",
+          "sm": "個人向けAIエージェント「Muse」を発表。AI投資の収益化への一歩と評価され高値更新。",
+          "pl": "AI投資の回収が見え始めた → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "テスラ",
+      "en": "Tesla / TSLA",
+      "px": "$356.58",
+      "chg": -0.67,
+      "t": "prev",
+      "note": "−0.7%と小幅続落。米国のEV市場でのシェア回復が話題に",
+      "news": [
+        {
+          "t": "Tesla Takes Back America",
+          "u": "https://247wallst.com/investing/2026/09/15/tesla-takes-back-america/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "米国のEV販売全体が約3割減る中、テスラのシェアは52%に回復。GMやフォードがEV計画を縮小し、国内の競争相手が減った。",
+          "pl": "米国EV市場での存在感が回復 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Anthropic's Amodei calls for AI oversight, joined by Altman and Musk",
+          "u": "https://www.washingtonpost.com/technology/2026/09/12/anthropic-ceo-dario-amodei-calls-ai-industry-slow-down/",
+          "s": "Washington Post・9/12",
+          "sm": "マスクCEOもAIの能力向上ペースを落とすべきとの主張に同調。AIを成長の柱に据えるテスラの経営者の発言として注目された。",
+          "pl": "AI・自動運転の成長期待に不透明感 → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "kpiNews": {
+    "SPY": {
+      "label": "S&P500 に関係するニュース",
+      "items": [
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq fall as 10-year Treasury yield touches 2007 high ahead of Fed decision day",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html",
+          "s": "Yahoo Finance・9/15",
+          "sm": "FOMCを前に金利が2007年以来の水準に上がり、S&P500は2日続落。前日売られたAI関連株の戻りが下げを和らげた。",
+          "pl": "金利高が重し、半導体の戻りが支え → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "U.S. 10-year yield surges past 5% to highest since 2007 on Fed rate hike bets",
+          "u": "https://www.investing.com/news/economy-news/us-10yr-treasury-yields-rise-further-above-5-hit-highest-level-since-2007-4900796",
+          "s": "Investing.com・9/15",
+          "sm": "9/16の0.25%利上げ確率は92%。金利上昇は株の評価を押し下げる方向に働く。",
+          "pl": "利上げと金利5% → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "DIA": {
+      "label": "NYダウ に関係するニュース",
+      "items": [
+        {
+          "t": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips",
+          "u": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "大型テックが下落。ダウ採用のマイクロソフト（−1.6%）とアマゾン（−2.0%）の下げが、ダウの−0.63%につながった。",
+          "pl": "主力の大型株安 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Empire: Growth Moderates in September",
+          "u": "https://www.stateeconomicwatch.com/2026/09/empire-growth-moderates-in-september.html",
+          "s": "State Economic Watch・9/15",
+          "sm": "ニューヨーク州の製造業景況指数は7.6と8月の20.6から低下。仕入れ価格の指数は63.1と高いまま。",
+          "pl": "景気の勢いは鈍化、コスト高は継続 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "QQQ": {
+      "label": "ナスダック に関係するニュース",
+      "items": [
+        {
+          "t": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips: Skyworks Jumps 11%, Qorvo Rises 7%, Qualcomm Climbs 4%",
+          "u": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "スマホ向け半導体が急騰する一方、時価総額の大きいテック株が下落し、ナスダックは−0.78%。",
+          "pl": "テックの中で明暗 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "BofA raises US semiconductor industry outlook to 18% annual growth",
+          "u": "https://www.investing.com/news/stock-market-news/bofa-raises-us-semiconductor-industry-outlook-to-18-annual-growth-93CH-4901067",
+          "s": "Investing.com・9/15",
+          "sm": "2030年の半導体市場を3.2兆ドルと予想。AI減速論の翌日に、強気の需要見通しが示された。",
+          "pl": "半導体の長期成長シナリオを後押し → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    "JPY": {
+      "label": "ドル／円 に関係するニュース",
+      "items": [
+        {
+          "t": "Dollar Keeps Yen Near Lows Ahead of Fed and BoJ Decisions",
+          "u": "https://www.tradingpedia.com/2026/09/15/dollar-keeps-yen-near-lows-ahead-of-fed-and-boj-decisions/",
+          "s": "Tradingpedia・9/15",
+          "sm": "米金利の上昇でドルが支えられ、ドル円は154円台で推移。FOMC（9/16）と日銀（9/18）を前に大きな動きは控えられた。",
+          "pl": "米金利高はドル高・円安要因 → 円安材料",
+          "dir": "up"
+        },
+        {
+          "t": "Japanese Yen weakens at the start of a central bank-heavy week",
+          "u": "https://www.fxstreet.com/news/japanese-yen-weakens-against-us-dollar-at-the-start-of-a-central-bank-heavy-week-202609141607",
+          "s": "FXStreet・9/14",
+          "sm": "FOMC・日銀が続く週の初めに円は弱含み。9/18の日銀会合では1.25%への利上げが確実視されている。",
+          "pl": "日銀のタカ派姿勢は円高要因 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "US10Y": {
+      "label": "米国10年金利 に関係するニュース",
+      "items": [
+        {
+          "t": "US 10-Year Treasury Yields Rise to Highest Level Since 2007",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-15/us-10-year-treasury-yields-rise-to-highest-level-since-2007",
+          "s": "Bloomberg・9/15",
+          "sm": "10年金利は一時5.04%と2007年以来の高さ、5.00%で引け。設備投資ブームとエネルギー高による世界的な債券売り。",
+          "pl": "借り入れコストの上昇 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "U.S. 10-year yield surges past 5% to highest since 2007 on Fed rate hike bets",
+          "u": "https://www.investing.com/news/economy-news/us-10yr-treasury-yields-rise-further-above-5-hit-highest-level-since-2007-4900796",
+          "s": "Investing.com・9/15",
+          "sm": "30年金利は5.38%前後、2年金利は4.68%前後。10年金利は年初から0.86%上昇。",
+          "pl": "住宅ローン金利も数十年ぶりの高さに → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "WTI": {
+      "label": "WTI原油 に関係するニュース",
+      "items": [
+        {
+          "t": "Saudi cancels some oil cargoes after pipeline hit, top buyer chasing alternatives",
+          "u": "https://www.al-monitor.com/originals/2026/09/saudi-cancels-some-oil-cargoes-after-pipeline-hit-top-buyer-chasing-alternatives",
+          "s": "Al-Monitor（ロイター配信）・9/15",
+          "sm": "サウジは東西パイプラインの停止で紅海側の積み出しを止め、9月積みの一部を取り消し。欧州の現物原油は120ドル前後。",
+          "pl": "実際の供給減が表面化 → 原油高材料",
+          "dir": "up"
+        },
+        {
+          "t": "U.S. oil tops $105 as Saudi Arabia reportedly cancels some crude cargoes after pipeline closure",
+          "u": "https://www.cnbc.com/2026/09/15/oil-extends-gains-following-houthi-strikes-on-saudi-arabia.html",
+          "s": "CNBC・9/15",
+          "sm": "WTIは105ドルを超え、105.83ドル（+4.4%）で終了（Yahoo Finance実測）。ブレントは108.75ドル。",
+          "pl": "月曜に縮めた上げ幅を取り戻す → 原油高材料",
+          "dir": "up"
+        }
+      ]
+    }
+  },
+  "movers": [
+    {
+      "nm": "スカイワークス",
+      "en": "Skyworks / SWKS",
+      "pct": 13.55,
+      "why": "コルボとの合併が最終段階に — 前日急落からの反発も",
+      "desc": "スマートフォン向けの通信用半導体（電波を送受信する部品）の大手。アップルが主要顧客。前日はAI減速論で−10.3%と売られていた。",
+      "news": [
+        {
+          "t": "Skyworks Solutions and Qorvo surge as merger enters final stages",
+          "u": "https://seekingalpha.com/news/4643087-skyworks-solutions-and-qorvo-surge-as-merger-enters-final-stages",
+          "s": "Seeking Alpha・9/15",
+          "sm": "CEOが投資家向けの会議で、コルボとの220億ドルの合併は残る承認が2つの国・地域のみと説明。年内の完了を見込む。",
+          "pl": "合併完了が近づく → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "コルボ",
+      "en": "Qorvo / QRVO",
+      "pct": 9.34,
+      "why": "スカイワークスとの合併進展でそろって上昇",
+      "desc": "スマホや通信機器向けの通信用半導体メーカー。スカイワークスとの合併が決まっており、両社の株価は連動しやすい。",
+      "news": [
+        {
+          "t": "Smartphone Chip Stocks Rally While Large-Cap Technology Slips: Skyworks Jumps 11%, Qorvo Rises 7%, Qualcomm Climbs 4%",
+          "u": "https://247wallst.com/investing/2026/09/15/smartphone-chip-stocks-rally-while-large-cap-technology-slips-skyworks-jumps-11-qorvo-rises-7-qualcomm-climbs-4/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "合併による5億ドルのコスト削減効果や20億ドルの自社株買いの枠が意識された。記事は「会社の発表だけでは説明しきれない上げ幅」とも指摘。",
+          "pl": "合併効果への期待 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "レビティ",
+      "en": "Revvity / RVTY",
+      "pct": 9.11,
+      "why": "年後半の見通しを説明し、52週高値",
+      "desc": "生命科学の研究や診断に使う機器・試薬のメーカー。投資家向け会議で、受注残が年後半に出荷されると説明した。",
+      "news": [
+        {
+          "t": "Stocks making the biggest moves midday: Skyworks Solutions, Axon, Dave & Buster's, Revvity & more",
+          "u": "https://www.cnbc.com/2026/09/15/stocks-making-the-biggest-moves-midday-swks-axon-play-rvty.html",
+          "s": "CNBC・9/15",
+          "sm": "ベアードのヘルスケア会議で年内の見通しを説明。4〜6月期末に受注残が多く、7〜12月に出荷される見込みと評価された。",
+          "pl": "年後半の売上の上積み期待 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "エノバ",
+      "en": "Enova / ENVA",
+      "pct": -23.43,
+      "why": "銀行買収（グラスホッパー）の申請を取り下げ",
+      "desc": "ネットで個人・中小企業にお金を貸す会社。銀行を買収して自ら銀行になる計画だったが、規制当局の判断が出ないまま断念した。",
+      "news": [
+        {
+          "t": "Enova stock falls after dropping Grasshopper acquisition bid",
+          "u": "https://www.investing.com/news/stock-market-news/enova-stock-falls-after-dropping-grasshopper-acquisition-bid-93CH-4900413",
+          "s": "Investing.com・9/15",
+          "sm": "約3.7億ドルでのグラスホッパー・バンコープ買収の申請を取り下げ。CEOは「銀行になりたいノンバンクの審査基準があいまい」と説明。業績予想は維持し、自社株買いを加速する方針。",
+          "pl": "成長戦略の柱が白紙に → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "デイブ＆バスターズ",
+      "en": "Dave & Buster's / PLAY",
+      "pct": -19.01,
+      "why": "第2四半期決算で売上・利益とも予想に届かず",
+      "desc": "ゲームセンターとレストランを組み合わせた娯楽施設チェーン。飲食は伸びているが、主力のゲームなど娯楽部門の売上が約9%減った。",
+      "news": [
+        {
+          "t": "Dave & Buster's Retreats on Sales Miss; Six Flags Slips, Lucky Strike Entertainment Falls",
+          "u": "https://247wallst.com/investing/2026/09/15/dave-busters-retreats-4-on-sales-miss-six-flags-slips-2-lucky-strike-entertainment-falls-1/",
+          "s": "24/7 Wall St.・9/15",
+          "sm": "売上は5.44億ドル（前年比−2.4%）で予想を下回り、1株あたり0.27ドルの赤字（予想は黒字）。娯楽部門の売上は約9%減。",
+          "pl": "消費者の「遊び」への支出が鈍る → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "アクソン",
+      "en": "Axon / AXON",
+      "pct": -9.81,
+      "why": "10億ドルの転換社債の発行を発表",
+      "desc": "テーザー銃や警察向けボディカメラ、証拠管理のクラウドサービスの会社。将来株に換わる社債を発行するため、1株の価値が薄まる懸念が出た。",
+      "news": [
+        {
+          "t": "Axon Stock Falls 10% on a $1 Billion Convertible Offering",
+          "u": "https://ca.finance.yahoo.com/news/axon-stock-falls-10-1-154341979.html",
+          "s": "Yahoo Finance・9/15",
+          "sm": "2031年満期・利息ゼロの転換社債を10億ドル発行する計画。資金は成長投資や買収などに充てる方針。",
+          "pl": "株の希薄化の懸念 → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "prevIdx": {
+    "SPY": {
+      "label": "S&P500",
+      "prevIdx": 7586
+    },
+    "DIA": {
+      "label": "NYダウ",
+      "prevIdx": 52093
+    },
+    "QQQ": {
+      "label": "ナスダック",
+      "prevIdx": 25982
+    }
+  },
+  "date": "2026-09-15"
+}
