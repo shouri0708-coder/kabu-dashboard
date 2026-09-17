@@ -1,0 +1,865 @@
+{
+  "dateLabel": "2026年9月17日（木）終値",
+  "headerNote": "※株価は取引日の翌朝に終値で更新。週末・休場日も重要ニュースがあれば解説を随時更新します（7・12・18・22時に確認）",
+  "headline": {
+    "kicker": "きょうの結論（2026年9月17日・木曜の米国市場）",
+    "lead": "利上げの翌日は買い戻しで全面高 — ナスダック+1.7%、半導体は+3.4%、原油安と金利低下が支え",
+    "sub": "前日にFRBの利上げで売られた米国株は、木曜に3指数そろって反発しました。S&P500は+1.14%の7,637.76、NYダウは+0.61%の51,778.04、ナスダックは+1.69%の26,418.30（Yahoo Finance実測）。投資家の不安の度合いを示すVIXは15.44まで12.8%下がりました。追い風は3つ。①原油が101.15ドルまで下がり、物価の心配が和らいだこと、②10年金利が4.95%と5%を割り込んだこと、③メモリー不足をめぐる話題で半導体株に強い買いが入ったことです。半導体ETF（SOXX）は+3.4%、インテルは+7.7%、AMDは+6.4%と急伸しました。一方で自動車販売店やスポーツ賭博など、消費に近い銘柄は大きく売られ、明暗がはっきり分かれた一日でした。",
+    "evidence": [
+      {
+        "tag": "全面反発",
+        "title": "3指数そろって上昇 — ナスダックは+1.69%、VIXは12.8%低下",
+        "body": "S&P500は+1.14%の7,637.76、NYダウは+0.61%の51,778.04、ナスダックは+1.69%の26,418.30（いずれもYahoo Finance実測）。小型株のラッセル2000も+0.55%。「恐怖指数」と呼ばれるVIXは15.44へ12.8%下がり、前日の警戒が一気にほどけました。",
+        "so": "FRBの利上げ自体は事前の予想どおりで、「追加利上げの示唆」で売られすぎた分を買い戻す動き。原油安と金利低下が背中を押した。",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-17-134502255.html",
+        "src": "出典：Yahoo Finance（9/17・米国市場の終値まとめ）"
+      },
+      {
+        "tag": "半導体",
+        "title": "メモリー不足が話題に — インテル+7.7%、AMD+6.4%、半導体ETFは+3.4%",
+        "body": "英バークレイズがインテルの投資判断を「アンダーパフォーム（弱気）」から「オーバーウェイト（強気）」へ2段階引き上げ、さらにSKハイニックスとオハイオ工場でメモリーを作る協議が伝わったことで、インテルは+7.67%の108.80ドル。出来高は平均比35%増の1億4,720万株でした。マイクロンは+5.50%、サンディスクは+6.21%。半導体ETF（SOXX）は+3.39%で、AMDは+6.36%、TSMCは+3.00%と広く買われました。",
+        "so": "AI向けのメモリーが足りず値段が上がり続けている、という見立てが半導体株全体を押し上げた。ただしインテルとSKハイニックスの提携は「まだ決まっていない」段階。",
+        "url": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+        "src": "出典：Motley Fool（9/17・インテル8%高）"
+      },
+      {
+        "tag": "金利・原油",
+        "title": "10年金利は4.95%へ低下、WTI原油は101.15ドル（−1.25%）",
+        "body": "米10年金利は前日の5.01%から4.95%へ低下（Yahoo Finance実測）。木曜に出た週間の失業保険申請は19.6万件と予想（20.7万件）を下回り、8月の住宅着工は予想割れでした。原油は、サウジアラビアがホルムズ海峡の外で船から船へ原油を積み替えて輸出を続けていると伝わり、WTIは101.15ドルまで下落しました。",
+        "so": "金利が下がると、将来の利益を当てにする成長株・ハイテク株の価値が計算上高くなる。原油安は物価上昇の心配を和らげ、FRBへの警戒も薄れる。",
+        "url": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html",
+        "src": "出典：CNBC（9/17・米国債利回り）"
+      },
+      {
+        "tag": "消費の弱さ",
+        "title": "オートネーション−10.5%、ドラフトキングス−7.6% — 消費に近い銘柄は売られる",
+        "body": "自動車販売大手オートネーションは、モルガン・スタンレーの投資家向け会議で「整備サービスの伸びが鈍い」「消費者が車を買いにくくなっている」「EVの需要が急減している」と説明し、−10.49%と急落。同業のリシア・モーターズも−5.17%、アズベリーも−3.74%と業界全体に売りが広がりました。スポーツ賭博のドラフトキングスは、予測市場カルシーにNFL開幕週の取引量の76%を取られたと伝わり−7.64%。",
+        "so": "指数は上がっても、家計の財布に近い商売は金利高・値上がりの影響を受けている。「AIは強いが消費は弱い」という色分けが鮮明に。",
+        "url": "https://seekingalpha.com/news/4644083-autonation-tumbles-10-percent-amid-cautious-conference-commentary",
+        "src": "出典：Seeking Alpha（9/17・オートネーション急落）"
+      }
+    ],
+    "summary": "①3指数そろって反発、ナスダック+1.69%・S&P500+1.14%・ダウ+0.61%。②VIXは15.44へ12.8%低下し、前日の警戒が緩む。③10年金利は4.95%と5%割れ、WTI原油は101.15ドル（−1.25%）。④メモリー不足を材料に半導体が急伸、インテル+7.7%・AMD+6.4%・SOXX+3.4%。⑤ジェネラックはアマゾンとの最大80億ドル契約で+18.3%。⑥一方でオートネーション−10.5%、ドラフトキングス−7.6%と消費関連は下落。⑦次は9/18の日銀とトリプル・ウィッチング。"
+  },
+  "kpis": [
+    {
+      "key": "SPY",
+      "name": "S&P500（市場全体の平均像）",
+      "valAttr": " id=\"v-SPY\"",
+      "valueHtml": "7,638",
+      "deltaClass": "d-up",
+      "deltaAttr": " id=\"d-SPY\"",
+      "delta": "▲ +1.14%（9/17終値）",
+      "why": "利上げ翌日の買い戻しで4日ぶり反発。金利低下と原油安が支え"
+    },
+    {
+      "key": "DIA",
+      "name": "NYダウ（大企業30社）",
+      "valAttr": " id=\"v-DIA\"",
+      "valueHtml": "51,778",
+      "deltaClass": "d-up",
+      "deltaAttr": " id=\"d-DIA\"",
+      "delta": "▲ +0.61%（9/17終値）",
+      "why": "316ドル高。ただハイテク中心の上げで、前日の631ドル安の半分ほどの戻り"
+    },
+    {
+      "key": "QQQ",
+      "name": "ナスダック（ハイテク中心）",
+      "valAttr": " id=\"v-QQQ\"",
+      "valueHtml": "26,418",
+      "deltaClass": "d-up",
+      "deltaAttr": " id=\"d-QQQ\"",
+      "delta": "▲ +1.69%（9/17終値）",
+      "why": "3指数で最大の上げ。半導体ETF（SOXX）は+3.4%と全体をけん引"
+    },
+    {
+      "key": "JPY",
+      "name": "ドル／円",
+      "valAttr": "",
+      "valueHtml": "<span id=\"v-JPY\">156.01</span><span style=\"font-size:13px\">円</span>",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ 156円台に円安（9/17）",
+      "why": "9/18の日銀は0.25%利上げがほぼ確実視。それでも日米の金利差は大きいまま"
+    },
+    {
+      "key": "US10Y",
+      "name": "米国10年金利（長期金利）",
+      "valAttr": "",
+      "valueHtml": "4.95<span style=\"font-size:13px\">%</span>",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▼ 4.95%（9/17終値・前日5.01%）",
+      "why": "5%を割り込み、成長株の追い風に。原油安と住宅の弱さが金利を下げた"
+    },
+    {
+      "key": "WTI",
+      "name": "WTI原油（先物）",
+      "valAttr": "",
+      "valueHtml": "$101.15",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▼ −1.25%（9/17終値）",
+      "why": "サウジが海峡の外で積み替えて輸出を継続。供給不安が後退し2日続落"
+    }
+  ],
+  "reasons": [
+    {
+      "dir": "up",
+      "mark": "①",
+      "title": " 「売られすぎ」の買い戻し — 原油安と金利低下がそろった",
+      "body": "前日のFRBの利上げ（0.25%、政策金利3.75〜4.00%）は予想どおりでしたが、ウォーシュ議長が「物価は高すぎる状態が長く続いている」と述べ、18人中16人が年内の追加利上げを見込んだことで、ダウは631ドル安になっていました。木曜はその反動です。WTI原油は101.15ドル（−1.25%）と2日続落し、10年金利は4.95%へ低下。VIXは15.44まで12.8%下がりました。",
+      "tsumari": "利上げそのものより「言い方がタカ派すぎた」ことで売られた分を、投資家が買い戻した。原油が下がれば物価も落ち着きやすく、「利上げはあと1回で終わるかも」という見方が戻ってくる。",
+      "tags": [
+        "影響：市場全体",
+        "FOMC翌日の反発・原油・金利"
+      ]
+    },
+    {
+      "dir": "up",
+      "mark": "②",
+      "title": " メモリー不足がテーマに — インテル+7.7%、AMD+6.4%、半導体ETFは+3.4%",
+      "body": "インテルのリップブー・タンCEOが、AI需要にメモリーの供給が追いつかず「価格は5〜7倍に上がった」「不足は来年さらに厳しくなる」と語ったことが広く報じられました。そこへ、SKハイニックスがインテルのオハイオ工場でメモリーを作る協議をしているとのロイター報道と、バークレイズによるインテルの2段階格上げ（弱気→強気）が重なりました。インテル+7.67%、マイクロン+5.50%、サンディスク+6.21%、AMD+6.36%、TSMC+3.00%、半導体ETF（SOXX）+3.39%（いずれもYahoo Finance実測）。",
+      "tsumari": "AIのデータセンターは計算用の半導体だけでなく「記憶する部品（メモリー）」も大量に要る。その値上がりはメモリー会社の利益になり、半導体株全体の買い材料になった。ただしインテルとSKハイニックスの提携はまだ「協議中」で、両社とも決定を否定している。",
+      "tags": [
+        "影響：半導体・AI関連",
+        "メモリー不足・インテル格上げ"
+      ]
+    },
+    {
+      "dir": "down",
+      "mark": "③",
+      "title": " 上がったのはAIだけ — 車の販売店やスポーツ賭博は大きく下落",
+      "body": "自動車販売大手オートネーションは、モルガン・スタンレーの会議で整備サービスの伸び鈍化・消費者の購買力低下・EV需要の急減を説明し−10.49%。リシア・モーターズ−5.17%、アズベリー−3.74%と業界全体が売られました。スポーツ賭博のドラフトキングスは、予測市場カルシーがNFL開幕週の取引量の76%（146億ドル）を握ったと伝わり−7.64%で52週安値圏に。AIクラウドのコアウィーブも30億ドルの転換社債発行を発表して−4.16%でした。",
+      "tsumari": "指数の上げは半導体とAIに偏っている。金利の高さと値上がりで、車のように大きな買い物や娯楽の支出は鈍りやすい。AI以外の分野は個別の事情で振り落とされている。",
+      "tags": [
+        "影響：消費関連・小売・娯楽",
+        "オートネーション・ドラフトキングス"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "type": "bull",
+      "label": "強気シナリオ ↑",
+      "title": "原油の下落が続き金利5%が天井に、AI・半導体主導の戻りが定着する",
+      "body": "サウジの輸出が回復して原油が100ドルを下回り、10年金利が5%未満で落ち着けば、「利上げはあと1回で終わる」という見方が強まりやすくなります。メモリー不足を背景にした半導体の業績期待が続けば、9/30のマイクロン決算が次の確認材料になります。",
+      "flow": "📈 <b>成立の条件：</b>原油の一段安 ＋ 物価指標の落ち着き ＋ マイクロン決算の好内容<br>👀 <b>ウォッチ：</b>10年金利が5%を下回ったままか、SOXXが戻り高値を更新できるか"
+    },
+    {
+      "type": "bear",
+      "label": "弱気シナリオ ↓",
+      "title": "消費の弱さが広がり、AI一本足の相場が崩れる",
+      "body": "オートネーションのように、金利高と値上がりで家計の支出が細っている兆しが他の業種にも広がれば、企業の利益見通しが下がります。雇用の強さ（失業保険申請19.6万件）が続けばFRBは10月も利上げしやすく、金利の再上昇が高い株価の重しになる可能性もあります。",
+      "flow": "📉 <b>成立の条件：</b>小売・自動車・娯楽の弱い数字 ＋ FRB高官のタカ派発言 ＋ 中東情勢の再悪化<br>👀 <b>ウォッチ：</b>10年金利5.1%超、消費関連株の続落、原油の反発"
+    },
+    {
+      "type": "flat",
+      "label": "中立シナリオ →",
+      "title": "9/18は日銀とトリプル・ウィッチングで荒れやすい一日",
+      "body": "金曜は日銀の金融政策決定会合（0.25%の利上げがほぼ織り込み済み）と、株価指数先物・オプションの同時期限（トリプル・ウィッチング）が重なります。売買が膨らみ、指数もドル円も理由なく大きく振れやすい日です。日銀が利上げしても日米の金利差は大きいままで、円安が止まるとは限りません。これらは今後の値動きを当てるものではなく、考え方の整理です。",
+      "flow": "➡️ <b>よくある展開：</b>期限日は値動きが荒く、方向感は翌週に持ち越し<br>👀 <b>ウォッチ：</b>9/18 日銀（植田総裁の会見）、ドル円156円台、9/30 マイクロン決算"
+    }
+  ],
+  "news": [
+    {
+      "cat": "🌍 世界の大きな動き",
+      "catNote": "相場全体を左右するニュース",
+      "items": [
+        {
+          "url": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html",
+          "title": "イングランド銀行は据え置き — FRBの利上げに追随せず3.75%を維持",
+          "src": "CNBC（英語）・9/17",
+          "body": "6対3の多数決で据え置き、3人は4%への利上げを主張。英国の8月の消費者物価は3.1%に上昇。国債の売却ペースも緩めた。↕️ 主要中銀の足並みは一致していない。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+          "title": "原油は2日続落 — サウジが海峡の外で積み替えて輸出を継続",
+          "src": "CNBC（英語）・9/17",
+          "body": "ドローン攻撃で傷ついたパイプラインの迂回策として、オマーン沖で船から船へ原油を移し、ホルムズ海峡の外のタンカーに積み替える方式を採用。WTIの終値は101.15ドル（−1.25%、Yahoo Finance実測）。📈 供給不安の後退。"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-jumps-5-intel-ceo-153804720.html",
+          "title": "インテルCEO「メモリー価格は5〜7倍、不足は来年さらに悪化」",
+          "src": "Yahoo Finance（英語）・9/17",
+          "body": "サンタクララのAIインフラ会議での発言。TrendForceはサーバー用DRAM価格が2026年に270%上がると予想。マイクロンは9/30に決算。📈 メモリー各社には追い風。"
+        }
+      ]
+    },
+    {
+      "cat": "📈 米国市場のいま",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+          "title": "3指数そろって反発 — 金利低下と原油安が支え",
+          "src": "Yahoo Finance（英語）・9/17",
+          "body": "S&P500 +1.14%、ナスダック +1.69%、ダウ +0.61%（実測）。VIXは15.44へ12.8%低下。ウォーシュ議長のタカ派姿勢は「FRBの物価への信頼を取り戻した」との評価と、「言い方が強すぎた」との声が交錯。📈 前日の下げの取り戻し。"
+        },
+        {
+          "url": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+          "title": "インテル8%高 — バークレイズが2段階格上げ、SKハイニックスとの協議報道も",
+          "src": "Motley Fool（英語）・9/17",
+          "body": "投資判断は「弱気」から「強気」へ。出来高は平均比35%増。記事は「思惑での急騰は続きにくい」とも注意を促している。📈 ただし提携はまだ協議段階。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html",
+          "title": "米10年金利は4.95%へ低下 — 失業保険申請は19.6万件、住宅着工は予想割れ",
+          "src": "CNBC（英語）・9/17",
+          "body": "失業保険の新規申請は予想の20.7万件を下回る19.6万件（レイバーデー休暇で少なめに出た可能性も）。一戸建ての建築許可は−1.8%の87.8万件。📈 金利低下は株の追い風。"
+        }
+      ]
+    },
+    {
+      "cat": "🏢 企業・決算",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61849239/generac-gnrc-stock-amazon-deal",
+          "title": "ジェネラック+18.3% — アマゾンとのデータセンター向け発電機契約",
+          "src": "Benzinga（英語）・9/17",
+          "body": "最初の納入は2027〜28年で24億ドル、契約全体では最大80億ドル。アマゾンは1株200.93ドルで最大169万株を買える権利も取得（うち約30.8万株は即時に権利確定）。📈 AIの電力確保をめぐる大型契約。"
+        },
+        {
+          "url": "https://seekingalpha.com/news/4644083-autonation-tumbles-10-percent-amid-cautious-conference-commentary",
+          "title": "オートネーション−10.5% — 整備の伸び鈍化とEV需要の急減を説明",
+          "src": "Seeking Alpha（英語）・9/17",
+          "body": "モルガン・スタンレーの投資家会議で、消費者の購買力低下と新車の粗利の先行き悪化に言及。リシア・モーターズ、アズベリーなど同業にも売りが波及した。📉 消費の弱さが表面化。"
+        },
+        {
+          "url": "https://www.investing.com/news/company-news/coreweave-plans-3-billion-convertible-notes-offering-93CH-4905333",
+          "title": "コアウィーブ、30億ドルの転換社債を発行へ — 株価は−4.2%",
+          "src": "Investing.com（英語）・9/17",
+          "body": "2033年4月満期、追加で5億ドルの上乗せ枠つき。クーポンは2.375〜2.875%の見込みで、希薄化を抑えるオプション取引にも資金を充てる。↕️ AI設備投資の資金調達が続く一方、株式の増加は既存株主の重し。"
+        }
+      ]
+    },
+    {
+      "cat": "🏛 金融政策・経済指標",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.news4jax.com/business/2026/09/17/claims-for-unemployment-benefits-drop-to-196000-lowest-since-mid-july-as-layoffs-remain-low/",
+          "title": "失業保険の新規申請は19.6万件、7月中旬以来の少なさ",
+          "src": "News4JAX（AP配信・英語）・9/17",
+          "body": "予想は20.75万件。4週平均は20.3万件。解雇は少ない状態が続く。↕️ 景気には安心材料、利上げ継続の理由にも。"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-09-17/us-housing-starts-unexpectedly-decline-on-multifamily-projects",
+          "title": "8月の住宅着工は128万件、予想外の減少 — 集合住宅が大きく減る",
+          "src": "Bloomberg（英語）・9/17",
+          "body": "前月比−2.6%、予想は132万件。建築許可も−3.7%の131万件。📉 金利高が住宅市場を冷やしている。"
+        },
+        {
+          "url": "https://www.fxstreet.com/news/japanese-yen-awaits-fresh-direction-from-bank-of-japan-interest-rate-decision-202609171748",
+          "title": "円は日銀待ち — 9/18に0.25%利上げの見方がほぼ全員",
+          "src": "FXStreet（英語）・9/17",
+          "body": "ロイター調査では68人中66人が利上げを予想し、政策金利は1.00%→1.25%と約30年ぶりの高さに。24人は10月か12月にさらに1.50%への追加利上げを見込む。↕️ 焦点は植田総裁の次の一手への発言。"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "when": "9/18（金）",
+      "what": "日銀金融政策決定会合・植田総裁の会見",
+      "note": "0.25%の利上げ（1.00%→1.25%）がほぼ織り込み済み。焦点は「次も上げるか」の言い方。日米の金利差は大きいままで、円安が止まるとは限らない。"
+    },
+    {
+      "when": "9/18（金）",
+      "what": "株価指数先物・オプションの同時期限（トリプル・ウィッチング）",
+      "note": "売買が膨らみ、値動きが大きくなりやすい日。"
+    },
+    {
+      "when": "9/22（火）",
+      "what": "スペースXのスターシップ初の軌道飛行（予定）",
+      "note": "上場後のスペースX株の大きな材料。"
+    },
+    {
+      "when": "9/30（水）",
+      "what": "マイクロンの四半期決算",
+      "note": "メモリー不足で値上がりが利益にどこまで効いたかを確かめる、半導体相場の答え合わせ。"
+    },
+    {
+      "when": "日程未定",
+      "what": "サウジ東西パイプラインの復旧／インテル・SKハイニックスの協議",
+      "note": "パイプラインは6週間で全面再開の計画。インテルの提携は両社とも「未決定」とコメント、韓国政府の技術審査も関門。"
+    }
+  ],
+  "footerAsOf": "株価・指数・金利・原油は2026年9月17日（木）米国市場終値（Yahoo Finance実測）。ドル円は同日のニューヨーク引け近辺の値。解説・ニュースは Yahoo Finance・CNBC・Bloomberg・Motley Fool・Benzinga・Seeking Alpha・Investing.com・24/7 Wall St.・News4JAX（AP）・FXStreet・TechCrunch などの報道に基づく",
+  "watch": [
+    {
+      "nm": "エヌビディア",
+      "en": "NVIDIA / NVDA",
+      "px": "$219.34",
+      "chg": 2.54,
+      "t": "prev",
+      "note": "+2.5%と3日続伸。半導体全体の上げに乗り、219ドル台を回復",
+      "news": [
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq rebound as bond yields slip, oil eases",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "金利低下と原油安を追い風にハイテク株が買われ、ナスダックは+1.69%と3指数で最も上昇した。",
+          "pl": "金利低下は成長株の追い風 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Lucid Motors has a potential robotaxi partner for Europe",
+          "u": "https://techcrunch.com/2026/09/17/lucid-motors-has-a-potential-robotaxi-partner-for-europe/",
+          "s": "TechCrunch・9/17",
+          "sm": "ルーシッドが欧州の配車大手ボルトと結んだ2万5,000台の自動運転車計画で、車両にはNVIDIAの自動運転基盤「Hyperion」が使われる。",
+          "pl": "自動運転でも採用が広がる → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Apple AI server could pair M8 Ultra chips with Nvidia NVLink Fusion",
+          "u": "https://applemagazine.com/apple-ai-server-m8-ultra-nvidia-nvlink-fusion/",
+          "s": "AppleMagazine（The Information報道）・9/16",
+          "sm": "アップルが自社製M8 Ultra搭載サーバーを検討し、NVIDIAの接続技術「NVLink Fusion」の採用を協議していると報じられた。発売は2029年以降の想定で、未確定。",
+          "pl": "自前主義のアップルにも接続技術が入る可能性 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "ブロードコム",
+      "en": "Broadcom / AVGO",
+      "px": "$347.30",
+      "chg": 2.29,
+      "t": "prev",
+      "note": "+2.3%と続伸。半導体ETF（SOXX）が+3.4%と急伸し、大型半導体にも買いが戻る",
+      "news": [
+        {
+          "t": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+          "s": "Motley Fool・9/17",
+          "sm": "厳しい一週間だった半導体セクターが広く買い戻され、AMDは+6.36%、クアルコムは+2.09%と上昇した。",
+          "pl": "半導体全体の買い戻し → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Broadcom (AVGO) Q3 earnings report 2026",
+          "u": "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
+          "s": "CNBC・9/2",
+          "sm": "半導体売上が3倍の167億ドル、純利益131億ドル。来期の強気見通しも示した。",
+          "pl": "足元の業績は絶好調 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "TSMC（ADR）",
+      "en": "Taiwan Semi / TSM",
+      "px": "$430.26",
+      "chg": 3.00,
+      "t": "prev",
+      "note": "+3.0%と続伸し430ドル台へ。メモリー不足をきっかけにした半導体買いが波及",
+      "news": [
+        {
+          "t": "Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%",
+          "u": "https://247wallst.com/investing/2026/09/17/intel-jumps-8-sk-hynix-climbs-5-as-ohio-memory-talks-reignite-micron-rises-6/",
+          "s": "24/7 Wall St.・9/17",
+          "sm": "インテルのオハイオ工場を使うメモリー生産の協議報道で半導体株が広く買われた。ただし両社とも「決定はしていない」とコメントし、韓国政府の技術審査という関門も残る。",
+          "pl": "受託製造の競争相手が育つ可能性 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Micron Jumps 5% as Intel CEO Says Memory Prices Have Surged Over 500%",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/micron-jumps-5-intel-ceo-153804720.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "インテルCEOがAI向けメモリーの価格が5〜7倍になり、不足は来年さらに厳しくなると述べた。最先端の製造能力への需要は強い。",
+          "pl": "AI向け製造需要の強さを裏づけ → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "AMD",
+      "en": "Advanced Micro / AMD",
+      "px": "$545.09",
+      "chg": 6.36,
+      "t": "prev",
+      "note": "+6.4%と急伸し545ドル台。半導体セクターの上げを主導した一角",
+      "news": [
+        {
+          "t": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+          "s": "Motley Fool・9/17",
+          "sm": "半導体セクターが広く買い戻される中、AMDは+6.36%と大きく上昇した。",
+          "pl": "セクター全体の反発をけん引 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "What's Going On With AMD Stock Thursday?",
+          "u": "https://www.benzinga.com/trading-ideas/movers/26/09/61838516/whats-going-on-with-amd-stock-thursday-10",
+          "s": "Benzinga・9/17",
+          "sm": "リスクを取る姿勢の回復とともに寄り前から上昇。9/10にはパイパー・サンドラーが「オーバーウェイト」・目標株価600ドルで調査を開始している。",
+          "pl": "AI需要への強気見通しが支え → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "インテル",
+      "en": "Intel / INTC",
+      "px": "$108.80",
+      "chg": 7.67,
+      "t": "prev",
+      "note": "+7.7%と急騰。バークレイズの2段階格上げとSKハイニックスとの協議報道が重なる",
+      "news": [
+        {
+          "t": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+          "s": "Motley Fool・9/17",
+          "sm": "バークレイズが投資判断を「アンダーパフォーム」から「オーバーウェイト」へ2段階引き上げ。出来高は平均比35%増の1億4,720万株に膨らんだ。",
+          "pl": "受託製造の立て直しへの期待 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%",
+          "u": "https://247wallst.com/investing/2026/09/17/intel-jumps-8-sk-hynix-climbs-5-as-ohio-memory-talks-reignite-micron-rises-6/",
+          "s": "24/7 Wall St.・9/17",
+          "sm": "稼働していないオハイオ工場に「核となる借り手」が見つかるとの期待。ただしSKハイニックスは「確定していない」、インテルは報道を「憶測」と説明。",
+          "pl": "まだ協議段階で実現は不透明 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Micron Jumps 5% as Intel CEO Says Memory Prices Have Surged Over 500%",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/micron-jumps-5-intel-ceo-153804720.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "リップブー・タンCEOがサンタクララのAIインフラ会議で、メモリー価格は5〜7倍に上がり、不足は2027年にさらに厳しくなると警告した。",
+          "pl": "メモリー事業への注目が高まる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "マイクロソフト",
+      "en": "Microsoft / MSFT",
+      "px": "$497.75",
+      "chg": 1.52,
+      "t": "prev",
+      "note": "+1.5%と3日ぶり反発。500ドル目前まで戻す",
+      "news": [
+        {
+          "t": "Treasury yields move lower after Fed kicks off hiking cycle",
+          "u": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html",
+          "s": "CNBC・9/17",
+          "sm": "米10年金利は7bp超低下し4.93%前後まで下がった（終値は4.95%・Yahoo Finance実測）。失業保険申請の減少と住宅着工の予想割れが背景。",
+          "pl": "金利低下は大型成長株の追い風 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq rebound as bond yields slip, oil eases",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "利上げ翌日の買い戻しで大型テックがそろって上昇し、ナスダックが上げをけん引した。",
+          "pl": "売られすぎの修正 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アップル",
+      "en": "Apple / AAPL",
+      "px": "$337.00",
+      "chg": 1.38,
+      "t": "prev",
+      "note": "+1.4%と続伸し337ドル。AIサーバー参入の観測報道も話題に",
+      "news": [
+        {
+          "t": "Apple AI server could pair M8 Ultra chips with Nvidia NVLink Fusion",
+          "u": "https://applemagazine.com/apple-ai-server-m8-ultra-nvidia-nvlink-fusion/",
+          "s": "AppleMagazine（The Information報道）・9/16",
+          "sm": "自社チップM8 Ultraを2個または4個載せたラック型サーバーを検討中と報道。AI開発者・企業・政府向けを想定するが、発売は2029年以降で中止の可能性もある。",
+          "pl": "新しい法人向け事業の芽 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Apple unveils $2,000 iPhone Duo, its first foldable smartphone",
+          "u": "https://fortune.com/2026/09/09/apple-iphone-18-foldable-launch-event-john-ternus-siri-ai/",
+          "s": "Fortune・9/9",
+          "sm": "折りたたみ「iPhone Duo」（1,999ドル、10/23発売）を発表。Pro各機種は100ドル値上げ。",
+          "pl": "新カテゴリー＋値上げで成長シナリオ再構築 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アルファベット",
+      "en": "Alphabet / GOOGL",
+      "px": "$347.33",
+      "chg": 1.30,
+      "t": "prev",
+      "note": "+1.3%と3日ぶり反発。金利低下で大型テックに買いが戻る",
+      "news": [
+        {
+          "t": "Treasury yields move lower after Fed kicks off hiking cycle",
+          "u": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html",
+          "s": "CNBC・9/17",
+          "sm": "FRBの利上げ翌日、長期金利はむしろ低下。金利が下がると将来の利益を当てにする大型テックの評価が上がりやすい。",
+          "pl": "金利低下 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing",
+          "s": "Bloomberg・9/13",
+          "sm": "出資先のAnthropicが上場先にナスダックを選び、10月の上場を目指すと報じられた。",
+          "pl": "出資先の上場で価値が見えやすくなる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アマゾン",
+      "en": "Amazon / AMZN",
+      "px": "$251.19",
+      "chg": 2.13,
+      "t": "prev",
+      "note": "+2.1%と4日ぶり反発。ジェネラックとの最大80億ドル契約が評価される",
+      "news": [
+        {
+          "t": "Generac Soars Nearly 20% on $8 Billion Amazon Data Center Deal",
+          "u": "https://www.benzinga.com/trading-ideas/movers/26/09/61849239/generac-gnrc-stock-amazon-deal",
+          "s": "Benzinga・9/17",
+          "sm": "アマゾンは世界のデータセンター向け非常用発電機を最大80億ドル分購入する長期契約を締結。最初の納入は2027〜28年で24億ドル。",
+          "pl": "AIデータセンターの電力確保を着々と進める → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Amazon obtains right to buy up to $340M of Generac, boosting stock",
+          "u": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
+          "s": "CNBC・9/16",
+          "sm": "アマゾンは1株200.93ドルで最大169万株を買える権利（ワラント）を取得。購入額が増えるほど段階的に権利が確定する仕組み。",
+          "pl": "取引先の成長を自社の利益にもできる → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Retail sales rise a better-than-expected 1.2% in August",
+          "u": "https://www.usnews.com/news/business/articles/2026-09-16/retail-sales-rise-a-better-than-expected-1-2-in-august-after-shoppers-pulled-back-spending-in-july",
+          "s": "U.S. News（AP）・9/16",
+          "sm": "8月の小売売上高は+1.2%と予想を上回り、ネット通販は+2.6%伸びた。",
+          "pl": "ネット通販の消費は強い → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "メタ",
+      "en": "Meta / META",
+      "px": "$682.31",
+      "chg": 1.34,
+      "t": "prev",
+      "note": "+1.3%と3日続伸し682ドル台。大型テックの中では最も安定した動き",
+      "news": [
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq rebound as bond yields slip, oil eases",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "利上げ翌日の反発でハイテク株が広く買われ、ナスダックは+1.69%と上昇した。",
+          "pl": "リスクを取る姿勢の回復 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Meta Surges Over 6.5% on Muse AI Agent Launch",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/09/stock-market-today-sept-9-meta-surges-over-6-5-on-muse-ai-agent-launch/",
+          "s": "Motley Fool・9/9",
+          "sm": "個人向けAIエージェント「Muse」を発表。AI投資の収益化への一歩と評価され高値更新。",
+          "pl": "AI投資の回収が見え始めた → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "テスラ",
+      "en": "Tesla / TSLA",
+      "px": "$366.20",
+      "chg": 2.27,
+      "t": "prev",
+      "note": "+2.3%と続伸し366ドル台。ロボタクシーの走行実績が改めて注目される",
+      "news": [
+        {
+          "t": "Tesla Stock Has a Potential Catalyst Wall Street Can't Ignore",
+          "u": "https://247wallst.com/investing/2026/09/17/tesla-stock-has-a-potential-catalyst-wall-street-cant-ignore/",
+          "s": "24/7 Wall St.・9/17",
+          "sm": "ロボタクシーは米7都市に拡大し、無人走行は38万マイル超。FSDの契約は148万件（前年比+56%）で、北米の新車の55%が利用。4〜6月期の納車は48万126台と過去最高だった。",
+          "pl": "自動運転の実績が積み上がる → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Goldman Sachs cuts Tesla stock delivery forecast on weak demand",
+          "u": "https://www.investing.com/news/analyst-ratings/goldman-sachs-cuts-tesla-stock-delivery-forecast-on-weak-demand-93CH-4902644",
+          "s": "Investing.com・9/16",
+          "sm": "ゴールドマン・サックスが7〜9月期の納車予想を49万台から43.5万台に引き下げ。評価は「中立」、目標株価360ドルは維持。",
+          "pl": "主要市場の販売が伸び悩み → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "kpiNews": {
+    "SPY": {
+      "label": "S&P500 に関係するニュース",
+      "items": [
+        {
+          "t": "Stock Market Today (Sept. 17, 2026): Dow surges after Fed rate hike decision",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-17-134502255.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "S&P500は+85.95ポイントの7,637.76で引け、VIXは15.44へ12.8%低下。FOMC後の買い戻しが相場を押し上げた。",
+          "pl": "警戒の緩みと買い戻し → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Bank of England defies Fed's rate-hike lead, leaving rates unchanged",
+          "u": "https://www.cnbc.com/2026/09/17/bank-of-england-interest-rate-decision-fed-rate-hike-uk-inflation.html",
+          "s": "CNBC・9/17",
+          "sm": "イングランド銀行は6対3で3.75%据え置き。英CPIは3.1%に上昇しており、3人は利上げを主張した。",
+          "pl": "主要中銀の足並みは不一致 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "DIA": {
+      "label": "NYダウ に関係するニュース",
+      "items": [
+        {
+          "t": "AutoNation tumbles 10% amid cautious conference commentary",
+          "u": "https://seekingalpha.com/news/4644083-autonation-tumbles-10-percent-amid-cautious-conference-commentary",
+          "s": "Seeking Alpha・9/17",
+          "sm": "整備サービスの伸び鈍化、消費者の購買力低下、EV需要の急減を説明。自動車販売店の株が業界全体で売られた。",
+          "pl": "消費の弱さが企業の言葉で確認された → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq rebound as bond yields slip, oil eases",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "ダウは316ドル高の51,778ドル。3指数の中では上げ幅が小さく、前日の631ドル安の半分ほどの戻りにとどまった。",
+          "pl": "戻りは限定的 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "QQQ": {
+      "label": "ナスダック に関係するニュース",
+      "items": [
+        {
+          "t": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+          "s": "Motley Fool・9/17",
+          "sm": "半導体株が広く買い戻され、ナスダックは26,418で+1.69%。インテル+8%、AMD+6.36%が上げをけん引した。",
+          "pl": "半導体主導の上昇 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Stock Market Today, Sept. 17: CoreWeave Falls on Convertible Debt and Share Sale Announcement",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-coreweave-falls-on-convertible-debt-and-share-sale-announcement/",
+          "s": "Motley Fool・9/17",
+          "sm": "AIクラウドのコアウィーブは30億ドルの転換社債発行と株式プログラムの発表で−4.16%。",
+          "pl": "AI企業の資金調達は株式の希薄化も伴う → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "JPY": {
+      "label": "ドル／円 に関係するニュース",
+      "items": [
+        {
+          "t": "Japanese Yen awaits fresh direction from Bank of Japan interest rate decision",
+          "u": "https://www.fxstreet.com/news/japanese-yen-awaits-fresh-direction-from-bank-of-japan-interest-rate-decision-202609171748",
+          "s": "FXStreet・9/17",
+          "sm": "9/18の日銀は0.25%の利上げがほぼ確実視され、政策金利は1.25%と約30年ぶりの高さに。焦点は植田総裁が次の利上げをどう語るか。",
+          "pl": "利上げは織り込み済み、会見次第で振れる → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "BOJ preview September: 25 bps hike expected with hawkish outlook",
+          "u": "https://in.investing.com/news/economy-news/boj-preview-september-25-bps-hike-expected-with-hawkish-outlook-5596110",
+          "s": "Investing.com・9/16",
+          "sm": "ロイター調査では68人中66人（97%）が利上げを予想。24人は10月か12月に1.50%への追加利上げを見込む。",
+          "pl": "日銀は利上げ路線へ → 円高材料だが金利差は残る",
+          "dir": "mix"
+        }
+      ]
+    },
+    "US10Y": {
+      "label": "米国10年金利 に関係するニュース",
+      "items": [
+        {
+          "t": "Treasury yields move lower after Fed kicks off hiking cycle",
+          "u": "https://www.cnbc.com/2026/09/17/treasury-yields-move-lower-after-fed-kicks-off-hiking-cycle.html",
+          "s": "CNBC・9/17",
+          "sm": "失業保険申請19.6万件（予想20.7万件）と住宅着工の予想割れを受け、10年金利は低下。終値は4.95%（Yahoo Finance実測）。",
+          "pl": "5%割れは株の追い風 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "US housing starts fall in August as multifamily construction drops sharply",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-17/us-housing-starts-unexpectedly-decline-on-multifamily-projects",
+          "s": "Bloomberg・9/17",
+          "sm": "8月の住宅着工は年率128万件（−2.6%）と予想の132万件を下回った。金利高が住宅建設を冷やしている。",
+          "pl": "金利の高さが実体経済に効き始めた → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "WTI": {
+      "label": "WTI原油 に関係するニュース",
+      "items": [
+        {
+          "t": "Oil prices fall as Saudi Arabia reportedly offers more crude via Hormuz after pipeline attack",
+          "u": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+          "s": "CNBC・9/17",
+          "sm": "サウジはオマーンのソハール港沖で船から船へ原油を積み替え、ホルムズ海峡の外で待つタンカーに載せる方式でアジア向け供給を維持。WTIの終値は101.15ドル（−1.25%・Yahoo Finance実測）。",
+          "pl": "供給不安の後退 → 原油安材料",
+          "dir": "down"
+        },
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq rebound as bond yields slip, oil eases",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-17-dow-sp-500-nasdaq-oil-fed-081248626.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "原油安が「物価は抑えられる」との期待につながり、株式と債券がそろって買われた。ただしWTIは月間では18%超の上昇のまま。",
+          "pl": "原油安は株の追い風、ただし水準はまだ高い → 両面",
+          "dir": "mix"
+        }
+      ]
+    }
+  },
+  "movers": [
+    {
+      "nm": "ジェネラック",
+      "en": "Generac / GNRC",
+      "pct": 18.34,
+      "why": "アマゾンと最大80億ドルの発電機供給契約、ワラントも付与",
+      "desc": "家庭用・業務用の非常用発電機のメーカー。停電に備える設備が主力で、AIデータセンターの電力需要という新しい追い風を得た。",
+      "news": [
+        {
+          "t": "Generac Soars Nearly 20% on $8 Billion Amazon Data Center Deal",
+          "u": "https://www.benzinga.com/trading-ideas/movers/26/09/61849239/generac-gnrc-stock-amazon-deal",
+          "s": "Benzinga・9/17",
+          "sm": "寄り付き直後は+27.8%まで急伸。最初の納入は2027〜28年に24億ドル、契約全体では最大80億ドル。アマゾンには1株200.93ドルで最大169万株を買える権利が付与され、うち約30.8万株は即時に確定。終値は+18.34%（Yahoo Finance実測）。",
+          "pl": "AI電力需要が新しい成長の柱に → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Generac Lands $2.4 Billion Generator Deal With Amazon",
+          "u": "https://www.fool.com/investing/2026/09/17/generac-lands-24-billion-generator-deal-with-amazon/",
+          "s": "Motley Fool・9/17",
+          "sm": "確定している最初の24億ドル分だけでも、同社の年間売上に匹敵する規模。残りはアマゾンの購入額に応じて段階的に増える。",
+          "pl": "確実な受注が積み上がる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "サンディスク",
+      "en": "SanDisk / SNDK",
+      "pct": 6.21,
+      "why": "AI向けメモリー不足で価格上昇の見方が強まる",
+      "desc": "SSDやメモリーカードなど記憶装置のメーカー。2025年にウエスタンデジタルから分離して上場した。メモリー価格の上下が業績に直結する。",
+      "news": [
+        {
+          "t": "Why are Micron, SK Hynix, and SanDisk stocks jumping on Thursday?",
+          "u": "https://invezz.com/news/2026/09/17/why-are-micron-sk-hynix-and-sandisk-stocks-jumping-on-thursday/",
+          "s": "Invezz・9/17",
+          "sm": "インテルCEOの「メモリー価格は5〜7倍」という発言をきっかけに、メモリー関連株がそろって上昇した。",
+          "pl": "値上がりが利益に直結 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "マイクロン",
+      "en": "Micron / MU",
+      "pct": 5.50,
+      "why": "インテルCEOのメモリー不足発言で買いが集まる",
+      "desc": "米国唯一の大手メモリーメーカー。AIサーバー向けの高速メモリー（HBM）が伸びている。9/30に四半期決算を控える。",
+      "news": [
+        {
+          "t": "Micron Jumps 5% as Intel CEO Says Memory Prices Have Surged Over 500%",
+          "u": "https://finance.yahoo.com/markets/stocks/articles/micron-jumps-5-intel-ceo-153804720.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "インテルのタン CEOが「メモリー価格は5〜7倍に上がり、不足は2027年にさらに厳しくなる」と発言。TrendForceはサーバー用DRAMが2026年に270%値上がりすると予想。マイクロンは9/30に決算を発表する。",
+          "pl": "値上がりが利益率を押し上げる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "ルーシッド",
+      "en": "Lucid / LCID",
+      "pct": 5.94,
+      "why": "欧州の配車大手ボルトと2万5,000台の自動運転車で提携",
+      "desc": "高級EVメーカー。サウジの政府系ファンドが大株主。自社の車を自動運転タクシーとして使う計画を進めている。",
+      "news": [
+        {
+          "t": "Lucid stock jumps on 25,000 robotaxi deal with Europe's Bolt",
+          "u": "https://finance.yahoo.com/markets/stocks/article/lucid-stock-jumps-on-25000-robotaxi-deal-with-europes-bolt-132433027.html",
+          "s": "Yahoo Finance・9/17",
+          "sm": "欧州の主要都市に少なくとも2万5,000台の自動運転車を配備する計画。米国外へのロボタクシー展開は初めて。終値は+5.94%（Yahoo Finance実測）。",
+          "pl": "EV販売以外の収益源が見えてきた → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Lucid Motors has a potential robotaxi partner for Europe",
+          "u": "https://techcrunch.com/2026/09/17/lucid-motors-has-a-potential-robotaxi-partner-for-europe/",
+          "s": "TechCrunch・9/17",
+          "sm": "車両は開発中の中型プラットフォームがベースで、NVIDIAのHyperionを採用しレベル4の自動運転を目指す。ただし配備の時期も投資額も未公表。",
+          "pl": "具体的な日程はこれから → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "オートネーション",
+      "en": "AutoNation / AN",
+      "pct": -10.49,
+      "why": "投資家会議で整備の伸び鈍化・EV需要の急減を説明",
+      "desc": "米国最大級の自動車販売チェーン。新車・中古車の販売に加え、修理や点検などの整備サービスが利益の柱。",
+      "news": [
+        {
+          "t": "AutoNation tumbles 10% amid cautious conference commentary",
+          "u": "https://seekingalpha.com/news/4644083-autonation-tumbles-10-percent-amid-cautious-conference-commentary",
+          "s": "Seeking Alpha・9/17",
+          "sm": "モルガン・スタンレーの投資家会議で、整備サービスの伸びの鈍化、消費者の購買力低下、新車の粗利の先行き悪化、EV需要の急減を説明。リシア・モーターズ（−5.2%）やアズベリー（−3.7%）にも売りが広がった。",
+          "pl": "消費の弱さが業界全体に → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "ドラフトキングス",
+      "en": "DraftKings / DKNG",
+      "pct": -7.64,
+      "why": "予測市場カルシーにシェアを奪われ52週安値圏へ",
+      "desc": "米国のスポーツ賭博・オンラインカジノの大手。近年は「予測市場」と呼ばれる新しい取引所型サービスとの競争が激しくなっている。",
+      "news": [
+        {
+          "t": "Why is DraftKings stock sliding today?",
+          "u": "https://www.investing.com/news/stock-market-news/why-is-draftkings-stock-sliding-today-93CH-4906231",
+          "s": "Investing.com・9/17",
+          "sm": "カルシーがNFL開幕週の予測市場の取引量の76%（146億ドル）を占め、ドラフトキングスの取引所は「大きく引き離された」。8月末にはアーガスが「高い顧客獲得費用、州の税率上昇、シェア低下」を理由に投資判断を引き下げていた。",
+          "pl": "新しい競合にシェアを奪われる → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "prevIdx": {
+    "SPY": {
+      "label": "S&P500",
+      "prevIdx": 7638
+    },
+    "DIA": {
+      "label": "NYダウ",
+      "prevIdx": 51778
+    },
+    "QQQ": {
+      "label": "ナスダック",
+      "prevIdx": 26418
+    }
+  },
+  "date": "2026-09-17"
+}
