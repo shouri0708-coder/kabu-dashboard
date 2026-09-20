@@ -1,0 +1,864 @@
+{
+  "dateLabel": "2026年9月18日（金）終値 ＋ 9月20日（日）22時30分までの週末ニュース",
+  "headerNote": "※株価は取引日の翌朝に終値で更新。週末・休場日も重要ニュースがあれば解説を随時更新します（7・12・18・22時に確認）",
+  "newsAsOf": "2026-09-20 22:30",
+  "headline": {
+    "kicker": "きょうの結論（9月18日・金曜の米国市場終値 ＋ 9月20日・日曜22時30分までの週末ニュース）",
+    "lead": "週末に動いたのは相場ではなく外交 — イランが「戦争を終わらせる条件」を米国に提示、そして今週は米中首脳会談",
+    "sub": "金曜（9/18）の米国株は指数によって方向が分かれ、S&P500は+0.17%の7,650.50、ナスダックは+0.39%の26,522.54、NYダウは−0.18%の51,682.64で終わりました（Yahoo Finance実測）。株式市場は週末休みで、米国の株価指数先物が動き出すのは日本時間の月曜朝7時からです。そのあいだに、相場の先行きを左右しそうな外交のニュースが2つ出ました。1つはイランです。最高安全保障委員会のレザイ書記がアルジャジーラの単独取材に応じ、戦争を終わらせるための条件をカタールの仲介で米国に伝えたと明らかにしました。条件は「すべての戦線での戦闘停止」「凍結資産の解放」「海上封鎖の解除」で、いまはトランプ大統領の返答を待つ段階です。ただし20日には議会のガリバフ議長が「交渉の前にまず敵を押し返すべきだ」と強硬な発言もしており、和平に一直線という状況ではありません。もう1つは米中です。9月24日にワシントンでトランプ大統領と習近平国家主席の首脳会談が予定されており、11月10日に期限を迎える関税の一時休戦、先端半導体の輸出規制、レアアース（希少な金属）の供給が議題になると報じられています。暗号資産は週末も取引が続き、ビットコインは日本時間20日22時半時点で8万0,488ドルと、金曜に回復した8万ドルの節目を保っています（Yahoo Finance実測）。",
+    "evidence": [
+      {
+        "tag": "まちまち",
+        "title": "金曜の終値：S&P500 +0.17%、ナスダック +0.39%、ダウ −0.18% — ダウは3月以来の悪い週",
+        "body": "S&P500は+0.17%の7,650.50、ナスダックは+0.39%の26,522.54、NYダウは−0.18%の51,682.64（いずれもYahoo Finance実測）。週間ではダウが−1.7%と3月以来の大きな下げ、S&P500も−0.08%と2週続けての小幅安。ナスダックだけが週間+0.7%とプラスを保ちました。VIXは14.81とさらに低下しています。",
+        "so": "指数の数字は小さな動きでも、中身は「半導体・暗号資産は上がり、素材・自動車・一部のハイテクは下がる」という銘柄ごとの差が大きい一日だった。",
+        "url": "https://www.bnnbloomberg.ca/markets/2026/09/18/wall-street-drifts-as-bond-yields-rise-and-oil-prices-swing/",
+        "src": "出典：AP（BNN Bloomberg掲載・9/18・米国株まちまち）"
+      },
+      {
+        "tag": "地政学",
+        "title": "イランが「戦争を終わらせる条件」をカタール経由で米国に提示 — トランプ大統領の返答待ち",
+        "body": "イラン最高安全保障委員会のモフセン・レザイ書記がアルジャジーラの単独取材に応じ、「仲介役のカタールと連絡を取り続けており、戦争を終わらせる目的でわれわれの条件がワシントンに伝えられた」と述べました。明らかにした条件は①すべての戦線での戦闘停止、②凍結されたイラン資産の解放、③海上封鎖の解除の3つです。レザイ書記はホルムズ海峡をめぐってオマーンとの合意が近づいたものの先送りになったとも説明し、同時に「決戦の用意はできている」とも語りました。20日には議会のガリバフ議長が「交渉の前に全軍事力で敵に打撃を与えるべきだ」と発言しています。",
+        "so": "いまの相場を動かしている最大の要因は原油で、その原油はホルムズ海峡と紅海の情勢で決まっている。戦争が終わる道筋が見えれば原油は下がりやすく、物価とFRBの利上げの心配も和らぐ。逆に交渉が決裂すれば原油は上がりやすい。",
+        "url": "https://www.aljazeera.com/news/2026/9/19/iran-says-conditions-to-re-engage-in-talks-end-war-sent-to-us-via-qatar",
+        "src": "出典：アルジャジーラ（英語・9/19・レザイ書記への単独取材）"
+      },
+      {
+        "tag": "米中",
+        "title": "今週24日にワシントンで米中首脳会談 — 関税休戦・先端半導体・レアアースが議題",
+        "body": "トランプ大統領と習近平国家主席の会談がワシントンで開かれる予定です。Investing.comは、貿易と関税、台湾、イラン戦争、AIが議題を形づくると伝えています。最大の焦点は、11月10日に期限を迎える関税の一時休戦が延長されるかどうか。この休戦は、一時100%を超えるところまで進んだ関税の応酬を止めたものです。ほかに先端半導体の輸出規制やレアアースの供給、中国による農産物・航空機の購入も交渉材料とされています。中国はイラン産原油の最大の買い手でもあり、中東情勢の出口づくりでも役割を持ちます。",
+        "so": "関税や半導体の規制は、米国企業の仕入れ値や中国での売上に直接ひびく。会談の結果しだいで、半導体・農業・航空機・レアアース関連の株が大きく動きやすい一週間になる。",
+        "url": "https://www.investing.com/news/economy-news/what-to-expect-from-upcoming-summit-between-presidents-trump-and-xi-4908152",
+        "src": "出典：Investing.com（英語・9/20・米中首脳会談の見どころ）"
+      },
+      {
+        "tag": "金利",
+        "title": "米10年金利は5.00%で週を終える — 今週は一時2007年以来の高さ",
+        "body": "10年金利は木曜の4.95%から5.00%へ上がりました（Yahoo Finance実測）。今週は一時5.04%と2007年7月以来の高さを付けています。FRBは9/16に3年ぶりの利上げ（3.75〜4.00%）を決め、18人中16人が「年内にもう1回以上の利上げ」を見込んでいます。CMEのFedWatchでは、ウォーシュ議長の会見直後に10月の追加利上げの確率が49%まで上がりました。週末にFRB高官の新しい発言はなく、月曜のグールズビー・シカゴ連銀総裁の講演が今週最初の手がかりになります。",
+        "so": "金利が5%台にあると、借金をして事業を広げる企業や、将来の利益を当てにする株の評価に重しがかかる。景気に敏感なダウ構成銘柄や素材株が売られやすい。",
+        "url": "https://www.cnbc.com/2026/09/18/treasury-yields-fed-rates-volatile-week.html",
+        "src": "出典：CNBC（9/18・荒れた一週間の金利）"
+      }
+    ],
+    "summary": "①金曜（9/18）はS&P500 +0.17%、ナスダック +0.39%、ダウ −0.18%。ダウは週間−1.7%と3月以来の悪い週。②週末はイランが戦争終結の条件（戦闘停止・凍結資産の解放・海上封鎖の解除）をカタール経由で米国に提示し、トランプ大統領の返答待ち。③一方でイラン議会議長は「交渉の前に打撃を」と強硬発言、和平の行方はまだ不透明。④今週24日にワシントンで米中首脳会談。11月10日期限の関税休戦の延長、先端半導体の規制、レアアースが焦点。⑤米10年金利は5.00%で、10月の追加利上げ観測がくすぶる。⑥ビットコインは週末も8万ドル台を保ち、日本時間20日22時半で8万0,488ドル（実測）。⑦原油は3日続落しWTI期近は99.53ドル。サウジは東西パイプラインの半分を数日で復旧する計画。⑧米国の株価指数先物が動き出すのは日本時間の月曜朝7時から。"
+  },
+  "kpis": [
+    {
+      "key": "SPY",
+      "name": "S&P500（市場全体の平均像）",
+      "valAttr": " id=\"v-SPY\"",
+      "valueHtml": "7,651",
+      "deltaClass": "d-up",
+      "deltaAttr": " id=\"d-SPY\"",
+      "delta": "▲ +0.17%（9/18終値）",
+      "why": "半導体と暗号資産関連が支えて小幅高。今週は24日の米中首脳会談が最大のイベント"
+    },
+    {
+      "key": "DIA",
+      "name": "NYダウ（大企業30社）",
+      "valAttr": " id=\"v-DIA\"",
+      "valueHtml": "51,683",
+      "deltaClass": "d-down",
+      "deltaAttr": " id=\"d-DIA\"",
+      "delta": "▼ −0.18%（9/18終値）",
+      "why": "金利5%が重しで95ドル安。週間では−1.7%と3月以来の大きな下げ"
+    },
+    {
+      "key": "QQQ",
+      "name": "ナスダック（ハイテク中心）",
+      "valAttr": " id=\"v-QQQ\"",
+      "valueHtml": "26,523",
+      "deltaClass": "d-up",
+      "deltaAttr": " id=\"d-QQQ\"",
+      "delta": "▲ +0.39%（9/18終値）",
+      "why": "半導体の4日続伸が支え。米中首脳会談で先端半導体の輸出規制が議題になる点に注意"
+    },
+    {
+      "key": "JPY",
+      "name": "ドル／円",
+      "valAttr": "",
+      "valueHtml": "<span id=\"v-JPY\">156.85</span><span style=\"font-size:13px\">円</span>",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ 156円台後半に円安（9/18）",
+      "why": "日銀の利上げ後も円安方向。為替の取引が再開するのは日本時間の月曜朝で、週末の値動きはなし"
+    },
+    {
+      "key": "US10Y",
+      "name": "米国10年金利（長期金利）",
+      "valAttr": "",
+      "valueHtml": "5.00<span style=\"font-size:13px\">%</span>",
+      "deltaClass": "d-up",
+      "deltaAttr": "",
+      "delta": "▲ 5.00%（9/18終値・前日4.95%）",
+      "why": "今週は一時5.04%と2007年以来の高さ。週末にFRB高官の新発言はなく、月曜の講演が最初の手がかり"
+    },
+    {
+      "key": "WTI",
+      "name": "WTI原油（先物）",
+      "valAttr": "",
+      "valueHtml": "$99.53",
+      "deltaClass": "d-down",
+      "deltaAttr": "",
+      "delta": "▼ −2.34%（9/18終値・期近10月限）",
+      "why": "3日続落で100ドル割れ。週末にイランが停戦条件を米国に提示し、先行きは外交しだいに"
+    }
+  ],
+  "reasons": [
+    {
+      "dir": "mix",
+      "mark": "①",
+      "title": " 週末の主役は外交 — イランが「戦争を終わらせる条件」を米国に提示",
+      "body": "イラン最高安全保障委員会のレザイ書記が19日、アルジャジーラの単独取材に応じ、戦争を終わらせるための条件をカタールの仲介で米国に伝えたと明らかにしました。明かした条件は①すべての戦線での戦闘停止、②凍結資産の解放、③海上封鎖の解除の3つで、いまはトランプ大統領の返答待ちです。ただしレザイ書記自身が「決戦の用意はできている」とも語り、20日には議会のガリバフ議長が「交渉の前に全軍事力で打撃を」と発言しています。原油は金曜まで3日続落してWTI期近は99.53ドル（実測）。サウジアラビアは攻撃で止まった東西パイプラインの能力の半分を数日で、全面復旧を6週間で進める計画です。",
+      "tsumari": "いまの相場でいちばん効いているのは原油の値段で、その原油はホルムズ海峡と紅海の情勢で決まっている。戦争が終わる道筋が見えれば原油は下がり、ガソリンやディーゼルの高値も落ち着いて、FRBがこれ以上利上げしなくて済むという期待につながる。ただし「条件を伝えた」段階であって、合意したわけではない。",
+      "tags": [
+        "影響：原油・エネルギー・航空・物価に敏感な株",
+        "イランの停戦条件・カタール仲介・海上封鎖"
+      ]
+    },
+    {
+      "dir": "mix",
+      "mark": "②",
+      "title": " 今週は米中首脳会談 — 関税休戦の延長と先端半導体の規制が焦点",
+      "body": "トランプ大統領と習近平国家主席の会談が24日にワシントンで開かれる予定です。Investing.comは、貿易と関税、台湾、イラン戦争、AIが議題になると伝えています。投資家が最も注目するのは、11月10日に期限が来る関税の一時休戦が延ばされるかどうか。この休戦は、一時100%を超えるところまで上がった関税の応酬を止めたものです。ほかに先端半導体の輸出規制、レアアースの供給、中国による農産物や航空機の購入も交渉材料とされています。なお中国は、米国が台湾向けの武器売却を承認すれば会談を取りやめる構えだとも報じられており、開催そのものにも不確実さが残ります。",
+      "tsumari": "関税は「輸入品にかかる税金」で、上がれば米国企業の仕入れ値が上がり、中国での売上も減りやすい。半導体の輸出規制は、AI向けチップを作る会社の売り先を直接左右する。会談の結果しだいで、半導体・農業・航空機・レアアース関連の株が大きく動きやすい。",
+      "tags": [
+        "影響：半導体・農業・航空機・レアアース関連",
+        "米中首脳会談・関税休戦は11月10日期限"
+      ]
+    },
+    {
+      "dir": "mix",
+      "mark": "③",
+      "title": " 金曜のおさらい — 金利5%が重し、半導体と暗号資産は買われた",
+      "body": "米10年金利は木曜の4.95%から5.00%へ上がり、今週は一時5.04%と2007年7月以来の高さを付けました（実測）。景気に敏感な大型株の多いダウは−0.18%で、週間では−1.7%と3月以来の大きな下げ。一方、週の初めにAnthropicのアモデイCEOらが「AI開発のペースを落とすべきだ」と呼びかけたことで売られていた半導体株は4日続伸し、半導体指数SOXは+2.8%（実測）。ブロードコムは+3.0%、AMDは+2.7%、NVIDIAは+1.3%でした。ビットコインが8万ドルを回復したことでストラテジーは+16.39%、コインベースは+11.66%と急伸し、週末も8万ドル台を保っています（20日22時半時点で8万0,488ドル・実測）。",
+      "tsumari": "指数を大きく動かす材料が少ない日は、お金が「上がった株から、出遅れた株や新しい材料のある株へ」移動する。指数が静かでも、個別株は大きく動いていることがある。",
+      "tags": [
+        "影響：市場全体・半導体・暗号資産関連",
+        "10年金利5.00%・SOX+2.8%・ビットコイン8万ドル台"
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "type": "bull",
+      "label": "強気シナリオ ↑",
+      "title": "外交が前に進み、原油と関税のリスクが同時に薄まる",
+      "body": "イランが示した条件に米国が応じて戦闘が止まる道筋が見えれば、ホルムズ海峡と紅海のリスクが薄れ、原油は下がりやすくなります。サウジアラビアは東西パイプラインの能力の半分を数日で、全面復旧を6週間で進める計画です。24日の米中首脳会談で関税休戦の延長がまとまれば、供給網の心配も和らぎます。原油が100ドルを下回ったまま落ち着けば物価の心配が減り、「FRBの利上げはあと1回程度」という見方が強まりやすくなります。",
+      "flow": "📈 <b>成立の条件：</b>イラン情勢の前進 ＋ 米中の関税休戦の延長 ＋ WTIの100ドル割れ定着<br>👀 <b>ウォッチ：</b>日本時間の月曜朝に再開する原油・株価先物、首脳会談で発表される合意の中身"
+    },
+    {
+      "type": "bear",
+      "label": "弱気シナリオ ↓",
+      "title": "交渉が決裂し、原油高と金利5%台が同時に戻る",
+      "body": "レザイ書記は条件を伝えた一方で「決戦の用意はできている」とも語り、議会のガリバフ議長は交渉の前に軍事的な打撃をと主張しています。米中についても、米国が台湾向けの武器売却を承認すれば中国が会談を取りやめる構えだと報じられています。原油が再び上がれば、ガソリン1ガロン4.47ドル・ディーゼル過去最高6.45ドルという物価の圧力がさらに強まり、10月28日のFOMCでの追加利上げが意識されやすくなります。",
+      "flow": "📉 <b>成立の条件：</b>イラン交渉の決裂 ＋ 首脳会談の中止や物別れ ＋ WTIの100ドル回復<br>👀 <b>ウォッチ：</b>10年金利の5.1%超え、原油の反発、首脳会談の直前報道"
+    },
+    {
+      "type": "flat",
+      "label": "中立シナリオ →",
+      "title": "イベント待ちの一週間 — 答えが出るまで行ったり来たり",
+      "body": "今週は前半に大きな経済指標がなく、21日のグールズビー・シカゴ連銀総裁の講演、24日の米中首脳会談、30日のPCE物価とマイクロン決算と、材料が後半に集まっています。イランの件もトランプ大統領の返答待ちで、結論が出るまでは様子見になりやすい時期です。これらは今後の値動きを当てるものではなく、考え方の整理です。",
+      "flow": "➡️ <b>よくある展開：</b>大きなイベントの前は様子見で、個別の材料がある銘柄だけが大きく動く<br>👀 <b>ウォッチ：</b>9/21 グールズビー講演、9/24 米中首脳会談、9/30 PCE・マイクロン決算"
+    }
+  ],
+  "news": [
+    {
+      "cat": "🌍 世界の大きな動き",
+      "catNote": "相場全体を左右するニュース",
+      "items": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/9/19/iran-says-conditions-to-re-engage-in-talks-end-war-sent-to-us-via-qatar",
+          "title": "イランが戦争終結の条件をカタール経由で米国に提示 — 戦闘停止・凍結資産の解放・海上封鎖の解除",
+          "src": "アルジャジーラ（英語）・9/19",
+          "body": "イラン最高安全保障委員会のレザイ書記が単独取材で表明。ホルムズ海峡をめぐるオマーンとの合意は近づいたが先送りになったと説明し、バブ・エル・マンデブ海峡の封鎖についてはフーシ派の問題だとして否定した。トランプ大統領の返答待ち。📈 原油安につながれば株には追い風。"
+        },
+        {
+          "url": "https://www.investing.com/news/economy-news/what-to-expect-from-upcoming-summit-between-presidents-trump-and-xi-4908152",
+          "title": "24日にワシントンで米中首脳会談 — 関税休戦の延長、半導体規制、レアアースが焦点",
+          "src": "Investing.com（英語）・9/20",
+          "body": "議題は貿易・関税、台湾、イラン戦争、AI。11月10日に期限を迎える関税の一時休戦が延長されるかが最大の注目点で、中国による農産物・航空機の購入や先端半導体の輸出規制も交渉材料になる。↕️ 結果しだいで半導体・農業・航空機が大きく動く。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+          "title": "原油は3日続落 — サウジの供給回復への期待がフーシ派との戦闘を上回る",
+          "src": "CNBC（英語）・9/18",
+          "body": "サウジは東西パイプラインの能力の半分を数日で回復させ、6週間で全面再開する計画。ホルムズ海峡経由の積み替えでも輸出を続けている。WTI期近（10月限）の終値は99.53ドル（−2.34%・Yahoo Finance実測）。📈 物価の心配の後退。"
+        }
+      ]
+    },
+    {
+      "cat": "📈 米国市場のいま",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.bnnbloomberg.ca/markets/2026/09/18/wall-street-drifts-as-bond-yields-rise-and-oil-prices-swing/",
+          "title": "米国株はまちまち — 金利上昇が重し、S&P500とダウは2週続落",
+          "src": "AP（BNN Bloomberg掲載・英語）・9/18",
+          "body": "10年金利は5%へ上昇。ガソリンは1ガロン4.47ドル（1年前は3.20ドル）、ディーゼルは過去最高の6.45ドル。欧州株は1.5%安、韓国KOSPIは+2.7%、日経平均は+1.4%。↕️ 金利高と原油高が物価の重し。"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-18-dow-sp-500-nasdaq-080504071.html",
+          "title": "半導体株は「AI減速」の売りから戻す — サイバーセキュリティ株は週間で大幅高",
+          "src": "Yahoo Finance（英語）・9/18",
+          "body": "半導体株は、AnthropicやOpenAIの「AI開発の減速」の呼びかけによる売りから戻した。週間ではクラウドストライク+14%、パロアルト+8%などサイバーセキュリティ株が大きく上昇。📈 AI関連の心配の一服。"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/09/18/strategy-climbs-12-coinbase-jumps-10-as-bitcoin-tops-80000/",
+          "title": "ビットコインが8万ドル回復 — ストラテジーとコインベースが急伸",
+          "src": "24/7 Wall St.（英語）・9/18",
+          "body": "8万ドルの壁を抜けて売りの買い戻しが連鎖。SECは米国の取引所にトークン化株式の取り扱いを5年間認める特例を出した。終値はストラテジー+16.39%、コインベース+11.66%（実測）。暗号資産は週末も取引が続き、ビットコインは日本時間20日22時半で8万0,488ドル（実測）と8万ドル台を保っている。📈 暗号資産関連の追い風。"
+        }
+      ]
+    },
+    {
+      "cat": "🏢 企業・決算",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.gurufocus.com/news/9088436/xene-stock-drops-30-on-phase-3-trial-halt-pricetosales-ratio-signals-market-skepticism",
+          "title": "ゼノン・ファーマシューティカルズ−31% — うつ病治験の新規登録を停止",
+          "src": "GuruFocus（英語）・9/18",
+          "body": "開発中の薬アゼツカルナーで、精神面の副作用が見つかったため、うつ病と双極性うつの最終段階の治験で新規患者の登録を一時停止。ドイツ銀行は投資判断を引き下げ、目標株価を90ドルから46ドルへ。一方でてんかん向けの承認申請は提出済み。📉 主力候補の先行き不透明。"
+        },
+        {
+          "url": "https://ca.investing.com/news/stock-market-news/nucor-stock-falls-on-weaker-than-expected-third-quarter-guidance-93CH-4844239",
+          "title": "ニューコア−6% — 7〜9月期の利益見通しが予想を下回る",
+          "src": "Investing.com（英語）・9/17",
+          "body": "1株利益の見通しは5.55〜5.65ドルで、市場予想を下回った。鉄鋼価格は上がっているが、原材料部門の利益が減る見込み。同業のスティール・ダイナミクスも下落。📉 景気敏感株に売り。"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/why-is-general-motors-stock-sliding-today-93CH-4907795",
+          "title": "GM−5% — ディーゼル高と金利上昇で自動車株が反落",
+          "src": "Investing.com（英語）・9/18",
+          "body": "ディーゼル価格の最高値更新は、GMの利益の大半を占めるトラック・SUVの需要に逆風。金利上昇で自動車ローンの負担も増える。フォードやステランティスも下落。📉 前日の買いが逆回転。"
+        }
+      ]
+    },
+    {
+      "cat": "🏛 金融政策・経済指標",
+      "catNote": null,
+      "items": [
+        {
+          "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+          "title": "FRBは3.75〜4.00%へ利上げ — 10月の追加利上げの確率は49%に（9/16）",
+          "src": "CNBC（英語）・9/16",
+          "body": "全会一致で3年ぶりの利上げ。参加者18人中16人が年内にもう1回以上の利上げを予想し、4人は2回を予想。ウォーシュ議長の会見後、CMEのFedWatchで10月利上げの確率は49%、年内の追加利上げは87%に上がった。📉 金利の高止まり要因。"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/economic-data-releases-and-fed-speech-highlight-mondays-calendar-93CH-4907762",
+          "title": "月曜はグールズビー・シカゴ連銀総裁が講演 — 今週最初の金利の手がかり",
+          "src": "Investing.com（英語）・9/18",
+          "body": "9/21（月）米東部時間5時30分から、経済の見通しと金融政策について講演。週末にFRB高官の新しい発言は無く、大きな経済指標も今週前半には無いため、高官の発言が金利の手がかりになる。↕️ 追加利上げへの姿勢に注目。"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
+          "title": "日銀の利上げ後、日本株は上昇・円と国債利回りは低下",
+          "src": "CNBC（英語）・9/18",
+          "body": "日銀は1.25%へ利上げしたが、2人の委員が反対し、全体として「思ったほど強気ではない」と受け止められた。日経平均は882円高の65,018円。ドル円は一時158円台まで円安が進み、NY引けは156.85円（実測）。↕️ 利上げでも円高にならず。"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "when": "9/21（月）",
+      "what": "グールズビー・シカゴ連銀総裁の講演",
+      "note": "利上げ後、FRB高官が追加利上げについてどう話すか。10月の利上げ観測を左右する。"
+    },
+    {
+      "when": "9/22（火）",
+      "what": "スペースXのスターシップ初の軌道飛行（予定）",
+      "note": "上場後のスペースX株の大きな材料。"
+    },
+    {
+      "when": "9/24（木）",
+      "what": "米中首脳会談（ワシントン）",
+      "note": "11月10日に期限を迎える関税の一時休戦の延長、先端半導体の輸出規制、レアアースの供給が焦点。半導体・農業・航空機・レアアース関連が動きやすい。"
+    },
+    {
+      "when": "9/30（水）",
+      "what": "8月のPCE物価指数／4〜6月期GDP確報値／マイクロン決算",
+      "note": "PCEはFRBが最も重視する物価の指標。マイクロン決算はメモリー不足による値上がりがどこまで利益に効いたかの答え合わせ。"
+    },
+    {
+      "when": "10/1（木）",
+      "what": "テスラの新型ロードスター発表会",
+      "note": "テキサス州ウェーコで開催。2017年の初公開から約9年越しの披露。"
+    },
+    {
+      "when": "10/2（金）",
+      "what": "9月の雇用統計",
+      "note": "強ければ10/27〜28のFOMCでの追加利上げが意識されやすい。"
+    }
+  ],
+  "footerAsOf": "株価・指数・金利は2026年9月18日（金）米国市場終値（Yahoo Finance実測）。WTI原油は期近の10月限の終値（Yahoo Finance実測・同日から連続足が11月限に切り替わったため）。ドル円は同日のニューヨーク引け近辺（日本時間の翌朝6時台）の値。解説・ニュースは2026年9月20日（日）22時30分（日本時間）までの、アルジャジーラ・AP・CNBC・Yahoo Finance・Investing.com・24/7 Wall St.・Benzinga・GuruFocus・Motley Fool・Apple・TopSpeed などの報道に基づく。ビットコインの水準は同時点のYahoo Finance実測",
+  "watch": [
+    {
+      "nm": "エヌビディア",
+      "en": "NVIDIA / NVDA",
+      "px": "$222.27",
+      "chg": 1.34,
+      "t": "prev",
+      "note": "+1.3%と4日続伸し222ドル台。今週24日の米中首脳会談で先端半導体の輸出規制が議題に",
+      "news": [
+        {
+          "t": "What to expect from upcoming summit between Presidents Trump and Xi",
+          "u": "https://www.investing.com/news/economy-news/what-to-expect-from-upcoming-summit-between-presidents-trump-and-xi-4908152",
+          "s": "Investing.com・9/20",
+          "sm": "24日の米中首脳会談では、先端半導体の輸出規制とレアアースの供給が交渉材料になると伝えられた。中国向けの販売がどこまで認められるかは、AI向け半導体を作る会社の売上に直結する。",
+          "pl": "規制の行方しだいで売り先が変わる → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Jensen Huang says Nvidia will sell twice as many chips next year",
+          "u": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
+          "s": "CNBC・9/17",
+          "sm": "フアンCEOは英スコットランドでの会合で「来年は今年の2倍の数の半導体を売ると見込む」と述べ、AIの需要があらゆる産業・国に広がっていると説明した。",
+          "pl": "AI需要の強さを経営トップが明言 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "ブロードコム",
+      "en": "Broadcom / AVGO",
+      "px": "$357.61",
+      "chg": 2.97,
+      "t": "prev",
+      "note": "+3.0%と3日続伸し357ドル台。AI半導体の強い売上目標が改めて評価される",
+      "news": [
+        {
+          "t": "What Is Going on With Broadcom Stock on Friday?",
+          "u": "https://www.benzinga.com/markets/tech/26/09/61873424/what-is-going-on-with-broadcom-stock-on-friday-2",
+          "s": "Benzinga・9/18",
+          "sm": "ホック・タンCEOがAI向け計算基盤の需要は「非常に強く」続くと改めて強調。AI半導体の売上は2027年度に1,150億ドル、2028年度に2,300億ドルへ倍々で増える見通しで、弱い市場の中で上昇した。",
+          "pl": "AIの受注見通しが強い → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Hock Tan Just Guided Broadcom's AI Revenue to Reach $230 Billion by 2028. Should You Believe Him?",
+          "u": "https://www.fool.com/investing/2026/09/16/hock-tan-just-guided-broadcoms-ai-revenue-to-reach/",
+          "s": "Motley Fool・9/16",
+          "sm": "2028年度のAI売上2,300億ドルは今年度見込み（580億ドル）の約4倍。タンCEOは両年度とも供給は確保済みと説明した。",
+          "pl": "目標の実現性が焦点 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "TSMC（ADR）",
+      "en": "Taiwan Semi / TSM",
+      "px": "$434.67",
+      "chg": 1.02,
+      "t": "prev",
+      "note": "+1.0%と3日続伸し434ドル台。24日の米中首脳会談では台湾をめぐる発言にも注目",
+      "news": [
+        {
+          "t": "What to expect from upcoming summit between Presidents Trump and Xi",
+          "u": "https://www.investing.com/news/economy-news/what-to-expect-from-upcoming-summit-between-presidents-trump-and-xi-4908152",
+          "s": "Investing.com・9/20",
+          "sm": "24日の会談では台湾も議題のひとつ。中国は米国が台湾の独立に公に反対するよう求めているとされ、先端半導体の輸出規制も交渉材料になる。台湾に生産が集中するTSMCにとっては、米中関係そのものが事業環境を左右する。",
+          "pl": "米中関係の行方が事業環境を左右 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Jensen Huang says Nvidia will sell twice as many chips next year",
+          "u": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
+          "s": "CNBC・9/17",
+          "sm": "NVIDIAが来年、半導体の販売数を2倍にする見込みと表明。NVIDIAの最先端チップを製造するTSMCにとっては受注の先行きを示す材料。",
+          "pl": "最大顧客の強気見通し → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "AMD",
+      "en": "Advanced Micro / AMD",
+      "px": "$559.82",
+      "chg": 2.70,
+      "t": "prev",
+      "note": "+2.7%と4日続伸し559ドル台。幹部が「AI需要に減速なし」と発言",
+      "news": [
+        {
+          "t": "AMD Says AI Adoption Is Still Early, Sees No Slowdown In Demand",
+          "u": "https://www.benzinga.com/markets/tech/26/09/61863429/amd-says-ai-adoption-is-still-early-sees-no-slowdown-in-demand",
+          "s": "Benzinga・9/18",
+          "sm": "マーク・ペーパーマスターCTOが、企業が生産性の向上を求めてAIの導入を進めており、需要の減速は見られないと発言。パイパー・サンドラーは「オーバーウェイト」・目標株価600ドルを維持した。",
+          "pl": "AI需要への不安を打ち消す → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Stock Market Today, Sept. 17: Intel Surges 8% on Rumored SK Hynix Talks",
+          "u": "https://www.fool.com/coverage/stock-market-today/2026/09/17/stock-market-today-sept-17-intel-surges-8-on-rumored-sk-hynix-talks/",
+          "s": "Motley Fool・9/17",
+          "sm": "半導体セクターが広く買い戻される中、AMDは+6.36%と大きく上昇していた。",
+          "pl": "セクター全体の反発をけん引 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "インテル",
+      "en": "Intel / INTC",
+      "px": "$108.60",
+      "chg": -0.18,
+      "t": "prev",
+      "note": "−0.2%と前日の急騰後に一服。110ドル手前で足踏み",
+      "news": [
+        {
+          "t": "INTC Buyers Need a Close Above $110 for Intel Stock to Rally to $140 Target",
+          "u": "https://www.fxleaders.com/news/2026/09/18/intc-buyers-need-a-close-above-110-for-intel-stock-to-rally-to-140-target/",
+          "s": "FX Leaders・9/18",
+          "sm": "前日の急騰後、110ドル前後で上値が重い。さらに上を目指すには、競争や財務面の課題を乗り越える必要があると指摘した。",
+          "pl": "急騰のあとの一服 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Intel, SK Hynix shares jump on report they're discussing U.S. memory chip manufacturing",
+          "u": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html",
+          "s": "CNBC・9/16",
+          "sm": "SKハイニックスがインテルのオハイオ工場の一部を借りる案や、クラウド大手を交えた合弁案を検討と報道。両社とも「決定していない」とした。",
+          "pl": "まだ協議段階で実現は不透明 → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "マイクロソフト",
+      "en": "Microsoft / MSFT",
+      "px": "$493.78",
+      "chg": -0.80,
+      "t": "prev",
+      "note": "−0.8%と反落し493ドル台。金利5%でハイテク大型株の一部に売り",
+      "news": [
+        {
+          "t": "Alphabet Rises 3%, Meta and Microsoft Slip: Is This a Momentum Run Rather Than a Tech Rally?",
+          "u": "https://247wallst.com/investing/2026/09/18/alphabet-rises-3-meta-and-microsoft-slip-is-this-a-momentum-run-rather-than-a-tech-rally/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "アルファベットが上がる一方でメタとマイクロソフトは下落。ハイテク全体（XLK）は+0.2%にとどまり、「セクター全体の上昇ではなく銘柄ごとの動き」と分析した。",
+          "pl": "大型テックの中でも明暗 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Treasury yields move higher as volatile week wraps up",
+          "u": "https://www.cnbc.com/2026/09/18/treasury-yields-fed-rates-volatile-week.html",
+          "s": "CNBC・9/18",
+          "sm": "10年金利は再び5%台へ上昇（終値5.00%・実測）。金利の上昇は、将来の利益を当てにする大型成長株の評価を下げやすい。",
+          "pl": "金利上昇 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "アップル",
+      "en": "Apple / AAPL",
+      "px": "$336.13",
+      "chg": -0.26,
+      "t": "prev",
+      "note": "−0.3%と小幅安。iPhone 18 Proが世界で発売、Pro各機種は100ドル値上げ",
+      "news": [
+        {
+          "t": "The latest iPhone, Apple Watch, and AirPods lineups arrive in stores worldwide",
+          "u": "https://www.apple.com/newsroom/2026/09/the-latest-iphone-apple-watch-and-airpods-lineups-arrive-in-stores-worldwide/",
+          "s": "Apple・9/18",
+          "sm": "iPhone 18 Pro／Pro Max、Apple Watch Series 12・Ultra 4、AirPods 5が世界のApple Storeで発売された。",
+          "pl": "新製品の販売が始まる → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Stock market today: Dow, S&P 500, Nasdaq slip as bond yields rise",
+          "u": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-18-dow-sp-500-nasdaq-080504071.html",
+          "s": "Yahoo Finance・9/18",
+          "sm": "iPhone 18 Proはメモリー不足によるコスト上昇を受けて100ドル値上げして発売された。",
+          "pl": "値上げが販売数にどう響くか → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    {
+      "nm": "アルファベット",
+      "en": "Alphabet / GOOGL",
+      "px": "$349.54",
+      "chg": 0.64,
+      "t": "prev",
+      "note": "+0.6%と続伸し349ドル台。日中は+3%近くまで上げる場面も",
+      "news": [
+        {
+          "t": "Alphabet Rises 3%, Meta and Microsoft Slip: Is This a Momentum Run Rather Than a Tech Rally?",
+          "u": "https://247wallst.com/investing/2026/09/18/alphabet-rises-3-meta-and-microsoft-slip-is-this-a-momentum-run-rather-than-a-tech-rally/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "日中に3%上昇したが、会社の発表は無く、年初来+15%の勢いに乗った買いとの見方。終値は+0.64%（実測）と上げ幅を縮めた。",
+          "pl": "勢いに乗った買い → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Anthropic Said to Choose Nasdaq for Much-Anticipated IPO Listing",
+          "u": "https://www.bloomberg.com/news/articles/2026-09-13/anthropic-said-to-choose-nasdaq-for-much-anticipated-ipo-listing",
+          "s": "Bloomberg・9/13",
+          "sm": "出資先のAnthropicが上場先にナスダックを選び、10月の上場を目指すと報じられた。",
+          "pl": "出資先の上場で価値が見えやすくなる → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "アマゾン",
+      "en": "Amazon / AMZN",
+      "px": "$253.71",
+      "chg": 1.00,
+      "t": "prev",
+      "note": "+1.0%と続伸し253ドル台。データセンターの電力確保策が引き続き評価される",
+      "news": [
+        {
+          "t": "What Needs To Be True To Buy Qualcomm Stock Now?",
+          "u": "https://www.trefis.com/stock/qcom/articles/615901/what-needs-to-be-true-to-buy-qualcomm-stock-now/2026-09-18",
+          "s": "Trefis・9/18",
+          "sm": "クアルコムがアマゾンと結んだAI向け特注半導体の契約について、利益率は低めと分析。アマゾンが自社のデータセンター向けに調達先を広げていることを示す。",
+          "pl": "AIインフラの調達を多様化 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Generac Soars Nearly 20% on $8 Billion Amazon Data Center Deal",
+          "u": "https://www.benzinga.com/trading-ideas/movers/26/09/61849239/generac-gnrc-stock-amazon-deal",
+          "s": "Benzinga・9/17",
+          "sm": "アマゾンは世界のデータセンター向け非常用発電機を最大80億ドル分購入する長期契約を締結。最初の納入は2027〜28年で24億ドル。",
+          "pl": "AIデータセンターの電力確保を着々と進める → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "メタ",
+      "en": "Meta / META",
+      "px": "$665.75",
+      "chg": -2.43,
+      "t": "prev",
+      "note": "−2.4%と4日ぶり反落。1カ月で23%上がった反動の利益確定売り",
+      "news": [
+        {
+          "t": "Meta Platforms Just Ripped 23% in a Month: Take Profits, or Buy More?",
+          "u": "https://247wallst.com/investing/2026/09/18/meta-platforms-just-ripped-23-in-a-month-take-profits-or-buy-more/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "メタはこの1カ月で23%上昇したが、年初来では+2%程度。7月の決算の弱さは訴訟関連費用や人員削減の費用によるもので、本業は弱っていないとの見方が戻りを支えた。今月後半の製品発表会が次の材料。",
+          "pl": "急な上げの反動 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Alphabet Rises 3%, Meta and Microsoft Slip: Is This a Momentum Run Rather Than a Tech Rally?",
+          "u": "https://247wallst.com/investing/2026/09/18/alphabet-rises-3-meta-and-microsoft-slip-is-this-a-momentum-run-rather-than-a-tech-rally/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "メタとマイクロソフトは、会社固有の悪材料が無いまま下落。ハイテク全体は小動きで、銘柄ごとの資金の移動が目立った。",
+          "pl": "利益確定の対象に → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "テスラ",
+      "en": "Tesla / TSLA",
+      "px": "$364.27",
+      "chg": -0.53,
+      "t": "prev",
+      "note": "−0.5%と小幅反落。10/1に新型ロードスターの発表会を控える",
+      "news": [
+        {
+          "t": "Tesla Roadster Reveal Set for October 1, 2026 in Waco, Texas",
+          "u": "https://www.topspeed.com/tesla-roadster-october-2026-reveal-sept-18/",
+          "s": "TopSpeed・9/18",
+          "sm": "第2世代ロードスターの発表会は10/1夜にテキサス州ウェーコで開催。予約者限定で招待し、ライブ配信も予定。生産はテキサス工場で2027〜28年を目指す。",
+          "pl": "話題づくりの材料 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "Goldman Sachs cuts Tesla stock delivery forecast on weak demand",
+          "u": "https://www.investing.com/news/analyst-ratings/goldman-sachs-cuts-tesla-stock-delivery-forecast-on-weak-demand-93CH-4902644",
+          "s": "Investing.com・9/16",
+          "sm": "ゴールドマン・サックスが7〜9月期の納車予想を49万台から43.5万台に引き下げ。評価は「中立」、目標株価360ドルは維持。",
+          "pl": "主要市場の販売が伸び悩み → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "kpiNews": {
+    "SPY": {
+      "label": "S&P500 に関係するニュース",
+      "items": [
+        {
+          "t": "What to expect from upcoming summit between Presidents Trump and Xi",
+          "u": "https://www.investing.com/news/economy-news/what-to-expect-from-upcoming-summit-between-presidents-trump-and-xi-4908152",
+          "s": "Investing.com・9/20",
+          "sm": "24日にワシントンで米中首脳会談。11月10日に期限を迎える関税の一時休戦が延長されるかが最大の焦点で、農産物や航空機の購入、先端半導体の輸出規制も交渉材料になる。",
+          "pl": "今週いちばんの材料 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Wall Street drifts lower as bond yields rise and oil prices swing",
+          "u": "https://www.bnnbloomberg.ca/markets/2026/09/18/wall-street-drifts-as-bond-yields-rise-and-oil-prices-swing/",
+          "s": "AP（BNN Bloomberg）・9/18",
+          "sm": "S&P500は+12.74ポイントの7,650.50。上昇率トップはコインベースの+11.7%。S&P500とダウは2週続けての下げとなった。",
+          "pl": "金利高で上値は重い → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "DIA": {
+      "label": "NYダウ に関係するニュース",
+      "items": [
+        {
+          "t": "Dow falls Friday and posts worst week since March as Treasury yields rise",
+          "u": "https://www.cnbc.com/2026/09/17/stock-market-today-live-updates.html",
+          "s": "CNBC・9/18",
+          "sm": "ダウは95.40ドル安の51,682.64で引け、週間では3月以来の大きな下げ（週間−1.7%・実測）。金利の上昇と高い原油、FRBの利上げが重しになった。",
+          "pl": "景気敏感な大型株に売り → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Why is General Motors stock sliding today?",
+          "u": "https://www.investing.com/news/stock-market-news/why-is-general-motors-stock-sliding-today-93CH-4907795",
+          "s": "Investing.com・9/18",
+          "sm": "ディーゼル価格の最高値と金利上昇が自動車の需要に逆風。GMは−5.10%（実測）、フォードやステランティスも下落した。",
+          "pl": "景気敏感株の売り → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "QQQ": {
+      "label": "ナスダック に関係するニュース",
+      "items": [
+        {
+          "t": "Strategy Climbs 12%, Coinbase Jumps 10% as Bitcoin Tops $80,000",
+          "u": "https://247wallst.com/investing/2026/09/18/strategy-climbs-12-coinbase-jumps-10-as-bitcoin-tops-80000/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "ビットコインの8万ドル回復で、ナスダック上場の暗号資産関連株が急伸。終値はストラテジー+16.39%、コインベース+11.66%（実測）。ビットコインは週末も8万ドル台を保っている（日本時間20日22時半で8万0,488ドル・実測）。",
+          "pl": "暗号資産関連の急伸 → 追い風",
+          "dir": "up"
+        },
+        {
+          "t": "AMD Says AI Adoption Is Still Early, Sees No Slowdown In Demand",
+          "u": "https://www.benzinga.com/markets/tech/26/09/61863429/amd-says-ai-adoption-is-still-early-sees-no-slowdown-in-demand",
+          "s": "Benzinga・9/18",
+          "sm": "AMDの幹部が「AI需要に減速なし」と発言。週の初めのAI減速懸念による下げから、半導体株は4日続けて戻した（SOX +2.8%・実測）。",
+          "pl": "半導体の戻り → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    "JPY": {
+      "label": "ドル／円 に関係するニュース",
+      "items": [
+        {
+          "t": "Japanese stocks rose as bond yields and the yen fell after rate hike",
+          "u": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
+          "s": "CNBC・9/18",
+          "sm": "日銀は1.25%へ利上げしたが、2人の反対で「思ったほどタカ派ではない」と受け止められ、円は下落。ドル円は日本時間18日18時ごろに157.9円台を付けたあと、NY引けにかけて156.85円まで戻した（Yahoo Finance実測）。",
+          "pl": "利上げでも円安 → 円安材料",
+          "dir": "mix"
+        },
+        {
+          "t": "Yen slumps to two-week low after BOJ rate hike underwhelms",
+          "u": "https://finance.yahoo.com/markets/currencies/articles/yen-weak-ahead-boj-decision-005910776.html",
+          "s": "Yahoo Finance・9/18",
+          "sm": "円は一時158.07円と2週間ぶりの安値。植田総裁は次の利上げのペースを「物価の動き次第」とし、強い言葉は無かった。為替の取引が再開するのは日本時間の月曜朝。",
+          "pl": "次の利上げ時期は示さず → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "US10Y": {
+      "label": "米国10年金利 に関係するニュース",
+      "items": [
+        {
+          "t": "Treasury yields move higher as volatile week wraps up",
+          "u": "https://www.cnbc.com/2026/09/18/treasury-yields-fed-rates-volatile-week.html",
+          "s": "CNBC・9/18",
+          "sm": "10年金利は今週、一時5.04%と2007年以来の高さ。木曜に下げたあと、金曜は再び5%台へ。終値は5.00%（Yahoo Finance実測）。",
+          "pl": "5%台の定着は株の重し → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Fed rate decision September 2026: Rates rise to 3.75%-4%",
+          "u": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+          "s": "CNBC・9/16",
+          "sm": "FRBは全会一致で利上げし、18人中16人が年内にもう1回以上の利上げを予想。会見後、10月の利上げ確率は49%に上がった。",
+          "pl": "追加利上げの観測が金利を支える → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    "WTI": {
+      "label": "WTI原油 に関係するニュース",
+      "items": [
+        {
+          "t": "Iran says conditions to re-engage in talks, end war sent to US via Qatar",
+          "u": "https://www.aljazeera.com/news/2026/9/19/iran-says-conditions-to-re-engage-in-talks-end-war-sent-to-us-via-qatar",
+          "s": "アルジャジーラ・9/19",
+          "sm": "イラン最高安全保障委員会のレザイ書記が、戦争終結の条件（全戦線での戦闘停止・凍結資産の解放・海上封鎖の解除）をカタール経由で米国に伝えたと表明。ホルムズ海峡をめぐるオマーンとの合意は先送りになったと説明した。",
+          "pl": "交渉が進めば原油安の材料 → 両面",
+          "dir": "mix"
+        },
+        {
+          "t": "Oil prices fall for third day on Saudi Arabia supply hopes",
+          "u": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+          "s": "CNBC・9/18",
+          "sm": "サウジは東西パイプラインの能力の半分を数日で取り戻し、6週間で全面再開する計画。原油は3日続落し、WTI期近（10月限）は99.53ドル、11月限は95.47ドルで引けた（Yahoo Finance実測）。",
+          "pl": "供給不安の後退 → 原油安材料",
+          "dir": "down"
+        }
+      ]
+    }
+  },
+  "movers": [
+    {
+      "nm": "ストラテジー",
+      "en": "Strategy / MSTR",
+      "pct": 16.39,
+      "why": "ビットコインが8万ドルを回復し、大量保有の同社株が急伸",
+      "desc": "旧マイクロストラテジー。本業はソフトウェアだが、会社の資金で大量のビットコインを保有しており、株価はビットコインの値動きを増幅した形で動く。",
+      "news": [
+        {
+          "t": "Strategy Climbs 12%, Coinbase Jumps 10% as Bitcoin Tops $80,000",
+          "u": "https://247wallst.com/investing/2026/09/18/strategy-climbs-12-coinbase-jumps-10-as-bitcoin-tops-80000/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "ビットコインは8万ドルの節目を抜けると、値下がりに賭けた取引の買い戻しが連鎖して上げが加速。ストラテジーはビットコインの値動きより大きく動く。終値は+16.39%（Yahoo Finance実測）。週末もビットコインは8万ドル台を保っている（日本時間20日22時半で8万0,488ドル・実測）。",
+          "pl": "保有するビットコインの価値が上昇 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "コインベース",
+      "en": "Coinbase / COIN",
+      "pct": 11.66,
+      "why": "ビットコイン高に加え、SECがトークン化株式の取り扱いを認める特例",
+      "desc": "米国最大の暗号資産取引所。売買の手数料が主な収入で、暗号資産の値段や取引量が増えると利益が伸びる。",
+      "news": [
+        {
+          "t": "Strategy, Coinbase surges as Bitcoin hits $80k again, SEC eases tokenized trading",
+          "u": "https://invezz.com/news/2026/09/18/strategy-mstr-coinbase-as-bitcoin-hits-80k-again-sec-eases-tokenized-trading/",
+          "s": "Invezz・9/18",
+          "sm": "SECが米国の取引所にトークン化株式（株をデジタル化したもの）の取り扱いを5年間認める特例を出し、コインベースに新しい手数料収入の道が開けた。S&P500の上昇率トップの+11.66%（実測）。",
+          "pl": "新しい収益源と取引の活発化 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "ロビンフッド",
+      "en": "Robinhood / HOOD",
+      "pct": 9.12,
+      "why": "暗号資産の上昇で取引が増えるとの期待",
+      "desc": "手数料無料の株式・暗号資産の売買アプリ。若い個人投資家に人気で、暗号資産の取引が収入の大きな柱になっている。",
+      "news": [
+        {
+          "t": "Wall Street drifts lower as bond yields rise and oil prices swing",
+          "u": "https://www.bnnbloomberg.ca/markets/2026/09/18/wall-street-drifts-as-bond-yields-rise-and-oil-prices-swing/",
+          "s": "AP（BNN Bloomberg）・9/18",
+          "sm": "暗号資産関連株が買われ、コインベース+11.7%に続いてロビンフッドも+9.1%と、S&P500で上昇率上位に入った。",
+          "pl": "個人の取引が増えやすい環境 → 追い風",
+          "dir": "up"
+        }
+      ]
+    },
+    {
+      "nm": "ニューコア",
+      "en": "Nucor / NUE",
+      "pct": -6.32,
+      "why": "7〜9月期の利益見通しが市場予想を下回る",
+      "desc": "米国最大の鉄鋼メーカー。電炉と呼ばれる、鉄くずを溶かして鉄をつくる方式が中心。建設や自動車向けの需要で業績が左右される。",
+      "news": [
+        {
+          "t": "Nucor stock falls on weaker than expected third quarter guidance",
+          "u": "https://ca.investing.com/news/stock-market-news/nucor-stock-falls-on-weaker-than-expected-third-quarter-guidance-93CH-4844239",
+          "s": "Investing.com・9/17",
+          "sm": "7〜9月期の1株利益の見通しは5.55〜5.65ドルで市場予想を下回った。鉄鋼工場と鉄鋼製品の部門は増益の見込みだが、原材料部門は減益。今期は約203万株の自社株買いも実施している。",
+          "pl": "期待ほど利益が伸びない → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "クアルコム",
+      "en": "Qualcomm / QCOM",
+      "pct": -5.82,
+      "why": "1カ月の急上昇の反動で利益確定の売り",
+      "desc": "スマホ向け半導体（Snapdragon）と通信技術の特許が収益の柱。最近はパソコンやデータセンター向けのAI半導体にも力を入れている。",
+      "news": [
+        {
+          "t": "Qualcomm Drops 6% as Past Month's Rally Unwinds; Skyworks and Qorvo Slip",
+          "u": "https://247wallst.com/investing/2026/09/18/qualcomm-drops-6-as-past-months-rally-unwinds-skyworks-and-qorvo-slip/",
+          "s": "24/7 Wall St.・9/18",
+          "sm": "この日の会社発表は無く、1カ月で12%上がった分のポジション調整との見方。半導体ETF（SOXX）は+1%と上がっており、クアルコムだけが大きく売られた。終値は−5.82%（実測）。",
+          "pl": "上がりすぎの修正 → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "What Needs To Be True To Buy Qualcomm Stock Now?",
+          "u": "https://www.trefis.com/stock/qcom/articles/615901/what-needs-to-be-true-to-buy-qualcomm-stock-now/2026-09-18",
+          "s": "Trefis・9/18",
+          "sm": "新しいiPhoneでのクアルコム製モデムの採用比率は、会社がこれまで見込んでいた20%を大きく下回る見通し。アンドロイド向けの売上も前年比20%減っている。",
+          "pl": "主力のスマホ事業に逆風 → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "ゼネラル・モーターズ",
+      "en": "General Motors / GM",
+      "pct": -5.10,
+      "why": "ディーゼル高と金利上昇で自動車株が反落",
+      "desc": "米国最大の自動車メーカー。シボレーやキャデラックなどのブランドを持ち、利益の大半をピックアップトラックとSUVで稼いでいる。",
+      "news": [
+        {
+          "t": "Why is General Motors stock sliding today?",
+          "u": "https://www.investing.com/news/stock-market-news/why-is-general-motors-stock-sliding-today-93CH-4907795",
+          "s": "Investing.com・9/18",
+          "sm": "ディーゼル価格が1ガロン6.30ドル超の過去最高になり、トラック・SUVの利益に逆風。金利上昇で自動車ローンの負担も増える。ドイツ銀行は目標株価を82ドルに調整し「ホールド」を維持。終値は−5.10%（実測）。",
+          "pl": "燃料高と金利高のダブルパンチ → 重し",
+          "dir": "down"
+        }
+      ]
+    },
+    {
+      "nm": "ゼノン・ファーマシューティカルズ",
+      "en": "Xenon Pharma / XENE",
+      "pct": -30.69,
+      "why": "うつ病治験で副作用が見つかり新規患者の登録を停止",
+      "desc": "カナダの製薬ベンチャー。神経の病気の薬を開発しており、主力候補のアゼツカルナーをてんかんやうつ病向けに開発している。",
+      "news": [
+        {
+          "t": "XENE Stock Drops 30% on Phase 3 Trial Halt",
+          "u": "https://www.gurufocus.com/news/9088436/xene-stock-drops-30-on-phase-3-trial-halt-pricetosales-ratio-signals-market-skepticism",
+          "s": "GuruFocus・9/18",
+          "sm": "うつ病と双極性うつの最終段階（第3相）の治験で、以前の治験では見られなかった精神面の副作用が見つかり、新規登録を一時停止。株価は昨年11月以来の安値に。終値は−30.69%（Yahoo Finance実測）。",
+          "pl": "主力候補の用途が狭まるおそれ → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Xenon downgraded at Deutsche Bank on trial pause",
+          "u": "https://seekingalpha.com/news/4644488-xenon-downgraded-deutsche-bank-trial-pause",
+          "s": "Seeking Alpha・9/18",
+          "sm": "ドイツ銀行が投資判断を「買い」から「ホールド」へ下げ、目標株価を90ドルから46ドルへほぼ半分に。てんかん向けの承認申請はFDAに提出済み。",
+          "pl": "アナリストの評価も後退 → 重し",
+          "dir": "down"
+        }
+      ]
+    }
+  ],
+  "prevIdx": {
+    "SPY": {
+      "label": "S&P500",
+      "prevIdx": 7651
+    },
+    "DIA": {
+      "label": "NYダウ",
+      "prevIdx": 51683
+    },
+    "QQQ": {
+      "label": "ナスダック",
+      "prevIdx": 26523
+    }
+  },
+  "date": "2026-09-18"
+}
