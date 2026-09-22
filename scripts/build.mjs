@@ -87,8 +87,20 @@ const eventBlock = (e) => `
         <div class="what">${e.what}${e.note ? `<small>${e.note}</small>` : ""}</div>
       </div>`;
 
+// 用語ミニ解説。データに glossary があればそれを、無ければ src/glossary-default.json を使う
+// （古い版のデータを再ビルドしても用語集が消えないようにするための保険）
+const glossary = Array.isArray(d.glossary) && d.glossary.length
+  ? d.glossary
+  : JSON.parse(readFileSync(join(ROOT, "src", "glossary-default.json"), "utf8"));
+const glossaryBlock = (g) => `
+    <details>
+      <summary>${g.q}</summary>
+      <p>${g.a}</p>
+    </details>`;
+
 /* ---------- 差し込み ---------- */
 const fills = {
+  GLOSSARY:     glossary.map(glossaryBlock).join(""),
   DATE_LINE:    `ニューヨーク市場 ${d.dateLabel} ｜ ${d.headerNote}`,
   HL_KICKER:    d.headline.kicker,
   HL_LEAD:      d.headline.lead,

@@ -115,6 +115,24 @@ for (const k of d.kpis || [])
 for (const s of ["SPY", "DIA", "QQQ"])
   if (!(s in (d.prevIdx || {}))) errors.push(`prevIdx に ${s} が無い`);
 
+/* --- 4. 用語ミニ解説（あれば） --- */
+if (d.glossary !== undefined) {
+  if (!Array.isArray(d.glossary)) errors.push("glossary が配列ではない");
+  else {
+    const seen = new Set();
+    d.glossary.forEach((g, i) => {
+      if (!g || typeof g.q !== "string" || !g.q.trim() || typeof g.a !== "string" || !g.a.trim())
+        errors.push(`glossary[${i}] に q / a が無い`);
+      else if (seen.has(g.q)) errors.push(`glossary の見出しが重複: 「${g.q}」`);
+      else seen.add(g.q);
+      if (g && typeof g.a === "string" && /<script|javascript:|on\w+=/i.test(g.a + (g.q || "")))
+        errors.push(`glossary[${i}] に実行可能なHTML断片が含まれている`);
+    });
+    if (d.glossary.length > 30)
+      warns.push(`用語ミニ解説が ${d.glossary.length} 件 — 30件超。追加を止めて整理が必要（ユーザーに報告）`);
+  }
+}
+
 /* --- 出力 --- */
 console.log(`チェック対象: data/${key}.json` +
   (updateDate ? `（ニュース更新版: 株価 ${date} 終値 / ニュース ${d.newsAsOf} JST）` : "") + "\n");
