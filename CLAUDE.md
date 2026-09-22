@@ -61,7 +61,7 @@ secrets.json          同じ形式。あれば config.json を上書き（gitign
 5. `git add -A && git commit && git push` — push で公開ページに反映される
 
 ### KPI カード（`kpis`）の構成 — 8枚
-順番: `SPY`（S&P500）→ `ORUKAN`（オルカン）→ `GOLD`（金1g）→ `DIA` → `QQQ` → `JPY` → `US10Y` → `WTI`。
+順番: `SPY`（S&P500）→ `ORUKAN`（オルカン）→ `DIA` → `QQQ` → `JPY` → `US10Y` → `WTI` → `GOLD`（金1g・最後）。
 `kpiNews` にも同じ 8 キーを持たせる（無いと check が WARN、カードを押しても何も出ない）。
 - **ORUKAN（オルカン＝eMAXIS Slim 全世界株式）**: data-quotes の `fund.orukan` から
   `nav`（基準価額・円）と `chgYen` / `chgPct`（前日比）を使う。基準価額は1日1回、日本の営業日の
