@@ -20,14 +20,19 @@ data/<終値日>_<JST日付>-<HHmm>.json
 scripts/check.mjs     整合性チェック（日付の食い違い・古いニュースの残存を検出）
 scripts/build.mjs     template + json → index.html
 scripts/extract.mjs   旧・単一HTML からの移行用（もう使わない）
-secrets.json          { "finnhubKey": "..." } — gitignore 済み。無ければキー空でビルド
+config.json           { "finnhubKey": "..." } — コミット済み。Finnhub の無料キーは配布 HTML に
+                      埋め込まれる公開情報なのでここに置く（クラウド実行でもキー付きでビルドできる）
+secrets.json          同じ形式。あれば config.json を上書き（gitignore）
 ```
 
 ## 毎日の更新手順
 
-> この手順はスケジュールタスク `kabu-dashboard-daily`（毎日 7・12・18・22時 JST）で
-> 自動実行される。手動で走らせるときも同じ手順。新しい終値が無い（週末・休場日・既に作成済み）
-> 場合は、終値日以降に重要なニュースがあるときだけ下の「ニュース更新版」を作る。
+> この手順はクラウドのルーティン（claude.ai/code/routines、毎日 7・12・18・22時 JST）で
+> 自動実行される。PC の電源が入っていなくても動く。手動で走らせるときも同じ手順。
+> 新しい終値が無い（週末・休場日・既に作成済み）場合は、終値日以降に重要なニュースが
+> あるときだけ下の「ニュース更新版」を作る。
+> 複数の実行が重ならないよう、push 前に必ず `git pull --rebase` する。push が拒否されたら
+> pull --rebase してやり直す（force push は絶対にしない）。
 
 ### ニュース更新版（新しい終値が無いとき）
 - 最新の data ファイル（ニュース更新版を含む）の出典より**新しい、重要な**ニュースがあるときだけ作る。
@@ -81,5 +86,6 @@ secrets.json          { "finnhubKey": "..." } — gitignore 済み。無けれ�
 ## してはいけないこと
 
 - `index.html` を直接編集（次のビルドで消える）
-- `secrets.json` や API キーをコミット
+- `secrets.json` をコミット（config.json の Finnhub 無料キーは公開前提なので例外）
+- `git push --force`（複数の実行が同じリポジトリに書くため、履歴を消すと他方の作業が消える）
 - `data/` の過去日付ファイルの書き換え（履歴として残す。ニュース更新も既存ファイルを直さず新ファイルで積む）

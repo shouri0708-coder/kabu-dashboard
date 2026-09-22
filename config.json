@@ -1,0 +1,4 @@
+{
+  "_note": "公開ページ（index.html）に埋め込まれるクライアント側の設定。Finnhub の無料キーは配布HTMLに入る前提の公開情報なのでここに置く。秘密にしたい値は secrets.json（gitignore）に書けば上書きされる",
+  "finnhubKey": "d9u8ldpr01qs9cmbn5ggd9u8ldpr01qs9cmbn5h0"
+}

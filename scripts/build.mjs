@@ -23,10 +23,13 @@ if (!existsSync(dataPath)) { console.error(`データがありません: data/${
 const d = JSON.parse(readFileSync(dataPath, "utf8"));
 let out = readFileSync(join(ROOT, "src", "template.html"), "utf8");
 
-// APIキーはリポジトリ外の secrets.json から差し込む（無ければ空 → 画面の入力欄から手入力）
+// APIキー: config.json（コミット済み・公開前提）→ secrets.json（gitignore）があれば上書き。
+// どちらも無ければ空 → 画面の入力欄から手入力
 let key = "";
-const secretsPath = join(ROOT, "secrets.json");
-if (existsSync(secretsPath)) key = JSON.parse(readFileSync(secretsPath, "utf8")).finnhubKey || "";
+for (const name of ["config.json", "secrets.json"]) {
+  const p = join(ROOT, name);
+  if (existsSync(p)) key = JSON.parse(readFileSync(p, "utf8")).finnhubKey || key;
+}
 
 /* ---------- 部品 ---------- */
 const j = (v) => JSON.stringify(v, null, 2).split("\n").join("\n  ");

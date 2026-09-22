@@ -1,4 +1,4 @@
-# APIキー（コミット禁止）
+# 秘密の設定（config.json を上書きする。コミット禁止）
 secrets.json
 
 node_modules/
