@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-21",
+  "note": "個別株・原油の日足バーがYahoo側でまだ生成されていなかったため、chart API の meta.regularMarketPrice（2026-09-21T20:00Z＝16:00ET の正規取引終値）を使用",
+  "quotes": {
+    "NVDA": { "close": 227.38, "prevClose": 222.27, "chg": 2.30 },
+    "AVGO": { "close": 362.66, "prevClose": 357.61, "chg": 1.41 },
+    "TSM": { "close": 445.14, "prevClose": 434.67, "chg": 2.41 },
+    "AMD": { "close": 615.52, "prevClose": 559.82, "chg": 9.95 },
+    "INTC": { "close": 121.78, "prevClose": 108.60, "chg": 12.14 },
+    "MSFT": { "close": 501.61, "prevClose": 493.78, "chg": 1.59 },
+    "AAPL": { "close": 338.98, "prevClose": 336.13, "chg": 0.85 },
+    "GOOGL": { "close": 354.97, "prevClose": 349.54, "chg": 1.55 },
+    "AMZN": { "close": 258.45, "prevClose": 253.71, "chg": 1.87 },
+    "META": { "close": 741.25, "prevClose": 665.75, "chg": 11.34 },
+    "TSLA": { "close": 375.30, "prevClose": 364.27, "chg": 3.03 }
+  },
+  "extra": {
+    "^GSPC": { "label": "S&P500", "close": 7764.70, "prevClose": 7650.50, "chg": 1.49 },
+    "^DJI": { "label": "NYダウ", "close": 52048.83, "prevClose": 51682.64, "chg": 0.71 },
+    "^IXIC": { "label": "ナスダック", "close": 27122.09, "prevClose": 26522.54, "chg": 2.26 },
+    "JPY=X": { "label": "ドル円", "close": 157.05, "prevClose": 156.13, "chg": 0.59 },
+    "^TNX": { "label": "米10年金利", "close": 4.96, "prevClose": 5.00, "chg": -0.70 },
+    "CL=F": { "label": "WTI原油（期近10月限 CLV26）", "close": 95.80, "prevClose": 100.30, "chg": -4.49 }
+  }
+}
