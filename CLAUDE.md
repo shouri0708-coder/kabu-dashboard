@@ -77,7 +77,7 @@ secrets.json          同じ形式。あれば config.json を上書き（gitign
 
 ### 用語ミニ解説（`glossary`）の運用
 - 形式: `glossary: [{ q: "〜って？", a: "2〜4文の解説" }]`。前版を複製して作るので自然に引き継がれる。
-  データに無い場合、build は `src/glossary-default.json`（基本14項目）で埋める
+  データに無い場合、build は `src/glossary-default.json`（基本15項目）で埋める
 - **追加の基準**: その日の `headline` / `reasons` / `scenarios` に、既存の用語集に無い専門用語や
   仕組みが「初めて、または中心的に」登場したとき、1〜2件だけ追加する。
   （例: ドットチャート、円キャリー、為替介入、ローテーション、受注残、SOX指数…）
