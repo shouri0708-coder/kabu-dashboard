@@ -30,8 +30,34 @@ function resolvePrev(sym, targetDate, yahooPrevDate, yahooPrevClose) {
 
 // ウォッチリスト銘柄
 const STOCKS = ["NVDA", "AVGO", "TSM", "AMD", "INTC", "MSFT", "AAPL", "GOOGL", "AMZN", "META", "TSLA"];
-// 指数・為替・金利・原油
-const EXTRA = { "^GSPC": "S&P500", "^DJI": "NYダウ", "^IXIC": "ナスダック", "JPY=X": "ドル円", "^TNX": "米10年金利", "CL=F": "WTI原油" };
+// 指数・為替・金利・原油・金
+const EXTRA = { "^GSPC": "S&P500", "^DJI": "NYダウ", "^IXIC": "ナスダック", "JPY=X": "ドル円", "^TNX": "米10年金利", "CL=F": "WTI原油", "GC=F": "金(ドル/oz)" };
+const TROY_OUNCE_G = 31.1035;   // 1トロイオンス = 31.1035g
+
+// オルカン（eMAXIS Slim 全世界株式）の基準価額。公式ページは JS 描画で取れないため、
+// みんかぶのページの meta description（「基準価額37161.0円、前日比+103.0（+0.28%）」）から読む。
+// 失敗しても全体は止めない（ニュース更新版などでは無くても困らない）
+async function fetchOrukan() {
+  const url = "https://itf.minkabu.jp/fund/0331418A";
+  const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  const html = await r.text();
+  const m = html.match(/基準価額([\d,]+(?:\.\d+)?)円、前日比([+\-−]?[\d,]+(?:\.\d+)?)（([+\-−]?[\d.]+)%）/);
+  if (!m) throw new Error("基準価額のパターンが見つからない");
+  const num = (s) => +s.replace(/,/g, "").replace("−", "-");
+  // 基準日。本文に「基準価額 09/17 37,161 円」の形で載る（年なし）。年は「その月日が未来なら前年」で補う
+  const text = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
+  const dm = text.match(/基準価額\s*(\d{1,2})\/(\d{1,2})\s*[\d,]+\s*円/);
+  let asOf = null;
+  if (dm) {
+    const now = new Date();
+    let y = now.getFullYear();
+    const cand = new Date(Date.UTC(y, +dm[1] - 1, +dm[2]));
+    if (cand.getTime() - now.getTime() > 7 * 864e5) y -= 1;
+    asOf = `${y}-${dm[1].padStart(2, "0")}-${dm[2].padStart(2, "0")}`;
+  }
+  return { name: "eMAXIS Slim 全世界株式（オール・カントリー）", nav: num(m[1]), chgYen: num(m[2]), chgPct: num(m[3]), asOf, source: "みんかぶ", sourceUrl: url };
+}
 
 async function chart(sym) {
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=1mo&interval=1d`;
@@ -101,6 +127,38 @@ for (const [sym, label] of Object.entries(EXTRA)) {
   out.extra[sym] = { label, close: +close.toFixed(2), prevClose: +prev.close.toFixed(2), chg: +chg.toFixed(2) };
   rows.push(`${label.padEnd(12)} ${close.toFixed(2).padStart(10)}  ${(chg >= 0 ? "+" : "") + chg.toFixed(2)}%  (前日 ${prev.close.toFixed(2)})`);
 }
+
+// 金 1g の円換算 = 金先物(ドル/oz) × ドル円 ÷ 31.1035。国際価格ベースで、国内の店頭小売価格
+// （税込・手数料込）とは差がある。金・為替は株と休場日がずれるので、対象日「以前で最新」のバーを使う
+{
+  const lastOnOrBefore = (days, date) => [...days].filter(d => d.date <= date).at(-1);
+  const gold = all["GC=F"], fx = all["JPY=X"];
+  const g = lastOnOrBefore(gold, target);
+  if (g) {
+    const f = lastOnOrBefore(fx, g.date);
+    const gPrev = [...gold].filter(d => d.date < g.date).at(-1);
+    const fPrev = gPrev ? lastOnOrBefore(fx, gPrev.date) : null;
+    if (f) {
+      const close = g.close * f.close / TROY_OUNCE_G;
+      const prevClose = gPrev && fPrev ? gPrev.close * fPrev.close / TROY_OUNCE_G : null;
+      const chg = prevClose ? (close / prevClose - 1) * 100 : null;
+      out.extra["GOLD_JPY_G"] = { label: "金1g(円換算)", close: Math.round(close), prevClose: prevClose ? Math.round(prevClose) : null,
+        chg: chg == null ? null : +chg.toFixed(2), asOf: g.date, goldUsdOz: +g.close.toFixed(2), usdJpy: +f.close.toFixed(2) };
+      rows.push(`金1g(円換算)   ${String(Math.round(close)).padStart(10)}円  ${chg == null ? "" : (chg >= 0 ? "+" : "") + chg.toFixed(2) + "%"}  (${g.date} の金 $${g.close.toFixed(0)}/oz × ${f.close.toFixed(2)}円)`);
+      if (g.date !== target) notes.add(`金は ${target} のバーが無く ${g.date} の値で換算`);
+    }
+  }
+}
+
+// オルカンの基準価額（取れなければ注記だけ）
+try {
+  const o = await fetchOrukan();
+  out.fund = { orukan: o };
+  rows.push(`オルカン基準価額 ${String(o.nav.toLocaleString("ja-JP")).padStart(9)}円  ${(o.chgYen >= 0 ? "+" : "") + o.chgYen}円 (${(o.chgPct >= 0 ? "+" : "") + o.chgPct}%)  基準日 ${o.asOf ?? "不明"}（${o.source}）`);
+} catch (e) {
+  notes.add(`オルカン基準価額の取得に失敗: ${e.message}（前回の値を据え置き、その旨を注記すること）`);
+}
+
 notes.forEach(n => rows.push(`※ ${n}`));
 
 mkdirSync(join(ROOT, "data-quotes"), { recursive: true });

@@ -435,6 +435,20 @@
       <div class="why">原油の急落と金利の5%割れで幅広く買われた。ただし上げたのは11セクター中10で、エネルギーだけが−2.88%。今週最大の関門は24日の米中首脳会談</div>
       <div class="more">▶ 関連ニュース</div>
     </div>
+    <div class="kpi" data-kpi="ORUKAN">
+      <div class="name">オルカン（全世界株・基準価額）</div>
+      <div class="val">37,161<span style="font-size:13px">円</span></div>
+      <div class="delta d-up">▲ +103円（+0.28%）</div>
+      <div class="why">基準日9/17の公表値（1日1回）。日本は9/21〜23が連休で次の公表は9/24。円建てなので円高は下押し要因</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
+    <div class="kpi" data-kpi="GOLD">
+      <div class="name">金 1g（国際価格の円換算）</div>
+      <div class="val">22,211<span style="font-size:13px">円</span></div>
+      <div class="delta d-up">▲ +0.65%（円換算）</div>
+      <div class="why">9/18のNY金先物4,425ドル/oz×156.13円で換算。店頭小売価格（税込）とは差あり。金利上昇局面では上値が重い</div>
+      <div class="more">▶ 関連ニュース</div>
+    </div>
     <div class="kpi" data-kpi="DIA">
       <div class="name">NYダウ（大企業30社）</div>
       <div class="val" id="v-DIA">52,049</div>
@@ -1093,7 +1107,8 @@
 
   /* 株価チャート(TradingViewの無料埋め込みウィジェット。日本時間・日本語表示) */
   const WATCH_TV = { NVDA: "NASDAQ:NVDA", AVGO: "NASDAQ:AVGO", TSM: "NYSE:TSM", AMD: "NASDAQ:AMD", INTC: "NASDAQ:INTC", MSFT: "NASDAQ:MSFT", AAPL: "NASDAQ:AAPL", GOOGL: "NASDAQ:GOOGL", AMZN: "NASDAQ:AMZN", META: "NASDAQ:META", TSLA: "NASDAQ:TSLA" };
-  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", JPY: "FX:USDJPY", WTI: "TVC:USOIL", US10Y: "FRED:DGS10" };
+  // ORUKAN（オルカン）は投信でTradingViewに無いため、中身がほぼ同じ全世界株ETF（ACWI）のチャートで代用
+  const KPI_TV = { SPY: "SP:SPX", DIA: "DJ:DJI", QQQ: "NASDAQ:IXIC", ORUKAN: "NASDAQ:ACWI", GOLD: "TVC:GOLD", JPY: "FX:USDJPY", WTI: "TVC:USOIL", US10Y: "FRED:DGS10" };
   // ※US10Yは TVC:US10Y が埋め込み非対応のため、FRED（米セントルイス連銀）の日次データを使用
   const MOVER_TV = { CRWV: "NASDAQ:CRWV", NBIS: "NASDAQ:NBIS", CAVA: "NYSE:CAVA", SMCI: "NASDAQ:SMCI", NVDA: "NASDAQ:NVDA", APO: "NYSE:APO", AA: "NYSE:AA", BX: "NYSE:BX", PFGC: "NYSE:PFGC", NBIX: "NASDAQ:NBIX", UPWK: "NASDAQ:UPWK", EVC: "NYSE:EVC", ONON: "NYSE:ONON" };
   function isDarkTheme() {
@@ -1247,6 +1262,48 @@
           "sm": "ペゼシキアン大統領が国連総会で演説する予定。トランプ大統領は会談に前向きと述べる一方、合意がなければイランを「消し去る」か経済を「腐らせる」しかないと日曜のFOXニュースで語っている。",
           "pl": "会談が流れれば原油は反発 → 上振れリスク",
           "dir": "mix"
+        }
+      ]
+    },
+    "ORUKAN": {
+      "label": "オルカン（全世界株） に関係するニュース",
+      "items": [
+        {
+          "t": "ｅＭＡＸＩＳ Ｓｌｉｍ 全世界株式（オール・カントリー）基準価額・チャート",
+          "u": "https://itf.minkabu.jp/fund/0331418A",
+          "s": "みんかぶ・9/22",
+          "sm": "基準日9/17の基準価額は37,161円（前日比+103円）。日本の営業日の夕方に1日1回公表され、その朝までの海外市場を反映する。",
+          "pl": "中身の約6割は米国株 → 米国市場の動きがそのまま効く",
+          "dir": "mix"
+        },
+        {
+          "t": "ｅＭＡＸＩＳ Ｓｌｉｍ 全世界株式（オール・カントリー）| 三菱UFJアセットマネジメント",
+          "u": "https://emaxis.am.mufg.jp/fund/253425.html",
+          "s": "三菱UFJアセット・9/22",
+          "sm": "全世界株式指数（MSCI ACWI）に連動する投信。円建てなので、株価が同じでも円高になれば基準価額は下がり、円安なら上がる。",
+          "pl": "株価と為替の両方が効く → 両面",
+          "dir": "mix"
+        }
+      ]
+    },
+    "GOLD": {
+      "label": "金 に関係するニュース",
+      "items": [
+        {
+          "t": "Current price of gold: September 21, 2026",
+          "u": "https://fortune.com/article/current-price-of-gold-09-21-2026/",
+          "s": "Fortune・9/21",
+          "sm": "9/21の金スポット価格は1オンス4,353ドル（−0.56%）。1月に付けた史上最高値5,597ドルからは調整局面にある。",
+          "pl": "利上げ観測の高まりは「金利を生まない」金の重し → 重し",
+          "dir": "down"
+        },
+        {
+          "t": "Gold Price Predictions for 2026 and 2027 | J.P. Morgan Global Research",
+          "u": "https://www.jpmorgan.com/insights/global-research/commodities/gold-prices",
+          "s": "J.P.モルガン・2026年",
+          "sm": "中央銀行の記録的な買いと、年1〜2%しか伸びない鉱山生産という構造要因が長期の支え。",
+          "pl": "長期の下支え要因は不変 → 追い風",
+          "dir": "up"
         }
       ]
     }

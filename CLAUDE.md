@@ -48,7 +48,8 @@ secrets.json          同じ形式。あれば config.json を上書き（gitign
 - check.mjs は「結論の根拠に終値日より新しい出典が無い」とエラーにする
 
 1. `node scripts/fetch-quotes.mjs <日付>` — Yahoo Finance から全銘柄・指数・
-   ドル円・10年金利・WTI の終値と騰落率を取得（`data-quotes/<日付>.json` に保存）。
+   ドル円・10年金利・WTI・金 の終値と騰落率、金1gの円換算、オルカンの基準価額を取得
+   （`data-quotes/<日付>.json` に保存）。
    騰落率や指数水準は必ずこの実データを使う（報道の数字は intraday のことがある）
 2. 最新の市況ニュースを調べ、前日の `data/*.json` を複製して新しい日付で作成
 3. 全セクションを更新する（`headline` / `kpis` / `reasons` / `scenarios` /
@@ -58,6 +59,21 @@ secrets.json          同じ形式。あれば config.json を上書き（gitign
    必要なときだけ追記する
 4. `npm run daily` — チェックが通ればそのままビルドされる
 5. `git add -A && git commit && git push` — push で公開ページに反映される
+
+### KPI カード（`kpis`）の構成 — 8枚
+順番: `SPY`（S&P500）→ `ORUKAN`（オルカン）→ `GOLD`（金1g）→ `DIA` → `QQQ` → `JPY` → `US10Y` → `WTI`。
+`kpiNews` にも同じ 8 キーを持たせる（無いと check が WARN、カードを押しても何も出ない）。
+- **ORUKAN（オルカン＝eMAXIS Slim 全世界株式）**: data-quotes の `fund.orukan` から
+  `nav`（基準価額・円）と `chgYen` / `chgPct`（前日比）を使う。基準価額は1日1回、日本の営業日の
+  夕方に公表され、その日の日本時間朝までの海外市場を反映する（＝終値日の翌営業日の公表値が対応）。
+  valueHtml は `37,161<span style="font-size:13px">円</span>` の形、delta は「▲ +103円（+0.28%）」。
+  `fund.orukan` が無い（取得失敗）ときは前版の値を据え置き、why に「前回公表値」と書く。
+  出典は みんかぶ（fund.orukan.sourceUrl）。TradingView チャートは ACWI（全世界株ETF）で代用
+- **GOLD（金1g・円換算）**: data-quotes の `extra.GOLD_JPY_G`（`close` 円/g、`chg`、`asOf`、
+  `goldUsdOz`、`usdJpy`）。国際価格（NY金先物）×ドル円÷31.1035 の換算値で、国内の店頭小売価格とは
+  差がある旨を why に必ず書く。`asOf` が終値日と違う（金の休場日）ときは why に「◯/◯の金価格で換算」。
+  delta には日付を書かない（check.mjs の日付検査が終値日と照合するため）
+- 他の6枚は従来どおり（指数・ドル円・金利・原油は `extra` の実測値）
 
 ### 用語ミニ解説（`glossary`）の運用
 - 形式: `glossary: [{ q: "〜って？", a: "2〜4文の解説" }]`。前版を複製して作るので自然に引き継がれる。
