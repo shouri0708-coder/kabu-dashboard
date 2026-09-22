@@ -90,23 +90,23 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 89.85,
+      "close": 89.66,
       "prevClose": 95.78,
-      "chg": -6.19
+      "chg": -6.39
     },
     "GC=F": {
       "label": "金(ドル/oz)",
-      "close": 4396.2,
+      "close": 4402.2,
       "prevClose": 4383.9,
-      "chg": 0.28
+      "chg": 0.42
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 22243,
+      "close": 22273,
       "prevClose": 22135,
-      "chg": 0.49,
+      "chg": 0.62,
       "asOf": "2026-09-22",
-      "goldUsdOz": 4396.2,
+      "goldUsdOz": 4402.2,
       "usdJpy": 157.37
     }
   },
