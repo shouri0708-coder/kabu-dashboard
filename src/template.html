@@ -592,8 +592,8 @@
   });
 
   /* ================= リアルタイム自動更新エンジン (Finnhub) =================
-     - 起動時に全銘柄の現在値をRESTで取得し、以後10秒ごとに巡回更新
-     - 取引時間中はWebSocketでほぼ即時に反映（10秒より速い）
+     - 起動時に全銘柄の現在値をRESTで取得し、以後 REST 巡回＋WebSocket で価格を収集
+     - 画面の書き換えは 10 秒に 1 回（届いた最新値をまとめて反映。約定ごとには動かさない）
      - 指数はETF（SPY/DIA/QQQ）の変動率から概算値を計算
      - このパネル内で外部接続がブロックされる場合は、HTMLファイルを
        ブラウザ（Chrome等）で直接開くと有効になります                      */
@@ -708,6 +708,17 @@
     if (IDX[sym]) updateIndex(sym, price); else updateStock(sym, price);
   }
 
+  // 画面の書き換えは 10 秒に 1 回にまとめる。WebSocket や REST で届いた価格はいったん pending に溜め、
+  // 10 秒ごとに最新値だけを反映する（約定ごとに数字が動いて落ち着かないのを防ぐ）
+  const REFRESH_MS = 10000;
+  const pending = {};
+  function queuePrice(sym, price) { pending[sym] = price; }
+  setInterval(() => {
+    const syms = Object.keys(pending);
+    if (!syms.length) return;
+    syms.forEach(s => { const p = pending[s]; delete pending[s]; applyPrice(s, p); });
+  }, REFRESH_MS);
+
   async function fetchQuote(sym, key) {
     const r = await fetch("https://finnhub.io/api/v1/quote?symbol=" + sym + "&token=" + encodeURIComponent(key));
     if (r.status === 429) throw new Error("rate");
@@ -734,7 +745,7 @@
     }
     function statusText() {
       const s = session();
-      if (s === "regular") return "リアルタイム更新中：通常取引（日本時間 夜22:30〜朝5:00頃）・ほぼ即時反映";
+      if (s === "regular") return "リアルタイム更新中：通常取引（日本時間 夜22:30〜朝5:00頃）・10秒ごとに画面更新";
       if (s === "pre")     return "リアルタイム更新中：時間外取引・プレマーケット（日本時間 夕方17:00〜22:30頃）";
       if (s === "after")   return "リアルタイム更新中：時間外取引・アフターマーケット（日本時間 朝5:00〜9:00頃）※変動率は当日終値比";
       return "市場クローズ中：直近の終値を表示（時間外プレ市場は日本時間 夕方17:00頃から）";
@@ -753,7 +764,7 @@
         if (d.type === "trade" && d.data) {
           const seen = {};
           d.data.forEach(t => { seen[t.s] = t.p; });
-          Object.keys(seen).forEach(s => applyPrice(s, seen[s]));
+          Object.keys(seen).forEach(s => queuePrice(s, seen[s]));   // 反映は10秒ごとのまとめ更新で
         }
       };
     } catch (e) { /* WebSocket不可でもRESTポーリングで継続 */ }
@@ -768,7 +779,7 @@
           state[sym].pc = q.pc;
           state[sym].restC = q.c;
           // 時間外はWebSocketの約定が最優先。RESTの値が古い場合は上書きしない
-          if (session() === "regular" || !state[sym].last) applyPrice(sym, q.c);
+          if (session() === "regular" || !state[sym].last) queuePrice(sym, q.c);
         }
       } catch (e) { /* 一時的な失敗はスキップ */ }
     }, 1100);
