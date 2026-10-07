@@ -46,6 +46,11 @@
       "prevClose": 251.4,
       "chg": 1.95
     },
+    "META": {
+      "close": 738.88,
+      "prevClose": 741.9,
+      "chg": -0.41
+    },
     "TSLA": {
       "close": 380.68,
       "prevClose": 378.73,
@@ -83,14 +88,26 @@
       "prevClose": 5.31,
       "chg": -0.79
     },
+    "CL=F": {
+      "label": "WTI原油",
+      "close": 89.44,
+      "prevClose": 89.43,
+      "chg": 0.01
+    },
+    "GC=F": {
+      "label": "金(ドル/oz)",
+      "close": 4187.1,
+      "prevClose": 4156.8,
+      "chg": 0.73
+    },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 21080,
-      "prevClose": 21134,
-      "chg": -0.25,
-      "asOf": "2026-10-05",
-      "goldUsdOz": 4156.8,
-      "usdJpy": 157.73
+      "close": 21265,
+      "prevClose": 21080,
+      "chg": 0.88,
+      "asOf": "2026-10-06",
+      "goldUsdOz": 4187.1,
+      "usdJpy": 157.96
     }
   },
   "fund": {
