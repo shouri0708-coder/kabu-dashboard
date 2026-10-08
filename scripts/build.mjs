@@ -76,7 +76,7 @@ const scenarioBlock = (s) => `
 const newsGroup = (g) => `
       <div class="news-cat">${g.cat}${g.catNote ? `<small>${g.catNote}</small>` : ""}</div>` +
   g.items.map(n => `
-      <div class="news-item">
+      <div class="news-item${n.body.replace(/<[^>]+>/g, "").length > 70 ? " long" : ""}">
         <a href="${n.url}" target="_blank" rel="noopener">${n.title}</a><span class="src">${n.src}</span>
         <p>${n.body}</p>
       </div>`).join("");
