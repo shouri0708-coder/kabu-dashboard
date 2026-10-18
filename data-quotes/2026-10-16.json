@@ -90,9 +90,9 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 99.02,
+      "close": 101.41,
       "prevClose": 97.97,
-      "chg": 1.07
+      "chg": 3.51
     },
     "GC=F": {
       "label": "金(ドル/oz)",
@@ -102,12 +102,12 @@
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 21237,
+      "close": 21258,
       "prevClose": 21178,
-      "chg": 0.28,
+      "chg": 0.38,
       "asOf": "2026-10-16",
       "goldUsdOz": 4181.1,
-      "usdJpy": 157.99
+      "usdJpy": 158.14
     }
   },
   "fund": {
