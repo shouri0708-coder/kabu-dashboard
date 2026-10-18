@@ -90,9 +90,9 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 101.41,
+      "close": 99.02,
       "prevClose": 97.97,
-      "chg": 3.51
+      "chg": 1.07
     },
     "GC=F": {
       "label": "金(ドル/oz)",
