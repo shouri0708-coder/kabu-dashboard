@@ -75,6 +75,31 @@ secrets.json          同じ形式。あれば config.json を上書き（gitign
   delta には日付を書かない（check.mjs の日付検査が終値日と照合するため）
 - 他の6枚は従来どおり（指数・ドル円・金利・原油は `extra` の実測値）
 
+### 文章量の上限（必ず守る。check.mjs が検査する）
+長文化が進み、10/7版では結論の見出しが 2,800 字、KPI の一言が 1,300 字になって読めなくなった。
+**スマホで最初の数行を読めば要点が分かる**のがこのダッシュボードの価値なので、以下を上限とする
+（HTMLタグを除いた文字数）。上限超過は WARN、3倍超は ERROR（公開不可）。
+前版から引き継ぐ文章（watch の note など）も上限に合わせて短く書き直す。
+
+| フィールド | 上限 | 書き方 |
+|---|---|---|
+| headline.lead | 60字 | 1行の見出し。**HTMLタグ・株価の羅列を入れない** |
+| headline.sub | 250字 | 3〜4文で「何が起きて、なぜか」 |
+| headline.evidence[].title / body / so | 50 / 200 / 120字 | |
+| headline.summary | 200字 | |
+| kpis[].why | 60字 | 一言。数字の羅列はしない（値は valueHtml/delta にある） |
+| kpis[].delta | 30字 | |
+| reasons[].title / body / tsumari | 45 / 220 / 120字 | |
+| scenarios[].title / body / flow | 45 / 220 / 150字 | |
+| news[].items[].body | 160字 | |
+| watch[].note | 60字 | 一言。株価の数字は px/chg にある |
+| watch[].news[].sm / kpiNews / movers news の sm | 120字 | |
+| movers[].why / desc | 40 / 80字 | |
+| events[].note | 100字 | |
+| glossary[].a | 220字 | |
+
+長くなりそうなときは、詳細をニュース項目（出典付き）に逃がす。本文で全部説明しようとしない。
+
 ### 用語ミニ解説（`glossary`）の運用
 - 形式: `glossary: [{ q: "〜って？", a: "2〜4文の解説" }]`。前版を複製して作るので自然に引き継がれる。
   データに無い場合、build は `src/glossary-default.json`（基本15項目）で埋める

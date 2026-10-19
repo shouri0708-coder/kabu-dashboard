@@ -133,6 +133,41 @@ if (d.glossary !== undefined) {
   }
 }
 
+/* --- 5. 文章量（長文化の歯止め。上限超は WARN、3倍超は ERROR） --- */
+{
+  const plain = (s) => String(s ?? "").replace(/<[^>]+>/g, "");
+  const over = [];
+  const chk = (label, text, limit) => {
+    const n = plain(text).length;
+    if (n > limit * 3) errors.push(`${label} が ${n} 字（上限 ${limit} 字の3倍超）— 短く書き直す`);
+    else if (n > limit) over.push(`${label} ${n}字（上限 ${limit}）`);
+  };
+  const h = d.headline || {};
+  chk("headline.lead", h.lead, 60);
+  if (/<[a-z]/i.test(String(h.lead ?? ""))) warns.push("headline.lead に HTML タグが入っている（1行の見出しにする）");
+  chk("headline.sub", h.sub, 250);
+  chk("headline.summary", h.summary, 200);
+  (h.evidence || []).forEach((e, i) => { chk(`evidence[${i}].title`, e.title, 50); chk(`evidence[${i}].body`, e.body, 200); chk(`evidence[${i}].so`, e.so, 120); });
+  (d.kpis || []).forEach(k => { chk(`kpi ${k.key}.why`, k.why, 60); chk(`kpi ${k.key}.delta`, k.delta, 30); });
+  (d.reasons || []).forEach((r, i) => { chk(`reasons[${i}].title`, r.title, 45); chk(`reasons[${i}].body`, r.body, 220); chk(`reasons[${i}].tsumari`, r.tsumari, 120); });
+  (d.scenarios || []).forEach((s, i) => { chk(`scenarios[${i}].title`, s.title, 45); chk(`scenarios[${i}].body`, s.body, 220); chk(`scenarios[${i}].flow`, s.flow, 150); });
+  (d.news || []).forEach(g => (g.items || []).forEach((n, i) => chk(`news「${plain(n.title).slice(0, 14)}…」body`, n.body, 160)));
+  (d.watch || []).forEach(w => {
+    const tk = (w.en || "").split("/").pop().trim();
+    chk(`watch ${tk}.note`, w.note, 60);
+    (w.news || []).forEach((n, i) => chk(`watch ${tk}.news[${i}].sm`, n.sm, 120));
+  });
+  (d.movers || []).forEach(m => {
+    const tk = (m.en || "").split("/").pop().trim();
+    chk(`movers ${tk}.why`, m.why, 40); chk(`movers ${tk}.desc`, m.desc, 80);
+    (m.news || []).forEach((n, i) => chk(`movers ${tk}.news[${i}].sm`, n.sm, 120));
+  });
+  Object.entries(d.kpiNews || {}).forEach(([k, v]) => (v.items || []).forEach((n, i) => chk(`kpiNews ${k}[${i}].sm`, n.sm, 120)));
+  (d.events || []).forEach((e, i) => chk(`events[${i}].note`, e.note, 100));
+  (d.glossary || []).forEach((g, i) => chk(`glossary[${i}].a`, g.a, 220));
+  if (over.length) warns.push(`文章量が上限超え ${over.length} 件: ` + over.slice(0, 8).join(" / ") + (over.length > 8 ? ` …他${over.length - 8}件` : ""));
+}
+
 /* --- 出力 --- */
 console.log(`チェック対象: data/${key}.json` +
   (updateDate ? `（ニュース更新版: 株価 ${date} 終値 / ニュース ${d.newsAsOf} JST）` : "") + "\n");

@@ -342,6 +342,14 @@
   .news-item.open::after, .w-news-item.open::after {
     content: "▲ たたむ"; display: block; font-size: 11px; color: var(--muted); margin-top: 3px;
   }
+  /* 長文の折りたたみ（結論・KPIの一言・根拠・理由・シナリオ・銘柄メモ）。JS が長さを測って .clamp を付ける */
+  .clamp { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer; }
+  .clamp.c2 { -webkit-line-clamp: 2; }
+  .clamp.c3 { -webkit-line-clamp: 3; }
+  .clamp.c4 { -webkit-line-clamp: 4; }
+  .clamp.open { display: block; -webkit-line-clamp: unset; overflow: visible; }
+  .clamp-hint { font-size: 11px; color: var(--accent); margin-top: 3px; cursor: pointer; }
+  .clamp-hint.open { color: var(--muted); }
 
   /* events */
   .events { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 6px 18px; }
@@ -612,6 +620,65 @@
     if (!it || e.target.closest("a")) return;
     it.classList.toggle("open");
   });
+
+  /* ---- 長文の折りたたみ：最初の数行だけ見せ、タップで全文 ----
+     対象要素に .clamp.cN を付け、実際にはみ出している要素だけ「▼ タップで全文を読む」を付ける。
+     stop=true の要素は親（結論パネル・KPIカード・銘柄行）のクリック開閉と競合するので、
+     本文タップは「全文表示」だけにして親へ伝えない。group を指定した要素は一緒に開閉する */
+  const CLAMPS = [
+    { sel: ".headline .lead", lines: 2, stop: true, group: "headline", hint: false },
+    { sel: ".headline .sub",  lines: 2, stop: true, group: "headline" },
+    { sel: ".ev-item p",      lines: 3, stop: true },
+    { sel: ".ev-item .ev-so", lines: 3, stop: true },
+    { sel: ".ev-sum",         lines: 3, stop: true },
+    { sel: ".kpi .why",       lines: 4, stop: true },
+    { sel: ".reason p",       lines: 4 },
+    { sel: ".reason .tsumari",lines: 3 },
+    { sel: ".scenario p",     lines: 4 },
+    { sel: ".scenario .flow", lines: 3 },
+    { sel: ".event small",    lines: 3 },
+    { sel: ".w-note",         lines: 3, stop: true },
+  ];
+  function toggleClamp(el, hint, open) {
+    el.classList.toggle("open", open);
+    if (hint) { hint.classList.toggle("open", open); hint.textContent = open ? "▲ たたむ" : "▼ タップで全文を読む"; }
+  }
+  function setupClamp(cfg) {
+    document.querySelectorAll(cfg.sel).forEach(el => {
+      if (el.dataset.clamp) return;
+      if (!el.offsetParent && el.offsetHeight === 0) return;   // まだ非表示（開いたときに再実行される）
+      el.dataset.clamp = "1";
+      el.classList.add("clamp", "c" + cfg.lines);
+      if (el.scrollHeight <= el.clientHeight + 2) { el.classList.remove("clamp", "c" + cfg.lines); el.dataset.clamp = "short"; return; }
+      el.dataset.clampGroup = cfg.group || "";
+      let hint = null;
+      if (cfg.hint !== false) {
+        hint = document.createElement("div");
+        hint.className = "clamp-hint";
+        hint.textContent = "▼ タップで全文を読む";
+        el.insertAdjacentElement("afterend", hint);
+      }
+      const onTap = (e) => {
+        if (e.target.closest("a")) return;
+        if (cfg.stop) e.stopPropagation();
+        const open = !el.classList.contains("open");
+        if (cfg.group) {
+          document.querySelectorAll('[data-clamp-group="' + cfg.group + '"]').forEach(g => {
+            const h = g.nextElementSibling && g.nextElementSibling.classList.contains("clamp-hint") ? g.nextElementSibling : null;
+            toggleClamp(g, h, open);
+          });
+        } else {
+          toggleClamp(el, hint, open);
+        }
+      };
+      el.addEventListener("click", onTap);
+      if (hint) hint.addEventListener("click", onTap);
+    });
+  }
+  function applyClamps() { CLAMPS.forEach(setupClamp); }
+  applyClamps();
+  // パネルを開いたときに現れる要素（結論の根拠など）にも遅れて適用する
+  document.addEventListener("click", () => setTimeout(applyClamps, 60));
 
   /* ================= リアルタイム自動更新エンジン (Finnhub) =================
      - 起動時に全銘柄の現在値をRESTで取得し、以後 REST 巡回＋WebSocket で価格を収集
