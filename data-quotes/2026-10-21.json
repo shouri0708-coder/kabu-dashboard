@@ -90,23 +90,23 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 97.74,
+      "close": 97.15,
       "prevClose": 101.79,
-      "chg": -3.98
+      "chg": -4.56
     },
     "GC=F": {
       "label": "金(ドル/oz)",
-      "close": 4161.3,
+      "close": 4150,
       "prevClose": 4142.6,
-      "chg": 0.45
+      "chg": 0.18
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 21174,
+      "close": 21117,
       "prevClose": 21113,
-      "chg": 0.29,
+      "chg": 0.02,
       "asOf": "2026-10-21",
-      "goldUsdOz": 4161.3,
+      "goldUsdOz": 4150,
       "usdJpy": 158.27
     }
   },
@@ -116,7 +116,7 @@
       "nav": 37859,
       "chgYen": 176,
       "chgPct": 0.47,
-      "asOf": "2026-10-21",
+      "asOf": "2026-10-20",
       "source": "みんかぶ",
       "sourceUrl": "https://itf.minkabu.jp/fund/0331418A"
     }
