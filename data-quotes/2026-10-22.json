@@ -113,10 +113,10 @@
   "fund": {
     "orukan": {
       "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
-      "nav": 38036,
-      "chgYen": 178,
-      "chgPct": 0.47,
-      "asOf": "2026-10-22",
+      "nav": 37162,
+      "chgYen": -874,
+      "chgPct": -2.3,
+      "asOf": "2026-10-23",
       "source": "みんかぶ",
       "sourceUrl": "https://itf.minkabu.jp/fund/0331418A"
     }
