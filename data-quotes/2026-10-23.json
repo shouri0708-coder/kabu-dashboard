@@ -102,12 +102,12 @@
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 20207,
+      "close": 20165,
       "prevClose": 20643,
-      "chg": -2.12,
+      "chg": -2.32,
       "asOf": "2026-10-23",
       "goldUsdOz": 4007.9,
-      "usdJpy": 156.81
+      "usdJpy": 156.49
     }
   },
   "fund": {
