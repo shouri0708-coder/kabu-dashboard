@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-29",
+  "quotes": {
+    "NVDA": {
+      "close": 213.66,
+      "prevClose": 215.38,
+      "chg": -0.8
+    },
+    "AVGO": {
+      "close": 345,
+      "prevClose": 351.81,
+      "chg": -1.94
+    },
+    "TSM": {
+      "close": 431.81,
+      "prevClose": 439.51,
+      "chg": -1.75
+    },
+    "AMD": {
+      "close": 566.42,
+      "prevClose": 578.44,
+      "chg": -2.08
+    },
+    "INTC": {
+      "close": 92.07,
+      "prevClose": 95.53,
+      "chg": -3.62
+    },
+    "MSFT": {
+      "close": 530.14,
+      "prevClose": 531.01,
+      "chg": -0.16
+    },
+    "AAPL": {
+      "close": 348.91,
+      "prevClose": 343.83,
+      "chg": 1.48
+    },
+    "GOOGL": {
+      "close": 283.82,
+      "prevClose": 324.89,
+      "chg": -12.64
+    },
+    "AMZN": {
+      "close": 243.79,
+      "prevClose": 254.6,
+      "chg": -4.25
+    },
+    "META": {
+      "close": 624.52,
+      "prevClose": 612.49,
+      "chg": 1.96
+    },
+    "TSLA": {
+      "close": 403.3,
+      "prevClose": 404.22,
+      "chg": -0.23
+    }
+  },
+  "extra": {
+    "^GSPC": {
+      "label": "S&P500",
+      "close": 7720.39,
+      "prevClose": 7743.98,
+      "chg": -0.3
+    },
+    "^DJI": {
+      "label": "NYダウ",
+      "close": 52342.56,
+      "prevClose": 52475.1,
+      "chg": -0.25
+    },
+    "^IXIC": {
+      "label": "ナスダック",
+      "close": 26184.72,
+      "prevClose": 26549.85,
+      "chg": -1.38
+    },
+    "JPY=X": {
+      "label": "ドル円",
+      "close": 157.62,
+      "prevClose": 157.99,
+      "chg": -0.24
+    },
+    "^TNX": {
+      "label": "米10年金利",
+      "close": 4.99,
+      "prevClose": 5.05,
+      "chg": -1.11
+    },
+    "CL=F": {
+      "label": "WTI原油",
+      "close": 102.84,
+      "prevClose": 102.78,
+      "chg": 0.06
+    },
+    "GC=F": {
+      "label": "金(ドル/oz)",
+      "close": 4034.2,
+      "prevClose": 4051.6,
+      "chg": -0.43
+    },
+    "GOLD_JPY_G": {
+      "label": "金1g(円換算)",
+      "close": 20443,
+      "prevClose": 20580,
+      "chg": -0.67,
+      "asOf": "2026-10-29",
+      "goldUsdOz": 4034.2,
+      "usdJpy": 157.62
+    }
+  },
+  "fund": {
+    "orukan": {
+      "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
+      "nav": 37902,
+      "chgYen": 222,
+      "chgPct": 0.59,
+      "asOf": "2026-10-29",
+      "source": "みんかぶ",
+      "sourceUrl": "https://itf.minkabu.jp/fund/0331418A"
+    }
+  }
+}
