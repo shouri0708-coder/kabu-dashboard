@@ -1030,13 +1030,6 @@
       "catNote": "来週2日はアップルの決算、3日は米国の中間選挙。米国は1日に夏時間が終わります",
       "items": [
         {
-          "title": "米国の夏時間は1日に終了 — 取引時間は日本時間23時30分〜翌6時へ",
-          "url": "https://www.nasdaq.com/market-activity/stock-market-holiday-and-trading-hours",
-          "src": "ナスダック（英語）・10/30",
-          "dir": "mix",
-          "body": "来週から米国市場の取引時間は1時間後ろにずれます。日本時間の夜の値動きを見る時間も変わります。"
-        },
-        {
           "title": "来週2日（月）：アップルの7〜9月期決算",
           "url": "https://finance.yahoo.com/quote/AAPL/",
           "src": "ヤフーファイナンス（英語）・10/29",
