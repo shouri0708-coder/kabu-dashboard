@@ -66,7 +66,7 @@
     },
     "^DJI": {
       "label": "NYダウ",
-      "close": 51770.3,
+      "close": 51770.31,
       "prevClose": 52342.56,
       "chg": -1.09
     },
@@ -90,23 +90,23 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 102.95,
+      "close": 104.12,
       "prevClose": 102,
-      "chg": 0.93
+      "chg": 2.08
     },
     "GC=F": {
       "label": "金(ドル/oz)",
-      "close": 3884.9,
+      "close": 3898.9,
       "prevClose": 4031.4,
-      "chg": -3.63
+      "chg": -3.29
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 19710,
+      "close": 19781,
       "prevClose": 20457,
-      "chg": -3.65,
+      "chg": -3.3,
       "asOf": "2026-10-30",
-      "goldUsdOz": 3884.9,
+      "goldUsdOz": 3898.9,
       "usdJpy": 157.8
     }
   },
