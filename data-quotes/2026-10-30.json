@@ -66,7 +66,7 @@
     },
     "^DJI": {
       "label": "NYダウ",
-      "close": 51770.31,
+      "close": 51770.3,
       "prevClose": 52342.56,
       "chg": -1.09
     },
@@ -78,9 +78,9 @@
     },
     "JPY=X": {
       "label": "ドル円",
-      "close": 157.52,
+      "close": 157.8,
       "prevClose": 157.83,
-      "chg": -0.2
+      "chg": -0.02
     },
     "^TNX": {
       "label": "米10年金利",
@@ -102,12 +102,12 @@
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 19674,
+      "close": 19710,
       "prevClose": 20457,
-      "chg": -3.83,
+      "chg": -3.65,
       "asOf": "2026-10-30",
       "goldUsdOz": 3884.9,
-      "usdJpy": 157.52
+      "usdJpy": 157.8
     }
   },
   "fund": {
