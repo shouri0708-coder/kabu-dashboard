@@ -72,9 +72,15 @@
     },
     "^IXIC": {
       "label": "ナスダック",
-      "close": 25164.32,
+      "close": 25164.36,
       "prevClose": 25437,
       "chg": -1.07
+    },
+    "JPY=X": {
+      "label": "ドル円",
+      "close": 157.68,
+      "prevClose": 157.8,
+      "chg": -0.08
     },
     "^TNX": {
       "label": "米10年金利",
@@ -82,25 +88,13 @@
       "prevClose": 4.93,
       "chg": -0.71
     },
-    "CL=F": {
-      "label": "WTI原油",
-      "close": 96.26,
-      "prevClose": 104.12,
-      "chg": -7.55
-    },
-    "GC=F": {
-      "label": "金(ドル/oz)",
-      "close": 3956.6,
-      "prevClose": 3898.9,
-      "chg": 1.48
-    },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 20074,
-      "prevClose": 19781,
-      "chg": 1.48,
-      "asOf": "2026-11-02",
-      "goldUsdOz": 3956.6,
+      "close": 19781,
+      "prevClose": 20457,
+      "chg": -3.3,
+      "asOf": "2026-10-30",
+      "goldUsdOz": 3898.9,
       "usdJpy": 157.8
     }
   },
