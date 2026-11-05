@@ -1,0 +1,3834 @@
+{
+ "dateLabel": "2026年11月5日（木）米国市場の終値",
+ "headerNote": "※カードの株価・指数・金利・原油・金は、すべて11月5日（木）の米国市場の終値の実測値です。<b>要点は3つです。1つめは、ナスダックが24,315.00（−5.52%）で調整局面に入ったことです。</b>S&P500は−4.36%、ダウは1,833.06ドル安（−3.44%）で、前日の選挙後の上げを丸ごと消しました。<b>2つめは、下げが半導体に集中したことです。</b>フィラデルフィア半導体指数は9,011.14（−12.25%）、AMDは−17.26%です。<b>3つめは、民主党が議会を制し、データセンター規制への警戒が強まったことです。</b>VIXは28.18（+69.66%）、10年金利は4.84%です（実測、CNBC、ロイター）。",
+ "headline": {
+  "kicker": "きょうの結論（11月5日・木の終値）",
+  "lead": "AI関連が総崩れ、ナスダックは5.52%安で調整局面入り",
+  "sub": "5日の米国株は大幅安です。ナスダックは24,315.00（−5.52%）で、10月6日の高値から1割超下げる「調整」に入りました。S&P500は−4.36%、ダウは1,833.06ドル安（−3.44%）で、前日の選挙後の上げを丸ごと消しました。民主党が議会を制し、データセンターの建設が止まるとの警戒が半導体に集中しています。",
+  "evidence": [
+   {
+    "title": "ナスダックが5.52%安 — 高値から1割超下げて調整入り",
+    "body": "実測の終値は24,315.00（−5.52%・1,421.51安）です。<b>S&P500は7,353.73（−4.36%）、ダウは51,523.06（1,833.06ドル安・−3.44%）で、前日の上げをすべて返しました。</b>S&P500の値下がりは419銘柄、値上がりは84銘柄にとどまりました。",
+    "so": "前日は選挙を好感した急騰でしたが、たった1日で全部戻した形です",
+    "tag": "ナスダック −5.52%",
+    "src": "実測・11/5／CNBC（英語）・11/5",
+    "url": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html"
+   },
+   {
+    "title": "半導体指数は12.25%安 — 2020年3月以来の下げ",
+    "body": "実測でフィラデルフィア半導体指数は9,011.14（−12.25%）です。<b>AMDは404.40ドル（−17.26%）、TSMCは−10.78%、ブロードコムは−10.43%、エヌビディアは181.60ドル（−9.26%）で引けました。</b>6月の最高値からは約38%下の水準です。",
+    "so": "指数ごと1割超下がるのは、個別の悪材料ではなく業種全体が売られたときの形です",
+    "tag": "SOX −12.25%",
+    "src": "実測・11/5／FXストリート（英語）・11/5",
+    "url": "https://www.fxstreet.com/news/did-the-ai-bubble-just-burst-semiconductor-index-sees-worst-sell-off-since-covid-202611051926"
+   },
+   {
+    "title": "データセンターが建たない、という警戒が引き金",
+    "body": "テキサス州知事選で、新しいデータセンターの即時停止を訴えた民主党のイノホサ氏が現職のアボット氏を破りました。<b>ウェルズ・ファーゴは、米国で計画中のデータセンター能力の27%がテキサス州にあると試算しています。</b>各地の住民投票も41件のうち40件で規制側が勝ちました。",
+    "so": "電気を大量に使う施設が建たなければ、半導体や電源設備の注文も減るという連想です",
+    "tag": "テキサスに27%",
+    "src": "CNBC（英語）・11/4",
+    "url": "https://www.cnbc.com/2026/11/04/ai-stocks-texas-governor-data-centers.html"
+   },
+   {
+    "title": "英中銀は4.00%へ利上げ — 2023年以来の引き上げ",
+    "body": "政策金利を3.75%から4.00%へ引き上げました。<b>投票は8対1で、マン委員は0.50%の引き上げを主張しています。</b>イランとの戦争によるエネルギー高で、英国の物価上昇率は来年4〜6月に4.9%まで上がる見通しだと説明しました。",
+    "so": "主要国の金利が「下げ」から「上げ」へ向かう流れが、もう一段はっきりしました",
+    "tag": "英 3.75→4.00%",
+    "src": "CNBC（英語）・11/5",
+    "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html"
+   }
+  ],
+  "summary": "5日の米国株は大幅安。ナスダックは24,315.00（−5.52%）で調整入り、S&P500は−4.36%、ダウは1,833.06ドル安です。半導体指数は−12.25%、VIXは28.18（+69.66%）。民主党の議会制圧でデータセンター規制への警戒が強まりました（実測、CNBC）。"
+ },
+ "kpis": [
+  {
+   "key": "SPY",
+   "name": "S&P500（市場全体の平均像）",
+   "valAttr": " id=\"v-SPY\"",
+   "valueHtml": "7,354",
+   "deltaClass": "d-down",
+   "deltaAttr": " id=\"d-SPY\"",
+   "delta": "▼ −4.36%（11/5終値・334.89安）",
+   "why": "前日の選挙後の上げを1日で全て消しました"
+  },
+  {
+   "key": "ORUKAN",
+   "name": "オルカン（全世界株の投資信託）",
+   "valAttr": " id=\"v-ORUKAN\"",
+   "valueHtml": "37,729<span style=\"font-size:13px\">円</span>",
+   "deltaClass": "d-up",
+   "deltaAttr": " id=\"d-ORUKAN\"",
+   "delta": "▲ +469円（+1.26%）",
+   "why": "5日公表値。5日の米国株安はまだ反映前です"
+  },
+  {
+   "key": "DIA",
+   "name": "NYダウ（代表的な30社）",
+   "valAttr": " id=\"v-DIA\"",
+   "valueHtml": "51,523",
+   "deltaClass": "d-down",
+   "deltaAttr": " id=\"d-DIA\"",
+   "delta": "▼ −3.44%（11/5終値・1,833.06安）",
+   "why": "全11業種が下落。ハイテク以外も売られました"
+  },
+  {
+   "key": "QQQ",
+   "name": "ナスダック100（ハイテク中心）",
+   "valAttr": " id=\"v-QQQ\"",
+   "valueHtml": "24,315",
+   "deltaClass": "d-down",
+   "deltaAttr": " id=\"d-QQQ\"",
+   "delta": "▼ −5.52%（11/5終値・1,421.51安）",
+   "why": "10月6日の高値から1割超下げ、調整局面入り"
+  },
+  {
+   "key": "JPY",
+   "name": "ドル円（1ドル＝何円か）",
+   "valAttr": " id=\"v-JPY\"",
+   "valueHtml": "157.66",
+   "deltaClass": "d-down",
+   "deltaAttr": " id=\"d-JPY\"",
+   "delta": "▼ −0.51%（11/5終値・前日158.47円）",
+   "why": "株安で円が買われ、158円台から戻りました"
+  },
+  {
+   "key": "US10Y",
+   "name": "米10年金利（長期金利）",
+   "valAttr": " id=\"v-US10Y\"",
+   "valueHtml": "4.84",
+   "deltaClass": "d-down",
+   "deltaAttr": " id=\"d-US10Y\"",
+   "delta": "▼ −0.05pt（11/5・前日4.89%）",
+   "why": "株から国債へ資金が逃げ、約2カ月ぶりの低さ"
+  },
+  {
+   "key": "WTI",
+   "name": "WTI原油（1バレル＝何ドル）",
+   "valAttr": " id=\"v-WTI\"",
+   "valueHtml": "91.16",
+   "deltaClass": "d-up",
+   "deltaAttr": " id=\"d-WTI\"",
+   "delta": "▲ +3.45%（12月限・前日88.12ドル）",
+   "why": "12月限どうしの比較。イラン情勢の警戒で反発"
+  },
+  {
+   "key": "GOLD",
+   "name": "金 1g（円換算）",
+   "valAttr": " id=\"v-GOLD\"",
+   "valueHtml": "20,776<span style=\"font-size:13px\">円</span>",
+   "deltaClass": "d-up",
+   "deltaAttr": " id=\"d-GOLD\"",
+   "delta": "▲ +0.12%（円換算・25円高）",
+   "why": "国際価格4,099ドルの円換算。店頭小売価格とは差があります"
+  }
+ ],
+ "reasons": [
+  {
+   "title": "データセンターが建たない、という警戒",
+   "body": "テキサス州知事選で、データセンターの即時建設停止を訴えた民主党のイノホサ氏が現職を破りました。<b>ウェルズ・ファーゴは、計画中の米国のデータセンター能力の27%がテキサス州にあると試算しています。</b>ジェフリーズは、停止なら州内の約13.3ギガワットの計画が危うくなると見ています。",
+   "tsumari": "つまり：AIの設備投資そのものが細るのでは、と疑われはじめた、ということです",
+   "dir": "down",
+   "mark": "◆",
+   "tags": [
+    "テキサス州知事選はデータセンターの即時停止を訴えたイノホサ氏が勝利 — 計画能力の27%が同州（CNBC・11/4）",
+    "ジェフリーズは、停止なら州内の約13.3ギガワットの計画が危うくなると試算（CNBC・11/4）",
+    "データセンター関連の住民投票は10州・41件のうち40件で規制側が勝利（Qz・11/5）",
+    "サンダース議員は全米でのデータセンター建設の一時停止を提案（24/7ウォール街・11/5）"
+   ]
+  },
+  {
+   "title": "半導体とメモリーが総崩れ",
+   "body": "実測でフィラデルフィア半導体指数は9,011.14（−12.25%）、AMDは404.40ドル（−17.26%）です。<b>メモリー関連はサンディスクが−22.26%、マイクロンが−17.46%と一段大きく下げました。</b>建設が遅れればサーバーや記憶装置の納入時期もずれる、という連想が理由とされます。",
+   "tsumari": "つまり：需要が実際に減る前に、株価だけが先に下げた形です",
+   "dir": "down",
+   "mark": "◆",
+   "tags": [
+    "実測：半導体指数は9,011.14（−12.25%）、AMD404.40ドル（−17.26%）、サンディスク−22.26%（実測・11/5）",
+    "AMDの7〜9月期は売上134億ドル・前年比45%増だったが、株価は17%安（JKN・11/5）",
+    "サンディスクはNAND型フラッシュの比重が大きく、下げが業種平均より大きい（ベンジンガ・11/5）",
+    "半導体指数の下げは新型コロナ以来の大きさ。6月の最高値から約38%下（FXストリート・11/5）"
+   ]
+  },
+  {
+   "title": "株から債券・金・円へ「逃げ場」探し",
+   "body": "実測でVIXは28.18（+69.66%）へ急上昇し、10年金利は4.84%（前日4.89%）まで下がりました。<b>ドル円は157.66円（−0.51%）と円高に振れ、金は4,098.70ドル（+0.63%）です。</b>全11業種が下落し、下げが小さかったのは公益（−0.71%）と生活必需品（−0.75%）でした。",
+   "tsumari": "つまり：売られたお金が消えたのではなく、安全とされる先に移った、ということです",
+   "dir": "mix",
+   "mark": "◆",
+   "tags": [
+    "実測：VIXは28.18（+69.66%）、10年金利4.84%、ドル円157.66円、金4,098.70ドル（実測・11/5）",
+    "実測：公益−0.71%、生活必需品−0.75%、医療−2.50%、エネルギー−2.98%、ハイテク−8.00%（実測・11/5）",
+    "12月の米利上げ確率はCMEの織り込みで70.1%へ低下（前日82.7%）（FXストリート・11/5）",
+    "新規失業保険申請は18.9万件で予想19.6万件を下回り、7月以来の低さ（インベスティングライブ・11/5）"
+   ]
+  }
+ ],
+ "scenarios": [
+  {
+   "title": "規制が思ったほど進まない場合",
+   "body": "イノホサ氏の就任は来年で、州上院は共和党が多数のままです。<b>全州一律の建設停止は法的にも難しいとの指摘があります。</b>調査会社カウンターポイントは、メモリーの品薄と高価格は続き、新しい生産能力は2028年まで出てこないと見ています。",
+   "flow": "→ だから：規制が小幅にとどまると分かれば、下げた分を買い戻す動きが出る可能性があります",
+   "type": "bull",
+   "label": "強気シナリオ ↑"
+  },
+  {
+   "title": "関心が6日の雇用統計に移る場合",
+   "body": "6日（金）午前8時30分（米東部）に10月の米雇用統計が出ます。<b>市場予想は5.9万〜6.5万人増、失業率は4.2%の横ばいです。</b>5日の新規失業保険申請は18.9万件で予想を下回りました。12月の利上げ確率は70.1%へ下がっています。",
+   "flow": "→ だから：数字の強弱で金利とドルの向きが変わり、業種ごとの明暗も入れ替わる可能性があります",
+   "type": "base",
+   "label": "中立シナリオ →"
+  },
+  {
+   "title": "AI関連の売りがさらに広がる場合",
+   "body": "ナスダックはすでに調整局面に入り、半導体指数は6月の最高値から約38%下にあります（実測・報道）。<b>データセンターを貸す側もアイレン−16.95%、ネビウス−14.94%と大きく下げました。</b>エヌビディアの決算発表は11月17日が予定されています。",
+   "flow": "→ だから：好決算でも株価が下がる、という日がしばらく続く可能性があります",
+   "type": "bear",
+   "label": "弱気シナリオ ↓"
+  }
+ ],
+ "news": [
+  {
+   "cat": "🌍 世界の大きな動き",
+   "catNote": "5日の米国株は大幅安。ナスダックは24,315.00（−5.52%）で調整局面に入り、ダウは1,833.06ドル安です。VIXは28.18（+69.66%）、英中銀は4.00%へ利上げしました（実測、CNBC）",
+   "items": [
+    {
+     "title": "実測：ナスダックは24,315.00（−5.52%）、S&P500は7,353.73（−4.36%）、ダウは51,523.06（−3.44%）",
+     "url": "https://finance.yahoo.com/quote/%5EIXIC",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "ダウの下げ幅は1,833.06ドルです。前日の選挙後の急騰をそのまま打ち消しました。"
+    },
+    {
+     "title": "ナスダックが調整局面入り — 10月6日の高値から1割超の下げ",
+     "url": "https://axios.com/2026/11/05/nasdaq-plummets-correction",
+     "src": "アクシオス（英語）・11/5",
+     "dir": "down",
+     "body": "「調整」は直近の高値から10%以上下がった状態を指します。下げの中心はAI関連と半導体です。"
+    },
+    {
+     "title": "ダウは中間選挙後の2日目としては1896年以来で最悪の下げ",
+     "url": "https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html",
+     "src": "ヤフーファイナンス（英語）・11/5",
+     "dir": "down",
+     "body": "ダウの算出開始以来という比較です。前日は44年ぶりに大きい選挙後の上げだったと伝えられます。"
+    },
+    {
+     "title": "S&P500の値下がりは419銘柄、値上がりは84銘柄 — 全11業種が下落",
+     "url": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+     "src": "CNBC（英語）・11/5",
+     "dir": "down",
+     "body": "下げが小さかったのは公益と生活必需品です。実測で公益は−0.71%、生活必需品は−0.75%です。"
+    },
+    {
+     "title": "英中銀が政策金利を3.75%→4.00%へ引き上げ — 2023年以来",
+     "url": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
+     "src": "CNBC（英語）・11/5",
+     "dir": "mix",
+     "body": "投票は8対1。物価上昇率は来年4〜6月に4.9%まで上がる見通しで、2029年に2%を下回るとしています。"
+    },
+    {
+     "title": "英中銀はさらなる引き上げも示唆 — 12月の利上げ確率は約5割",
+     "url": "https://moneyweek.com/economy/news/live/uk-interest-rates-november-bank-of-england",
+     "src": "マネーウィーク（英語）・11/5",
+     "dir": "mix",
+     "body": "ベイリー総裁は、戦争でエネルギー価格が上がり続けるなら追加の引き締めもあり得ると述べました。"
+    },
+    {
+     "title": "実測：VIXは28.18（+69.66%）へ急上昇、10年金利は4.84%",
+     "url": "https://finance.yahoo.com/quote/%5EVIX",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "VIXは市場の不安の目安です。前日の16.61から大きく上がりました。2年金利は約4.56%です。"
+    },
+    {
+     "title": "新規失業保険申請は18.9万件 — 予想19.6万件を下回り7月以来の低さ",
+     "url": "https://investinglive.com/news/us-initial-jobless-claims-189k-vs-196k-estimate/",
+     "src": "インベスティングライブ（英語）・11/5",
+     "dir": "up",
+     "body": "継続受給は約172万件へ増えました。雇用は底堅く、利下げを急ぐ理由は乏しいと受け止められました。"
+    },
+    {
+     "title": "12月の米利上げ確率は70.1%へ低下 — 前日は82.7%",
+     "url": "https://www.fxstreet.com/news/gold-rallies-above-4-100-as-nasdaq-100-crashes-december-hike-bets-fade-202611052023",
+     "src": "FXストリート（英語）・11/5",
+     "dir": "mix",
+     "body": "CMEの織り込みです。政策金利は現在3.75〜4.00%。株安が引き締めの圧力を和らげた形です。"
+    },
+    {
+     "title": "原油は反発 — WTI12月限は実測91.16ドル（+3.45%）",
+     "url": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
+     "src": "ロイター（英語）・11/5／実測・11/5",
+     "dir": "up",
+     "body": "前日は和平観測で8%超下げました。イランが仲介案を検討中と報じられ、上げ幅を一部縮めています。"
+    },
+    {
+     "title": "金は4,100ドル台へ上昇 — 株安を受けた資金の逃避先に",
+     "url": "https://www.fxstreet.com/news/gold-rallies-above-4-100-as-nasdaq-100-crashes-december-hike-bets-fade-202611052023",
+     "src": "FXストリート（英語）・11/5",
+     "dir": "up",
+     "body": "実測のNY金先物は4,098.70ドル（+0.63%）です。円換算の金1gは20,776円（+0.12%）です。"
+    },
+    {
+     "title": "実測：5日18時のコスピ終値は5,383.80（−5.28%）、台湾加権は41,574.72（−3.20%）",
+     "url": "https://finance.yahoo.com/quote/%5EKS11/",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "正午の−3.49%から下げを広げました。半導体の比重が大きい2市場に売りが集中しています。"
+    },
+    {
+     "title": "欧州株が最高値圏 — 「AI取引の巻き戻し」が地域を押し上げると報道",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-05/european-stocks-hit-fresh-record-as-ai-unwind-boosts-region",
+     "src": "ブルームバーグ（英語）・11/5",
+     "dir": "up",
+     "body": "実測でストックス600は661.62（+0.64%）、DAX+0.74%、英FT100+0.84%です。鉱業と生活必需品が主導しました。"
+    },
+    {
+     "title": "実測：5日18時10分のナスダック100先物は28,343（−0.78%）、ダウ先物は53,761（+0.48%）",
+     "url": "https://finance.yahoo.com/quote/ES=F/",
+     "src": "実測・11/5",
+     "dir": "mix",
+     "body": "S&P500先物は7,714（−0.08%）です。下げているのは半導体を中心にしたハイテクだけという形が続いています。"
+    },
+    {
+     "title": "英中銀が日本時間21時に政策金利を決定 — 3.75%→4.00%の利上げ観測",
+     "url": "https://www.bloomberg.com/news/newsletters/2026-11-05/boe-decision-day-with-a-hike-baked-in-traders-look-to-december",
+     "src": "ブルームバーグ（英語）・11/5",
+     "dir": "mix",
+     "body": "2023年以来の引き上げになる見込みです。市場は完全に織り込んでおり、焦点は今後の指針だと伝えられます。"
+    },
+    {
+     "title": "実測：5日18時のWTI12月限は88.22ドル（+0.11%）、金は4,139.50ドル（+1.63%）",
+     "url": "https://finance.yahoo.com/quote/CL=F/",
+     "src": "実測・11/5",
+     "dir": "mix",
+     "body": "原油は4日の8%超安のあと横ばいです。銀は52.88ドル（+1.46%）、ドル円は158.23円でほぼ変わらずです。"
+    },
+    {
+     "title": "FRBのクック理事の聴聞、12月14日へ延期 — 解任の是非を調べる委員会",
+     "url": "https://www.cnbc.com/2026/11/04/trump-federal-reserve-lisa-cook-hearing.html",
+     "src": "CNBC（英語）・11/4",
+     "dir": "mix",
+     "body": "欧州での政策会合に出席するため12月以降になると弁護士が説明しました。本人は不正を否定しています。"
+    },
+    {
+     "title": "実測：5日12時のナスダック100先物は28,375.75（−0.67%）、ダウ先物は53,663（+0.30%）",
+     "url": "https://finance.yahoo.com/quote/ES=F/",
+     "src": "実測・11/5",
+     "dir": "mix",
+     "body": "S&P500先物は7,713.25（−0.09%）です。半導体の決算を受け、下げているのはハイテクだけです。"
+    },
+    {
+     "title": "「ブルー・ウェーブ」でアジアの半導体が売られ、自動車株が買われる",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-05/blue-wave-stock-rotation-sinks-asian-chipmakers-boosts-autos",
+     "src": "ブルームバーグ（英語）・11/5",
+     "dir": "mix",
+     "body": "MSCIアジア太平洋指数は−0.2%です。データセンター規制の懸念で、半導体から自動車・内需へ資金が移ったとしています。"
+    },
+    {
+     "title": "アジア株はおおむね上昇、コスピだけが半導体売りで下落",
+     "url": "https://www.wsls.com/business/2026/11/05/asian-shares-mostly-advance-following-us-midterms-though-kospi-falls-on-selling-of-chipmakers/",
+     "src": "AP通信（英語）・11/5",
+     "dir": "mix",
+     "body": "午前のコスピは5,484.38（−3.5%）、サムスンは−5.7%、SKハイニックスは−7.4%と伝えられます。"
+    },
+    {
+     "title": "実測：5日12時のWTI12月限は87.19ドル（前日比−0.97%）、金先物は4,137.40ドル（+1.60%）",
+     "url": "https://finance.yahoo.com/quote/CL=F/",
+     "src": "実測・11/5",
+     "dir": "mix",
+     "body": "ドル円は157.90円で、4日終値の158.36円からやや円高です。原油安と金高が同時に進んでいます。"
+    },
+    {
+     "title": "イランが米国の回答を「不十分」として交渉は停滞 — カタールが仲介を続ける",
+     "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
+     "src": "CBSニュース（英語）・11/4",
+     "dir": "mix",
+     "body": "ホルムズ海峡の全面再開が論点です。暫定合意はまだ可能だとカタール側は期待を示しています。"
+    },
+    {
+     "title": "ダウが1,569ドル高 — 民主党の明確な勝利と原油安で2025年4月以来の最大の上げ",
+     "url": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
+     "src": "CNBC（英語）・11/4",
+     "dir": "up",
+     "body": "実測ではダウ53,356.12（+3.03%）、S&P500は7,688.62（+1.58%）、ナスダック総合は25,736.51（+1.44%）です。"
+    },
+    {
+     "title": "上下院とも民主党が制する — 上院は51議席に到達",
+     "url": "https://www.nbcnews.com/politics/2026-election/live-blog/midterm-election-results-2026-news-trump-live-updates-rcna605763",
+     "src": "NBCニュース（英語）・11/4",
+     "dir": "mix",
+     "body": "共和党の53対47の優勢が崩れました。下院はジェフリーズ氏が議長になる見込みです。アラスカとミシシッピは未確定です。"
+    },
+    {
+     "title": "原油が9%急落 — トランプ氏とバンス氏が中間選挙の敗因をイラン戦争と認める",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html",
+     "src": "オイルプライス（英語）・11/4",
+     "dir": "down",
+     "body": "和平の可能性が織り込まれました。「中東からの輸出増と、直ちに攻撃する予定はないとの発言が圧力になっている」とされます。"
+    },
+    {
+     "title": "ブレントが100ドル割れ — イラン合意への期待がEIAの在庫減を上回る",
+     "url": "https://invezz.com/in/news/2026/11/04/brent-crude-price-falls-below-dollar100-as-iran-deal-hopes-outweigh-eia-draw/",
+     "src": "インベッズ（英語）・11/4",
+     "dir": "down",
+     "body": "実測ではブレント1月限94.63ドル（−8.66%）で、9月4日以来の安値です。ホルムズ海峡の問題は未解決のままです。"
+    },
+    {
+     "title": "米ISM非製造業景気指数（10月）は54.5 — 予想54.8を下回る",
+     "url": "https://www.prnewswire.com/news-releases/services-pmi-at-54-5-october-2026-ism-services-pmi-report-302928112.html",
+     "src": "ISM／PRニュースワイヤー（英語）・11/4",
+     "dir": "down",
+     "body": "前月54.9から低下し7月以来の低さです。新規受注は59.8→55.9、仕入価格は74.0→73.0、雇用は50.1→51.4です。"
+    },
+    {
+     "title": "「ブルー・ツナミ」で政治の不透明感が消えたとの見方",
+     "url": "https://www.nbcnews.com/business/markets/stock-futures-blue-tsunami-ai-boom-rcna607351",
+     "src": "NBCニュース（英語）・11/4",
+     "dir": "up",
+     "body": "実測ではVIXが16.61（−20.26%）へ急低下しました。選挙結果が早く確定したことが警戒感の後退につながりました。"
+    },
+    {
+     "title": "選挙結果を歓迎する一方、新たなリスクを抱える業種も",
+     "url": "https://www.consumeraffairs.com/news/wall-street-cheers-election-results-but-some-industries-face-new-risks-110426.html",
+     "src": "コンシューマー・アフェアーズ（英語）・11/4",
+     "dir": "mix",
+     "body": "医療保険や再生可能エネルギーには追い風、防衛・データセンター・石油には逆風という形で業種差が出ました。"
+    },
+    {
+     "title": "トランプ大統領が民主党に祝意 — 敗因の一部はイラン戦争と認める",
+     "url": "https://www.france24.com/en/americas/20261104-trump-congratulates-democrats-on-midterms-win-says-iran-war-played-role",
+     "src": "フランス24（英語）・11/4",
+     "dir": "mix",
+     "body": "フォックスニュースに「民主党におめでとう、よくやった」と述べ、結果を受け入れるとしました。2020年の敗北時とは異なる対応です。"
+    }
+   ]
+  },
+  {
+   "cat": "🤖 AI・半導体",
+   "catNote": "半導体指数は9,011.14（−12.25%）で新型コロナ以来の下げ。AMD−17.26%、サンディスク−22.26%と、建設停止の警戒がメモリーや電源設備にも広がりました（実測、FXストリート）",
+   "items": [
+    {
+     "title": "実測：フィラデルフィア半導体指数は9,011.14（−12.25%）",
+     "url": "https://finance.yahoo.com/quote/%5ESOX",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "1日で1,257.51ポイント下げました。報道では新型コロナ以来の大きさで、6月の最高値から約38%下です。"
+    },
+    {
+     "title": "AI関連の売りが2日目に突入 — 「データセンターに関係するものは何でも売り」",
+     "url": "https://www.fool.com/investing/2026/11/05/the-ai-selloff-is-getting-worse-nvidia-dell-and-data-center-stocks-are-plunging-hard-is-it-time-to-buy-the-dip/",
+     "src": "モトリーフール（英語）・11/5",
+     "dir": "down",
+     "body": "半導体・サーバー・電源・冷却と、建設に関わる業種が一斉に下げました。選挙結果が引き金です。"
+    },
+    {
+     "title": "実測：AMD404.40ドル（−17.26%）、TSMC353.10ドル（−10.78%）、ブロードコム291.53ドル（−10.43%）",
+     "url": "https://finance.yahoo.com/quote/AMD",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "インテルは52.25ドル（−10.33%）、エヌビディアは181.60ドル（−9.26%）です。"
+    },
+    {
+     "title": "AMDは売上45%増の好決算でも17%安 — 規制リスクの再評価",
+     "url": "https://news.jkn.co.kr/editions/english/post/1073355",
+     "src": "JKN（英語）・11/5",
+     "dir": "down",
+     "body": "7〜9月期の売上は134億ドルでした。スーCEOはAI半導体の需要が鈍る兆しはないと述べています。"
+    },
+    {
+     "title": "エヌビディアは9%安 — 「まったくの殺戮」と市場関係者",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-sinks-9-midterm-data-180809681.html",
+     "src": "ヤフーファイナンス（英語）・11/5",
+     "dir": "down",
+     "body": "同社の見通しには中国向けデータセンター売上が入っていないため、米国内の建設遅れが新しい心配事です。"
+    },
+    {
+     "title": "メモリー株が崩れる — サンディスク実測−22.26%、マイクロン−17.46%",
+     "url": "https://www.fxstreet.com/news/the-memory-trade-collapses-as-sandisk-sheds-17-micron-sinks-to-may-levels-202611051550",
+     "src": "FXストリート（英語）・11/5／実測・11/5",
+     "dir": "down",
+     "body": "建設が止まればサーバーや記憶装置の納入が遅れるという連想です。SKハイニックスも大きく下げました。"
+    },
+    {
+     "title": "サンディスクの下げが業種平均より大きい理由 — NAND比重の高さ",
+     "url": "https://www.benzinga.com/markets/tech/26/11/62943088/sandisk-leads-memory-stocks-lower-a-look-inside-the-rout",
+     "src": "ベンジンガ（英語）・11/5",
+     "dir": "down",
+     "body": "スマホ・パソコン・クラウド向けのNAND型フラッシュに偏っているためです。シーゲートなども下げました。"
+    },
+    {
+     "title": "サンダース議員が全米でのデータセンター建設の一時停止を提案",
+     "url": "https://247wallst.com/investing/2026/11/05/sandisk-slides-7-micron-and-western-digital-fall-5-as-lawmakers-call-for-ai-pause-extends-memory-rout/",
+     "src": "24/7ウォール街（英語）・11/5",
+     "dir": "down",
+     "body": "民主党と行動する無所属議員の提案で、法律になったものではありません。メモリー株の下げを広げました。"
+    },
+    {
+     "title": "データセンターを貸す側も急落 — 実測でアイレン−16.95%、ネビウス−14.94%",
+     "url": "https://finance.yahoo.com/quote/IREN",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "アプライド・デジタルは−14.69%、コアウィーブは−9.83%です。建設の遅れが直接の収入減につながります。"
+    },
+    {
+     "title": "半導体メーカーの時価総額は1.5兆ドル超が消えたと報道",
+     "url": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650",
+     "src": "NBCニュース（英語）・11/5",
+     "dir": "down",
+     "body": "業種をまとめた概算です。AI関連の株が2日続けて売られ、選挙前の水準を下回りました。"
+    },
+    {
+     "title": "「AIバブルは弾けたのか」— 半導体指数はコロナ以来の売られ方",
+     "url": "https://www.fxstreet.com/news/did-the-ai-bubble-just-burst-semiconductor-index-sees-worst-sell-off-since-covid-202611051926",
+     "src": "FXストリート（英語）・11/5",
+     "dir": "down",
+     "body": "一方で業績そのものは悪くなく、政策と心理の問題だと指摘する声も多いと伝えられます。"
+    },
+    {
+     "title": "ハイパースケーラーの設備投資計画は維持と指摘する見方も",
+     "url": "https://www.fool.com/investing/2026/11/05/the-ai-selloff-is-getting-worse-nvidia-dell-and-data-center-stocks-are-plunging-hard-is-it-time-to-buy-the-dip/",
+     "src": "モトリーフール（英語）・11/5",
+     "dir": "mix",
+     "body": "多くの案件は承認・資金調達済みか建設中で、すぐには止まらないという見立てです。"
+    },
+    {
+     "title": "コスピが5.28%安 — SKハイニックス−9.46%、サムスン電子−7.57%",
+     "url": "https://www.koreatimes.co.kr/economy/20261105/kospi-tumbles-as-democrat-sweep-fuels-ai-infrastructure-concerns",
+     "src": "コリアタイムズ（英語）・11/5",
+     "dir": "down",
+     "body": "民主党の議会制圧でデータセンター規制が強まり、半導体需要が落ちるとの見方が売りを呼びました。"
+    },
+    {
+     "title": "韓国取引所がサイドカーを発動 — コスピ200先物が5%超下落",
+     "url": "https://news.jkn.co.kr/editions/english/post/1071857",
+     "src": "JKN（英語）・11/5",
+     "dir": "down",
+     "body": "プログラムの売り注文を5分間停止する措置です。サムスンとSKハイニックスで時価総額の約半分を占めます。"
+    },
+    {
+     "title": "実測：寄り前はクアルコム156.20ドル（−9.81%）、アーム184.30ドル（−3.91%）",
+     "url": "https://finance.yahoo.com/quote/QCOM/",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "日本時間5日18時10分の値です。正午時点の−7.40%から下げ幅を広げました。"
+    },
+    {
+     "title": "実測：寄り前の半導体はAMD−3.75%、インテル−3.04%、ブロードコム−2.19%、TSMC−1.87%",
+     "url": "https://finance.yahoo.com/quote/AMD/",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "エヌビディアは197.91ドル（−1.11%）です。装置・メモリーに比べれば下げは小さく収まっています。"
+    },
+    {
+     "title": "日経平均はAI株安で下落、TOPIXは上昇 — 225銘柄のうち168が値上がり",
+     "url": "https://investinglive.com/stock-market-update/168-of-225-nikkei-stocks-rise-but-ai-losses-drag-the-index-lower-as-the-topix-rallies/",
+     "src": "インベスティングライブ（英語）・11/5",
+     "dir": "mix",
+     "body": "アドバンテストと東京エレクトロンが大きく下げ、指数を押し下げました。それ以外の業種は買われています。"
+    },
+    {
+     "title": "アームの royalty 収入は6.70億ドル — 予想の7.208億ドルに届かず",
+     "url": "https://www.investing.com/news/stock-market-news/why-is-arm-stock-sliding-today-93CH-5001498",
+     "src": "インベスティングドットコム（英語）・11/5",
+     "dir": "down",
+     "body": "スマホの出荷の弱さが背景です。次期見通しも予想とほぼ同水準で、上振れ期待に応えられませんでした。"
+    },
+    {
+     "title": "クアルコムが時間外で下落 — 10〜12月期の利益見通しが中心値で予想に届かず",
+     "url": "https://www.gurufocus.com/news/9171893/qualcomm-qcom-stock-drops-after-tepid-earnings-forecast",
+     "src": "グルフォーカス（英語）・11/4",
+     "dir": "down",
+     "body": "調整後1株2.17ドル・売上約104億ドルは予想超えでした。ただ設備投資は約25億ドルで、予想の約19億ドルを上回ります。"
+    },
+    {
+     "title": "クアルコムのスマホ向け半導体は26%減 — メモリー不足が端末の原価を押し上げ",
+     "url": "https://fool.com/investing/2026/11/04/qualcomm-s-phone-chip-sales-drop-26-rapid-earnings-reaction",
+     "src": "モトリーフール（英語）・11/4",
+     "dir": "down",
+     "body": "売上全体は8%減です。会社は世界的なメモリー不足が端末価格を上げ、スマホの販売を抑えていると説明しました。"
+    },
+    {
+     "title": "アームは予想超えでも時間外で下落 — 次期見通しが予想とほぼ同水準",
+     "url": "https://seekingalpha.com/news/4664949-arm-holdings-slips-even-as-q2-results-guidance-top-estimates",
+     "src": "シーキングアルファ（英語）・11/4",
+     "dir": "down",
+     "body": "7〜9月期は1株52セント・売上14.4億ドル。10〜12月期は56セント・15.4億ドルの見通しで、予想は55セント・15.3億ドルでした。"
+    },
+    {
+     "title": "アームの年間契約額（ACV）が予想をわずかに下回る",
+     "url": "https://investinglive.com/stocks/arm-shares-fall-5-after-hours-despite-q2-beat-as-outlook-only-edges-past-forecasts/",
+     "src": "インベスティングライブ（英語）・11/4",
+     "dir": "down",
+     "body": "ACVは長期の使用料の積み上がりを示す指標です。伸びの鈍化が、見通しの弱さとあわせて売りを呼びました。"
+    },
+    {
+     "title": "グローバルファウンドリーズも決算後に伸びず — 4日の終値は実測−5.95%",
+     "url": "https://siliconangle.com/2026/11/04/qualcomms-stock-falls-on-revenue-miss-and-weak-guidance-arm-and-globalfoundries-do-little-better/",
+     "src": "シリコンアングル（英語）・11/4",
+     "dir": "down",
+     "body": "クアルコム・アーム・グローバルファウンドリーズの3社がそろって市場の期待に届かなかったと伝えています。"
+    },
+    {
+     "title": "実測：時間外のクアルコムは160.37ドル（−7.40%）、アームは188.47ドル（−1.74%）",
+     "url": "https://finance.yahoo.com/quote/QCOM/",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "グローバルファウンドリーズは40.01ドルです。エヌビディアは199.77ドル（−0.18%）と小幅安にとどまりました。"
+    },
+    {
+     "title": "アドバンテスト−11.69%、レーザーテック−11.76%、東京エレクトロン−9.89%",
+     "url": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+     "src": "CNBC（英語）・11/5",
+     "dir": "down",
+     "body": "民主党の議会制圧でAI向けデータセンターの規制が強まるとの警戒です。SKハイニックスは約9%安と伝えられます。"
+    },
+    {
+     "title": "キオクシアは8%安、SKハイニックスとソフトバンクグループは6%安と伝えられる",
+     "url": "https://www.tradingkey.com/analysis/stocks/more/262278885-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-googl-amzn-tradingkey",
+     "src": "トレーディングキー（英語）・11/5",
+     "dir": "down",
+     "body": "日経平均は上昇した一方、AI・半導体関連だけが売られる形です。TOPIXは上昇しました。"
+    },
+    {
+     "title": "実測：韓国コスピは5,485.58（−3.49%）、台湾加権は42,392.37（−1.30%）",
+     "url": "https://finance.yahoo.com/quote/%5EKS11/",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "日本時間5日12時前後の値です。日経平均の前引けは61,913.51円（−0.44%）でした。"
+    },
+    {
+     "title": "データセンター関連が急落、再生可能エネルギーは急伸 — 民主党の圧勝を受けて",
+     "url": "https://finance.yahoo.com/energy/articles/ai-data-center-stocks-dip-113427491.html",
+     "src": "ロイター／ヤフーファイナンス（英語）・11/4",
+     "dir": "mix",
+     "body": "実測ではバーティブ−12.89%、クアンタ−11.65%、イートン−9.86%、GEベルノバ−9.30%。ネクステラは+4.89%です。"
+    },
+    {
+     "title": "大型ハイテクが急騰 — 「民主党がAI投資を抑える」との読み",
+     "url": "https://uk.finance.yahoo.com/news/big-tech-stocks-soar-traders-170754816.html",
+     "src": "ロイター／ヤフーファイナンス（英語）・11/4",
+     "dir": "up",
+     "body": "重いAI投資が自由資金を圧迫してきたため、投資が減ることを好感する動きです。マイクロソフトは+6.68%でした。"
+    },
+    {
+     "title": "バーンスタイン試算：米データセンター計画の56%・244ギガワットに政治リスク",
+     "url": "https://www.fool.com/investing/2026/11/04/data-center-stocks-just-plunged-after-the-midterms-is-it-time-to-buy-the-dip/",
+     "src": "モトリーフール（英語）・11/4",
+     "dir": "down",
+     "body": "テキサス州は計画容量の約27%を占めますが、新規の即時停止を掲げる知事が当選しました。"
+    }
+   ]
+  },
+  {
+   "cat": "📈 決算と個別銘柄",
+   "catNote": "アプラビンが+31.04%、タペストリーが+7.07%と好決算組は上昇。半面、テスラは−10.77%で、規制への警戒が重荷になりました（実測、ロイター）",
+   "items": [
+    {
+     "title": "アプラビンが実測+31.04%で356.10ドル — 過去最高の四半期",
+     "url": "https://seekingalpha.com/news/4667356-applovin-jumps-31-percent-on-record-q3-results-raised-outlook",
+     "src": "シーキングアルファ（英語）・11/5／実測・11/5",
+     "dir": "up",
+     "body": "7〜9月期の売上は55%増の21.8億ドル（予想20.7億ドル）、1株利益4.30ドル（予想4.03ドル）です。"
+    },
+    {
+     "title": "アプラビンの10〜12月期見通しは23.7〜24.0億ドル — 予想22.5億ドルを大きく上回る",
+     "url": "https://www.gurufocus.com/news/9175430/applovin-stocks-jump-31-as-cash-generation-backs-a-larger-buyback",
+     "src": "グルフォーカス（英語）・11/5",
+     "dir": "up",
+     "body": "フリーキャッシュフローは約14億ドル（売上の約64%）で、自社株買いの枠も増やしました。"
+    },
+    {
+     "title": "マグナイトが実測+20.75% — アプラビンの好決算が広告関連に波及",
+     "url": "https://247wallst.com/investing/2026/11/05/applovin-soars-30-on-record-quarter-and-strong-outlook-magnite-surges-17-trade-desk-falls-2/",
+     "src": "24/7ウォール街（英語）・11/5／実測・11/5",
+     "dir": "up",
+     "body": "ネット広告の売り手側の配信基盤を手がける会社です。トレードデスクは下げたと伝えられます。"
+    },
+    {
+     "title": "タペストリーが実測+7.07% — コーチ好調で通期見通しを増額",
+     "url": "https://www.investing.com/news/stock-market-news/tapestry-lifts-outlook-as-young-shoppers-snap-up-coach-bags-shares-jump-5003845",
+     "src": "ロイター（英語）・11/5／実測・11/5",
+     "dir": "up",
+     "body": "コーチの売上は16%増の16.6億ドル、中国本土は43%増です。ケイト・スペードは10%減でした。"
+    },
+    {
+     "title": "タペストリーの通期1株利益見通しは8.25〜8.35ドルへ引き上げ",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tapestry-shares-rise-over-8-150550190.html",
+     "src": "ヤフーファイナンス（英語）・11/5",
+     "dir": "up",
+     "body": "従来は7.80〜7.90ドルでした。自社株買いも3.5億ドル増やし、年17億ドルの計画としています。"
+    },
+    {
+     "title": "テスラが実測−10.77%で343.69ドル — 規制と合併の不透明感",
+     "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-tumbling-today-93CH-4997818",
+     "src": "インベスティングドットコム（英語）・11/5",
+     "dir": "down",
+     "body": "民主党が議会を制したことで、マスク氏の事業に規制面の重荷が増えるとの警戒が出ました。"
+    },
+    {
+     "title": "テスラとスペースXの合併構想にも不透明感 — テキサス州知事選の結果も重荷",
+     "url": "https://www.gurufocus.com/news/9175302/tesla-tsla-shares-drop-amid-political-concerns-valuation-remains-fairly-priced",
+     "src": "グルフォーカス（英語）・11/5",
+     "dir": "down",
+     "body": "同社の主要拠点はテキサス州にあります。上海工場の出荷の弱さも売りの理由に挙げられました。"
+    },
+    {
+     "title": "クアルコムは実測−9.49%で156.75ドル — 前日引け後の弱い見通しを引きずる",
+     "url": "https://finance.yahoo.com/quote/QCOM",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "10〜12月期の1株利益見通しの中心値が予想に届かず、スマホ向けは26%減でした。"
+    },
+    {
+     "title": "実測：寄り前の大型株はメタ+0.97%、アマゾン+0.89%、アルファベット+0.54%",
+     "url": "https://finance.yahoo.com/quote/META/",
+     "src": "実測・11/5",
+     "dir": "up",
+     "body": "日本時間5日18時10分の値です。マイクロソフトはほぼ変わらず、アップルは+0.31%です。"
+    },
+    {
+     "title": "クアルコムとアームが下落 — スマホの不振が重荷と報道",
+     "url": "https://en.sedaily.com/international/2026/11/05/qualcomm-arm-shares-slide-as-smartphone-slump-bites",
+     "src": "ソウル経済日報（英語）・11/5",
+     "dir": "down",
+     "body": "クアルコムの時間外は−6.46%と伝えられます。メモリー価格の高騰が端末の原価を押し上げています。"
+    },
+    {
+     "title": "実測：寄り前のテスラは376.67ドル（−2.21%）",
+     "url": "https://finance.yahoo.com/quote/TSLA/",
+     "src": "実測・11/5",
+     "dir": "down",
+     "body": "4日の−3.34%に続く下げです。民主党の議会制圧で規制が強まるとの警戒が残っています。"
+    },
+    {
+     "title": "アップラビンが時間外で約19%高 — 1株4.30ドル",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-4",
+     "src": "キャップノーツ（英語）・11/4",
+     "dir": "up",
+     "body": "広告技術の会社です。米東部時間4日17時09分時点の時間外の値と伝えられます。"
+    },
+    {
+     "title": "スナップが時間外で約9%安 — 売上17.2億ドルで約1,000万ドルの未達",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-4",
+     "src": "キャップノーツ（英語）・11/4",
+     "dir": "down",
+     "body": "通常取引では+5.90%でしたが、決算後に反落しました。米東部時間4日17時09分時点の値です。"
+    },
+    {
+     "title": "ジロウが時間外で約15%安 — 1株利益と売上がともに未達",
+     "url": "https://cappnotes.substack.com/p/closing-look-wednesday-november-4",
+     "src": "キャップノーツ（英語）・11/4",
+     "dir": "down",
+     "body": "住宅情報サイトの会社です。同じ時間帯にエアビーアンドビーやクラウドフレアも決算を発表しています。"
+    },
+    {
+     "title": "クアルコムの自動車部門は四半期で初の20億ドル超 — 過去最高",
+     "url": "https://www.benzinga.com/markets/earnings/26/11/62892347/qualcomm-q4-highlights-double-beat-company-looks-ahead-to-ramp-of-our-data-center-business",
+     "src": "ベンジンガ（英語）・11/4",
+     "dir": "up",
+     "body": "スマホ依存を減らす柱として、自動車とデータセンターの立ち上がりを強調しました。ただ10〜12月期の数字にはまだ表れていません。"
+    },
+    {
+     "title": "医療保険・病院が急騰 — 民主党の圧勝で給付縮小の後ずれ観測",
+     "url": "https://www.investing.com/news/stock-market-news/health-insurers-hospitals-rally-after-sweeping-midterm-win-for-democrats-5000171",
+     "src": "ロイター／インベスティング（英語）・11/4",
+     "dir": "up",
+     "body": "実測ではセンティーン+12.64%、HCA+10.34%、モリーナ+8.93%です。ACAの補助金延長への期待も出ました。"
+    },
+    {
+     "title": "3M株が急伸 — PFAS（有機フッ素化合物）訴訟の和解報道",
+     "url": "https://www.tradingview.com/news/stockstory:f22b29d35094b:0-why-is-3m-mmm-stock-rocketing-higher-today/",
+     "src": "ストックストーリー／トレーディングビュー（英語）・11/4",
+     "dir": "up",
+     "body": "実測では193.95ドル（+9.55%）でダウ30銘柄で最大の上げです。ブルームバーグが和解方針を伝えたとされます。"
+    },
+    {
+     "title": "アップルがエヌビディアを抜いて時価総額首位 — 「設備投資の落とし穴」を回避",
+     "url": "https://finance.yahoo.com/markets/article/apple-overtakes-nvidia-as-most-valuable-company-as-iphone-maker-avoids-capex-pitfalls-150316032.html",
+     "src": "ヤフーファイナンス（英語）・11/4",
+     "dir": "up",
+     "body": "実測ではアップル+5.31%、エヌビディア−3.17%。首位は最近何度も入れ替わっており、差は大きくありません。"
+    },
+    {
+     "title": "マグニフィセント7はエヌビディアとテスラを除いて上昇",
+     "url": "https://247wallst.com/investing/2026/11/04/nvidia-and-tesla-left-behind-as-rest-of-mag7-rally-on-dems-big-night/",
+     "src": "24/7ウォールストリート（英語）・11/4",
+     "dir": "mix",
+     "body": "実測ではアマゾン+6.12%、マイクロソフト+6.68%、アルファベット+3.18%、メタ+1.44%です。"
+    },
+    {
+     "title": "スペースXとテスラが下落 — アナリストが「AI建設に大きな障害」と警告",
+     "url": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html",
+     "src": "ヤフーファイナンス（英語）・11/4",
+     "dir": "down",
+     "body": "ダン・アイブス氏は、とくに上院を民主党が取ったことが今後2年の立法を複雑にすると指摘しています。"
+    },
+    {
+     "title": "実測：防衛株と石油大手が下落 — ロッキード−6.88%、エクソン−4.62%",
+     "url": "https://finance.yahoo.com/quote/LMT/",
+     "src": "実測・11/4",
+     "dir": "down",
+     "body": "ノースロップ−4.53%、RTX−2.64%、オキシデンタル−5.13%です。和平観測と原油安が重荷になりました。"
+    },
+    {
+     "title": "テスラが寄り前に4〜5%安 — 自動運転の規制と政府契約への監視を警戒",
+     "url": "https://www.tipranks.com/news/why-are-elon-musks-tesla-and-spacex-stocks-falling-in-premarket-after-democrats-win-midterm-elections-november-4",
+     "src": "ティップランクス（英語）・11/4",
+     "dir": "down",
+     "body": "テスラとスペースXの全株式交換による統合観測も伝えられます。実測の寄り前は378.72ドル（−4.96%）です。"
+    },
+    {
+     "title": "ロイターはテスラの下げを3.6%と伝える — 規制と合併への懸念",
+     "url": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-tumbling-today-93CH-4997818",
+     "src": "インベスティング（英語）・11/4",
+     "dir": "down",
+     "body": "報道と実測で下げ幅に差があります。寄り前の値は変動が大きいため、当ページは実測値を併記しています。"
+    },
+    {
+     "title": "実測：寄り前はパランティア166.80ドル（−4.90%）、アマゾン260.86ドル（+4.06%）",
+     "url": "https://finance.yahoo.com/quote/PLTR/",
+     "src": "実測・11/4",
+     "dir": "mix",
+     "body": "日本時間4日22時20分時点、3日の終値比です。マイクロソフトは532.00ドル（+2.11%）、アップルは337.77ドル（+1.77%）です。"
+    },
+    {
+     "title": "アマゾン・マイクロソフト・メタは上昇、アルファベットは軟調",
+     "url": "https://newsnationnow.com/business/your-money/markets-rally-after-democrats-midterm-sweep",
+     "src": "ニュースネイション（英語）・11/4",
+     "dir": "mix",
+     "body": "データセンターが多い州の選挙結果が、関連株の重荷になっていると伝えられます。"
+    },
+    {
+     "title": "アリスタネットワークスが時間外で約14%高と伝えられる",
+     "url": "https://www.cnbc.com/2026/11/03/midterm-elections-2026-live-updates.html",
+     "src": "CNBC（英語）・11/4",
+     "dir": "up",
+     "body": "データセンター向けのネットワーク機器の大手です。AI向けの需要が追い風とされます。時間外の値動きは翌日に変わることがあります。"
+    },
+    {
+     "title": "スカイワークスが時間外で約15%安 — 1〜3月期の見通しが弱い",
+     "url": "https://www.cnbc.com/2026/11/03/midterm-elections-2026-live-updates.html",
+     "src": "CNBC（英語）・11/4",
+     "dir": "down",
+     "body": "スマートフォン向けの高周波部品の会社です。AI向けとは需要の性質が違い、明暗が分かれた形です。"
+    },
+    {
+     "title": "AMDの7〜9月期は売上約134億ドル（+45%）— データセンターは過去最高の85億ドル",
+     "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+     "src": "AMD（英語）・11/3",
+     "dir": "up",
+     "body": "調整後1株利益は2.09ドルで予想（約1.95ドル）超え。10〜12月期は伸びの加速を見込みます。"
+    },
+    {
+     "title": "AMD株は時間外で約7%上昇 — データセンターがほぼ倍増",
+     "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+     "src": "CNBC（英語）・11/3",
+     "dir": "up",
+     "body": "Instinct MI450の投入とEPYCの需要が効きました。通常取引の終値は483.90ドル（+3.65%・実測）です。"
+    },
+    {
+     "title": "スーパー・マイクロの売上は約199億ドルと予想超え — 時間外で上昇と伝えられる",
+     "url": "https://investinglive.com/stocks/super-micro-shares-rise-after-hours-as-revenue-nears-20bn-and-q2-guidance-tops-forecasts/",
+     "src": "インベスティングライブ（英語）・11/3",
+     "dir": "up",
+     "body": "予想は約160億ドルでした。次の四半期は195〜215億ドル、通期は720〜780億ドルの見通しとされます。"
+    }
+   ]
+  },
+  {
+   "cat": "🗓 このあとの注目",
+   "catNote": "6日（金）に10月の米雇用統計（予想5.9万〜6.5万人増）、17日にエヌビディアの決算が控えます（CNBC）",
+   "items": [
+    {
+     "title": "6日（金）8時30分（米東部）に10月の米雇用統計 — 予想は5.9万〜6.5万人増",
+     "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
+     "src": "CNBC（英語）・11/5",
+     "dir": "mix",
+     "body": "9月は2.9万人増でした。失業率は4.2%の横ばい、平均時給は前月比0.3%増が予想されています。"
+    },
+    {
+     "title": "雇用統計は「底堅い労働市場」を示すとの見方 — 予想外の強弱が焦点",
+     "url": "https://www.morningstar.com/economy/october-jobs-report-seen-showing-resilient-labor-market",
+     "src": "モーニングスター（英語）・11/5",
+     "dir": "mix",
+     "body": "2025年1月〜2026年9月の平均は月3.5万人増にとどまります。弱くても驚きではない水準です。"
+    },
+    {
+     "title": "エヌビディアの決算発表は11月17日を予定",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-sinks-9-midterm-data-180809681.html",
+     "src": "ヤフーファイナンス（英語）・11/5",
+     "dir": "mix",
+     "body": "AI投資の実需が続いているかを確かめる場になります。会社の見通しに中国向けは含まれていません。"
+    },
+    {
+     "title": "英中銀の次回決定は12月17日 — 追加利上げの有無が焦点",
+     "url": "https://moneyweek.com/economy/news/live/uk-interest-rates-november-bank-of-england",
+     "src": "マネーウィーク（英語）・11/5",
+     "dir": "mix",
+     "body": "市場は12月の引き上げを5割程度織り込んでいます。英国の物価は来年前半にかけて上がる見通しです。"
+    },
+    {
+     "title": "テキサス州の新知事の就任は来年 — 州上院は共和党が多数",
+     "url": "https://www.fastcompany.com/91634444/texas-wanted-to-power-americas-ai-boom-its-new-governor-could-change-everything",
+     "src": "ファストカンパニー（英語）・11/5",
+     "dir": "mix",
+     "body": "全州一律の建設停止には法的な壁があるとされます。前知事は9月に接続審査で新規許可を止めています。"
+    },
+    {
+     "title": "11/5（木）21:00 英中銀の政策金利 — 3.75%から4.00%への引き上げ観測",
+     "url": "https://www.bloomberg.com/news/newsletters/2026-11-05/boe-decision-day-with-a-hike-baked-in-traders-look-to-december",
+     "src": "ブルームバーグ（英語）・11/5",
+     "dir": "mix",
+     "body": "2023年以来の利上げになる見込みです。投票は7対2が予想されています。指針の文言が焦点です。"
+    },
+    {
+     "title": "11/5（木）22:30 米新規失業保険申請件数（予想19.7万件・前回19.4万件）",
+     "url": "https://www.xtb.com/int/market-analysis/news-and-research/what-drives-the-market-top-morning-news-november-5-2026",
+     "src": "XTB（英語）・11/5",
+     "dir": "mix",
+     "body": "政府機関の閉鎖で遅れていた統計の公表が正常化しつつあります。6日の雇用統計の前哨戦です。"
+    },
+    {
+     "title": "12月の米利上げ確率は8割前後 — CMEの織り込み",
+     "url": "https://financefeeds.com/gold-price-today-4135-thursday-before-6-november-jobs-report-dollar-near-one-month-low-bull-4225-bear-4000/",
+     "src": "ファイナンスフィーズ（英語）・11/5",
+     "dir": "mix",
+     "body": "原油安が続けば見方が変わる余地もあります。金は4,135ドル前後で10月の下落からの戻り局面です。"
+    },
+    {
+     "title": "5日22:30 米新規失業保険申請件数 — 予想19.7万件、前回19.4万件",
+     "url": "https://www.investing.com/economic-calendar/initial-jobless-claims-294",
+     "src": "インベスティングドットコム（英語）・11/5",
+     "dir": "mix",
+     "body": "政府機関の閉鎖で遅れていた統計の公表が正常化しつつあります。継続受給は前回170.1万件でした。"
+    },
+    {
+     "title": "6日（金）22:30 10月の米雇用統計 — 民間予想は4.5万〜6.5万人",
+     "url": "https://continuumeconomics.com/a/6bbddd0c/preview-due-november-6-us-october-employment-non-farm-payrolls-subdued-report-to-hint-at-q4-slowing",
+     "src": "コンティニュアム・エコノミクス（英語）・11/4",
+     "dir": "mix",
+     "body": "バークレイズは5万人、KPMGは4.5万人の予想です。失業率の予想は4.1〜4.2%、9月は2.9万人でした。"
+    },
+    {
+     "title": "バークレイズ「5万人増と失業率の小幅低下なら12月の利上げが残る」",
+     "url": "https://continuumeconomics.com/a/6bbddd0c/preview-due-november-6-us-october-employment-non-farm-payrolls-subdued-report-to-hint-at-q4-slowing",
+     "src": "コンティニュアム・エコノミクス（英語）・11/4",
+     "dir": "mix",
+     "body": "10月末のFOMCは据え置きで、12月9日の会合では利上げの観測が強い状態でした。原油安はこの見方を和らげ得ます。"
+    },
+    {
+     "title": "今週の経済指標カレンダー — 雇用統計が最大の焦点",
+     "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar",
+     "src": "キプリンガー（英語）・11/4",
+     "dir": "mix",
+     "body": "政府機関の閉鎖で遅れていた統計の公表が正常化しつつあります。金利とドルの方向を左右します。"
+    },
+    {
+     "title": "どの業種が恩恵を受け、どこが圧力を受けるか — 民主党圧勝後の見方",
+     "url": "https://www.investing.com/news/stock-market-news/which-sectors-will-benefit-most-and-face-pressure-after-democratic-sweep-93CH-4999088",
+     "src": "インベスティング（英語）・11/4",
+     "dir": "mix",
+     "body": "医療・再生可能エネルギーに追い風、防衛・データセンター・石油に逆風という整理が示されています。"
+    },
+    {
+     "title": "5日0:00 米ISM非製造業景気指数（10月）— 予想54.7、前回54.9",
+     "url": "https://www.fxstreet.com/news/adp-employment-report-expected-to-show-slower-job-growth-in-october-202611040930",
+     "src": "FXストリート（英語）・11/4",
+     "dir": "mix",
+     "body": "2日の製造業は55.5で予想を上回りました。ADPも予想超えだったため、強い数字が続くかが焦点です。"
+    },
+    {
+     "title": "6日（金）10月の米雇用統計 — 政府機関の閉鎖で遅れていた統計が正常化へ",
+     "url": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html",
+     "src": "CNBC（英語）・11/4",
+     "dir": "mix",
+     "body": "ADPが8.6万人と予想を上回ったことで、雇用統計への見方も上方に振れやすくなります。"
+    },
+    {
+     "title": "今夜22時15分に10月のADP雇用者数 — 予想7.0万人（前回9.0万人）",
+     "url": "https://fx.minkabu.jp/news/383481",
+     "src": "みんかぶ・11/4",
+     "dir": "mix",
+     "body": "5日0時には10月のISM非製造業景気指数（予想54.7、前回54.9）が出ます。強ければドル買いを後押ししそうだとしています。"
+    },
+    {
+     "title": "19時にユーロ圏の10月消費者物価（HICP速報）— 前年比の予想は3.9%",
+     "url": "https://fx.minkabu.jp/news/383486",
+     "src": "みんかぶ・11/4",
+     "dir": "mix",
+     "body": "コアの予想は2.5%です。スウェーデン中銀の政策金利（予想2.0%）も17時30分に発表されます。"
+    },
+    {
+     "title": "残る課題は中東情勢 — 原油は96ドル付近で落ち着く",
+     "url": "https://fx.minkabu.jp/news/383490",
+     "src": "みんかぶ・11/4",
+     "dir": "mix",
+     "body": "情勢が収束に向かうのか、攻撃が再開するのかを確認したいとしています。関連報道に敏感に反応するとみられます。"
+    },
+    {
+     "title": "上院の多数派はまだ確定せず — 確定まで数日かかる場合もある",
+     "url": "https://www.cbsnews.com/live-updates/senate-election-results-2026/",
+     "src": "CBSニュース（英語）・11/4",
+     "dir": "mix",
+     "body": "民主党はあと2議席の奪取とミシガン州の防衛が必要です。テキサス州はタラリコ氏がリードしていますが開票は途中です。"
+    },
+    {
+     "title": "米国株の通常取引は日本時間23時30分から — 先物の下げがそのまま出るとは限りません",
+     "url": "https://finance.yahoo.com/quote/ES=F/",
+     "src": "実測・11/4",
+     "dir": "mix",
+     "body": "冬時間のため取引は23時30分〜翌6時です。開票の進み方で、寄り付きまでに雰囲気が変わることもあります。"
+    },
+    {
+     "title": "中間選挙の開票 — 日本時間4日朝から順次",
+     "url": "https://news.yahoo.co.jp/articles/9229fe6058ef88dd190d5ee3f14a09abac4f9279",
+     "src": "共同通信・11/3",
+     "dir": "mix",
+     "body": "下院435議席・上院35議席・36州の知事選が対象です。多数派の確定に数日かかる場合もあるとされます。"
+    },
+    {
+     "title": "6日（金）に米雇用統計（10月分）",
+     "url": "https://www.cnbc.com/amp/2026/11/03/us-treasury-yields-bonds.html",
+     "src": "CNBC（英語）・11/3",
+     "dir": "mix",
+     "body": "9月の求人が強かったため、雇用統計への注目度が上がっています。金利と為替が動きやすい日です。"
+    },
+    {
+     "title": "きょう3日：米中間選挙の投票 — 開票は日本時間4日朝8時から順次",
+     "url": "https://news.web.nhk/newsweb/na/nd-20261103de69868",
+     "src": "NHK・11/3",
+     "dir": "mix",
+     "body": "下院435議席、上院35議席、36州の知事選が対象です。多数派の確定までに数日かかる場合もあります。"
+    },
+    {
+     "title": "期日前投票でも民主党に勢い — 予測市場は下院奪還を優勢とみる",
+     "url": "https://www.dlri.co.jp/report/macro/672308.html",
+     "src": "第一生命経済研究所・11/3",
+     "dir": "mix",
+     "body": "予測市場の数値は情報源によって差があります。上院で民主党が過半数を取るかが焦点とされています。"
+    },
+    {
+     "title": "4日朝7時（JST）：AMDの7〜9月期決算",
+     "url": "https://www.marketbeat.com/earnings/reports/2026-11-3-advanced-micro-devices-inc-stock/",
+     "src": "マーケットビート（英語）・11/3",
+     "dir": "mix",
+     "body": "市場予想は売上約130.9億ドル、1株利益1.94ドルです。半導体株の目先の方向を左右しやすい発表です。"
+    },
+    {
+     "title": "11月18〜19日：APEC首脳会議（深圳）— 米中露の3カ国会談を協議と英FT",
+     "url": "https://www.thestandard.com.hk/china/article/347352/US-Russia-and-China-discuss-trilateral-meeting-between-Trump-Putin-and-Xi-FT-reports",
+     "src": "ザ・スタンダード（英語）・11/3",
+     "dir": "mix",
+     "body": "米露が中国に開催を求めているとされます。開催の有無はまだ決まっていません。"
+    },
+    {
+     "title": "3日（火）は米国の中間選挙 — 投資家の96%が民主党の下院奪還を予想",
+     "url": "https://www.cnbc.com/2026/10/30/2026-midterm-election-wall-street-prepares-for-democratic-gains.html",
+     "src": "CNBC（英語）・10/30",
+     "dir": "mix",
+     "body": "ウォルフ・リサーチの調査です。予測市場では上院も民主党優勢とされますが、接戦が見込まれています。"
+    },
+    {
+     "title": "分裂政府なら大型法案は通りにくい — 大統領令と議会調査が焦点",
+     "url": "https://www.morganstanley.com/insights/articles/2026-election-market-impact-investor-guide",
+     "src": "モルガン・スタンレー（英語）・10/30",
+     "dir": "mix",
+     "body": "開票の遅れで短期的に振れる可能性はあるものの、中長期の方向までは変わりにくいとの見方です。"
+    },
+    {
+     "title": "3日（火）の引け後にAMDの7〜9月期決算 — 売上予想は約130.9億ドル",
+     "url": "https://tradingkey.com/jp/analysis/stocks/us-stocks/262263684-amd-q3-earnings-preview-ai-chip-growth-reverse-tradingkey",
+     "src": "トレーディングキー・11/2",
+     "dir": "mix",
+     "body": "調整後1株利益の予想は1.95ドルです。データセンター部門とAI向け「Instinct」、10〜12月期の見通しが焦点です。"
+    },
+    {
+     "title": "6日（金）に米雇用統計（10月分） — 非農業部門は約6.5万人増の予想",
+     "url": "https://fx.minkabu.jp/news/383314",
+     "src": "みんかぶ・11/2",
+     "dir": "mix",
+     "body": "雇用の伸びが鈍いままなら、12月の金融政策の見方にも影響します。"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "when": "11/5（木）",
+   "what": "実測：ナスダックは24,315.00（−5.52%）で調整局面入り、S&P500は7,353.73（−4.36%）",
+   "note": "ダウは51,523.06（1,833.06ドル安・−3.44%）。前日の選挙後の上げを丸ごと消しました（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：フィラデルフィア半導体指数は9,011.14（−12.25%）— 新型コロナ以来の下げ",
+   "note": "6月の最高値から約38%下の水準です。AMDは404.40ドル（−17.26%）です（実測、FXストリート）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：サンディスク−22.26%、マイクロン−17.46%、アーム−13.08%",
+   "note": "メモリーと設計の銘柄が一段大きく下げました。建設の遅れによる納入のずれが理由とされます（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：アイレン−16.95%、ネビウス−14.94%、アプライド・デジタル−14.69%、ベルティブ−14.02%",
+   "note": "データセンターを貸す側・つくる側も急落しました。規制への警戒が直撃しています（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：VIXは28.18（+69.66%）、10年金利は4.84%、ドル円は157.66円（−0.51%）",
+   "note": "金は4,098.70ドル（+0.63%）、WTI12月限は91.16ドル（+3.45%）です（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "英中銀が政策金利を3.75%から4.00%へ引き上げ — 2023年以来の利上げ",
+   "note": "投票は8対1。物価上昇率は来年4〜6月に4.9%まで上がる見通しとしています（CNBC）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "新規失業保険申請は18.9万件 — 予想19.6万件を下回り7月以来の低さ",
+   "note": "継続受給は約172万件へ増加。利下げを急ぐ理由は乏しいと受け止められました（インベスティングライブ）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "12月の米利上げ確率はCMEの織り込みで70.1%へ低下（前日82.7%）",
+   "note": "政策金利は現在3.75〜4.00%です。株安が引き締めの圧力を和らげた形です（FXストリート）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "アプラビンが実測+31.04%で356.10ドル — 7〜9月期は売上55%増の21.8億ドル",
+   "note": "1株利益4.30ドル（予想4.03ドル）。10〜12月期見通しも予想を大きく上回りました（シーキングアルファ）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "タペストリーが実測+7.07% — 通期1株利益見通しを8.25〜8.35ドルへ増額",
+   "note": "コーチの売上は16%増。中国本土は43%増で、自社株買いも3.5億ドル増やしました（ロイター）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "マグナイトが実測+20.75% — アプラビンの好決算が広告関連に波及",
+   "note": "ネット広告の売り手側の配信基盤を手がける会社です（24/7ウォール街、実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "テスラが実測−10.77%で343.69ドル — 規制とスペースX合併の不透明感",
+   "note": "民主党の議会制圧とテキサス州知事選の結果が重荷とされます（インベスティング、グルフォーカス）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "S&P500の値下がりは419銘柄、値上がりは84銘柄 — 全11業種が下落",
+   "note": "公益−0.71%、生活必需品−0.75%が最も小幅で、ハイテクは−8.00%でした（CNBC、実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "ダウは中間選挙後の2日目としては1896年以来で最悪の下げ",
+   "note": "前日は44年ぶりに大きい選挙後の上げでした。たった1日で反転しています（ヤフーファイナンス）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：コスピの終値は5,383.80（−5.28%）、台湾加権は41,574.72（−3.20%）",
+   "note": "正午の−3.49%から下げを広げました。韓国取引所はサイドカーを発動しています（実測、JKN）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "SKハイニックスは−9.46%で126万ウォン、サムスン電子は−7.57%で20万1,500ウォン",
+   "note": "2社でコスピの時価総額の約半分を占めます。データセンター規制への警戒が理由とされます（コリアタイムズ）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：欧州はストックス600が661.62（+0.64%）、DAX26,633.96（+0.74%）、英FT100 10,920.63（+0.84%）",
+   "note": "ブルームバーグはAI取引の巻き戻しで8月の高値を超えたと伝えています（実測、ブルームバーグ）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：18時10分のナスダック100先物は28,343（−0.78%）、ダウ先物53,761（+0.48%）",
+   "note": "S&P500先物は7,714（−0.08%）です。下げているのは半導体中心のハイテクだけです（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：寄り前のクアルコムは156.20ドル（−9.81%）、アームは184.30ドル（−3.91%）",
+   "note": "AMD−3.75%、インテル−3.04%、ブロードコム−2.19%、エヌビディア197.91ドル（−1.11%）です（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：寄り前の大型株はメタ+0.97%、アマゾン+0.89%、アルファベット+0.54%、アップル+0.31%",
+   "note": "マイクロソフトはほぼ変わらずです。同じハイテクでも半導体と明暗が分かれました（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：WTI12月限は88.22ドル（+0.11%）、金は4,139.50ドル（+1.63%）、銀は52.88ドル（+1.46%）",
+   "note": "ドル円は158.23円です。原油は4日の8%超安のあと横ばいで落ち着いています（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "21:00 英中銀が政策金利を決定 — 3.75%から4.00%への利上げ観測",
+   "note": "2023年以来の引き上げになる見込みで、市場は完全に織り込んでいると伝えられます（ブルームバーグ）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "FRBのクック理事の聴聞が12月14日へ延期 — 解任の是非を調べる委員会",
+   "note": "欧州での政策会合出席のため12月以降になると弁護士が説明。本人は不正を否定しています（CNBC）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：5日12時のナスダック100先物は28,375.75（−0.67%）、ダウ先物は53,663（+0.30%）",
+   "note": "S&P500先物は7,713.25（−0.09%）です。半導体の決算でハイテクだけが売られています（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：韓国コスピは5,485.58（−3.49%）、台湾加権は42,392.37（−1.30%）— 日本時間12時前後",
+   "note": "日経平均の前引けは61,913.51円（−0.44%）でTOPIXは上昇。半導体だけが売られました（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "アドバンテスト−11.69%、レーザーテック−11.76%、東京エレクトロン−9.89%",
+   "note": "AI設備投資への警戒がアジアに広がりました。SKハイニックスは約9%安と伝えられます（CNBC）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：時間外のクアルコムは160.37ドル（−7.40%）、アームは188.47ドル（−1.74%）",
+   "note": "グローバルファウンドリーズは40.01ドル、エヌビディアは199.77ドル（−0.18%）です（実測）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "引け後：クアルコムの7〜9月期は調整後1株2.17ドル・売上約104億ドル — スマホ向けは26%減",
+   "note": "10〜12月期の1株利益見通しは2.15〜2.35ドルで中心値が予想に届きません（グルフォーカス、モトリーフール）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "引け後：アームの7〜9月期は1株52セント・売上14.4億ドルで予想超え",
+   "note": "10〜12月期は56セント・15.4億ドルの見通しです。予想は55セント・15.3億ドルでした（シーキングアルファ）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "実測：WTI12月限は87.19ドル（前日比−0.97%）、金先物は4,137.40ドル（+1.60%）",
+   "note": "ドル円は157.90円です。4日終値の158.36円からやや円高に戻しています（実測）"
+  },
+  {
+   "when": "11/5（木）",
+   "what": "22:30 米新規失業保険申請件数（予想19.7万件・前回19.4万件）",
+   "note": "政府機関の閉鎖で遅れていた統計の公表が正常化しつつあります（インベスティングドットコム）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：ダウは53,356.12（+1,569.40ドル・+3.03%）— 2025年4月以来の最大の上げ",
+   "note": "S&P500は7,688.62（+1.58%）、ナスダック総合は25,736.51（+1.44%）です（実測、CNBC）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "上下院とも民主党が制する — 上院は51議席に到達、下院はジェフリーズ氏が議長の見込み",
+   "note": "共和党の53対47の優勢が崩れました。アラスカとミシシッピは未確定です（NBCニュース、MS NOW）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：WTI12月限は88.04ドル（−8.38%）、ブレント1月限は94.63ドル（−8.66%）",
+   "note": "前日と同じ12月限どうしの比較です。ブレントは9月4日以来の安値になりました（実測、インベッズ）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "トランプ氏とバンス氏が中間選挙の敗因をイラン戦争と認める — 原油は急落",
+   "note": "トランプ氏はイランを直ちに攻撃する予定はないと述べたと伝えられます（オイルプライス）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：データセンター設備が急落 — バーティブ−12.89%、クアンタ−11.65%、イートン−9.86%",
+   "note": "GEベルノバは−9.30%、キャタピラーは−5.23%です。規制への警戒が理由とされます（実測、ロイター）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "データセンターの地元住民投票は41件のうち40件で反対が勝つ",
+   "note": "テキサス州は計画容量の約27%を占めますが、新規の即時停止を掲げる知事が当選しました（モトリーフール）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "バーンスタイン試算：米データセンター計画の56%・244ギガワットが政治リスクにさらされる",
+   "note": "一方で「設備が足りなければ結局バーティブの機器は必要」との反論もあります（モトリーフール）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：マイクロソフト+6.68%、アマゾン+6.12%、アップル+5.31%、アルファベット+3.18%",
+   "note": "AI投資が抑えられれば自由に使えるお金が増えるとの読みです。エヌビディアは−3.17%（実測、ヤフーファイナンス）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：医療保険・病院が急騰 — センティーン+12.64%、HCA+10.34%、モリーナ+8.93%",
+   "note": "メディケイド縮小の後ずれ観測です。JPモルガンは拒否権が残るため実現は難しいとしています（実測、ロイター）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "23:00 米ISM非製造業景気指数（10月）は54.5 — 予想54.8を下回る",
+   "note": "前月54.9から低下し7月以来の低さです。新規受注は59.8→55.9、仕入価格は74.0→73.0（ISM、インベスティングライブ）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：防衛株が下落 — ロッキード−6.88%、ノースロップ−4.53%、RTX−2.64%",
+   "note": "イラン和平観測が重荷になりました。石油大手もエクソン−4.62%、オキシデンタル−5.13%です（実測）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：再生可能エネルギーが上昇 — ネクステラ+4.89%、ファーストソーラー+4.63%",
+   "note": "民主党の議会制圧で連邦の支援が続き、認可も早まるとの見方です（実測、ロイター）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：VIXは16.61（−20.26%）へ急低下、SOX指数は10,268.65（−3.13%）",
+   "note": "警戒感は薄れましたが、半導体は3日の+2.63%から反落しました（実測）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：金先物は4,072.20ドル（+3.34%）、銀は52.33ドル（+5.52%）へ上昇",
+   "note": "金1gの円換算は20,733円（+3.64%）です。ドル指数は101.54（−0.33%）です（実測）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：3Mは193.95ドル（+9.55%）— PFAS（有機フッ素化合物）訴訟の和解報道",
+   "note": "ブルームバーグが和解に応じる方針と伝えたと報じられています。ダウ30銘柄で最大の上げでした（実測、ストックストーリー）"
+  },
+  {
+   "when": "11/6（金）",
+   "what": "10月の米雇用統計 — 民間予想は4.5万〜6.5万人、失業率は4.1〜4.2%程度",
+   "note": "バークレイズは5万人程度なら12月の利上げが残ると見ています（コンティニュアム・エコノミクス、キプリンガー）"
+  },
+  {
+   "when": "12/9（水）",
+   "what": "FOMC（米連邦公開市場委員会）— 10月末時点では利上げの観測が強かった",
+   "note": "原油安でインフレ圧力が和らげば、見方が変わる可能性があります（ブルームバーグ）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "22:15 米ADP雇用者数（10月）は8.6万人 — 予想7.5万人を上回る",
+   "note": "下方修正後の9月と同じ伸びです。運輸・流通・公益が3.9万人増、情報サービスは2,000人減です（CNBC、ストックタイタン）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "トランプ大統領が民主党に祝意 — 敗因の一部はイラン戦争と認める",
+   "note": "「それでも正しいことをした。もう一度やる」とWSJに述べました。結果は受け入れるとしています（フランス24、US News）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：4日22時20分のダウ先物は52,830（+1.80%）、ナスダック100先物は+0.23%",
+   "note": "S&P500先物は7,666（+0.91%）です。CNBCはダウ先物912ドル高と伝えています（実測、CNBC）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "AI・データセンター関連が下落、再生可能エネルギーが急伸 — 防衛株も売られる",
+   "note": "ノースロップ・グラマンが5%安、RTX・ロッキード・L3ハリスは3%超安と伝えられます（ロイター／インベスティング）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "テスラが寄り前に4〜5%安 — 自動運転の規制強化と政府契約への監視を警戒",
+   "note": "スペースXとの全株式交換による統合観測も伝えられます。実測の寄り前は378.72ドルです（ティップランクス、実測）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "実測：4日22時20分のWTI12月限は94.13ドル（−2.04%）、ブレントは101.51ドル",
+   "note": "金先物は4,050ドル（+2.79%）、銀51.88ドル（+4.61%）、ドル指数101.23（−0.62%）です（実測）"
+  },
+  {
+   "when": "11/4（水）",
+   "what": "イランが米国の回答を「説得力がない」と拒否 — 7条件が満たされるまで海峡は閉鎖",
+   "note": "最高国家安全保障会議のレザイ氏の発言です。カタールが提案の仲介を続けています（プレスTV、メディアライン）"
+  }
+ ],
+ "watch": [
+  {
+   "nm": "エヌビディア",
+   "en": "NVIDIA / NVDA",
+   "px": "$181.60",
+   "chg": -9.26,
+   "t": "prev",
+   "note": "5日は−9.26%。181ドル台まで下げました",
+   "news": [
+    {
+     "t": "実測：181.60ドル（−9.26%）で引け — 1日で18.53ドル安",
+     "u": "https://finance.yahoo.com/quote/NVDA",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "200ドルを大きく割り込みました。データセンターの建設が遅れるとの警戒が直撃しています。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "「まったくの殺戮」— 中間選挙後のデータセンター懸念が半導体を直撃",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/nvidia-sinks-9-midterm-data-180809681.html",
+     "s": "ヤフーファイナンス（英語）・11/5",
+     "dir": "down",
+     "sm": "会社の見通しに中国向けは含まれていないため、米国内の建設遅れが新しい心配事になりました。",
+     "pl": "→ 逆風。規制警戒"
+    },
+    {
+     "t": "決算発表は11月17日を予定 — AI投資の実需を確かめる場",
+     "u": "https://invezz.com/sg/news/2026/11/05/nvidia-stock-plunges-8percent-as-ai-spending-fears-and-financing-risks-mount/",
+     "s": "インベッツ（英語）・11/5",
+     "dir": "mix",
+     "sm": "AI向け投資の資金調達リスクを指摘する声も出ています。業績自体は好調が続いてきました。",
+     "pl": "→ 注目。決算待ち"
+    },
+    {
+     "t": "実測：寄り前は197.91ドル（−1.11%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/NVDA/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "200ドル割れです。装置・メモリー株の急落に比べれば、下げは小さく収まっています。",
+     "pl": "→ 注目。小幅安"
+    },
+    {
+     "t": "実測：時間外は199.77ドル（−0.18%）— 日本時間5日10時",
+     "u": "https://finance.yahoo.com/quote/NVDA/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "200ドルを挟む水準です。半導体の決算を受けたアジアの急落に比べれば、下げは小さく収まっています。",
+     "pl": "→ 注目。小幅安"
+    },
+    {
+     "t": "アジアの半導体株が急落 — アドバンテスト−11.69%、東京エレクトロン−9.89%",
+     "u": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+     "s": "CNBC（英語）・11/5",
+     "dir": "down",
+     "sm": "AI設備投資への警戒が広がりました。決算は11月中旬の予定で、受注の説明が注目されます。",
+     "pl": "→ 逆風。AI設備の警戒"
+    },
+    {
+     "t": "200.13ドル（−3.17%）で下落 — SOX指数は−3.13%",
+     "u": "https://finance.yahoo.com/quote/NVDA/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "指数が大きく上がった日に逆行しました。データセンター規制への警戒が重荷です。決算は11月中旬の予定です。",
+     "pl": "→ 逆風。AI設備への警戒"
+    },
+    {
+     "t": "テスラとエヌビディアは置いていかれる — マグニフィセント7のなかで逆行",
+     "u": "https://decrypt.co/382528/tech-ai-stocks-split-democratic-microsoft-jumps-tesla-nvidia-tank",
+     "s": "ディクリプト（英語）・11/4",
+     "dir": "down",
+     "sm": "AI投資が抑えられれば、チップを売る側の受注も減るとの読みです。ほかの5銘柄は上昇しました。",
+     "pl": "→ 逆風。主役の交代"
+    },
+    {
+     "t": "実測：寄り前は204.00ドル（−1.30%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/NVDA/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の終値206.69ドルとの比較です。AI・データセンター規制の警戒が残り、ハイテクは出遅れています。",
+     "pl": "→ 逆風。規制の警戒"
+    },
+    {
+     "t": "実測：アジアの半導体株は急落後に戻す — 日経平均は安値から2,000円以上反発",
+     "u": "https://finance.yahoo.com/quote/%5EN225/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "日経平均の終値は−1.42%、韓国コスピは+0.62%です。4日18時のナスダック100先物は+0.10%まで戻しました。",
+     "pl": "→ 注目。売りが一巡"
+    },
+    {
+     "t": "4日のアジアで半導体株が急落 — 日経平均の前引けは−3.56%、コスピ−3.30%",
+     "u": "https://finance.yahoo.com/quote/%5EN225/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "民主党優勢の報道でAI規制への警戒が出ました。日本時間4日12時のナスダック100先物は−2.27%です。",
+     "pl": "→ 逆風。AI規制の警戒"
+    },
+    {
+     "t": "206.69ドル（+2.29%）で引け — SOX指数は+2.63%で反発",
+     "u": "https://finance.yahoo.com/quote/NVDA/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "3日続落のあとの買い戻しです。自社の決算は11月中旬の予定で、それまで大きな材料はありません。",
+     "pl": "→ 追い風。業種全体の反発"
+    },
+    {
+     "t": "AI関連の売りが一巡し買いが戻る — ただしS&P500の構成銘柄は過半が下落",
+     "u": "https://www.bloomberg.com/news/articles/2026-11-02/stock-market-today-dow-s-p-live-updates",
+     "s": "ブルームバーグ（英語）・11/3",
+     "dir": "mix",
+     "sm": "指数を押し上げたのは一部の大型ハイテクだけで、上昇の中身は広くありません。",
+     "pl": "→ 注目。上昇の中身は限定的"
+    },
+    {
+     "t": "アジアの半導体株が急落 — コスピ−3.59%、台湾加権−3.59%（3日終値の実測）",
+     "u": "https://finance.yahoo.com/quote/%5EKS11/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "サムスン電子は4.15%安、SKハイニックスは5.03%安です。前日の米国でSOX指数が3.37%下げた流れを引き継ぎました。",
+     "pl": "→ 逆風。業界全体の売り"
+    }
+   ]
+  },
+  {
+   "nm": "ブロードコム",
+   "en": "Broadcom / AVGO",
+   "px": "$291.53",
+   "chg": -10.43,
+   "t": "prev",
+   "note": "5日は−10.43%。291ドル台まで下げました",
+   "news": [
+    {
+     "t": "実測：291.53ドル（−10.43%）で引け",
+     "u": "https://finance.yahoo.com/quote/AVGO",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "300ドルを割り込みました。AI向けの受注が多いぶん、建設停止の警戒を強く受けています。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "ブロードコムとエヌビディアはそろって1割前後の下げと報道",
+     "u": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+     "s": "CNBC（英語）・11/5",
+     "dir": "down",
+     "sm": "半導体指数は−12.25%（実測）で、報道では新型コロナ以来の売られ方とされます。",
+     "pl": "→ 逆風。業種ごと売り"
+    },
+    {
+     "t": "実測：寄り前は318.34ドル（−2.19%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/AVGO/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "カスタムAI半導体が柱です。データセンター投資への警戒が続き、半導体はそろって軟調です。",
+     "pl": "→ 逆風。半導体に売り"
+    },
+    {
+     "t": "実測：時間外は323.30ドル（−0.67%）— 日本時間5日10時",
+     "u": "https://finance.yahoo.com/quote/AVGO/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "クアルコムとアームの決算を受け、半導体はそろって軟調です。カスタムAI半導体の受注が同社の柱です。",
+     "pl": "→ 注目。半導体に逆風"
+    },
+    {
+     "t": "クアルコムが時間外で7.40%安 — 10〜12月期の利益見通しが中心値で予想に届かず",
+     "u": "https://www.gurufocus.com/news/9171893/qualcomm-qcom-stock-drops-after-tepid-earnings-forecast",
+     "s": "グルフォーカス（英語）・11/4",
+     "dir": "down",
+     "sm": "スマホ向けが26%減りました。用途は違いますが、半導体全体の評価の前提が問われています。",
+     "pl": "→ 逆風。業界全体の警戒"
+    },
+    {
+     "t": "325.48ドル（−2.00%）で下落 — 半導体は指数に逆行",
+     "u": "https://finance.yahoo.com/quote/AVGO/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "カスタムAIチップの受注はデータセンター投資に左右されます。SOX指数は−3.13%でした。",
+     "pl": "→ 逆風。投資抑制の観測"
+    },
+    {
+     "t": "データセンター関連が急落 — 民主党の議会制圧で懸念が再燃",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/vertiv-sinks-9-ge-vernova-150952479.html",
+     "s": "ロイター／ヤフーファイナンス（英語）・11/4",
+     "dir": "down",
+     "sm": "設備を売る側がまとめて売られました。バーティブは−12.89%、GEベルノバは−9.30%です。",
+     "pl": "→ 逆風。業種全体の売り"
+    },
+    {
+     "t": "実測：寄り前は328.68ドル（−1.04%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/AVGO/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の終値332.13ドルとの比較です。ナスダック100先物が+0.23%にとどまるなかで小幅安です。",
+     "pl": "→ 逆風。ハイテクの出遅れ"
+    },
+    {
+     "t": "実測：4日18時のナスダック100先物は+0.10% — 12時は2.27%安",
+     "u": "https://finance.yahoo.com/quote/NQ=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "民主党が上下院を制する見通しとなりましたが、株安の初動反応は一巡したとみんかぶは伝えています。",
+     "pl": "→ 追い風。下げを戻す"
+    },
+    {
+     "t": "ナスダック100先物は−2.27%（4日12時の実測）— AI規制への警戒",
+     "u": "https://fx.minkabu.jp/news/383452",
+     "s": "みんかぶFX・11/4",
+     "dir": "down",
+     "sm": "民主党が下院で過半数を取る見通しと報じられました。AI投資の持続性への警戒が出ています。",
+     "pl": "→ 逆風。AI規制の警戒"
+    },
+    {
+     "t": "332.13ドル（+3.07%）で引け — 大型半導体で上げが大きめ",
+     "u": "https://finance.yahoo.com/quote/AVGO/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "AI向けの自社設計半導体への期待が買いを集めました。SOX指数の+2.63%を上回る上げです。",
+     "pl": "→ 追い風。業種全体の反発"
+    },
+    {
+     "t": "アジアの半導体株が急落 — コスピ−3.59%、台湾加権−3.59%（3日終値の実測）",
+     "u": "https://finance.yahoo.com/quote/%5EKS11/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "サムスン電子は4.15%安、SKハイニックスは5.03%安です。前日の米国でSOX指数が3.37%下げた流れを引き継ぎました。",
+     "pl": "→ 逆風。業界全体の売り"
+    },
+    {
+     "t": "322.23ドル（−1.18%）で引け — 大型半導体では下げが小さめ",
+     "u": "https://finance.yahoo.com/quote/AVGO/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "AI向けの自社設計半導体への期待が下支えしました。SOXの−3.37%よりも下げは小さく収まっています。",
+     "pl": "→ 逆風。業種全体の下げ"
+    },
+    {
+     "t": "マーベルがルーメンタムを買収 — AI向け光通信の競争が激化",
+     "u": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity",
+     "s": "マーベル（英語）・11/2",
+     "dir": "mix",
+     "sm": "全株式交換で企業価値1,150億ドルです。データセンターをつなぐ部品で競う相手が大きくなります。",
+     "pl": "→ 注意。競争の激化"
+    }
+   ]
+  },
+  {
+   "nm": "TSMC",
+   "en": "TSMC / TSM",
+   "px": "$353.10",
+   "chg": -10.78,
+   "t": "prev",
+   "note": "5日は−10.78%。353ドル台です",
+   "news": [
+    {
+     "t": "実測：353.10ドル（−10.78%）で引け",
+     "u": "https://finance.yahoo.com/quote/TSM",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "400ドルから一段下げました。AI向け半導体の受託生産が集中しているため影響を受けやすい銘柄です。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "インテル・TSMCも大きく下げ — AI規制への警戒が業種全体に",
+     "u": "https://finance.yahoo.com/technology/ai/articles/amd-tumbles-13-nvidia-slides-154601778.html",
+     "s": "ヤフーファイナンス（英語）・11/5",
+     "dir": "down",
+     "sm": "選挙結果を受けた売りが2日続きました。業績の悪化が理由ではないと指摘されています。",
+     "pl": "→ 逆風。規制警戒"
+    },
+    {
+     "t": "実測：寄り前は388.34ドル（−1.87%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/TSM/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "台湾加権は41,574.72（−3.20%）で引けました。受託生産の受注はAI投資の増減に左右されます。",
+     "pl": "→ 逆風。台湾株安"
+    },
+    {
+     "t": "実測：時間外は391.60ドル（−1.05%）、台湾加権は42,392.37（−1.30%）",
+     "u": "https://finance.yahoo.com/quote/TSM/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "400ドルを割り込んだままです。台湾市場も日本時間5日12時前後で1.3%安となっています。",
+     "pl": "→ 逆風。400ドル割れ継続"
+    },
+    {
+     "t": "アジアの半導体株が急落 — AI設備投資への警戒が広がる",
+     "u": "https://www.wsls.com/business/2026/11/05/asian-shares-mostly-advance-following-us-midterms-though-kospi-falls-on-selling-of-chipmakers/",
+     "s": "AP通信（英語）・11/5",
+     "dir": "down",
+     "sm": "サムスン−5.7%、SKハイニックス−7.4%と伝えられます。受託生産の同社にも先行きの懸念が及んでいます。",
+     "pl": "→ 逆風。アジア全体の売り"
+    },
+    {
+     "t": "395.75ドル（−2.24%）で下落 — 400ドル割れ",
+     "u": "https://finance.yahoo.com/quote/TSM/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "AI向けの最先端品が業績の柱なので、データセンター投資の減速観測が重荷になりました。",
+     "pl": "→ 逆風。AI投資の減速観測"
+    },
+    {
+     "t": "AI関連は明暗が分かれる — マイクロソフトは上昇、半導体は下落",
+     "u": "https://decrypt.co/382528/tech-ai-stocks-split-democratic-microsoft-jumps-tesla-nvidia-tank",
+     "s": "ディクリプト（英語）・11/4",
+     "dir": "mix",
+     "sm": "同じAI関連でも、設備を使う側と作る側で評価が逆になった一日でした。",
+     "pl": "→ 注目。二極化"
+    },
+    {
+     "t": "実測：寄り前は400.30ドル（−1.11%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/TSM/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の終値404.80ドルとの比較です。台湾加権指数は4日、0.83%安で引けています。",
+     "pl": "→ 逆風。半導体の重さ"
+    },
+    {
+     "t": "実測：台湾加権指数は42,948.91（−0.83%）で引け — 下げを縮小",
+     "u": "https://finance.yahoo.com/quote/%5ETWII/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "朝方の急落から戻しました。AI投資の抑制への警戒が半導体株に出た一日です。",
+     "pl": "→ 注目。下げを縮小"
+    },
+    {
+     "t": "実測：台湾加権指数は42,618.19（−1.59%）— 4日12時時点",
+     "u": "https://finance.yahoo.com/quote/%5EN225/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "韓国コスピは−3.30%で、アジアの半導体株に売りが出ています。AI規制への警戒が理由とされます。",
+     "pl": "→ 逆風。アジアの半導体安"
+    },
+    {
+     "t": "404.80ドル（+1.55%）で引け — 半導体の反発では上げが小さめ",
+     "u": "https://finance.yahoo.com/quote/TSM/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "受託生産の大手で、AI向けの生産能力の増強が続いています。前日のアジアでは台湾加権指数が3.59%安でした。",
+     "pl": "→ 追い風。業種全体の反発"
+    },
+    {
+     "t": "アジアの半導体株が急落 — コスピ−3.59%、台湾加権−3.59%（3日終値の実測）",
+     "u": "https://finance.yahoo.com/quote/%5EKS11/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "サムスン電子は4.15%安、SKハイニックスは5.03%安です。前日の米国でSOX指数が3.37%下げた流れを引き継ぎました。",
+     "pl": "→ 逆風。業界全体の売り"
+    },
+    {
+     "t": "398.63ドル（−1.85%）で引け — 400ドルを下回る",
+     "u": "https://finance.yahoo.com/quote/TSM/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "半導体全体の持ち高調整に押されました。10月の月次売上の発表は11月上旬の予定です。",
+     "pl": "→ 逆風。業種全体の下げ"
+    },
+    {
+     "t": "東京の半導体株は明暗 — 東京エレクトロンは好決算で上昇",
+     "u": "https://www.media-ir.com/news/?p=186958",
+     "s": "メディアIR・11/2",
+     "dir": "mix",
+     "sm": "製造装置は好決算で買われ、メモリーのキオクシアは利益見通しが重荷になりました。受託生産への評価は分かれています。",
+     "pl": "→ 注目。装置株は堅調"
+    }
+   ]
+  },
+  {
+   "nm": "AMD",
+   "en": "AMD / AMD",
+   "px": "$404.40",
+   "chg": -17.26,
+   "t": "prev",
+   "note": "5日は−17.26%。好決算でも1日で17%安です",
+   "news": [
+    {
+     "t": "実測：404.40ドル（−17.26%）で引け — 7月以来の安値圏",
+     "u": "https://finance.yahoo.com/quote/AMD",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "ウォッチリストで最も大きい下げです。AI向けの比重が高いことが裏目に出ました。",
+     "pl": "→ 逆風。最大の下げ"
+    },
+    {
+     "t": "売上45%増の好決算でも17%安 — スーCEOは需要の鈍化を否定",
+     "u": "https://news.jkn.co.kr/editions/english/post/1073355",
+     "s": "JKN（英語）・11/5",
+     "dir": "down",
+     "sm": "7〜9月期の売上は134億ドルでした。数字より政策への警戒が優先された形です。",
+     "pl": "→ 逆風。業績より政策"
+    },
+    {
+     "t": "下げの理由は規制リスクの再評価 — 業績ではないと指摘",
+     "u": "https://www.investing.com/news/stock-market-news/why-is-advanced-micro-devices-stock-tumbling-today-93CH-5005047",
+     "s": "インベスティングドットコム（英語）・11/5",
+     "dir": "down",
+     "sm": "データセンターの建設が遅れれば、AI半導体の納入時期もずれるという見方です。",
+     "pl": "→ 逆風。規制警戒"
+    },
+    {
+     "t": "実測：寄り前は470.43ドル（−3.75%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/AMD/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "4日の上昇分を失う下げです。クアルコムとアームの見通しが半導体全体の重荷になりました。",
+     "pl": "→ 逆風。業種全体の売り"
+    },
+    {
+     "t": "実測：時間外は485.27ドル（−0.72%）— 日本時間5日10時",
+     "u": "https://finance.yahoo.com/quote/AMD/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "3日の決算でデータセンター部門が過去最高の85億ドルでした。半導体全体の売りのなかでは下げは小さめです。",
+     "pl": "→ 注目。決算の支えが残る"
+    },
+    {
+     "t": "キオクシアは8%安、SKハイニックスとソフトバンクグループは6%安と伝えられる",
+     "u": "https://www.tradingkey.com/analysis/stocks/more/262278885-japan-korea-stocks-skhy-kospi-nikkei-samsung-skhynix-softbank-kioxia-googl-amzn-tradingkey",
+     "s": "トレーディングキー（英語）・11/5",
+     "dir": "down",
+     "sm": "メモリーと装置が売りの中心です。メモリー高はAMDにとっても製造原価の上昇要因になります。",
+     "pl": "→ 逆風。メモリー高"
+    },
+    {
+     "t": "488.78ドル（+1.01%）で小幅高 — 半導体のなかでは逆行高",
+     "u": "https://finance.yahoo.com/quote/AMD/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "SOX指数が−3.13%のなかでプラスを保ちました。10月末の決算が好調だったことが支えとみられます。",
+     "pl": "→ 追い風。決算の評価が続く"
+    },
+    {
+     "t": "データセンター設備への規制懸念が半導体全体の重荷に",
+     "u": "https://www.fool.com/investing/2026/11/04/data-center-stocks-just-plunged-after-the-midterms-is-it-time-to-buy-the-dip/",
+     "s": "モトリーフール（英語）・11/4",
+     "dir": "mix",
+     "sm": "バーンスタインは米データセンター計画の56%・244ギガワットが政治リスクにさらされると試算しています。",
+     "pl": "→ 注目。規制リスク"
+    },
+    {
+     "t": "実測：寄り前は481.38ドル（−0.52%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/AMD/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の終値483.90ドルとの比較です。寄り前は一時6%高と伝えられましたが、上げ幅を消しています。",
+     "pl": "→ 注意。好決算でも上げを消す"
+    },
+    {
+     "t": "民主党がAI投資抑制に動くとの警戒 — データセンターの規制が焦点",
+     "u": "https://fx.minkabu.jp/news/383490",
+     "s": "みんかぶ・11/4",
+     "dir": "down",
+     "sm": "7〜9月期はデータセンター部門が過去最高の85億ドルでしたが、政策の前提が変わる可能性が意識されています。",
+     "pl": "→ 逆風。規制の警戒"
+    },
+    {
+     "t": "7〜9月期は予想超えだが、4日はAI規制の警戒で先物が下落",
+     "u": "https://www.cnbc.com/2026/11/03/texas-election-could-pressure-ai-data-center-trade.html",
+     "s": "CNBC（英語）・11/3",
+     "dir": "mix",
+     "sm": "データセンター部門は過去最高の85億ドルでした。いっぽうSOX指数は1カ月で約19%下げています。",
+     "pl": "→ 注目。需要と政策の綱引き"
+    },
+    {
+     "t": "7〜9月期は売上約134億ドル（+45%）・調整後1株2.09ドルで予想超え",
+     "u": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+     "s": "AMD（英語）・11/3",
+     "dir": "up",
+     "sm": "データセンター部門は過去最高の85億ドルで前年同期からほぼ倍増。Instinct MI450の投入が効いています。",
+     "pl": "→ 追い風。需要の裏づけ"
+    },
+    {
+     "t": "株価は時間外で約7%上昇 — 10〜12月期は伸びの加速を見込む",
+     "u": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html",
+     "s": "CNBC（英語）・11/3",
+     "dir": "up",
+     "sm": "通常取引の終値は483.90ドル（+3.65%・実測）でした。会社側はHeliosとVeniceの量産拡大を挙げています。",
+     "pl": "→ 追い風。見通しの改善"
+    },
+    {
+     "t": "3日の引け後に7〜9月期決算 — 日本時間4日朝7時",
+     "u": "https://www.marketbeat.com/earnings/reports/2026-11-3-advanced-micro-devices-inc-stock/",
+     "s": "マーケットビート（英語）・11/3",
+     "dir": "mix",
+     "sm": "市場予想は売上約130.9億ドル（+41.5%）、1株利益1.94ドル（+61.7%）です。電話会議は米東部時間17時からです。",
+     "pl": "→ 注目。決算の発表"
+    }
+   ]
+  },
+  {
+   "nm": "インテル",
+   "en": "Intel / INTC",
+   "px": "$52.25",
+   "chg": -10.33,
+   "t": "prev",
+   "note": "5日は−10.33%。52ドル台まで下げました",
+   "news": [
+    {
+     "t": "実測：52.25ドル（−10.33%）で引け",
+     "u": "https://finance.yahoo.com/quote/INTC",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "55ドルを割り込みました。半導体がそろって売られ、個別の悪材料は伝えられていません。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "インテルは8%超の下げと報道 — AI規制の警戒が半導体に広がる",
+     "u": "https://finance.yahoo.com/technology/ai/articles/amd-tumbles-13-nvidia-slides-154601778.html",
+     "s": "ヤフーファイナンス（英語）・11/5",
+     "dir": "down",
+     "sm": "報道は取引中の数字です。実測の終値は−10.33%で、下げ幅はさらに広がりました。",
+     "pl": "→ 逆風。業種ごと売り"
+    },
+    {
+     "t": "実測：寄り前は56.50ドル（−3.04%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/INTC/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "メモリー不足で端末の原価が上がるという話題が重荷です。装置株の急落も心理を冷やしました。",
+     "pl": "→ 逆風。メモリー高"
+    },
+    {
+     "t": "実測：時間外は57.75ドル（−0.89%）— 日本時間5日10時",
+     "u": "https://finance.yahoo.com/quote/INTC/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "60ドル割れが続いています。半導体の決算を受けた売りが、アジア時間にも引き継がれました。",
+     "pl": "→ 逆風。60ドル割れ継続"
+    },
+    {
+     "t": "クアルコム「世界的なメモリー不足が端末の原価を押し上げている」",
+     "u": "https://fool.com/investing/2026/11/04/qualcomm-s-phone-chip-sales-drop-26-rapid-earnings-reaction",
+     "s": "モトリーフール（英語）・11/4",
+     "dir": "down",
+     "sm": "スマホ向け半導体は26%減りました。パソコン・サーバー向けが主力のインテルにも関わる話です。",
+     "pl": "→ 逆風。原価の上昇"
+    },
+    {
+     "t": "58.27ドル（−3.77%）で下落 — 60ドル割れ",
+     "u": "https://finance.yahoo.com/quote/INTC/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "受託生産の立ち上げには大きな設備投資が必要なため、投資抑制の観測が逆風になりやすい銘柄です。",
+     "pl": "→ 逆風。投資抑制の観測"
+    },
+    {
+     "t": "メモリ・半導体株が下落 — 民主党のテキサス州勝利が警戒される",
+     "u": "https://invezz.com/news/2026/11/04/micron-sk-hynix-sandisk-stocks-fall-why-dems-texas-win-is-spooking-investors/",
+     "s": "インベッズ（英語）・11/4",
+     "dir": "down",
+     "sm": "テキサス州は米データセンター計画容量の約27%を占めます。新知事は新規の即時停止を掲げています。",
+     "pl": "→ 逆風。州レベルの規制"
+    },
+    {
+     "t": "実測：寄り前は58.95ドル（−2.64%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/INTC/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の終値60.55ドルとの比較です。10月30日の28.58%安からの戻りは鈍いままです。",
+     "pl": "→ 逆風。戻りが鈍い"
+    },
+    {
+     "t": "実測：韓国コスピは5,683.80（+0.62%）で引け — 3%超安から切り返す",
+     "u": "https://finance.yahoo.com/quote/%5EKS11/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "半導体株の売りが一巡しました。4日18時のナスダック100先物も+0.10%まで戻しています。",
+     "pl": "→ 追い風。売りが一巡"
+    },
+    {
+     "t": "4日のアジアで半導体株が急落 — AI規制への警戒",
+     "u": "https://fx.minkabu.jp/news/383448",
+     "s": "みんかぶ・11/4",
+     "dir": "down",
+     "sm": "テキサス州はAIデータセンター構築の最重要拠点の一つとされ、同州の上院選の行方が注目されています。",
+     "pl": "→ 逆風。AI規制の警戒"
+    },
+    {
+     "t": "60.55ドル（+0.97%）で引け — 10月30日の28.58%安からは戻らず",
+     "u": "https://finance.yahoo.com/quote/INTC/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "半導体全体の反発に乗りましたが、上げ幅は業種平均より小さいままです。パソコン向けの低迷は来年前半まで続く見方です。",
+     "pl": "→ 追い風。ただし戻りは鈍い"
+    },
+    {
+     "t": "アジアの半導体株が急落 — コスピ−3.59%、台湾加権−3.59%（3日終値の実測）",
+     "u": "https://finance.yahoo.com/quote/%5EKS11/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "サムスン電子は4.15%安、SKハイニックスは5.03%安です。前日の米国でSOX指数が3.37%下げた流れを引き継ぎました。",
+     "pl": "→ 逆風。業界全体の売り"
+    },
+    {
+     "t": "59.97ドル（−8.80%）で引け — 60ドルを下回る",
+     "u": "https://finance.yahoo.com/quote/INTC/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "30日の−28.58%に続く下げです。パソコン向けの在庫調整が来年前半まで続くとの見方が重荷です。",
+     "pl": "→ 逆風。見通しの下振れ"
+    },
+    {
+     "t": "東京市場でもパソコン・半導体関連に売り — キオクシアが急落",
+     "u": "https://www.media-ir.com/news/?p=186958",
+     "s": "メディアIR・11/2",
+     "dir": "down",
+     "sm": "キオクシアは30日発表の利益見通しが市場予想に届かず、日経平均を最も押し下げました。メモリー高の影響が共通の論点です。",
+     "pl": "→ 逆風。業種全体の売り"
+    }
+   ]
+  },
+  {
+   "nm": "マイクロソフト",
+   "en": "Microsoft / MSFT",
+   "px": "$535.93",
+   "chg": -3.58,
+   "t": "prev",
+   "note": "5日は−3.58%。前日の急騰分を一部返しました",
+   "news": [
+    {
+     "t": "実測：535.93ドル（−3.58%）で引け",
+     "u": "https://finance.yahoo.com/quote/MSFT",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "前日は+6.68%でした。すでに設備を持つ強みが評価された分を、一部返した形です。",
+     "pl": "→ 逆風。反落"
+    },
+    {
+     "t": "ハイパースケーラーの設備投資計画は維持との見方",
+     "u": "https://www.fool.com/investing/2026/11/05/the-ai-selloff-is-getting-worse-nvidia-dell-and-data-center-stocks-are-plunging-hard-is-it-time-to-buy-the-dip/",
+     "s": "モトリーフール（英語）・11/5",
+     "dir": "mix",
+     "sm": "多くの案件は承認・資金調達済みか建設中で、すぐには止まらないという見立てです。",
+     "pl": "→ 注目。計画は維持"
+    },
+    {
+     "t": "実測：寄り前は555.82ドル（ほぼ変わらず） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/MSFT/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "急騰のあと一服です。AI投資が抑えられれば費用が軽くなる、という読みは残っています。",
+     "pl": "→ 注目。高値圏で一服"
+    },
+    {
+     "t": "「ブルー・ウェーブ」で半導体から自動車・内需へ資金移動",
+     "u": "https://www.bloomberg.com/news/articles/2026-11-05/blue-wave-stock-rotation-sinks-asian-chipmakers-boosts-autos",
+     "s": "ブルームバーグ（英語）・11/5",
+     "dir": "mix",
+     "sm": "設備を持つクラウド大手が有利との見方が続いています。5日のダウ先物は+0.30%、ナスダック100先物は−0.67%です。",
+     "pl": "→ 注目。ローテーション継続"
+    },
+    {
+     "t": "555.80ドル（+6.68%）で急騰 — 上場来高値圏",
+     "u": "https://finance.yahoo.com/quote/MSFT/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "AI投資が抑えられれば自由に使えるお金が増えるとの読みです。すでに設備を持つ強みが評価されました。",
+     "pl": "→ 追い風。投資抑制の期待"
+    },
+    {
+     "t": "大型ハイテクが急騰 — 民主党がAI投資を抑えるとの読み",
+     "u": "https://uk.finance.yahoo.com/news/big-tech-stocks-soar-traders-170754816.html",
+     "s": "ロイター／ヤフーファイナンス（英語）・11/4",
+     "dir": "up",
+     "sm": "重いAI投資が自由資金を圧迫してきたため、投資が減ることを好感する動きです。アジュールは48%増でした。",
+     "pl": "→ 追い風。自由資金の改善"
+    },
+    {
+     "t": "実測：寄り前は532.00ドル（+2.11%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/MSFT/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "3日の終値520.99ドルとの比較です。ニュースネイションはアマゾン・メタとともに上昇と伝えています。",
+     "pl": "→ 追い風。寄り前は堅調"
+    },
+    {
+     "t": "米株先物は下げを縮小 — 民主党が上下院を制する",
+     "u": "https://za.investing.com/news/stock-market-news/us-stock-index-futures-steady-as-democrats-seize-congress-4548527",
+     "s": "ロイター（インベスティング）・11/4",
+     "dir": "mix",
+     "sm": "AIやハイテクへの規制監視の強化が焦点とされます。議会の勢力変化で株価が崩れた歴史は乏しいとの指摘もあります。",
+     "pl": "→ 注目。規制の行方"
+    },
+    {
+     "t": "下院は民主党が過半数の見通し — 企業への監視強化も警戒材料",
+     "u": "https://www.cnbc.com/2026/11/03/midterm-elections-2026-live-updates.html",
+     "s": "CNBC（英語）・11/4",
+     "dir": "down",
+     "sm": "AI規制の強化と企業への監視強化が懸念されていると伝えられます。データセンター投資の前提に関わります。",
+     "pl": "→ 逆風。政策の警戒"
+    },
+    {
+     "t": "520.99ドル（+2.74%）で引け — 大型ハイテクの買い戻しの中心",
+     "u": "https://finance.yahoo.com/quote/MSFT/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "前日に250億ドル超の大型社債を発表して下げた分を取り戻しました。AI投資の資金手当てが進んでいます。",
+     "pl": "→ 追い風。買い戻し"
+    },
+    {
+     "t": "パランティアは予想超えの決算でも1.65%安で引け",
+     "u": "https://seekingalpha.com/news/4514018-palantir-stock-tumbles-despite-q3-beat-as-analysts-mull-valuation",
+     "s": "シーキング・アルファ（英語）・11/3",
+     "dir": "down",
+     "sm": "契約総額（TCV）の伸びが前年同期比6%増にとどまりました。AI関連の高い評価に厳しい目が向いています。",
+     "pl": "→ 逆風。評価への厳しい目"
+    },
+    {
+     "t": "507.12ドル（−2.83%）で引け — 大型社債の発表が重荷",
+     "u": "https://finance.yahoo.com/quote/MSFT/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "AI投資の資金を借入で集める形が意識されました。大型ハイテクのなかで下げが大きい1日です。",
+     "pl": "→ 逆風。借入への警戒"
+    },
+    {
+     "t": "9年ぶりの大型社債で250億ドル以上を調達 — 2〜40年の最大10本立て",
+     "u": "https://dataconomy.com/2026/11/02/microsoft-launches-25-billion-bond-sale-to-fund-ai-expansion/",
+     "s": "データコノミー（英語）・11/2",
+     "dir": "down",
+     "sm": "2017年以来の投資適格債です。格付けはAaa/AAA、受渡しは4日の予定で、AI投資の資金に充てられます。",
+     "pl": "→ 逆風。借入でのAI投資"
+    },
+    {
+     "t": "521.91ドル（−1.55%）で引け — ハイテクのなかでは小幅",
+     "u": "https://finance.yahoo.com/quote/MSFT/",
+     "s": "実測・10/30",
+     "dir": "down",
+     "sm": "クラウドの需要は強いままで、半導体の急落からはやや距離があります。",
+     "pl": "→ 逆風。ハイテク安"
+    }
+   ]
+  },
+  {
+   "nm": "アップル",
+   "en": "Apple / AAPL",
+   "px": "$344.17",
+   "chg": -1.53,
+   "t": "prev",
+   "note": "5日は−1.53%。大型株で最も下げが小さいです",
+   "news": [
+    {
+     "t": "実測：344.17ドル（−1.53%）で引け",
+     "u": "https://finance.yahoo.com/quote/AAPL",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "ウォッチリストで最小の下げです。AI向け設備投資が少ないことが、この日は強みになりました。",
+     "pl": "→ 注目。小幅安"
+    },
+    {
+     "t": "実測：寄り前は350.59ドル（+0.31%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/AAPL/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "半導体が売られるなかで買われています。メモリー価格の高騰が粗利益率を押し下げる点は論点のままです。",
+     "pl": "→ 追い風。資金の受け皿"
+    },
+    {
+     "t": "クアルコムがメモリー不足による端末原価の上昇を指摘",
+     "u": "https://fool.com/investing/2026/11/04/qualcomm-s-phone-chip-sales-drop-26-rapid-earnings-reaction",
+     "s": "モトリーフール（英語）・11/4",
+     "dir": "mix",
+     "sm": "アップル自身も12月期の粗利益率の見通しをメモリー価格の高騰で抑えています。同じ要因が確認された形です。",
+     "pl": "→ 注目。原価の上昇"
+    },
+    {
+     "t": "349.51ドル（+5.31%）で急騰 — 時価総額は5兆ドル台",
+     "u": "https://finance.yahoo.com/quote/AAPL/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "AI設備への巨額投資をしていないことが、この日は強みとして評価されました。",
+     "pl": "→ 追い風。投資負担の軽さ"
+    },
+    {
+     "t": "アップルがエヌビディアを抜いて時価総額首位 — 「設備投資の落とし穴」を回避",
+     "u": "https://finance.yahoo.com/markets/article/apple-overtakes-nvidia-as-most-valuable-company-as-iphone-maker-avoids-capex-pitfalls-150316032.html",
+     "s": "ヤフーファイナンス（英語）・11/4",
+     "dir": "up",
+     "sm": "首位は最近何度も入れ替わっています。週初はメモリ価格の上昇が年末商戦の利益率を圧迫すると警告し下げていました。",
+     "pl": "→ 追い風。評価の見直し"
+    },
+    {
+     "t": "実測：寄り前は337.77ドル（+1.77%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/AAPL/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "3日の終値331.90ドルとの比較です。ダウ先物が1.80%高となるなかで買い戻しが入っています。",
+     "pl": "→ 追い風。買い戻し"
+    },
+    {
+     "t": "実測：4日18時のダウ先物は52,188（+0.56%）— 12時は0.89%安",
+     "u": "https://finance.yahoo.com/quote/YM=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "下げがハイテクに偏っていたぶん、ダウ先物は先にプラスへ戻しました。12月期の利益率の見通しが引き続き重荷です。",
+     "pl": "→ 追い風。下げを戻す"
+    },
+    {
+     "t": "4日の先物はハイテク中心に下落 — ナスダック100先物は−2.27%",
+     "u": "https://fx.minkabu.jp/news/383452",
+     "s": "みんかぶFX・11/4",
+     "dir": "down",
+     "sm": "民主党優勢の報道が理由とされます。アップル自身は利益率の見通しの重荷が残っています。",
+     "pl": "→ 逆風。ハイテク安"
+    },
+    {
+     "t": "331.90ドル（−1.90%）で引け — NYダウの重荷に",
+     "u": "https://finance.yahoo.com/quote/AAPL/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "12月期の粗利益率の見通し45〜46%が予想の約46.3%に届かず、2日続けて売られました。",
+     "pl": "→ 逆風。利益率の鈍化"
+    },
+    {
+     "t": "メモリー価格の高騰は12月期以降も続くと経営陣が説明",
+     "u": "https://www.tradingkey.com/analysis/stocks/us-stocks/262266155-apple-stock-forecast-q4-earnings-memory-costs-margin-guide-330-support-november-3-2026-tradingkey",
+     "s": "トレーディングキー（英語）・11/3",
+     "dir": "down",
+     "sm": "AI向けの需要でメモリーが値上がりし、端末メーカーには原価の上昇として効いています。",
+     "pl": "→ 逆風。部品代の上昇"
+    },
+    {
+     "t": "JPモルガンとモルガン・スタンレーが目標株価を引き下げ — 判断は据え置き",
+     "u": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/apple-s-margin-squeeze-draws-twin-target-cuts-from-jpmorgan-and-morgan-stanley/70451720",
+     "s": "アドホックニュース（英語）・11/3",
+     "dir": "mix",
+     "sm": "モルガン・スタンレーは、関税の還付分を除けば見通しはほぼ想定どおりだとしています。",
+     "pl": "→ 注意。評価の小幅な下げ"
+    },
+    {
+     "t": "338.32ドル（−1.83%）で引け — 引け後に7〜9月期決算",
+     "u": "https://finance.yahoo.com/quote/AAPL/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "決算発表前の下げです。発表後の時間外では0.9%安となっています。",
+     "pl": "→ 注目。決算の発表日"
+    },
+    {
+     "t": "7〜9月期は売上1,144.8億ドル・1株利益2.10ドルでともに予想超え",
+     "u": "https://jp.investing.com/news/earnings/article-1737854",
+     "s": "インベスティングドットコム・11/2",
+     "dir": "up",
+     "sm": "予想は売上1,133.8億ドル、1株利益1.99ドルでした。時間外の株価は0.9%下げています。",
+     "pl": "→ 追い風。予想超え"
+    },
+    {
+     "t": "2日（月）の米国市場の引け後に7〜9月期の決算",
+     "u": "https://fx.minkabu.jp/news/383206",
+     "s": "みんかぶFX・11/2",
+     "dir": "mix",
+     "sm": "米国は1日に夏時間が終わり、取引時間は日本時間23時30分〜翌6時になります。決算は日本時間3日の朝に出ます。",
+     "pl": "→ 注目。決算待ち"
+    }
+   ]
+  },
+  {
+   "nm": "アルファベット",
+   "en": "Alphabet / GOOGL",
+   "px": "$282.57",
+   "chg": -2.2,
+   "t": "prev",
+   "note": "5日は−2.20%。半導体より下げは小さめです",
+   "news": [
+    {
+     "t": "実測：282.57ドル（−2.20%）で引け",
+     "u": "https://finance.yahoo.com/quote/GOOGL",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "自前の半導体とデータセンターを持つため、建設停止の影響は受けにくいと見られています。",
+     "pl": "→ 注目。小幅安"
+    },
+    {
+     "t": "実測：寄り前は290.50ドル（+0.54%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/GOOGL/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "AI設備投資が抑えられれば費用が軽くなる側と見られています。半導体とは逆の動きです。",
+     "pl": "→ 追い風。費用の軽減期待"
+    },
+    {
+     "t": "実測：5日12時のナスダック100先物は28,375.75（−0.67%）",
+     "u": "https://finance.yahoo.com/quote/NQ=F/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "半導体の決算を受けた小幅安です。設備を持つ側が有利という4日の見方は、まだ崩れていません。",
+     "pl": "→ 注目。先物は小幅安"
+    },
+    {
+     "t": "288.93ドル（+3.18%）で上昇",
+     "u": "https://finance.yahoo.com/quote/GOOGL/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "クラウド大手は、データセンター建設が止まってもすでに設備を持つぶん有利との見方が出ました。",
+     "pl": "→ 追い風。設備を持つ強み"
+    },
+    {
+     "t": "アルファベット・アマゾン・マイクロソフトがそろって急騰",
+     "u": "https://www.fool.com/investing/2026/11/04/alphabet-amazon-and-microsoft-all-surged-today-you-can-thank-the-big-blue-wave/",
+     "s": "モトリーフール（英語）・11/4",
+     "dir": "up",
+     "sm": "選挙結果で政治の不透明感が消え、AI投資の抑制期待が重なりました。上げ幅は3〜7%でした。",
+     "pl": "→ 追い風。不透明感の解消"
+    },
+    {
+     "t": "実測：寄り前は282.05ドル（+0.72%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/GOOGL/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "3日の終値280.03ドルとの比較です。ニュースネイションは他の大型ハイテクに比べ軟調と伝えています。",
+     "pl": "→ 注目。出遅れ"
+    },
+    {
+     "t": "民主党の上下院制圧でAI投資の抑制を警戒 — アジアのハイテク株が下落",
+     "u": "https://www.thenationalnews.com/business/markets/2026/11/04/asian-equities-and-us-stocks-futures-slump-amid-blue-sweep-in-us-polls/",
+     "s": "ザ・ナショナル（英語）・11/4",
+     "dir": "down",
+     "sm": "予測市場では上院の民主党勝利が約9割、下院は約97%まで上がっていたと伝えています。",
+     "pl": "→ 逆風。規制の警戒"
+    },
+    {
+     "t": "民主党優勢でAI規制への警戒 — データセンター投資の前提に関わる",
+     "u": "https://fx.minkabu.jp/news/383448",
+     "s": "みんかぶ・11/4",
+     "dir": "down",
+     "sm": "民主党はAI規制に前向きとされ、勝てば開発ペースが鈍る可能性が指摘されています。",
+     "pl": "→ 逆風。AI規制の警戒"
+    },
+    {
+     "t": "280.03ドル（+0.37%）で引け — 大型ハイテクでは上げが小さめ",
+     "u": "https://finance.yahoo.com/quote/GOOGL/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "10月29日に出したAI投資の増額への不安が、まだ重荷として残っています。",
+     "pl": "→ 追い風。ただし上げは小さい"
+    },
+    {
+     "t": "278.99ドル（−0.30%）で引け — 大型ハイテクでは下げが小さめ",
+     "u": "https://finance.yahoo.com/quote/GOOGL/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "29日の−12.64%のあと、下げ止まりを探る動きです。通信サービスのETFは+0.36%でした。",
+     "pl": "→ 注目。下げ止まりを探る"
+    },
+    {
+     "t": "279.84ドル（−1.40%）で引け — AI検索の影響でレディットが−29%",
+     "u": "https://finance.yahoo.com/quote/GOOGL/",
+     "s": "実測・10/30",
+     "dir": "down",
+     "sm": "レディットは検索からの流入が減ったと説明しました。AI検索が他社の集客を奪う構図が意識されています。",
+     "pl": "→ 注目。AI検索の影響力"
+    },
+    {
+     "t": "−12.64%の283.82ドル — 2004年の上場以来いちばん大きな1日の下げ",
+     "u": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html",
+     "s": "CNBC（英語）・10/29／実測・10/29",
+     "dir": "down",
+     "sm": "時価総額は約5,000億ドル減りました。これまでの最大は2020年3月の−11.63%です。",
+     "pl": "→ 逆風。過去最大の下げ"
+    },
+    {
+     "t": "フリーキャッシュフローは90.7億ドルのマイナス — 予想は27億ドルのマイナス",
+     "u": "https://www.tradingkey.com/analysis/stocks/us-stocks/262248965-google-earnings-report-q3-services-cloud-search-capital-expenditures-cash-tradingkey",
+     "s": "トレーディングキー（英語）・10/29",
+     "dir": "down",
+     "sm": "設備投資が前年の2倍超の514億ドルにふくらみました。1株利益も2.12ドルで予想3.02ドルに未達です。",
+     "pl": "→ 逆風。投資負担の重さ"
+    },
+    {
+     "t": "2026年の設備投資計画は据え置き、2027年は「大幅に増える」と説明",
+     "u": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html",
+     "s": "CNBC（英語）・10/28",
+     "dir": "down",
+     "sm": "クラウドは好調でしたが、検索の伸びの鈍さと投資の重さが相殺した形です。",
+     "pl": "→ 逆風。投資の増加見込み"
+    }
+   ]
+  },
+  {
+   "nm": "アマゾン",
+   "en": "Amazon / AMZN",
+   "px": "$260.21",
+   "chg": -2.19,
+   "t": "prev",
+   "note": "5日は−2.19%。前日の急騰分の一部を返しました",
+   "news": [
+    {
+     "t": "実測：260.21ドル（−2.19%）で引け",
+     "u": "https://finance.yahoo.com/quote/AMZN",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "前日は+6.12%でした。既存のAWSの設備を持つ強みは、この日も相対的に効いています。",
+     "pl": "→ 逆風。反落"
+    },
+    {
+     "t": "実測：寄り前は268.39ドル（+0.89%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/AMZN/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "AWSの成長が見直されました。GPUを買う側なので、設備投資の抑制は費用面では追い風になります。",
+     "pl": "→ 追い風。クラウドの評価"
+    },
+    {
+     "t": "クラウド大手はデータセンター規制でも有利との見方が続く",
+     "u": "https://www.bloomberg.com/news/articles/2026-11-05/blue-wave-stock-rotation-sinks-asian-chipmakers-boosts-autos",
+     "s": "ブルームバーグ（英語）・11/5",
+     "dir": "mix",
+     "sm": "ブルームバーグは半導体から自動車・内需への資金移動を伝えています。設備を持つ側への選別が続いています。",
+     "pl": "→ 注目。選別の継続"
+    },
+    {
+     "t": "266.03ドル（+6.12%）で急騰",
+     "u": "https://finance.yahoo.com/quote/AMZN/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "選挙後にAWSの成長とAI戦略が改めて評価されました。7〜9月期のAWS売上は39%増の459.8億ドルです。",
+     "pl": "→ 追い風。AWSの再評価"
+    },
+    {
+     "t": "クラウド大手はデータセンター建設が止まっても有利との見方",
+     "u": "https://finance.yahoo.com/technology/ai/articles/big-tech-stocks-mag7-etf-185730254.html",
+     "s": "ロイター／ヤフーファイナンス（英語）・11/4",
+     "dir": "up",
+     "sm": "UBSのパーカー氏は、短期的には州レベルのデータセンター規制の影響が最も大きいとしています。",
+     "pl": "→ 追い風。先に設備を確保"
+    },
+    {
+     "t": "実測：寄り前は260.86ドル（+4.06%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/AMZN/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "3日の終値250.69ドルとの比較です。寄り前の値は出来高が薄く振れやすい点に注意が必要です。",
+     "pl": "→ 追い風。寄り前は大幅高"
+    },
+    {
+     "t": "民主党はデータセンターの税優遇見直しに前向きとされる",
+     "u": "https://fx.minkabu.jp/news/383490",
+     "s": "みんかぶ・11/4",
+     "dir": "down",
+     "sm": "AI投資の抑制への警戒が売りを呼びました。ただ足元では株安が一服しています。",
+     "pl": "→ 逆風。規制の警戒"
+    },
+    {
+     "t": "民主党優勢でデータセンター投資の鈍化が警戒される",
+     "u": "https://www.cnbc.com/2026/11/03/texas-election-could-pressure-ai-data-center-trade.html",
+     "s": "CNBC（英語）・11/3",
+     "dir": "down",
+     "sm": "ウェルズ・ファーゴは米国のデータセンター電力の27%がテキサス州だと推計しています。",
+     "pl": "→ 逆風。AI規制の警戒"
+    },
+    {
+     "t": "250.69ドル（+2.06%）で引け — クラウドの伸びが支え",
+     "u": "https://finance.yahoo.com/quote/AMZN/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "AWSの伸びが約5年ぶりに速いペースへ戻ったことが、引き続き買いの理由になっています。",
+     "pl": "→ 追い風。クラウドの需要"
+    },
+    {
+     "t": "245.63ドル（+2.20%）で引け — 大型ハイテクでいちばんの上げ",
+     "u": "https://finance.yahoo.com/quote/AMZN/",
+     "s": "実測・11/2",
+     "dir": "up",
+     "sm": "決算後の急落から買い戻しが入りました。一般消費財のETFは+2.41%で業種別の上位です。",
+     "pl": "→ 追い風。買い戻し"
+    },
+    {
+     "t": "フィリップ証券が「買い」へ格上げ、目標株価330ドル",
+     "u": "https://www.investing.com/news/analyst-ratings/phillip-securities-upgrades-amazon-stock-rating-on-aws-strength-93CH-4990042",
+     "s": "インベスティング（英語）・11/2",
+     "dir": "up",
+     "sm": "AWSの伸びを評価した格上げです。みずほ証券も目標株価を335ドルへ引き上げました。",
+     "pl": "→ 追い風。評価の底上げ"
+    },
+    {
+     "t": "240.35ドル（−1.41%）で引け — 寄り前の−7%から戻す",
+     "u": "https://finance.yahoo.com/quote/AMZN/",
+     "s": "実測・10/30",
+     "dir": "down",
+     "sm": "AWSが+39%と約5年ぶりの最速で伸びた点が評価されました。投資額の大きさは引き続き論点です。",
+     "pl": "→ 注目。クラウドは好調"
+    },
+    {
+     "t": "AWSの売上は460億ドル（+39%）で約5年ぶりの最速 — 営業利益178億ドル",
+     "u": "https://www.geekwire.com/2026/aws-growth-hits-39-its-fastest-in-nearly-five-years-as-amazon-misses-on-earnings/",
+     "s": "ギークワイヤー（英語）・10/29",
+     "dir": "up",
+     "sm": "前年同期の営業利益は114億ドルでした。クラウドの伸びは市場予想を上回っています。",
+     "pl": "→ 追い風。クラウドの加速"
+    },
+    {
+     "t": "2026年の設備投資は約2,200億ドルを維持、2027年は「意味のある増加」",
+     "u": "https://www.fool.com/investing/2026/10/29/aws-jumps-39-as-amazons-cash-flow-sinks-rapid-earn/",
+     "s": "モトリーフール（英語）・10/29",
+     "dir": "down",
+     "sm": "直近1年のフリーキャッシュフローは424億ドルの流出です（前年は148億ドルの流入）。",
+     "pl": "→ 逆風。投資負担の重さ"
+    }
+   ]
+  },
+  {
+   "nm": "メタ",
+   "en": "Meta / META",
+   "px": "$605.08",
+   "chg": -3.96,
+   "t": "prev",
+   "note": "5日は−3.96%。605ドル台まで下げました",
+   "news": [
+    {
+     "t": "実測：605.08ドル（−3.96%）で引け",
+     "u": "https://finance.yahoo.com/quote/META",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "自社でデータセンターを建てる計画が大きいぶん、建設規制の影響を受けやすい銘柄です。",
+     "pl": "→ 逆風。下落"
+    },
+    {
+     "t": "実測：寄り前は636.12ドル（+0.97%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "寄り前の大型株で上げが最大です。AI投資の抑制が費用の軽減につながるとの読みが働いています。",
+     "pl": "→ 追い風。費用の軽減期待"
+    },
+    {
+     "t": "実測：5日12時のS&P500先物は7,713.25（−0.09%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "ほぼ変わらずです。AI向け設備投資の負担が重い同社は、規制の話題では見方が分かれやすい位置にあります。",
+     "pl": "→ 注目。ほぼ横ばい"
+    },
+    {
+     "t": "630.00ドル（+1.44%）で上昇 — 大型株のなかでは小幅",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "10月の決算でAI投資の重さが意識されたため、投資抑制の恩恵は限定的と見られたようです。",
+     "pl": "→ 追い風。ただし小幅"
+    },
+    {
+     "t": "マグニフィセント7はエヌビディアとテスラを除いて上昇",
+     "u": "https://247wallst.com/investing/2026/11/04/nvidia-and-tesla-left-behind-as-rest-of-mag7-rally-on-dems-big-night/",
+     "s": "24/7ウォールストリート（英語）・11/4",
+     "dir": "mix",
+     "sm": "設備を使う側が買われ、作る側が売られる形です。アルファベットは+3.18%、メタは+1.44%でした。",
+     "pl": "→ 注目。銘柄間の差"
+    },
+    {
+     "t": "実測：寄り前は620.09ドル（−0.15%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "3日の終値621.03ドルとの比較です。一時は625ドル台をつけており、方向感は定まっていません。",
+     "pl": "→ 注目。方向感に乏しい"
+    },
+    {
+     "t": "AI・ハイテクへの規制監視の強化が焦点に — 民主党が議会を制す",
+     "u": "https://za.investing.com/news/stock-market-news/us-stock-index-futures-steady-as-democrats-seize-congress-4548527",
+     "s": "ロイター（インベスティング）・11/4",
+     "dir": "mix",
+     "sm": "医療、金融、暗号資産の規制の行方も焦点だとしています。先物は下げを縮小しました。",
+     "pl": "→ 注目。規制の行方"
+    },
+    {
+     "t": "ナスダック100は10月の最高値から10%下げ — 調整圏に",
+     "u": "https://www.cnbc.com/2026/11/03/texas-election-could-pressure-ai-data-center-trade.html",
+     "s": "CNBC（英語）・11/3",
+     "dir": "down",
+     "sm": "AI投資の資金手当てと株価の評価への不安が続いています。そこに選挙結果が重なりました。",
+     "pl": "→ 逆風。調整が続く"
+    },
+    {
+     "t": "621.03ドル（+2.36%）で引け — 大型ハイテクの反発に乗る",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "AI投資の増額への不安で売られていた分を、買い戻しの流れで取り戻しました。",
+     "pl": "→ 追い風。買い戻し"
+    },
+    {
+     "t": "パランティアは予想超えの決算でも1.65%安で引け",
+     "u": "https://seekingalpha.com/news/4514018-palantir-stock-tumbles-despite-q3-beat-as-analysts-mull-valuation",
+     "s": "シーキング・アルファ（英語）・11/3",
+     "dir": "down",
+     "sm": "契約総額（TCV）の伸びが前年同期比6%増にとどまりました。AI関連の高い評価に厳しい目が向いています。",
+     "pl": "→ 逆風。評価への厳しい目"
+    },
+    {
+     "t": "606.73ドル（−1.34%）で引け — 610ドルを下回る",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・11/2",
+     "dir": "down",
+     "sm": "オラクルとマイクロソフトの大型調達を受け、AI投資の資金繰りへの警戒が同業にも広がりました。",
+     "pl": "→ 逆風。借入への警戒"
+    },
+    {
+     "t": "614.99ドル（−1.53%）で引け — ハイテク売りのなかで小幅",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・10/30",
+     "dir": "down",
+     "sm": "AI向けの投資額の大きさは論点ですが、30日は半導体に売りが集まりました。",
+     "pl": "→ 逆風。ハイテク安"
+    },
+    {
+     "t": "624.52ドル（+1.96%）で上昇 — 通信サービスが−1.87%のなかで逆行高",
+     "u": "https://finance.yahoo.com/quote/META/",
+     "s": "実測・10/29",
+     "dir": "up",
+     "sm": "通信サービス（XLC）全体は−1.87%でしたが、メタは上げました。この日の売りはアルファベットに集中した形です。",
+     "pl": "→ 追い風。織り込み済み"
+    },
+    {
+     "t": "アルファベットの現金流出が嫌われ、AI投資の重い銘柄に目が向く",
+     "u": "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/",
+     "s": "フォーチュン（英語）・10/28",
+     "dir": "down",
+     "sm": "メタも大型の資金調達でAI投資を進めています。投資の規模より現金が回るかを見る流れは、同社にも向かいやすい論点です。",
+     "pl": "→ 逆風。投資の重さ"
+    }
+   ]
+  },
+  {
+   "nm": "テスラ",
+   "en": "Tesla / TSLA",
+   "px": "$343.69",
+   "chg": -10.77,
+   "t": "prev",
+   "note": "5日は−10.77%。規制とスペースX合併の不透明感で",
+   "news": [
+    {
+     "t": "実測：343.69ドル（−10.77%）で引け — 1日で41.50ドル安",
+     "u": "https://finance.yahoo.com/quote/TSLA",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "民主党が議会を制し、マスク氏の事業に規制面の重荷が増えるとの警戒が出ました。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "スペースXとの合併構想にも不透明感 — テキサス州知事選の結果も重荷",
+     "u": "https://www.gurufocus.com/news/9175302/tesla-tsla-shares-drop-amid-political-concerns-valuation-remains-fairly-priced",
+     "s": "グルフォーカス（英語）・11/5",
+     "dir": "down",
+     "sm": "同社の主要拠点はテキサス州にあります。上海工場の出荷の弱さも売りの理由に挙げられました。",
+     "pl": "→ 逆風。政治リスク"
+    },
+    {
+     "t": "下げの主因は政治環境への懸念と報道",
+     "u": "https://www.investing.com/news/stock-market-news/why-is-tesla-stock-tumbling-today-93CH-4997818",
+     "s": "インベスティングドットコム（英語）・11/5",
+     "dir": "down",
+     "sm": "EV補助や自動運転の規制が厳しくなるとの見方です。業績の悪材料は伝えられていません。",
+     "pl": "→ 逆風。規制警戒"
+    },
+    {
+     "t": "実測：寄り前は376.67ドル（−2.21%） — 日本時間5日18時10分",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "民主党の議会制圧で規制が強まるとの警戒が残ります。EV優遇の見直しも論点になっています。",
+     "pl": "→ 逆風。規制の警戒"
+    },
+    {
+     "t": "実測：5日12時のダウ先物は53,663（+0.30%）、ナスダック100先物は−0.67%",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "ハイテクだけが売られる形が続いています。自動運転の規制強化への警戒は4日から残ったままです。",
+     "pl": "→ 注目。ハイテクに逆風"
+    },
+    {
+     "t": "385.19ドル（−3.34%）で下落 — 指数高に逆行",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "自動運転の規制強化や政府契約への監視が意識されました。スペースXとの統合観測にも疑問が出ています。",
+     "pl": "→ 逆風。規制強化の警戒"
+    },
+    {
+     "t": "ダン・アイブス氏「今後2年のAI・技術関連の立法に大きな障害ができる」",
+     "u": "https://finance.yahoo.com/markets/stocks/article/spacex-tesla-stocks-sink-as-analyst-warns-democrats-victory-will-create-major-hurdles-for-ai-build-out-135511616.html",
+     "s": "ヤフーファイナンス（英語）・11/4",
+     "dir": "down",
+     "sm": "とくに上院を民主党が取ったことが、ワシントンでの法案づくりを複雑にすると指摘しています。",
+     "pl": "→ 逆風。政策の不確実性"
+    },
+    {
+     "t": "実測：寄り前は378.72ドル（−4.96%）— 日本時間4日22時20分",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "自動運転の規制強化、政府契約への監視、スペースXとの統合観測が理由として挙げられています。",
+     "pl": "→ 逆風。規制への警戒"
+    },
+    {
+     "t": "実測：4日18時のS&P500先物は7,612.75（+0.21%）に戻す",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "朝の急落は一巡しました。民主党が議会を制し、EV政策や規制の前提が変わる可能性が意識されています。",
+     "pl": "→ 注目。政策の前提"
+    },
+    {
+     "t": "下院は民主党が過半数の見通し — 補助金や規制の前提が変わる可能性",
+     "u": "https://www.cnbc.com/2026/11/03/midterm-elections-2026-live-updates.html",
+     "s": "CNBC（英語）・11/4",
+     "dir": "mix",
+     "sm": "EVの補助金や自動運転の規制に関わる銘柄です。上院の多数派はまだ確定していません。",
+     "pl": "→ 注目。政策の前提"
+    },
+    {
+     "t": "398.50ドル（−1.32%）で引け — 400ドルを割る",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "ハイテク全体が反発するなかで下げました。中間選挙の結果が補助金や規制の見通しに関わる銘柄です。",
+     "pl": "→ 逆風。独自の値動き"
+    },
+    {
+     "t": "403.82ドル（+1.00%）で引け — 400ドル台を維持",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・11/2",
+     "dir": "up",
+     "sm": "一般消費財への買いの流れに乗りました。アマゾンに次いで大型ハイテクでは上げた1つです。",
+     "pl": "→ 追い風。消費関連への買い"
+    },
+    {
+     "t": "399.81ドル（−0.87%）で引け — 指数より小さい下げ",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・10/30",
+     "dir": "down",
+     "sm": "半導体やAI関連の持ち高調整からは距離があり、400ドル近辺を保ちました。",
+     "pl": "→ 逆風。小幅安"
+    },
+    {
+     "t": "403.30ドル（−0.23%）でほぼ横ばい",
+     "u": "https://finance.yahoo.com/quote/TSLA/",
+     "s": "実測・10/29",
+     "dir": "mix",
+     "sm": "一般消費財（XLY）は+0.75%でした。AI投資の話題とは少し離れた動きになっています。",
+     "pl": "→ 注目。小動き"
+    }
+   ]
+  }
+ ],
+ "movers": [
+  {
+   "nm": "アプラビン",
+   "en": "AppLovin / APP",
+   "pct": 31.04,
+   "why": "過去最高の決算と見通し増額（実測・11/5）",
+   "desc": "スマホアプリ向けの広告配信プラットフォームを運営する米国の会社です。",
+   "news": [
+    {
+     "t": "実測：356.10ドル（+31.04%）で引け — 1日で84.35ドル高",
+     "u": "https://finance.yahoo.com/quote/APP",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "この日のS&P500で最大の上げです。AI関連が総崩れのなかで突出しました。",
+     "pl": "→ 追い風。急騰"
+    },
+    {
+     "t": "7〜9月期の売上は55%増の21.8億ドル、1株利益4.30ドル — ともに予想超え",
+     "u": "https://seekingalpha.com/news/4667356-applovin-jumps-31-percent-on-record-q3-results-raised-outlook",
+     "s": "シーキングアルファ（英語）・11/5",
+     "dir": "up",
+     "sm": "予想は売上20.7億ドル、1株利益4.03ドルでした。10〜12月期見通しも予想を上回ります。",
+     "pl": "→ 追い風。記録的な決算"
+    },
+    {
+     "t": "フリーキャッシュフローは約14億ドル — 自社株買いの枠を拡大",
+     "u": "https://www.gurufocus.com/news/9175430/applovin-stocks-jump-31-as-cash-generation-backs-a-larger-buyback",
+     "s": "グルフォーカス（英語）・11/5",
+     "dir": "up",
+     "sm": "売上の約64%が現金として残る計算です。前回決算の失敗をCEOは「自分たちのミス」と説明しました。",
+     "pl": "→ 追い風。現金の厚み"
+    }
+   ]
+  },
+  {
+   "nm": "マグナイト",
+   "en": "Magnite / MGNI",
+   "pct": 20.75,
+   "why": "アプラビン決算の波及（実測・11/5）",
+   "desc": "ネット広告の売り手側（媒体側）の配信基盤を手がける米国の会社です。",
+   "news": [
+    {
+     "t": "実測：27.52ドル（+20.75%）で引け",
+     "u": "https://finance.yahoo.com/quote/MGNI",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "同業の好決算を受けて、ネット広告の市況が良いとの見方が広がりました。",
+     "pl": "→ 追い風。連想買い"
+    },
+    {
+     "t": "アプラビンの好決算で広告関連に買い — トレードデスクは下落",
+     "u": "https://247wallst.com/investing/2026/11/05/applovin-soars-30-on-record-quarter-and-strong-outlook-magnite-surges-17-trade-desk-falls-2/",
+     "s": "24/7ウォール街（英語）・11/5",
+     "dir": "up",
+     "sm": "同じ広告業界でも、勝ち組と負け組が分かれていると受け止められています。",
+     "pl": "→ 追い風。業界の活況"
+    }
+   ]
+  },
+  {
+   "nm": "タペストリー",
+   "en": "Tapestry / TPR",
+   "pct": 7.07,
+   "why": "コーチ好調で通期見通し増額（実測・11/5）",
+   "desc": "コーチやケイト・スペードを持つ米国のバッグ・アパレル大手です。",
+   "news": [
+    {
+     "t": "実測：134.17ドル（+7.07%）で引け",
+     "u": "https://finance.yahoo.com/quote/TPR",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "全面安の相場のなかで上げました。消費関連は株安の影響を受けにくい業種です。",
+     "pl": "→ 追い風。好決算"
+    },
+    {
+     "t": "7〜9月期は1株利益1.82ドル（予想1.56ドル）、売上19億ドル — 通期見通しを増額",
+     "u": "https://www.investing.com/news/stock-market-news/tapestry-lifts-outlook-as-young-shoppers-snap-up-coach-bags-shares-jump-5003845",
+     "s": "ロイター（英語）・11/5",
+     "dir": "up",
+     "sm": "コーチの売上は16%増の16.6億ドル、中国本土は43%増。ケイト・スペードは10%減でした。",
+     "pl": "→ 追い風。コーチ好調"
+    },
+    {
+     "t": "通期1株利益見通しは8.25〜8.35ドルへ — 従来7.80〜7.90ドル",
+     "u": "https://finance.yahoo.com/markets/stocks/articles/tapestry-shares-rise-over-8-150550190.html",
+     "s": "ヤフーファイナンス（英語）・11/5",
+     "dir": "up",
+     "sm": "自社株買いも3.5億ドル増やし、年17億ドルの計画としました。若い世代の購入が増えています。",
+     "pl": "→ 追い風。見通し増額"
+    }
+   ]
+  },
+  {
+   "nm": "サンディスク",
+   "en": "SanDisk / SNDK",
+   "pct": -22.26,
+   "why": "メモリー株の巻き戻し（実測・11/5）",
+   "desc": "スマホやパソコン向けのNAND型フラッシュメモリーを手がける米国の会社です。",
+   "news": [
+    {
+     "t": "実測：806.43ドル（−22.26%）で引け — 1日で230.97ドル安",
+     "u": "https://finance.yahoo.com/quote/SNDK",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "この日のS&P500で最大の下げです。報道の取引中の数字（約18%安）よりさらに下げました。",
+     "pl": "→ 逆風。急落"
+    },
+    {
+     "t": "NAND型フラッシュの比重が高く、下げが業種平均より大きい",
+     "u": "https://www.benzinga.com/markets/tech/26/11/62943088/sandisk-leads-memory-stocks-lower-a-look-inside-the-rout",
+     "s": "ベンジンガ（英語）・11/5",
+     "dir": "down",
+     "sm": "スマホ・パソコン・クラウド向けの記憶装置に偏っています。シーゲートなども下げました。",
+     "pl": "→ 逆風。偏った事業"
+    },
+    {
+     "t": "メモリー株は総崩れ — 建設が止まれば記憶装置の納入もずれる",
+     "u": "https://www.fxstreet.com/news/the-memory-trade-collapses-as-sandisk-sheds-17-micron-sinks-to-may-levels-202611051550",
+     "s": "FXストリート（英語）・11/5",
+     "dir": "down",
+     "sm": "品薄と高価格という前提が崩れるのでは、という疑いが出たという説明です。",
+     "pl": "→ 逆風。前提の崩れ"
+    }
+   ]
+  },
+  {
+   "nm": "マイクロン",
+   "en": "Micron Technology / MU",
+   "pct": -17.46,
+   "why": "AI投資減速の警戒（実測・11/5）",
+   "desc": "サーバーやスマホに使うメモリ（DRAM・NAND）をつくる米国の半導体メーカーです。",
+   "news": [
+    {
+     "t": "実測：656.39ドル（−17.46%）で引け",
+     "u": "https://finance.yahoo.com/quote/MU",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "5月の水準まで戻りました。AI向けの高帯域メモリーの比重が大きいぶん、警戒が強く出ました。",
+     "pl": "→ 逆風。急落"
+    },
+    {
+     "t": "マイクロン・サンディスク・SKハイニックスが最大2割の下げ",
+     "u": "https://invezz.com/en-ae/news/2026/11/05/micron-sandisk-sk-hynix-plunge-up-to-20percent-as-memory-stocks-selloff-intensifies/",
+     "s": "インベッツ（英語）・11/5",
+     "dir": "down",
+     "sm": "選挙後にAI関連の持ち高を減らす動きが続いた、という説明です。需要の悪化は報じられていません。",
+     "pl": "→ 逆風。持ち高減らし"
+    },
+    {
+     "t": "調査会社は品薄と高価格が続くと予想 — 新規能力は2028年まで出ない",
+     "u": "https://www.benzinga.com/markets/tech/26/11/62943088/sandisk-leads-memory-stocks-lower-a-look-inside-the-rout",
+     "s": "ベンジンガ（英語）・11/5",
+     "dir": "mix",
+     "sm": "業績の前提は変わっていないとする見方です。株価は政策への警戒で先に下げた形です。",
+     "pl": "→ 注目。需給は堅い"
+    }
+   ]
+  },
+  {
+   "nm": "アイレン",
+   "en": "IREN / IREN",
+   "pct": -16.95,
+   "why": "データセンター規制への警戒（実測・11/5）",
+   "desc": "AI向けのデータセンターを建てて貸し出す、オーストラリア発の会社です。",
+   "news": [
+    {
+     "t": "実測：18.03ドル（−16.95%）で引け",
+     "u": "https://finance.yahoo.com/quote/IREN",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "ネビウスは−14.94%、アプライド・デジタルは−14.69%です。貸す側ほど規制の影響が直接的です。",
+     "pl": "→ 逆風。急落"
+    },
+    {
+     "t": "住民投票は10州・41件のうち40件で規制側が勝利",
+     "u": "https://qz.com/chip-stocks-slip-democrats-sweep-data-center-outlook-110426",
+     "s": "Qz（英語）・11/5",
+     "dir": "down",
+     "sm": "水や電気の使用、騒音への不満が背景とされます。新しい用地の確保が難しくなります。",
+     "pl": "→ 逆風。用地の制約"
+    }
+   ]
+  },
+  {
+   "nm": "ベルティブ",
+   "en": "Vertiv / VRT",
+   "pct": -14.02,
+   "why": "電源・冷却設備の先行き懸念（実測・11/5）",
+   "desc": "データセンター向けの電源装置や冷却設備をつくる米国のメーカーです。",
+   "news": [
+    {
+     "t": "実測：176.73ドル（−14.02%）で引け",
+     "u": "https://finance.yahoo.com/quote/VRT",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "建設が止まれば最初に注文が減る業種です。前日の−12.89%に続く2日続きの急落です。",
+     "pl": "→ 逆風。続落"
+    },
+    {
+     "t": "「データセンターに関係するものは何でも売り」の2日目",
+     "u": "https://www.fool.com/investing/2026/11/05/the-ai-selloff-is-getting-worse-nvidia-dell-and-data-center-stocks-are-plunging-hard-is-it-time-to-buy-the-dip/",
+     "s": "モトリーフール（英語）・11/5",
+     "dir": "down",
+     "sm": "半導体・サーバー・電源・冷却と、建設に関わる業種が一斉に下げました。",
+     "pl": "→ 逆風。業種ごと売り"
+    }
+   ]
+  }
+ ],
+ "kpiNews": {
+  "SPY": {
+   "label": "S&P500",
+   "items": [
+    {
+     "t": "実測：S&P500は7,353.73（−4.36%・334.89安）で引け",
+     "u": "https://finance.yahoo.com/quote/%5EGSPC",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "前日の+1.58%を打ち消しました。VIXは28.18（+69.66%）へ急上昇しています。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "値下がり419銘柄・値上がり84銘柄 — 全11業種が下落",
+     "u": "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+     "s": "CNBC（英語）・11/5",
+     "dir": "down",
+     "sm": "下げが小さかったのは公益（−0.71%）と生活必需品（−0.75%）です（実測）。",
+     "pl": "→ 逆風。全面安"
+    },
+    {
+     "t": "選挙後の上げを丸ごと返す — 「AI建設の先行き」を市場が測りはじめる",
+     "u": "https://www.washingtonpost.com/business/2026/11/05/us-stocks-slide-wiping-out-post-midterm-gains/",
+     "s": "ワシントンポスト（英語）・11/5",
+     "dir": "down",
+     "sm": "民主党の勝利でデータセンターの規制が強まるとの見方が広がったという説明です。",
+     "pl": "→ 逆風。政策警戒"
+    },
+    {
+     "t": "実測：5日18時10分のS&P500先物は7,714（−0.08%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "ほぼ変わらずです。半導体が売られる一方で、ダウ先物は+0.48%と上昇しています。",
+     "pl": "→ 注目。ほぼ横ばい"
+    },
+    {
+     "t": "実測：5日12時のS&P500先物は7,713.25（−0.09%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "ほぼ変わらずです。半導体の決算で下げたのはナスダックだけで、ダウ先物は+0.30%と上昇しています。",
+     "pl": "→ 注目。ほぼ横ばい"
+    },
+    {
+     "t": "半導体の決算でAI取引への疑問が強まり、ナスダック先物が下げを主導",
+     "u": "https://za.investing.com/news/stock-market-news/us-stock-index-futures-steady-after-midterms-rally-4552481",
+     "s": "インベスティングドットコム（英語）・11/5",
+     "dir": "down",
+     "sm": "クアルコムとアームの見通しが期待に届かなかったためです。4日の大幅高のあと、いったん息切れしています。",
+     "pl": "→ 逆風。AI取引の見直し"
+    },
+    {
+     "t": "実測：S&P500は7,688.62（+1.58%・119.70高）で引け",
+     "u": "https://finance.yahoo.com/quote/%5EGSPC/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "上下院とも民主党が制し、選挙の不透明感が消えました。VIXは16.61（−20.26%）へ急低下しています。",
+     "pl": "→ 追い風。不透明感の解消"
+    },
+    {
+     "t": "ダウは1,569.40ドル高で2025年4月以来の最大の上げ — 原油安も支え",
+     "u": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
+     "s": "CNBC（英語）・11/4",
+     "dir": "up",
+     "sm": "ナスダック総合は+1.44%です。ただ半導体は下落し、上昇の中身は業種によって大きく分かれました。",
+     "pl": "→ 追い風。選挙と原油安"
+    },
+    {
+     "t": "実測：4日22時20分のS&P500先物は7,666（+0.91%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "18時時点は+0.21%でした。ねじれ議会を好感した買いが、ハイテク以外に広がっています。",
+     "pl": "→ 追い風。上げ幅拡大"
+    },
+    {
+     "t": "10月のADP雇用者数は8.6万人 — 予想7.5万人を上回る",
+     "u": "https://www.cnbc.com/2026/11/04/private-companies-added-86000-jobs-in-october-slightly-higher-than-expected-adp-says.html",
+     "s": "CNBC（英語）・11/4",
+     "dir": "up",
+     "sm": "下方修正後の9月と同じ伸びです。雇用の減速は思ったほどではないと受け止められました。",
+     "pl": "→ 追い風。景気の底堅さ"
+    },
+    {
+     "t": "実測：4日18時のS&P500先物は7,612.75（+0.21%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "12時時点は1.34%安でした。上下院ともに民主党が制する見通しとなり、初動の売りは一巡しています。",
+     "pl": "→ 追い風。売りが一巡"
+    },
+    {
+     "t": "実測：日本時間4日12時のS&P500先物は7,495（−1.34%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "中間選挙の開票で下院は民主党が過半数の見通しと報じられました。上院は未確定です。",
+     "pl": "→ 逆風。選挙を受けた売り"
+    }
+   ]
+  },
+  "ORUKAN": {
+   "label": "オルカン（全世界株）",
+   "items": [
+    {
+     "t": "5日公表の基準価額は37,729円（+469円・+1.26%）",
+     "u": "https://itf.minkabu.jp/fund/0331418A",
+     "s": "みんかぶ・11/5",
+     "dir": "up",
+     "sm": "4日の米国株高を反映した値です。5日の米国株安はまだ反映されていません。",
+     "pl": "→ 追い風。前日の米株高"
+    },
+    {
+     "t": "実測：全世界株ETF（ACWI）は152.43ドル（−3.82%）",
+     "u": "https://finance.yahoo.com/quote/ACWI",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "全世界株のドル建ての動きです。5日の下げは次回以降の基準価額に反映されます。",
+     "pl": "→ 逆風。世界株安"
+    },
+    {
+     "t": "欧州株が最高値圏に乗せる — 全世界株の約2割を占める地域",
+     "u": "https://www.bloomberg.com/news/articles/2026-11-05/european-stocks-hit-fresh-record-as-ai-unwind-boosts-region",
+     "s": "ブルームバーグ（英語）・11/5",
+     "dir": "up",
+     "sm": "ストックス600は661.62（+0.64%）です。米国以外の上昇は、全世界株の基準価額を支える材料になります。",
+     "pl": "→ 追い風。欧州の上昇"
+    },
+    {
+     "t": "5日のアジアは半導体安・自動車高 — 全世界株は業種で明暗",
+     "u": "https://www.bloomberg.com/news/articles/2026-11-05/blue-wave-stock-rotation-sinks-asian-chipmakers-boosts-autos",
+     "s": "ブルームバーグ（英語）・11/5",
+     "dir": "mix",
+     "sm": "MSCIアジア太平洋指数は−0.2%です。4日の米国株高は、5日夕方に公表される基準価額に反映される見込みです。",
+     "pl": "→ 注目。反映は5日夕方"
+    },
+    {
+     "t": "基準価額は37,260円（+72円・+0.19%）— 4日公表",
+     "u": "https://itf.minkabu.jp/fund/0331418A",
+     "s": "みんかぶ・11/4",
+     "dir": "up",
+     "sm": "この値は3日までの海外市場を反映したものです。4日の米国株高は次の公表値に入ります。",
+     "pl": "→ 追い風。ただし反映は翌日"
+    },
+    {
+     "t": "実測：4日の米国株高は次回の基準価額に反映される見込み",
+     "u": "https://finance.yahoo.com/quote/ACWI/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "S&P500は+1.58%、ダウは+3.03%でした。全世界株の投資信託なので米国株の比重が大きく効きます。",
+     "pl": "→ 追い風。次回に反映"
+    },
+    {
+     "t": "基準価額は37,260円（+72円・+0.19%）— 4日公表",
+     "u": "https://itf.minkabu.jp/fund/0331418A",
+     "s": "みんかぶ・11/4",
+     "dir": "up",
+     "sm": "3日は日本が休場だったため、2日公表の37,188円から2営業日ぶりの更新です。3日の米国株高を反映しました。",
+     "pl": "→ 追い風。2営業日ぶりの上昇"
+    },
+    {
+     "t": "民主党が上下院を制する見通し — 世界の株式は売り一巡",
+     "u": "https://fx.minkabu.jp/news/383490",
+     "s": "みんかぶ・11/4",
+     "dir": "mix",
+     "sm": "基準価額は1日1回の公表です。4日のアジア株は急落後に戻し、米株先物も小幅高に転じています。",
+     "pl": "→ 注目。次の公表待ち"
+    },
+    {
+     "t": "4日のアジアは全面安 — 次の基準価額に反映されます",
+     "u": "https://finance.yahoo.com/quote/%5EN225/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "日経平均の前引けは−3.56%、韓国コスピは−3.30%です。基準価額は日本の営業日の夕方に1日1回公表されます。",
+     "pl": "→ 逆風。アジア株安"
+    },
+    {
+     "t": "基準価額は37,188円（前日比−528円・−1.40%）— 2日公表分",
+     "u": "https://itf.minkabu.jp/fund/0331418A",
+     "s": "みんかぶ・11/2",
+     "dir": "down",
+     "sm": "3日は文化の日で日本の市場が休みのため、新しい基準価額は出ていません。次は4日夕方の公表です。",
+     "pl": "→ 据え置き。休場で更新なし"
+    },
+    {
+     "t": "3日のアジア株はまちまち — 韓国・台湾が急落、香港は続伸",
+     "u": "https://fx.minkabu.jp/news/383350",
+     "s": "みんかぶ・11/3",
+     "dir": "mix",
+     "sm": "コスピと台湾加権指数はともに−3.59%、香港ハンセンは+0.57%です。全世界株の基準価額にも影響します。",
+     "pl": "→ 逆風。アジアの下げ"
+    },
+    {
+     "t": "基準価額は37,188円（前日比−528円・−1.40%）",
+     "u": "https://itf.minkabu.jp/fund/0331418A",
+     "s": "みんかぶ・11/2",
+     "dir": "down",
+     "sm": "2日に公表された値で、30日の米国株の急落を映しています。2日の米国市場の結果は翌営業日の公表分に入ります。",
+     "pl": "→ 逆風。米国株安の反映"
+    }
+   ]
+  },
+  "DIA": {
+   "label": "NYダウ",
+   "items": [
+    {
+     "t": "実測：ダウは51,523.06（−3.44%・1,833.06ドル安）で引け",
+     "u": "https://finance.yahoo.com/quote/%5EDJI",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "前日は1,569.40ドル高でした。わずか1日で上げ幅を超える下げになりました。",
+     "pl": "→ 逆風。大幅安"
+    },
+    {
+     "t": "中間選挙後の2日目としては1896年以来で最悪の下げ",
+     "u": "https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html",
+     "s": "ヤフーファイナンス（英語）・11/5",
+     "dir": "down",
+     "sm": "ダウの算出開始以来という比較です。前日は44年ぶりに大きい選挙後の上げでした。",
+     "pl": "→ 逆風。記録的な下げ"
+    },
+    {
+     "t": "実測：5日18時10分のダウ先物は53,761（+0.48%）",
+     "u": "https://finance.yahoo.com/quote/YM=F/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "ハイテク以外に資金が向かう流れが続いています。半導体安の影響をほとんど受けていません。",
+     "pl": "→ 追い風。業種の明暗"
+    },
+    {
+     "t": "実測：5日12時のダウ先物は53,663（+0.30%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "ハイテク以外に資金が向かう流れが続いています。4日は1,569.40ドル高で2025年4月以来の最大の上げでした。",
+     "pl": "→ 追い風。ローテーション"
+    },
+    {
+     "t": "実測：NYダウは53,356.12（+3.03%・1,569.40ドル高）で引け",
+     "u": "https://finance.yahoo.com/quote/%5EDJI/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "寄り付きで1,009ドル高となり、そのまま上げ幅を広げました。2025年4月以来の最大の上げです。",
+     "pl": "→ 追い風。幅広い買い"
+    },
+    {
+     "t": "実測：3Mが+9.55%でダウ最大の上げ — PFAS訴訟の和解報道",
+     "u": "https://finance.yahoo.com/quote/MMM/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "ハイテク以外の銘柄に資金が向かったことが、ダウの上げがS&P500より大きくなった理由です。",
+     "pl": "→ 追い風。ハイテク以外へ"
+    },
+    {
+     "t": "実測：4日22時20分のダウ先物は52,830（+1.80%）",
+     "u": "https://finance.yahoo.com/quote/YM=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "18時時点は+0.56%でした。CNBCはダウ先物912ドル（1.75%）高と伝えています。",
+     "pl": "→ 追い風。主役交代の受け皿"
+    },
+    {
+     "t": "ダウ先物は912ドル高 — 政権と議会が分かれる形を好感",
+     "u": "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html",
+     "s": "CNBC（英語）・11/4",
+     "dir": "up",
+     "sm": "大きな政策変更のリスクが小さいと受け止められやすいとされます。上院は議事妨害を止める議席には届きません。",
+     "pl": "→ 追い風。政策の不確実性が後退"
+    },
+    {
+     "t": "実測：4日18時のダウ先物は52,188（+0.56%）",
+     "u": "https://finance.yahoo.com/quote/YM=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "12時時点は0.89%安でした。下げがハイテクに偏っていたぶん、ダウ先物は先にプラスへ戻しています。",
+     "pl": "→ 追い風。下げを戻す"
+    },
+    {
+     "t": "実測：日本時間4日12時のダウ先物は51,433（−0.89%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "ハイテク中心の下げで、ダウの下落率はナスダック100先物（−2.27%）より小さく収まっています。",
+     "pl": "→ 逆風。ただし下げは小さめ"
+    },
+    {
+     "t": "実測：NYダウは51,786.72（−0.38%・197.26安）で反落",
+     "u": "https://finance.yahoo.com/quote/%5EDJI/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "アップルの1.90%安が最大の重荷でした。ハイテク中心の指数とは逆の方向に動きました。",
+     "pl": "→ 逆風。アップル安"
+    },
+    {
+     "t": "NY株反落、197ドル安 — 中間選挙をにらみ買い控え",
+     "u": "https://news.yahoo.co.jp/articles/9229fe6058ef88dd190d5ee3f14a09abac4f9279",
+     "s": "共同通信・11/3",
+     "dir": "down",
+     "sm": "投開票を前に様子見姿勢が強まり、積極的な買いが控えられたと伝えています。",
+     "pl": "→ 逆風。結果待ち"
+    }
+   ]
+  },
+  "QQQ": {
+   "label": "ナスダック",
+   "items": [
+    {
+     "t": "実測：ナスダックは24,315.00（−5.52%・1,421.51安）で調整局面入り",
+     "u": "https://finance.yahoo.com/quote/%5EIXIC",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "10月6日の高値から1割超下げました。これを市場では「調整」と呼びます。",
+     "pl": "→ 逆風。調整入り"
+    },
+    {
+     "t": "ハイテク株の下げは選挙がAI取引を揺らしたため",
+     "u": "https://axios.com/2026/11/05/nasdaq-plummets-correction",
+     "s": "アクシオス（英語）・11/5",
+     "dir": "down",
+     "sm": "実測でハイテク業種は−8.00%。半導体指数は−12.25%と一段大きく下げています。",
+     "pl": "→ 逆風。AI取引の巻き戻し"
+    },
+    {
+     "t": "半導体メーカーの時価総額は1.5兆ドル超が消えたと報道",
+     "u": "https://www.nbcnews.com/business/markets/tech-stocks-plunge-ai-midterms-rcna607650",
+     "s": "NBCニュース（英語）・11/5",
+     "dir": "down",
+     "sm": "業種をまとめた概算です。2日続けて売られ、選挙前の水準を下回りました。",
+     "pl": "→ 逆風。規模の大きさ"
+    },
+    {
+     "t": "実測：5日18時10分のナスダック100先物は28,343（−0.78%）",
+     "u": "https://finance.yahoo.com/quote/NQ=F/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "正午の−0.67%から小幅に下げを広げました。クアルコムの寄り前は−9.81%です。",
+     "pl": "→ 逆風。半導体安"
+    },
+    {
+     "t": "実測：5日12時のナスダック100先物は28,375.75（−0.67%）",
+     "u": "https://finance.yahoo.com/quote/NQ=F/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "クアルコムの時間外−7.40%が重荷です。アジアでもアドバンテストが11.69%安となりました。",
+     "pl": "→ 逆風。半導体決算"
+    },
+    {
+     "t": "アジアの半導体株が急落 — コスピは5,485.58（−3.49%）",
+     "u": "https://finance.yahoo.com/quote/%5EKS11/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "AI向けデータセンターの規制を警戒した売りです。サムスン−5.7%、SKハイニックス−7.4%と伝えられます。",
+     "pl": "→ 逆風。AI規制の警戒"
+    },
+    {
+     "t": "実測：ナスダック総合は25,736.51（+1.44%）、ナスダック100は28,437.17（+0.91%）",
+     "u": "https://finance.yahoo.com/quote/%5EIXIC/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "大型ソフトは大きく上げましたが、半導体は下落しました。SOX指数は10,268.65（−3.13%）です。",
+     "pl": "→ 追い風。ただし中身は二極化"
+    },
+    {
+     "t": "大型ハイテクが急騰 — 民主党がAI投資を抑えるとの読み",
+     "u": "https://uk.finance.yahoo.com/news/big-tech-stocks-soar-traders-170754816.html",
+     "s": "ロイター／ヤフーファイナンス（英語）・11/4",
+     "dir": "up",
+     "sm": "マイクロソフト+6.68%、アマゾン+6.12%に対し、エヌビディアは−3.17%、マイクロンは−7.00%です。",
+     "pl": "→ 注目。主役の交代"
+    },
+    {
+     "t": "実測：4日22時20分のナスダック100先物は28,371.50（+0.23%）",
+     "u": "https://finance.yahoo.com/quote/NQ=F/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "ダウ先物+1.80%に対して出遅れています。AI・データセンター規制の警戒が残っています。",
+     "pl": "→ 注目。ハイテクは出遅れ"
+    },
+    {
+     "t": "AI・データセンター関連が下落、再生可能エネルギーは急伸",
+     "u": "https://www.investing.com/news/stock-market-news/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections-4998519",
+     "s": "ロイター／インベスティング（英語）・11/4",
+     "dir": "mix",
+     "sm": "データセンターが多い州で民主党が勝ったことが意識されました。電力料金の上昇が争点になった地域もあります。",
+     "pl": "→ 逆風。規制の警戒"
+    },
+    {
+     "t": "実測：4日18時のナスダック100先物は28,333.25（+0.10%）",
+     "u": "https://finance.yahoo.com/quote/NQ=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "12時の2.27%安から戻しました。AI規制への警戒は残りますが、売りの初動は一巡しています。",
+     "pl": "→ 追い風。2%超安から戻す"
+    },
+    {
+     "t": "実測：日本時間4日12時のナスダック100先物は27,662（−2.27%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "AI規制に前向きな民主党が優勢との報道で、ハイテクに売りが集中しました。",
+     "pl": "→ 逆風。ハイテクに売り集中"
+    }
+   ]
+  },
+  "JPY": {
+   "label": "ドル円",
+   "items": [
+    {
+     "t": "実測：ドル円は157.66円（−0.51%）— 前日は158.47円",
+     "u": "https://finance.yahoo.com/quote/JPY=X",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "株安で安全とされる円が買われました。ドルが下がると円建ての米国株の価値は目減りします。",
+     "pl": "→ 逆風。円高方向"
+    },
+    {
+     "t": "12月の米利上げ確率は70.1%へ低下（前日82.7%）",
+     "u": "https://www.fxstreet.com/news/gold-rallies-above-4-100-as-nasdaq-100-crashes-december-hike-bets-fade-202611052023",
+     "s": "FXストリート（英語）・11/5",
+     "dir": "mix",
+     "sm": "CMEの織り込みです。米金利の先高観が和らぐと、円高方向に振れやすくなります。",
+     "pl": "→ 注目。金利観の変化"
+    },
+    {
+     "t": "実測：5日18時のドル円は158.23円 — 4日終値158.47円からほぼ横ばい",
+     "u": "https://finance.yahoo.com/quote/JPY=X/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "英中銀の決定を21時に控え、主要通貨は小動きです。ポンドドルは1.347で小幅高です。",
+     "pl": "→ 注目。小動き"
+    },
+    {
+     "t": "実測：5日12時のドル円は157.90円 — 4日終値158.36円からやや円高",
+     "u": "https://finance.yahoo.com/quote/JPY=X/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "米金利の低下と、アジアの株安による様子見が重なりました。158円台をはさんだ値動きが続いています。",
+     "pl": "→ 注目。やや円高"
+    },
+    {
+     "t": "実測：ドル円は158.36円（+0.28%）で引け",
+     "u": "https://finance.yahoo.com/quote/JPY=X/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "米国株が大きく上がり、リスクを取る動きで円が売られました。ドル指数は101.54（−0.33%）です。",
+     "pl": "→ 注目。株高で円売り"
+    },
+    {
+     "t": "実測：10年金利は4.89%へ低下したがドル円は下がらず",
+     "u": "https://finance.yahoo.com/quote/%5ETNX/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "金利差が縮んでも円高にならなかった形です。日米の金利差はなお大きいままです。",
+     "pl": "→ 注目。金利差は依然大きい"
+    },
+    {
+     "t": "実測：4日22時20分のドル円は158.26円",
+     "u": "https://finance.yahoo.com/quote/JPY=X/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "朝方の157.41円から円安に戻しています。ドル指数は101.23（−0.62%）で、ドル全体は売られています。",
+     "pl": "→ 注目。円は上値が重い"
+    },
+    {
+     "t": "ドル円は157.41円まで下落後、158円台を回復",
+     "u": "https://fx.minkabu.jp/news/383489",
+     "s": "みんかぶ・11/4",
+     "dir": "mix",
+     "sm": "選挙を受けたドル売り円買いのあと、大勢判明で動揺が収まりました。4日18時の実測は158.33円です。",
+     "pl": "→ 注目。円高が一巡"
+    },
+    {
+     "t": "実測：日本時間4日12時のドル円は157.6円 — 小幅に円高へ戻す",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の終値157.91円からの戻りです。株安のなかでも大きな円高にはなっていません。",
+     "pl": "→ 注目。小動き"
+    },
+    {
+     "t": "実測：ドル円は157.91円（+0.15%・前日157.68円）で円安",
+     "u": "https://finance.yahoo.com/quote/JPY%3DX/",
+     "s": "実測・11/3",
+     "dir": "up",
+     "sm": "米国の求人件数が予想を上回り、米金利の上昇にあわせてドルが買われました。",
+     "pl": "→ 円安。米金利の上昇"
+    },
+    {
+     "t": "ロンドン時間はドル円157円95銭近辺 — ドル売りは一服",
+     "u": "https://fx.minkabu.jp/news/383351",
+     "s": "みんかぶ・11/3",
+     "dir": "mix",
+     "sm": "欧州時間は材料が少なく、中間選挙の結果待ちのムードとされています。",
+     "pl": "→ 注目。選挙待ち"
+    },
+    {
+     "t": "NY終値は157円93銭 — 157円63銭まで下げたあと戻す",
+     "u": "https://www.zaikei.co.jp/article/20261103/875915.html",
+     "s": "フィスコ／財経新聞・11/2",
+     "dir": "mix",
+     "sm": "原油安と米長期金利の低下でドル売りが優勢になりました。中間選挙を前に大きな方向は出ていません。",
+     "pl": "→ 注目。小動き"
+    }
+   ]
+  },
+  "US10Y": {
+   "label": "米10年金利",
+   "items": [
+    {
+     "t": "実測：米10年金利は4.84% — 前日4.89%から低下",
+     "u": "https://finance.yahoo.com/quote/%5ETNX",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "株から国債に資金が逃げました。報道では約2カ月ぶりの低さで、2年金利は約4.56%です。",
+     "pl": "→ 追い風。金利低下"
+    },
+    {
+     "t": "新規失業保険申請は18.9万件 — 予想19.6万件を下回る",
+     "u": "https://investinglive.com/news/us-initial-jobless-claims-189k-vs-196k-estimate/",
+     "s": "インベスティングライブ（英語）・11/5",
+     "dir": "up",
+     "sm": "7月以来の低さで、継続受給は約172万件へ増加。雇用は底堅いと受け止められました。",
+     "pl": "→ 注目。底堅い雇用"
+    },
+    {
+     "t": "6日（金）8時30分（米東部）に10月の米雇用統計 — 予想5.9万〜6.5万人増",
+     "u": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
+     "s": "CNBC（英語）・11/5",
+     "dir": "mix",
+     "sm": "9月は2.9万人増でした。失業率は4.2%の横ばいが予想されています。",
+     "pl": "→ 注目。次の分岐点"
+    },
+    {
+     "t": "12月の米利上げ確率は8割前後 — CMEの織り込み",
+     "u": "https://financefeeds.com/gold-price-today-4135-thursday-before-6-november-jobs-report-dollar-near-one-month-low-bull-4225-bear-4000/",
+     "s": "ファイナンスフィーズ（英語）・11/5",
+     "dir": "mix",
+     "sm": "原油安が続けば見方が変わる余地もあります。5日22時30分には新規失業保険申請件数が出ます。",
+     "pl": "→ 注目。12月の判断待ち"
+    },
+    {
+     "t": "原油が87ドル台へ続落 — 物価の重荷が軽くなる方向",
+     "u": "https://finance.yahoo.com/quote/CL=F/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "WTI12月限は87.19ドル（前日比−0.97%）です。4日の10年金利は4.89%で、低下方向の材料が続いています。",
+     "pl": "→ 追い風。インフレ懸念の緩和"
+    },
+    {
+     "t": "実測：10年金利は4.89%（前日4.95%）へ低下",
+     "u": "https://finance.yahoo.com/quote/%5ETNX/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "原油が8%以上下げたことでインフレ圧力が和らぐとの見方が出ました。株式にはプラスに働きます。",
+     "pl": "→ 追い風。インフレ懸念の後退"
+    },
+    {
+     "t": "6日（金）に10月の米雇用統計 — 民間予想は4.5万〜6.5万人",
+     "u": "https://continuumeconomics.com/a/6bbddd0c/preview-due-november-6-us-october-employment-non-farm-payrolls-subdued-report-to-hint-at-q4-slowing",
+     "s": "コンティニュアム・エコノミクス（英語）・11/4",
+     "dir": "mix",
+     "sm": "バークレイズは5万人程度で失業率が下がれば12月の利上げが残ると見ています。失業率の予想は4.1〜4.2%です。",
+     "pl": "→ 注目。次は雇用統計"
+    },
+    {
+     "t": "10月のADP雇用者数は8.6万人で予想超え — 金利の低下を抑える材料",
+     "u": "https://www.stocktitan.net/news/ADP/adp-national-employment-report-private-sector-employment-increased-5d0x58las33b.html",
+     "s": "ストックタイタン（英語）・11/4",
+     "dir": "mix",
+     "sm": "運輸・流通・公益が3.9万人増。選挙後は財政赤字の拡大が抑えられるとの見方で利回りが下がっていました。",
+     "pl": "→ 注目。強弱の材料が同時に"
+    },
+    {
+     "t": "財政赤字の拡大が抑えられるとの見方で米債利回りが低下",
+     "u": "https://fx.minkabu.jp/news/383490",
+     "s": "みんかぶ・11/4",
+     "dir": "down",
+     "sm": "ドル売りも同時に進みました。利回りの低下が続くかが、市場が結果をどう評価するかの試金石とされます。",
+     "pl": "→ 追い風。金利の低下"
+    },
+    {
+     "t": "4日は米国債市場の取引時間外 — 3日の終値は4.95%",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "冬時間のため米国の通常取引は日本時間23時30分からです。選挙結果を受けた金利の反応はそのあと出ます。",
+     "pl": "→ 注目。反応はこのあと"
+    },
+    {
+     "t": "米10年金利は4.935%へ4bp超の上昇 — 30年5.309%、2年4.608%",
+     "u": "https://www.cnbc.com/amp/2026/11/03/us-treasury-yields-bonds.html",
+     "s": "CNBC（英語）・11/3",
+     "dir": "up",
+     "sm": "9月の求人件数が752.3万件と予想を大きく上回ったことが理由です。実測の米10年金利は4.95%です。",
+     "pl": "→ 上昇。雇用の強さ"
+    },
+    {
+     "t": "9月の求人は前月比33.3万件増の752.3万件 — 5月以来の多さ",
+     "u": "https://247wallst.com/cards/xpost-01m6gywdtkdn919dm0m5zp8eb0",
+     "s": "24/7ウォール街（英語）・11/3",
+     "dir": "up",
+     "sm": "レイオフは164.1万件で2025年3月以来の少なさ。雇用が崩れていないことを示す内容です。",
+     "pl": "→ 上昇要因。利下げ観測の後退"
+    }
+   ]
+  },
+  "WTI": {
+   "label": "WTI原油",
+   "items": [
+    {
+     "t": "実測：WTI12月限は91.16ドル（+3.45%）— 前日88.12ドル",
+     "u": "https://finance.yahoo.com/quote/CL=F",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "12月限どうしの比較です。前日は和平観測で8%超下げたあとの反発です。",
+     "pl": "→ 逆風。原油反発"
+    },
+    {
+     "t": "原油は急落のあと反発 — イランが仲介案を検討中と報道",
+     "u": "https://www.rigzone.com/news/wire/oil_rebounds_after_sharp_iran_war_selloff-05-nov-2026-185023-article/",
+     "s": "ロイター（英語）・11/5",
+     "dir": "mix",
+     "sm": "報道で上げ幅を一部縮めました。和平が進むかどうかで振れやすい状態が続いています。",
+     "pl": "→ 注目。和平の行方"
+    },
+    {
+     "t": "実測：5日18時のWTI12月限は88.22ドル（+0.11%）",
+     "u": "https://finance.yahoo.com/quote/CL=F/",
+     "s": "実測・11/5",
+     "dir": "mix",
+     "sm": "4日の8%超安のあとは横ばいです。正午に87.19ドルまで下げたあと戻しました。同じ12月限の比較です。",
+     "pl": "→ 注目。下げが一巡"
+    },
+    {
+     "t": "実測：5日12時のWTI12月限は87.19ドル（前日比−0.97%）",
+     "u": "https://finance.yahoo.com/quote/CL=F/",
+     "s": "実測・11/5",
+     "dir": "down",
+     "sm": "4日の8.38%安に続く下落です。限月は同じ12月限どうしの比較で、見かけ上の下げではありません。",
+     "pl": "→ 継続。和平への期待"
+    },
+    {
+     "t": "イランが米国の回答を「不十分」として交渉は停滞 — カタールが仲介を続ける",
+     "u": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/",
+     "s": "CBSニュース（英語）・11/4",
+     "dir": "mix",
+     "sm": "ホルムズ海峡の全面再開が論点です。合意に至らなければ、原油が戻るリスクも残っています。",
+     "pl": "→ 注目。合意は未確定"
+    },
+    {
+     "t": "実測：WTI12月限は88.04ドル（−8.38%）、ブレント1月限は94.63ドル（−8.66%）",
+     "u": "https://finance.yahoo.com/quote/CL=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "前日と同じ12月限どうしの比較です。限月の切り替えによる見かけの下げではありません。",
+     "pl": "→ 注目。実勢の急落"
+    },
+    {
+     "t": "原油が9%急落 — 敗因はイラン戦争との発言で和平観測",
+     "u": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Crashes-9-as-Trump-and-Vance-Blame-Iran-War-for-Midterm-Rout.html",
+     "s": "オイルプライス（英語）・11/4",
+     "dir": "down",
+     "sm": "トランプ氏がイランを直ちに攻撃する予定はないと述べたと伝えられます。海峡の問題は未解決のままです。",
+     "pl": "→ 注目。供給不安の後退"
+    },
+    {
+     "t": "実測：4日22時20分のWTI12月限は94.13ドル（−2.04%）",
+     "u": "https://finance.yahoo.com/quote/CL=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の清算値96.09ドルとの比較です。同じ12月限どうしで比べています。ブレント1月限は101.51ドル（−2.02%）です。",
+     "pl": "→ 下げ。交渉期待"
+    },
+    {
+     "t": "イラン「米国の回答は説得力がない」— 7条件が満たされるまで海峡は再開しない",
+     "u": "https://www.presstv.co.uk/Detail/2026/11/03/779867/unconvincing-snsc-chief-rejects-us-response-to-demands-says-hormuz-wont-reopen-until-conditions-met",
+     "s": "プレスTV（英語）・11/3",
+     "dir": "mix",
+     "sm": "それでも交渉自体は続くとの見方が優勢で、原油は下げています。カタールが提案の仲介を続けています。",
+     "pl": "→ 注目。交渉と対立が同時に"
+    },
+    {
+     "t": "実測：4日18時のWTI12月限は96.30ドル（+0.22%）",
+     "u": "https://finance.yahoo.com/quote/CL=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "みんかぶは中東情勢を受けた急騰に調整が入り、96ドル付近で落ち着いた値動きだとしています。",
+     "pl": "→ 注目。小動き"
+    },
+    {
+     "t": "実測：日本時間4日12時のWTI12月限は95.25ドル（−0.87%）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "down",
+     "sm": "3日の清算値96.09ドルからの小幅安です。同じ12月限どうしの比較です。",
+     "pl": "→ 注目。小幅安"
+    },
+    {
+     "t": "WTI12月限の清算値は96.09ドル（−0.38%）— 実測の終値も同じ96.09ドル",
+     "u": "https://www.rigzone.com/news/oil_prices_swing_on_conflicting_iran_signals-03-nov-2026-185001-article",
+     "s": "リグゾーン（英語）・11/3",
+     "dir": "mix",
+     "sm": "ブレント1月限は103.60ドル（−1.1%）です。当ページは時間外を含む実測の終値を採用しています。",
+     "pl": "→ 横ばい。材料は強弱まちまち"
+    }
+   ]
+  },
+  "GOLD": {
+   "label": "金（1g・円換算）",
+   "items": [
+    {
+     "t": "実測：金1gの円換算は20,776円（+0.12%）— 国際価格4,098.70ドル（+0.63%）",
+     "u": "https://finance.yahoo.com/quote/GC=F",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "国際価格×ドル円÷31.1035の換算値です。国内の店頭小売価格とは差があります。",
+     "pl": "→ 追い風。小幅高"
+    },
+    {
+     "t": "金は4,100ドル台へ — ナスダック急落で資金の逃避先に",
+     "u": "https://www.fxstreet.com/news/gold-rallies-above-4-100-as-nasdaq-100-crashes-december-hike-bets-fade-202611052023",
+     "s": "FXストリート（英語）・11/5",
+     "dir": "up",
+     "sm": "株安と米利上げ観測の後退が追い風になりました。円高のぶん、円換算の上げは小さくなっています。",
+     "pl": "→ 追い風。避難先"
+    },
+    {
+     "t": "実測：5日18時の金先物は4,139.50ドル（+1.63%）、銀は52.88ドル（+1.46%）",
+     "u": "https://finance.yahoo.com/quote/GC=F/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "株の一部が売られるなかで買われています。10月の下落からの戻り局面で、最高値ではありません。",
+     "pl": "→ 追い風。逃避の買い"
+    },
+    {
+     "t": "実測：5日12時の金先物は4,137.40ドル（+1.60%）",
+     "u": "https://finance.yahoo.com/quote/GC=F/",
+     "s": "実測・11/5",
+     "dir": "up",
+     "sm": "4日の4,072.20ドルから続伸しています。1月の最高値（約5,600ドル）には届いていません。",
+     "pl": "→ 追い風。続伸"
+    },
+    {
+     "t": "実測：金1gの円換算は20,733円（+3.64%）— 国際価格は4,072.20ドル（+3.34%）",
+     "u": "https://finance.yahoo.com/quote/GC=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "国際価格×ドル円÷31.1035の換算値です。国内の店頭小売価格とは差があります。",
+     "pl": "→ 追い風。国際価格の上昇"
+    },
+    {
+     "t": "実測：銀は52.33ドル（+5.52%）へ急騰、ドル指数は101.54（−0.33%）",
+     "u": "https://finance.yahoo.com/quote/SI=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "金利低下とドル安が貴金属を支えました。株高の日に金も上がるのは珍しい組み合わせです。",
+     "pl": "→ 追い風。金利低下とドル安"
+    },
+    {
+     "t": "実測：4日22時20分の金先物は4,050ドル（+2.79%）、銀は51.88ドル（+4.61%）",
+     "u": "https://finance.yahoo.com/quote/GC=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "ドル指数は101.23（−0.62%）です。カードの円換算値は3日の金価格とドル円で計算した参考値です。",
+     "pl": "→ 追い風。ドル安"
+    },
+    {
+     "t": "実測：4日18時の金先物は4,045ドル（+2.66%）、銀は51.80ドル（+4.45%）",
+     "u": "https://finance.yahoo.com/quote/GC=F/",
+     "s": "実測・11/4",
+     "dir": "up",
+     "sm": "ドル指数は0.47%安です。ドル安と米金利の低下が金を支えたとCNBCは伝えています。",
+     "pl": "→ 追い風。ドル安と金利低下"
+    },
+    {
+     "t": "実測：日本時間4日12時のNY金は3,939ドル（ほぼ横ばい）",
+     "u": "https://finance.yahoo.com/quote/ES=F/",
+     "s": "実測・11/4",
+     "dir": "mix",
+     "sm": "株安のなかでも金は大きく動いていません。ドル円157.6円での1gの円換算は約19,980円です。",
+     "pl": "→ 注目。横ばい"
+    },
+    {
+     "t": "実測：NY金は3,940.20ドル（−0.74%）、金1gの円換算は20,006円（−0.59%）",
+     "u": "https://finance.yahoo.com/quote/GC%3DF/",
+     "s": "実測・11/3",
+     "dir": "down",
+     "sm": "米金利の上昇で金は売られましたが、円安が円換算の下げを和らげました。店頭小売価格とは差があります。",
+     "pl": "→ 小幅安。金利の上昇"
+    },
+    {
+     "t": "金は米金利の高止まり観測とイラン情勢で方向感が定まらず",
+     "u": "https://www.tradingview.com/news/cnbctv:00ab636f0094b:0/",
+     "s": "CNBC TV18／トレーディングビュー（英語）・11/3",
+     "dir": "mix",
+     "sm": "記事時点のCOMEX金は3,956.60ドル（−0.33%）。金利が高いままだと、利息のつかない金には重荷です。",
+     "pl": "→ 注意。金利との綱引き"
+    },
+    {
+     "t": "NY金12月限は3,969.60ドル（+70.70・+1.81%）で4営業日ぶり反発",
+     "u": "https://fx.minkabu.jp/news/383311",
+     "s": "みんかぶ・11/2／日本経済新聞・11/2",
+     "dir": "up",
+     "sm": "原油安と米長期金利の低下が支えました。30日は約1年ぶりの安値まで下げていました。",
+     "pl": "→ 追い風。反発"
+    }
+   ]
+  }
+ },
+ "prevIdx": {
+  "SPY": {
+   "label": "S&P500",
+   "prevIdx": 7354
+  },
+  "DIA": {
+   "label": "NYダウ",
+   "prevIdx": 51523
+  },
+  "QQQ": {
+   "label": "ナスダック",
+   "prevIdx": 24315
+  }
+ },
+ "footerAsOf": "カードの株価・指数・金利・原油・金は、すべて2026年11月5日（木）の米国市場の終値（実測）です。原油は12月限どうしの比較です",
+ "date": "2026-11-05",
+ "glossary": [
+  {
+   "q": "CPI（消費者物価指数）とは？",
+   "a": "私たちが買うモノ・サービスの値段がどれだけ上がったかを示す「物価の体温計」。物価の上がり方が強いと、中央銀行は金利を上げて経済を冷まそうとするため、株にはマイナスに働きやすい指標です。「コアCPI」は変動の激しい食品・エネルギーを除いた数字で、物価の基調を見るのに使われます。"
+  },
+  {
+   "q": "FRB・FOMC・利上げって？",
+   "a": "FRBは米国の中央銀行、FOMCはその金利を決める会合です。金利が上がるとお金を借りるコストが増え、企業活動や株式投資にブレーキがかかるため、「利上げ観測が強まる＝株安要因」となるのが基本です。"
+  },
+  {
+   "q": "なぜ原油が上がると株が下がるの？",
+   "a": "原油は輸送・製造・電力などあらゆる産業のコストに直結します。原油高→物価高→金利が下がりにくい→株に不利、という連鎖です。ただしエネルギー関連企業にとっては収益増となり、株価の追い風になります。"
+  },
+  {
+   "q": "S&P500・ダウ・ナスダックの違いは？",
+   "a": "S&P500は米国の主要500社の平均で「市場全体」を映す指数。ダウは有名な大企業30社だけの平均。ナスダックはAppleやNVIDIAなどハイテク企業の比率が高い指数で、金利やAI関連ニュースに敏感に動きます。"
+  },
+  {
+   "q": "「織り込み」「様子見」ってどういう意味？",
+   "a": "「織り込み」は、将来の出来事（利上げなど）を予想して、株価に先に反映させておくこと。予想どおりの結果なら株価はあまり動かず、予想と違うと大きく動きます。「様子見」は重要な発表の前に売買を控えること。"
+  },
+  {
+   "q": "PPI（卸売物価指数）とCPIの違いは？",
+   "a": "CPIが「消費者が買う値段」なら、PPIは「企業同士が取引する値段（卸値）」の物価指数です。卸値は数カ月遅れて消費者の値段に反映されることが多いため、PPIは「未来のCPIの先行ヒント」として注目されます。両方落ち着いていれば、インフレ鎮静の説得力が増します。"
+  },
+  {
+   "q": "決算・EPS・ガイダンスって？",
+   "a": "決算は企業の「成績発表」（3カ月ごと）。EPSは1株あたりの利益で、成績の代表的な数字です。ガイダンスは会社自身による「来期の見通し」。株価は過去の成績より未来を見るので、決算の数字が良くてもガイダンスが弱いと売られ、逆に数字が悪くてもガイダンスが強ければ買われることがよくあります。"
+  },
+  {
+   "q": "PER（株価収益率）って何？",
+   "a": "「株価が1株利益の何倍まで買われているか」を示す割高・割安の目安です。例えばPER 30倍なら「30年分の利益に相当する値段」。成長期待が高い企業ほどPERは高くなります（NVIDIAは30倍台、成熟企業は15倍前後が目安）。高PER株は期待で買われている分、期待が崩れたときの下げも大きくなりがちです。"
+  },
+  {
+   "q": "時価総額って何？",
+   "a": "「株価 × 発行株式数」＝会社全体の値段です。米国の巨大テックは数兆ドル規模（NVIDIAは約5兆ドル＝日本の国家予算の数倍）。時価総額が大きい企業ほど指数（S&P500など）への影響も大きいため、大型株の急落は市場全体を揺らします。"
+  },
+  {
+   "q": "ETF（上場投資信託）って何？",
+   "a": "たくさんの株を詰め合わせて1つの商品にした「株の福袋」です。例えばSPYはS&P500全体、QQQはナスダック100に連動します。1本買うだけで数百社に分散投資できるため、初心者の定番。このダッシュボードの指数概算もETFの値動きから計算しています。"
+  },
+  {
+   "q": "長期金利（10年債利回り）と株の関係は？",
+   "a": "米国債の利回り（金利）が上がると、「リスクのある株より安全な債券でいいや」という資金移動が起こり、株には逆風になります。特に将来の利益に期待して買われているハイテク株は金利上昇に弱め。逆に金利低下はハイテク株の追い風です。"
+  },
+  {
+   "q": "円高・円安は米国株投資にどう影響する？",
+   "a": "日本から米国株を買う場合、株価とは別に為替の損益が乗ります。円安（1ドル150円→160円）になると持っている米国株の円建て価値は増え、円高になると減ります。「株は上がったのに円高で利益が消えた」も起こり得るので、ドル円の動き（このページ上部に表示）もセットで見るのがおすすめです。"
+  },
+  {
+   "q": "時間外取引（プレ・アフター）って何？",
+   "a": "通常取引（日本時間 夜22:30〜朝5:00頃）の前後にも取引できる時間帯があります。前が「プレマーケット」（夕方17:00頃〜）、後が「アフターマーケット」（朝5:00〜9:00頃）。決算発表は引け後に出ることが多いため、アフターの急騰急落は翌日の相場の予告編になります。参加者が少なく値が飛びやすい点には注意。"
+  },
+  {
+   "q": "「利益確定売り」「押し目買い」って？",
+   "a": "利益確定売りは、値上がりした株を売って利益を現金にすること。最高値更新の後に小さく下げるのは大抵これで、悪材料とは限りません。押し目買いは、上昇トレンド中の一時的な下げ（押し目）を狙って買うこと。「上がったら売る人、下がったら買う人」が交錯して相場は動きます。"
+  },
+  {
+   "q": "ローソク足チャートの見方（超入門）",
+   "a": "チャートの1本1本が「1日の値動き」を表します。四角い部分（実体）は始値と終値の間で、上に伸びるヒゲはその日の高値、下のヒゲは安値。実体が長い陽線（上昇）は買いの勢いが強かった日、長い上ヒゲは「高値で売りに押された」サインです。まずは「実体が長いか短いか」だけ見るのでも十分役立ちます。"
+  },
+  {
+   "q": "利上げの「織り込み確率」って何？",
+   "a": "金利先物の値動きから逆算した、「市場が次の会合で利上げを何%の確率で見込んでいるか」という数字です（CMEのFedWatchが有名）。例えば9月の利上げ確率が73%→85%と動けば、それだけで金利やドルが先に反応します。実際の決定より「確率の変化」が相場を動かすことが多く、このダッシュボードでも頻繁に登場する指標です。"
+  },
+  {
+   "q": "ドットチャートって？",
+   "a": "FOMC参加者ひとりひとりが「今後の政策金利はこのくらい」と予想した点（ドット）を散らばせた図で、年4回（3・6・9・12月）の会合で公表されます。今回の利上げの有無より「来年はどこまで続くか」が読めるため、株式市場は声明文と同じくらいこの図を注視します。点の集まりが上に動けば「タカ派」、下なら「ハト派」と受け止められます。"
+  },
+  {
+   "q": "円キャリー取引と「巻き戻し」って？",
+   "a": "金利の低い円を借りて、金利の高いドル資産（米国株・米国債など）で運用する取引です。日米の金利差が大きいほど儲かるため、円安と米国株高を同時に支える力になります。逆に日銀が利上げして金利差が縮んだり、急な円高が来ると、一斉に手じまい（巻き戻し）が起きて米国株まで売られることがあります。"
+  },
+  {
+   "q": "PCE（個人消費支出物価指数）とCPIの違いは？",
+   "a": "どちらも物価の指標ですが、FRBが「2%目標」の判断に使うのはPCEです。CPIは家計の買い物かごを固定して測るのに対し、PCEは消費者が実際に買ったもの全体（医療費なども含む）で測るため、対象が広く、変動が少しなだらかになります。市場ではCPI（毎月中旬）が先に出て話題になり、PCE（月末）が答え合わせになる流れです。"
+  },
+  {
+   "q": "セクターローテーション（主役交代）って？",
+   "a": "相場全体の資金が、ある業種から別の業種へ移動することです。例えば「AI半導体が買われる → 利益確定してAIソフトへ → さらにAIサーバー企業へ」といった流れ。指数がほとんど動かない日でも中身では大きく主役が入れ替わっていることがあり、上昇の裾野が広がるなら相場の持続力にとっては健全なサインと見られます。"
+  },
+  {
+   "q": "為替介入って？",
+   "a": "政府・日銀が市場で直接ドルを売って円を買い、円安を止めようとする操作です。2026年夏には過去最大の15.4兆円規模で、米国も協調する異例の介入がありました。ただ効果は一時的になりがちで、根本は日米の金利差です。介入の前に当局が銀行に相場水準を問い合わせる「レートチェック」が観測されると、それだけで円が買われることもあります。"
+  },
+  {
+   "q": "ドル決済システムからの排除（二次制裁）って？",
+   "a": "国際的な取引の多くは米ドルで決済され、送金は最終的に米国の銀行網を通ります。米国が「この相手と取引したらドル決済をさせない」と決めると、その企業は世界中との商売が事実上できなくなります。制裁対象の国ではなく、その国と取引する第三国の企業を狙うので「二次制裁」と呼びます。9月22日にベッセント財務長官が、イラン機に燃料や着陸業務を提供した海外の空港・企業を排除すると警告したのがこの例です。原油や物流のコストに響きます。"
+  },
+  {
+   "q": "先物の「限月（げんげつ）」「期近」って？",
+   "a": "原油などの先物は「いつ受け渡すか」ごとに別の契約に分かれていて、その受け渡しの月を限月と呼びます。いちばん近い限月を「期近（きぢか）」といい、ニュースの「WTI原油の価格」はたいていこの期近の値段です。期近は満期になると次の限月に入れ替わるので、その日だけは違う契約どうしを比べることになり、値段が飛んで見えます。9月22日がまさにそれで、自動計算では−6%に見えましたが、同じ11月限どうしの本当の下げは−2.58%でした。"
+  },
+  {
+   "q": "イールドカーブ（長短金利差）って？",
+   "a": "同じ国債でも、返してもらうまでの期間が2年のものと10年のものでは金利が違います。この期間ごとの金利を並べた線をイールドカーブと呼び、ふつうは期間が長いほど金利が高くなります。銀行は短い期間で安く資金を集めて長い期間で高く貸すのが本業なので、この「差」が広いほど儲かります。9月22日に銀行株が3%前後そろって下げたのは、10年と2年の金利差が0.25%（2月は0.74%）まで縮んでいたためです。"
+  },
+  {
+   "q": "ホルムズ海峡を迂回するパイプラインって？",
+   "a": "湾岸の産油国から出る原油の多くは、ふつうホルムズ海峡を通る船で運ばれます。ただしサウジアラビアには、東部の油田から国土を横切って紅海側のヤンブー港まで原油を送る「東西パイプライン」があり、ここを使えば海峡を通らずに輸出できます。日量で最大400万バレルを運べる能力があり、海峡が使えないときの逃げ道になります。9月23日には、無人機攻撃で止まっていたこのパイプラインが再稼働したと報じられ、原油の下げ材料として意識されました。"
+  },
+  {
+   "q": "PMI（購買担当者景気指数）って？",
+   "a": "企業で仕入れを担当する人に「先月と比べて生産・受注・雇用は増えたか減ったか」と毎月アンケートを取り、指数にしたものです。50が「変わらない」の境目で、上なら拡大、下なら縮小です。政府の統計より早く出るので景気の先回りに使われ、同じ調査の「投入物価」の指数は物価の先行きを映します。9月23日に出た9月の米国の速報値は総合58.4と5年ぶりの高さでしたが、投入物価が66.4と2022年10月以来の高さになり、株は利上げ警戒で下げました。"
+  },
+  {
+   "q": "国債の入札って？ 不調だとなぜ金利が上がるの？",
+   "a": "国は国債を売ってお金を借ります。その売り出しは入札で、買いたい人が「この利回りなら買います」と札を入れ、国は低い利回りの札から順に売ります。買い手が少ないと、より高い利回りを提示しないと売り切れないので落札利回りが上がり、市場全体の金利の目安を押し上げます。9月23日の5年債入札では最高落札利回りが5.033%と直近6回の平均4.186%を大きく上回り、この「買い手が引いた」結果が同じ日の10年金利5.11%への上昇を後押ししました。"
+  },
+  {
+   "q": "関税の「一時休戦」って？",
+   "a": "国どうしが関税のかけ合いをいったん止め、期限を区切って「これ以上は上乗せしない」と約束することです。米国と中国は2025年10月に韓国・釜山で休戦を結び、双方が関税と輸出規制の上乗せを止め、中国が米国産品の購入を増やすことで合意しました。期限が近づくと「切れたら関税が上がるのでは」という不安で、輸入に頼る小売や中国で売る半導体の株が売られやすくなります。9月24日に期限は来年1月10日まで約2か月延長されました。"
+  },
+  {
+   "q": "フォワードガイダンス（先行き指針）って？",
+   "a": "中央銀行が「当面は金利を上げません」といった先々の方針をあらかじめ示して、市場の不安を和らげる手法です。先の道筋が分かると企業や投資家は計画を立てやすく、株価も落ち着きやすくなります。9月24日、ウィリアムズNY連銀総裁はロンドンでの講演で「明示的なフォワードガイダンスの時代は終わった」と述べました。これからは毎回の物価や雇用の数字しだいで判断するという宣言に近く、指標が出るたびに金利と株価が振れやすくなります。"
+  },
+  {
+   "q": "新規失業保険申請件数って？",
+   "a": "先週アメリカで新たに失業保険を申し込んだ人の数で、毎週木曜の日本時間21時30分に発表されます。雇用統計が月1回なのに対して週ごとに出るので、労働市場の温度をいち早く測れます。申請が少ないほど「企業が人を手放していない」ことを意味し、賃金が下がりにくいので物価も下がりにくい、とFRBは受け取ります。だから今の局面では、申請が少ない＝良い数字ほど金利が上がって株の重しになりやすいのです。"
+  }
+ ]
+}
