@@ -78,9 +78,9 @@
     },
     "JPY=X": {
       "label": "ドル円",
-      "close": 159.7,
+      "close": 158.71,
       "prevClose": 157.98,
-      "chg": 1.09
+      "chg": 0.46
     },
     "^TNX": {
       "label": "米10年金利",
@@ -90,33 +90,33 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 86.42,
+      "close": 86.53,
       "prevClose": 86.04,
-      "chg": 0.44
+      "chg": 0.57
     },
     "GC=F": {
       "label": "金(ドル/oz)",
-      "close": 3994.3,
+      "close": 4000.5,
       "prevClose": 4030.2,
-      "chg": -0.89
+      "chg": -0.74
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 20509,
+      "close": 20412,
       "prevClose": 20470,
-      "chg": 0.19,
+      "chg": -0.28,
       "asOf": "2026-11-11",
-      "goldUsdOz": 3994.3,
-      "usdJpy": 159.7
+      "goldUsdOz": 4000.5,
+      "usdJpy": 158.71
     }
   },
   "fund": {
     "orukan": {
       "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
-      "nav": 37279,
-      "chgYen": 136,
-      "chgPct": 0.37,
-      "asOf": "2026-11-11",
+      "nav": 37852,
+      "chgYen": 573,
+      "chgPct": 1.54,
+      "asOf": "2026-11-12",
       "source": "みんかぶ",
       "sourceUrl": "https://itf.minkabu.jp/fund/0331418A"
     }
