@@ -46,11 +46,6 @@
       "prevClose": 267.44,
       "chg": -0.29
     },
-    "META": {
-      "close": 641.69,
-      "prevClose": 623.61,
-      "chg": 2.9
-    },
     "TSLA": {
       "close": 390.22,
       "prevClose": 397.45,
@@ -78,9 +73,9 @@
     },
     "JPY=X": {
       "label": "ドル円",
-      "close": 159.69,
+      "close": 159.88,
       "prevClose": 159.73,
-      "chg": -0.03
+      "chg": 0.09
     },
     "^TNX": {
       "label": "米10年金利",
@@ -102,12 +97,12 @@
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 19959,
+      "close": 19983,
       "prevClose": 19953,
-      "chg": 0.03,
+      "chg": 0.15,
       "asOf": "2026-11-13",
       "goldUsdOz": 3887.6,
-      "usdJpy": 159.69
+      "usdJpy": 159.88
     }
   },
   "fund": {
