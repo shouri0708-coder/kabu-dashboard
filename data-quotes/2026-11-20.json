@@ -109,5 +109,16 @@
       "goldUsdOz": 3515.4,
       "usdJpy": 159.71
     }
+  },
+  "fund": {
+    "orukan": {
+      "name": "eMAXIS Slim 全世界株式（オール・カントリー）",
+      "nav": 35574,
+      "chgYen": -685,
+      "chgPct": -1.89,
+      "asOf": "2026-11-20",
+      "source": "みんかぶ",
+      "sourceUrl": "https://itf.minkabu.jp/fund/0331418A"
+    }
   }
 }
