@@ -78,9 +78,9 @@
     },
     "JPY=X": {
       "label": "ドル円",
-      "close": 159.22,
+      "close": 159.01,
       "prevClose": 158.93,
-      "chg": 0.18
+      "chg": 0.05
     },
     "^TNX": {
       "label": "米10年金利",
@@ -90,24 +90,24 @@
     },
     "CL=F": {
       "label": "WTI原油",
-      "close": 81.69,
+      "close": 82.05,
       "prevClose": 80.17,
-      "chg": 1.9
+      "chg": 2.35
     },
     "GC=F": {
       "label": "金(ドル/oz)",
-      "close": 3555,
+      "close": 3561.9,
       "prevClose": 3651.4,
-      "chg": -2.64
+      "chg": -2.45
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 18199,
+      "close": 18209,
       "prevClose": 18658,
-      "chg": -2.46,
+      "chg": -2.4,
       "asOf": "2026-11-24",
-      "goldUsdOz": 3555,
-      "usdJpy": 159.22
+      "goldUsdOz": 3561.9,
+      "usdJpy": 159.01
     }
   },
   "fund": {
