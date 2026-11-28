@@ -96,17 +96,17 @@
     },
     "GC=F": {
       "label": "金(ドル/oz)",
-      "close": 3668.5,
+      "close": 3639.6,
       "prevClose": 3535.8,
-      "chg": 3.75
+      "chg": 2.94
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 18786,
+      "close": 18638,
       "prevClose": 18105,
-      "chg": 3.77,
+      "chg": 2.95,
       "asOf": "2026-11-27",
-      "goldUsdOz": 3668.5,
+      "goldUsdOz": 3639.6,
       "usdJpy": 159.28
     }
   },
