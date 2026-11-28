@@ -78,9 +78,9 @@
     },
     "JPY=X": {
       "label": "ドル円",
-      "close": 159.51,
+      "close": 159.28,
       "prevClose": 159.21,
-      "chg": 0.19
+      "chg": 0.04
     },
     "^TNX": {
       "label": "米10年金利",
@@ -102,12 +102,12 @@
     },
     "GOLD_JPY_G": {
       "label": "金1g(円換算)",
-      "close": 18814,
+      "close": 18786,
       "prevClose": 18105,
-      "chg": 3.92,
+      "chg": 3.77,
       "asOf": "2026-11-27",
       "goldUsdOz": 3668.5,
-      "usdJpy": 159.51
+      "usdJpy": 159.28
     }
   },
   "fund": {
